@@ -1,14 +1,16 @@
 import { Box, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 
+export interface Item {
+  image_url: string;
+  name: string;
+  description: string;
+  stack_boost: string;
+  stack_reward: string;
+  where_from: string;
+}
+
 interface ItemTileProps {
-  item: {
-    image_url: string;
-    name: string;
-    description: string;
-    stack_boost: string;
-    stack_reward: string;
-    where_from: string;
-  };
+  item: Item;
 }
 
 const ItemTile = ({ item }: ItemTileProps) => {

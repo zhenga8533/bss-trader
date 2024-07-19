@@ -1,16 +1,9 @@
-import {
-  Grid,
-  GridItem,
-  Heading,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalHeader,
-  VStack,
-} from "@chakra-ui/react";
+import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader } from "@chakra-ui/react";
+import cub from "../assets/cub.webp";
+import sticker from "../assets/sticker.webp";
+import cubs from "../data/cubs.json";
 import stickers from "../data/stickers.json";
-import ItemTile from "./ItemTile";
+import ItemSearch from "./ItemSearch";
 
 interface ItemModalProps {
   isOpen: boolean;
@@ -26,16 +19,8 @@ const ItemModal = ({ isOpen, onClose }: ItemModalProps) => {
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <VStack backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5}>
-            <Heading size="md">Stickers</Heading>
-            <Grid templateColumns="repeat(10, 1fr)" borderRadius={5} gap={4} marginX={3}>
-              {stickers.map((sticker) => (
-                <GridItem key={sticker.name}>
-                  <ItemTile item={sticker} />
-                </GridItem>
-              ))}
-            </Grid>
-          </VStack>
+          <ItemSearch icon={cub} items={cubs} title="Cubs" />
+          <ItemSearch icon={sticker} items={stickers} title="Stickers" />
         </ModalBody>
       </ModalContent>
     </Modal>

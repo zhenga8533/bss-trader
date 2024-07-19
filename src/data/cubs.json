@@ -1,0 +1,82 @@
+[
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9d/Brown_Cub.png",
+    "name": "Brown Cub Skin",
+    "description": "\"A slightly chubby cub that got into the Royal Jelly.\"",
+    "stack_boost": "+1% Pollen",
+    "stack_reward": "10 Tickets",
+    "where_from": "Rewarded after completing 300 Brown Bear Quests"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d5/Robo_Cub.png",
+    "name": "Robo Cub Skin",
+    "description": "\"They forgot a few drives when constructing this Robo Bear.\"",
+    "stack_boost": "+1% Duped Ability Pollen",
+    "stack_reward": "10 Tickets",
+    "where_from": "Reward from finishing in the top 10 of the Daily Robo Bear Challenge Leaderboard\nReward for winning round 25 of Robo Bear's Challenge for the first time...\nOr: Rewarded after collecting  250,000\u00a0Cogs"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ac/Stick_Cub.png",
+    "name": "Stick Cub Skin",
+    "description": "\"This stick nymph evolved to camouflage itself as a bear.\"",
+    "stack_boost": "+1% Bee Attack",
+    "stack_reward": "10 Tickets",
+    "where_from": "Reward from finishing in the top 25 of the Daily Stick Bug Challenge Leaderboard\nDropped by Stick Bug (Unbelievably Rare)\nStick Bug Challenge Reward (Unbelievably Rare)"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/39/Star_Cub.png",
+    "name": "Star Cub Skin",
+    "description": "\"A cosmic cub visiting from another galaxy.\"",
+    "stack_boost": "+1% Gifted Bee Pollen",
+    "stack_reward": "10 Tickets",
+    "where_from": "Awarded after sticking all 12 Star Signs to the Sticker Stack\nUsing the Diamond Star Amulet Generator (1 in a million chance)\nSticker Printer (Star Egg, All Gifted Eggs)"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5f/Noob_Cub.png",
+    "name": "Noob Cub Skin",
+    "description": "\"This little noob doesn't know the first thing about running a shop.\"",
+    "stack_boost": "+10,000 Capacity",
+    "stack_reward": "10 Tickets",
+    "where_from": "This was included in the Cub Buddy Launch Pack"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8b/Bee_Cub.png",
+    "name": "Bee Cub Skin",
+    "description": "\"A young polar bear going through an identity crisis.\"",
+    "stack_boost": "+10,000 Capacity",
+    "stack_reward": "10 Tickets",
+    "where_from": "This was the final reward of Bee Bear's 2019 quests"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b5/Gingerbread_Cub.png",
+    "name": "Gingerbread Cub Skin",
+    "description": "\"A cub made of cookies, brought to life by Honeyday Magic!\"",
+    "stack_boost": "+10,000 Capacity",
+    "stack_reward": "10 Tickets",
+    "where_from": "Purchased in Bee Bear's 2020 Catalog for  250\u00a0Gingerbread Bears"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/70/Snow_Cub.png",
+    "name": "Snow Cub Skin",
+    "description": "\"This cruel cub was carved from a Lvl 20 Snowbear's snowball.\"",
+    "stack_boost": "+10,000 Capacity",
+    "stack_reward": "10 Tickets",
+    "where_from": "This was the final reward in Bee Bear's March 2022 quests"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e1/Peppermint_Robo_Cub.png",
+    "name": "Peppermint Robo Cub Skin",
+    "description": "\"A clockwork cub composed of cogs and candycanes.\"",
+    "stack_boost": "+10,000 Capacity",
+    "stack_reward": "10 Tickets",
+    "where_from": "This was the final reward in Bee Bear's April 2023 quests"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/00/Doodle_Cub.png",
+    "name": "Doodle Cub Skin",
+    "description": "\"Cut from cardboard and scribbled up with magic crayons.\"",
+    "stack_boost": "+10,000 Capacity",
+    "stack_reward": "10 Tickets",
+    "where_from": "Completing all of Bee Bear's Summer 2024 quests (not yet available)"
+  }
+]
