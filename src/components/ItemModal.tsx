@@ -1,9 +1,7 @@
 import {
-  Box,
   Grid,
   GridItem,
   Heading,
-  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -12,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import stickers from "../data/stickers.json";
+import ItemTile from "./ItemTile";
 
 interface ItemModalProps {
   isOpen: boolean;
@@ -32,9 +31,7 @@ const ItemModal = ({ isOpen, onClose }: ItemModalProps) => {
             <Grid templateColumns="repeat(10, 1fr)" borderRadius={5} gap={4} marginX={3}>
               {stickers.map((sticker) => (
                 <GridItem key={sticker.name}>
-                  <Box backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5}>
-                    <Image src={sticker.image_url} alt={sticker.name} p={1} />
-                  </Box>
+                  <ItemTile item={sticker} />
                 </GridItem>
               ))}
             </Grid>
