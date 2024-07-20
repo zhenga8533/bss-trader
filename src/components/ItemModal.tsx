@@ -13,7 +13,7 @@ interface ItemModalProps {
 const ItemModal = ({ isOpen, onClose }: ItemModalProps) => {
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="full">
-      <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" mt={5} w="60vw">
+      <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" my={5} w="60vw">
         <ModalHeader fontSize="xx-large" fontWeight={500}>
           Item Index
         </ModalHeader>

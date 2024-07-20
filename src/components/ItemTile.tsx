@@ -46,7 +46,7 @@ const ItemTile = ({ item }: ItemTileProps) => {
       <Text fontWeight="bold">Stack Reward: {item.stack_reward}</Text>
       <Box backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={2} whiteSpace="pre-line">
         <Text fontWeight="bold">Where it's from:</Text>
-        <Text>{"● " + item.where_from.replace(/\n/g, "\n• ")}</Text>
+        <Text>{"● " + item.where_from.replace(/\n/g, "\n● ")}</Text>
       </Box>
     </VStack>
   );
