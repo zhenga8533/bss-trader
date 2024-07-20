@@ -27,6 +27,16 @@ const theme = extendTheme({
       defaultProps: {
         variant: "outline",
       },
+      Modal: {
+        sizes: {
+          custom: {
+            content: {
+              w: "60vw",
+              h: "auto",
+            },
+          },
+        },
+      },
     },
   },
 });

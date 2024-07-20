@@ -1,5 +1,5 @@
 import { Grid, GridItem, Heading, HStack, Image, Input, VStack } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ItemTile, { Item } from "./ItemTile";
 
 interface ItemSearchProps {
@@ -11,6 +11,11 @@ interface ItemSearchProps {
 const ItemSearch = ({ icon, items, title }: ItemSearchProps) => {
   const [filteredItems, setFilteredItems] = useState(items);
   const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    setFilteredItems(items);
+    setSearchTerm("");
+  }, [items]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let term = event.target.value;
@@ -44,7 +49,7 @@ const ItemSearch = ({ icon, items, title }: ItemSearchProps) => {
         onChange={handleSearchChange}
         size="md"
       />
-      <Grid templateColumns="repeat(10, 1fr)" borderRadius={5} gap={4}>
+      <Grid templateColumns="repeat(auto-fit, minmax(90px, 1fr))" borderRadius={5} gap={4}>
         {filteredItems.map((item) => (
           <GridItem key={item.name}>
             <ItemTile item={item} />
