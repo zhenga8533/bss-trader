@@ -21,8 +21,8 @@ const ItemTile = ({ item }: ItemTileProps) => {
   );
 
   const label = (
-    <VStack alignItems="left" mb={1}>
-      <Heading size="sm">{item.name}</Heading>
+    <VStack alignItems="left" my={1}>
+      <Heading size="md">{item.name}</Heading>
       <HStack>
         <Box className="box" boxSize="50%" p={5}>
           <Image src={item.image_url} alt={item.name} />
@@ -44,7 +44,7 @@ const ItemTile = ({ item }: ItemTileProps) => {
       </HStack>
       <Text fontWeight="bold">Stack Boost: {item.stack_boost}</Text>
       <Text fontWeight="bold">Stack Reward: {item.stack_reward}</Text>
-      <Box backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={2} whiteSpace="pre-line">
+      <Box backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} px={2} whiteSpace="pre-line">
         <Text fontWeight="bold">Where it's from:</Text>
         <Text>{"● " + item.where_from.replace(/\n/g, "\n● ")}</Text>
       </Box>
