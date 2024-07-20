@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
+import { Box, Button, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 
 export interface Item {
   image_url: string;
@@ -15,9 +15,9 @@ interface ItemTileProps {
 
 const ItemTile = ({ item }: ItemTileProps) => {
   const tile = (
-    <Box backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5} p={1}>
+    <Button backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5} p={1}>
       <Image src={item.image_url} alt={item.name} />
-    </Box>
+    </Button>
   );
 
   const label = (
@@ -42,6 +42,7 @@ const ItemTile = ({ item }: ItemTileProps) => {
           </Text>
         </VStack>
       </HStack>
+      <Text fontStyle="italic">{item.description}</Text>
       <Text fontWeight="bold">Stack Boost: {item.stack_boost}</Text>
       <Text fontWeight="bold">Stack Reward: {item.stack_reward}</Text>
       <Box backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} px={2} whiteSpace="pre-line">
