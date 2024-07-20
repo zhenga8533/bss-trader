@@ -2,7 +2,7 @@
   "name": "bss-trader",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://{username}.github.io/bss-trader/",
+  "homepage": "https://zhenga8533.github.io/bss-trader/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
