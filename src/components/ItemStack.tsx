@@ -11,6 +11,8 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
   const [items, setItems] = useState<string[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  console.log(items);
+
   return (
     <>
       <ItemModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
