@@ -53,7 +53,7 @@ const ItemTile = ({ item }: ItemTileProps) => {
   );
 
   return (
-    <Tooltip label={label} placement="right" borderRadius={5} transform="rotate(15deg)">
+    <Tooltip label={label} placement="top" borderRadius={5} transform="rotate(15deg)">
       {tile}
     </Tooltip>
   );

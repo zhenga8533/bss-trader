@@ -49,7 +49,7 @@ const ItemSearch = ({ icon, items, title }: ItemSearchProps) => {
         onChange={handleSearchChange}
         size="md"
       />
-      <Grid templateColumns="repeat(auto-fit, minmax(90px, 1fr))" borderRadius={5} gap={4}>
+      <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} gap={4}>
         {filteredItems.map((item) => (
           <GridItem key={item.name}>
             <ItemTile item={item} />
