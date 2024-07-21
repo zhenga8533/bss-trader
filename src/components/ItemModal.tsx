@@ -1,4 +1,4 @@
-import { Button, HStack, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader } from "@chakra-ui/react";
+import { Button, HStack, Image, Modal, ModalBody, ModalCloseButton, ModalContent } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import cub from "../assets/cub.webp";
 import sticker from "../assets/sticker.webp";
@@ -28,11 +28,8 @@ const ItemModal = ({ isOpen, onClose }: ItemModalProps) => {
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
       <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" my={5} w="60vw">
-        <ModalHeader fontSize="xx-large" fontWeight={500}>
-          {category} Index
-        </ModalHeader>
         <ModalCloseButton />
-        <ModalBody mt={-6}>
+        <ModalBody mt={1}>
           <HStack mb={4}>
             <Button
               className="button"
