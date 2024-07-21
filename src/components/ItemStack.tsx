@@ -17,7 +17,14 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
     <>
       <ItemModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <VStack>
-        <Heading background={color} borderRadius={5} textAlign="center" size="lg" w="100%">
+        <Heading
+          background={color}
+          borderRadius={5}
+          textAlign="center"
+          textShadow={"1px 1px 2px black"}
+          size="lg"
+          w="100%"
+        >
           {title}
         </Heading>
         <Divider />
