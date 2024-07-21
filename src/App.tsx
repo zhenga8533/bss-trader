@@ -2,6 +2,7 @@ import { Box, Grid, GridItem, Heading, HStack, Image } from "@chakra-ui/react";
 import background from "./assets/background.jpg";
 import sticker from "./assets/sticker.webp";
 import ItemStack from "./components/ItemStack";
+import SproutTimer from "./components/SproutTimer";
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         position="absolute"
       >
         <Grid
-          templateAreas={`"header header header"
+          templateAreas={`"div header timer"
                           "offering center giving"
                           "footer footer footer"`}
           templateColumns={"1fr auto 1fr"}
@@ -43,6 +44,9 @@ const App = () => {
                 <Image src={sticker} alt="Sticker" />
               </HStack>
             </HStack>
+          </GridItem>
+          <GridItem gridArea="timer">
+            <SproutTimer />
           </GridItem>
           <GridItem gridArea="offering">
             <ItemStack color="rgba(255, 64, 64, 0.5)" title="Offering" />
