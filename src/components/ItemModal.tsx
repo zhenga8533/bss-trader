@@ -9,11 +9,12 @@ import ItemSearch from "./ItemSearch";
 interface ItemModalProps {
   isOpen: boolean;
   onClose: () => void;
+  addItem: (item: any) => void;
 }
 
-const ItemModal = ({ isOpen, onClose }: ItemModalProps) => {
-  const cubSearch = <ItemSearch icon={cub} items={cubs} title="Cub" />;
-  const stickerSearch = <ItemSearch icon={sticker} items={stickers} title="Sticker" />;
+const ItemModal = ({ isOpen, onClose, addItem }: ItemModalProps) => {
+  const cubSearch = <ItemSearch icon={cub} items={cubs} title="Cub" addItem={addItem} />;
+  const stickerSearch = <ItemSearch icon={sticker} items={stickers} title="Sticker" addItem={addItem} />;
   const [category, setCategory] = useState("Sticker");
   const [search, setSearch] = useState(stickerSearch);
 

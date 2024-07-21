@@ -11,11 +11,12 @@ export interface Item {
 
 interface ItemTileProps {
   item: Item;
+  onClick: (item: Item) => void;
 }
 
-const ItemTile = ({ item }: ItemTileProps) => {
+const ItemTile = ({ item, onClick }: ItemTileProps) => {
   const tile = (
-    <Button backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5} p={1}>
+    <Button backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5} p={1} onClick={() => onClick(item)}>
       <Image src={item.image_url} alt={item.name} />
     </Button>
   );

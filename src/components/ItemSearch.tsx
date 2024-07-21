@@ -6,9 +6,10 @@ interface ItemSearchProps {
   icon: string;
   items: Item[];
   title: string;
+  addItem: (item: Item) => void;
 }
 
-const ItemSearch = ({ icon, items, title }: ItemSearchProps) => {
+const ItemSearch = ({ icon, items, title, addItem }: ItemSearchProps) => {
   const [filteredItems, setFilteredItems] = useState(items);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -52,7 +53,7 @@ const ItemSearch = ({ icon, items, title }: ItemSearchProps) => {
       <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} gap={4}>
         {filteredItems.map((item) => (
           <GridItem key={item.name}>
-            <ItemTile item={item} />
+            <ItemTile item={item} onClick={addItem} />
           </GridItem>
         ))}
       </Grid>
