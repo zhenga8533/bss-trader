@@ -54,7 +54,7 @@ const ItemTile = ({ item, onClick }: ItemTileProps) => {
   );
 
   return (
-    <Tooltip label={label} placement="top" borderRadius={5} transform="rotate(15deg)">
+    <Tooltip label={label} bg="rgb(255, 255, 48)" borderRadius={5} placement="top" transform="rotate(15deg)">
       {tile}
     </Tooltip>
   );
