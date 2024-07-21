@@ -1,30 +1,29 @@
 import { Button, HStack, Image, Modal, ModalBody, ModalCloseButton, ModalContent } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import cub from "../assets/cub.webp";
 import sticker from "../assets/sticker.webp";
 import cubs from "../data/cubs.json";
 import stickers from "../data/stickers.json";
 import ItemSearch from "./ItemSearch";
+import { StackItem } from "./ItemStack";
 
 interface ItemModalProps {
   isOpen: boolean;
   onClose: () => void;
   addItem: (item: any) => void;
+  stackItems: { [key: string]: StackItem };
 }
 
-const ItemModal = ({ isOpen, onClose, addItem }: ItemModalProps) => {
-  const cubSearch = <ItemSearch icon={cub} items={cubs} title="Cub" addItem={addItem} />;
-  const stickerSearch = <ItemSearch icon={sticker} items={stickers} title="Sticker" addItem={addItem} />;
-  const [category, setCategory] = useState("Sticker");
-  const [search, setSearch] = useState(stickerSearch);
+const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => {
+  const [category, setCategory] = useState("");
 
-  useEffect(() => {
+  const getSearch = (category: string) => {
     if (category === "Cub") {
-      setSearch(cubSearch);
+      return <ItemSearch icon={cub} items={cubs} title="Cub" addItem={addItem} stackItems={stackItems} />;
     } else {
-      setSearch(stickerSearch);
+      return <ItemSearch icon={sticker} items={stickers} title="Sticker" addItem={addItem} stackItems={stackItems} />;
     }
-  }, [category]);
+  };
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
@@ -49,7 +48,7 @@ const ItemModal = ({ isOpen, onClose, addItem }: ItemModalProps) => {
               <Image src={sticker} alt="Sticker" />
             </Button>
           </HStack>
-          {search}
+          {getSearch(category)}
         </ModalBody>
       </ModalContent>
     </Modal>

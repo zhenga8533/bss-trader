@@ -11,10 +11,11 @@ export interface Item {
 
 interface ItemTileProps {
   item: Item;
+  stackQuantity: number;
   onClick: (item: Item) => void;
 }
 
-const ItemTile = ({ item, onClick }: ItemTileProps) => {
+const ItemTile = ({ item, stackQuantity, onClick }: ItemTileProps) => {
   const tile = (
     <Button backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5} p={1} onClick={() => onClick(item)}>
       <Image src={item.image_url} alt={item.name} />
@@ -33,10 +34,10 @@ const ItemTile = ({ item, onClick }: ItemTileProps) => {
             Sticker
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            In Book:
+            In Book: {stackQuantity > 0 ? "Yes" : "No"}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            In Stack:
+            In Stack: {stackQuantity}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
             Type

@@ -8,6 +8,10 @@ interface ItemStackProps {
   title: string;
 }
 
+export interface StackItem extends Item {
+  quantity: number;
+}
+
 const ItemStack = ({ color, title }: ItemStackProps) => {
   const [items, setItems] = useState<{ [key: string]: Item & { quantity: number } }>({});
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,7 +46,7 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
 
   return (
     <>
-      <ItemModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} addItem={addItem} />
+      <ItemModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} addItem={addItem} stackItems={items} />
       <VStack>
         <Heading
           background={color}
@@ -58,7 +62,7 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
         <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%">
           {Object.values(items).map((item) => (
             <Box position={"relative"} key={item.name}>
-              <ItemTile item={item} onClick={removeItem} />
+              <ItemTile item={item} stackQuantity={items[item.name]?.quantity ?? 0} onClick={removeItem} />
               <Box
                 backgroundColor="rgba(0, 0, 0, 0.5)"
                 borderRadius={5}
