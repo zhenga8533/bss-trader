@@ -1,5 +1,7 @@
-import { Box, Button, Divider, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
+import { Box, Button, Divider, Grid, Heading, HStack, Text, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import BeequipModal from "./BeequipModal";
+import { Beequip } from "./BeequipTile";
 import ItemModal from "./ItemModal";
 import ItemTile, { Item } from "./ItemTile";
 
@@ -13,11 +15,14 @@ export interface StackItem extends Item {
 }
 
 const ItemStack = ({ color, title }: ItemStackProps) => {
+  const id = title.toLowerCase().replace(/\s/g, "-");
+
+  // Cub Skins, Hive Skins, Stickers, and Vouchers
   const [items, setItems] = useState<{ [key: string]: Item & { quantity: number } }>(() => {
-    const saveData = localStorage.getItem(title);
+    const saveData = localStorage.getItem(id + "-items");
     return saveData ? JSON.parse(saveData) : {};
   });
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [itemsOpen, setItemsOpen] = useState(false);
 
   const addItem = (item: Item) => {
     setItems((prevItems) => {
@@ -48,12 +53,24 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
   };
 
   useEffect(() => {
-    localStorage.setItem(title, JSON.stringify(items));
+    localStorage.setItem(id + "-items", JSON.stringify(items));
   }, [items]);
+
+  // Beequips
+  const [beequips, setBeequips] = useState<Beequip[]>(() => {
+    const saveData = localStorage.getItem(id + "-beequips");
+    return saveData ? JSON.parse(saveData) : [];
+  });
+  const [beequipsOpen, setBeequipsOpen] = useState(false);
+
+  const addBeequip = (beequip: Beequip) => {
+    setBeequips((prevBeequips) => [...prevBeequips, beequip]);
+  };
 
   return (
     <>
-      <ItemModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} addItem={addItem} stackItems={items} />
+      <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addItem={addBeequip} />
+      <ItemModal isOpen={itemsOpen} onClose={() => setItemsOpen(false)} addItem={addItem} stackItems={items} />
       <VStack>
         <Heading
           background={color}
@@ -84,12 +101,26 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
             </Box>
           ))}
         </Grid>
+        <VStack>
+          {beequips.map((beequip) => (
+            <Text>{beequip.name}</Text>
+          ))}
+        </VStack>
         <Divider />
         <HStack>
-          <Button backgroundColor="rgba(0, 0, 255, 0.2)" onClick={() => setIsModalOpen(true)}>
-            Add
+          <Button backgroundColor="rgba(0, 0, 255, 0.2)" onClick={() => setBeequipsOpen(true)}>
+            Beequips
           </Button>
-          <Button backgroundColor="rgba(255, 0, 0, 0.4)" onClick={() => setItems({})}>
+          <Button backgroundColor="rgba(0, 255, 0, 0.2)" onClick={() => setItemsOpen(true)}>
+            Cosmetics
+          </Button>
+          <Button
+            backgroundColor="rgba(255, 0, 0, 0.4)"
+            onClick={() => {
+              setBeequips([]);
+              setItems({});
+            }}
+          >
             Clear
           </Button>
         </HStack>
