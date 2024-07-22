@@ -1,5 +1,5 @@
 import { Box, Button, Divider, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ItemModal from "./ItemModal";
 import ItemTile, { Item } from "./ItemTile";
 
@@ -13,7 +13,10 @@ export interface StackItem extends Item {
 }
 
 const ItemStack = ({ color, title }: ItemStackProps) => {
-  const [items, setItems] = useState<{ [key: string]: Item & { quantity: number } }>({});
+  const [items, setItems] = useState<{ [key: string]: Item & { quantity: number } }>(() => {
+    const saveData = localStorage.getItem(title);
+    return saveData ? JSON.parse(saveData) : {};
+  });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const addItem = (item: Item) => {
@@ -43,6 +46,10 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
       }
     });
   };
+
+  useEffect(() => {
+    localStorage.setItem(title, JSON.stringify(items));
+  }, [items]);
 
   return (
     <>
