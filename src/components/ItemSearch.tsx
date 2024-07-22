@@ -1,7 +1,8 @@
-import { Grid, GridItem, Heading, HStack, Image, Input, VStack } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { Box, Grid, GridItem, Heading, HStack, Image, Input, Spinner, VStack } from "@chakra-ui/react";
+import React, { Suspense, useEffect, useState } from "react";
 import { StackItem } from "./ItemStack";
-import ItemTile, { Item } from "./ItemTile";
+import { Item } from "./ItemTile";
+const ItemTile = React.lazy(() => import("./ItemTile"));
 
 interface ItemSearchProps {
   icon: string;
@@ -52,13 +53,21 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
         onChange={handleSearchChange}
         size="md"
       />
-      <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} gap={4}>
-        {filteredItems.map((item) => (
-          <GridItem key={item.name}>
-            <ItemTile item={item} stackQuantity={stackItems[item.name]?.quantity ?? 0} onClick={addItem} />
-          </GridItem>
-        ))}
-      </Grid>
+      <Suspense
+        fallback={
+          <Box alignItems="center" display="flex" justifyContent="center" height="40vh" width="100%">
+            <Spinner size="xl" />
+          </Box>
+        }
+      >
+        <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} columnGap={3} rowGap={5}>
+          {filteredItems.map((item) => (
+            <GridItem key={item.name}>
+              <ItemTile item={item} stackQuantity={stackItems[item.name]?.quantity ?? 0} onClick={addItem} />
+            </GridItem>
+          ))}
+        </Grid>
+      </Suspense>
     </VStack>
   );
 };
