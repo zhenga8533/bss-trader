@@ -59,7 +59,7 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
           {title}
         </Heading>
         <Divider />
-        <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%">
+        <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%" columnGap={3} rowGap={5}>
           {Object.values(items).map((item) => (
             <Box position={"relative"} key={item.name}>
               <ItemTile item={item} stackQuantity={items[item.name]?.quantity ?? 0} onClick={removeItem} />
@@ -77,6 +77,7 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
             </Box>
           ))}
         </Grid>
+        <Divider />
         <HStack>
           <Button backgroundColor="rgba(0, 0, 255, 0.2)" onClick={() => setIsModalOpen(true)}>
             Add

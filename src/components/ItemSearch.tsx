@@ -48,7 +48,7 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
       </HStack>
       <Input
         _placeholder={{ color: "gray.400" }}
-        placeholder={`Search for ${title}...`}
+        placeholder={`Search for ${title.toLowerCase()}s...`}
         value={searchTerm}
         onChange={handleSearchChange}
         size="md"

@@ -31,7 +31,7 @@ const ItemTile = ({ item, stackQuantity, onClick }: ItemTileProps) => {
         </Box>
         <VStack w="50%">
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            {item.category}
+            Skin
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
             In Book: {stackQuantity > 0 ? "Yes" : "No"}
@@ -55,7 +55,7 @@ const ItemTile = ({ item, stackQuantity, onClick }: ItemTileProps) => {
   );
 
   return (
-    <Tooltip label={label} bg="rgb(255, 255, 48)" borderRadius={5} placement="top" transform="rotate(15deg)">
+    <Tooltip label={label} bg="rgb(255, 255, 48)" borderRadius={5} placement="bottom" transform="rotate(15deg)">
       {tile}
     </Tooltip>
   );
