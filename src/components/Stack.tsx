@@ -71,6 +71,10 @@ const Stack = ({ color, title }: StackProps) => {
     setBeequips((prevBeequips) => prevBeequips.filter((b) => b.name !== beequip.name));
   };
 
+  useEffect(() => {
+    localStorage.setItem(id + "-beequips", JSON.stringify(beequips));
+  }, [beequips]);
+
   return (
     <>
       <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addItem={addBeequip} />
