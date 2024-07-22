@@ -1,9 +1,13 @@
 import { Button, HStack, Image, Modal, ModalBody, ModalCloseButton, ModalContent } from "@chakra-ui/react";
 import { useState } from "react";
 import cub from "../assets/cub.webp";
+import hive from "../assets/hive.webp";
 import sticker from "../assets/sticker.webp";
+import voucher from "../assets/voucher.webp";
 import cubs from "../data/cubs.json";
+import hives from "../data/hives.json";
 import stickers from "../data/stickers.json";
+import vouchers from "../data/vouchers.json";
 import ItemSearch from "./ItemSearch";
 import { StackItem } from "./ItemStack";
 
@@ -15,14 +19,31 @@ interface ItemModalProps {
 }
 
 const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => {
-  const [category, setCategory] = useState("");
+  const categories: { [key: string]: { icon: string; items: any[] } } = {
+    Cub: {
+      icon: cub,
+      items: cubs,
+    },
+    Hive: {
+      icon: hive,
+      items: hives,
+    },
+    Sticker: {
+      icon: sticker,
+      items: stickers,
+    },
+    Voucher: {
+      icon: voucher,
+      items: vouchers,
+    },
+  };
+  const [category, setCategory] = useState("Sticker");
 
-  const getSearch = (category: string) => {
-    if (category === "Cub") {
-      return <ItemSearch icon={cub} items={cubs} title="Cub" addItem={addItem} stackItems={stackItems} />;
-    } else {
-      return <ItemSearch icon={sticker} items={stickers} title="Sticker" addItem={addItem} stackItems={stackItems} />;
-    }
+  const getSearch = (key: string) => {
+    const category = categories[key];
+    return (
+      <ItemSearch icon={category.icon} items={category.items} addItem={addItem} stackItems={stackItems} title={key} />
+    );
   };
 
   return (
@@ -31,22 +52,17 @@ const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => 
         <ModalCloseButton />
         <ModalBody mt={1}>
           <HStack mb={4}>
-            <Button
-              className="button"
-              onClick={() => {
-                setCategory("Cub");
-              }}
-            >
-              <Image src={cub} alt="Cub" />
-            </Button>
-            <Button
-              className="button"
-              onClick={() => {
-                setCategory("Sticker");
-              }}
-            >
-              <Image src={sticker} alt="Sticker" />
-            </Button>
+            {Object.keys(categories).map((category) => (
+              <Button
+                className="button"
+                key={category}
+                onClick={() => {
+                  setCategory(category);
+                }}
+              >
+                <Image src={categories[category].icon} alt={category} />
+              </Button>
+            ))}
           </HStack>
           {getSearch(category)}
         </ModalBody>

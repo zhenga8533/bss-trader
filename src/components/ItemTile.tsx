@@ -31,7 +31,7 @@ const ItemTile = ({ item, stackQuantity, onClick }: ItemTileProps) => {
         </Box>
         <VStack w="50%">
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            Sticker
+            {item.category}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
             In Book: {stackQuantity > 0 ? "Yes" : "No"}
