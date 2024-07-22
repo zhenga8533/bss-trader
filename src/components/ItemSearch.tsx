@@ -1,7 +1,7 @@
 import { Box, Grid, GridItem, Heading, HStack, Image, Input, Spinner, VStack } from "@chakra-ui/react";
 import React, { Suspense, useEffect, useState } from "react";
-import { StackItem } from "./ItemStack";
 import { Item } from "./ItemTile";
+import { StackItem } from "./Stack";
 const ItemTile = React.lazy(() => import("./ItemTile"));
 
 interface ItemSearchProps {

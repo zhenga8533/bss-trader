@@ -2,8 +2,8 @@ import { Box, Center, Grid, GridItem, Heading, HStack, Image } from "@chakra-ui/
 import arrows from "./assets/arrows.webp";
 import background from "./assets/background.jpg";
 import sticker from "./assets/sticker.webp";
-import ItemStack from "./components/ItemStack";
 import SproutTimer from "./components/SproutTimer";
+import ItemStack from "./components/Stack";
 
 const App = () => {
   return (

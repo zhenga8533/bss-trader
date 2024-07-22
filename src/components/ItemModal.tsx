@@ -9,7 +9,7 @@ import hives from "../data/hives.json";
 import stickers from "../data/stickers.json";
 import vouchers from "../data/vouchers.json";
 import ItemSearch from "./ItemSearch";
-import { StackItem } from "./ItemStack";
+import { StackItem } from "./Stack";
 
 interface ItemModalProps {
   isOpen: boolean;

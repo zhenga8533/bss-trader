@@ -1,11 +1,11 @@
-import { Box, Button, Divider, Grid, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Divider, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import BeequipModal from "./BeequipModal";
-import { Beequip } from "./BeequipTile";
+import BeequipTile, { Beequip } from "./BeequipTile";
 import ItemModal from "./ItemModal";
 import ItemTile, { Item } from "./ItemTile";
 
-interface ItemStackProps {
+interface StackProps {
   color: string;
   title: string;
 }
@@ -14,7 +14,7 @@ export interface StackItem extends Item {
   quantity: number;
 }
 
-const ItemStack = ({ color, title }: ItemStackProps) => {
+const Stack = ({ color, title }: StackProps) => {
   const id = title.toLowerCase().replace(/\s/g, "-");
 
   // Cub Skins, Hive Skins, Stickers, and Vouchers
@@ -67,6 +67,10 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
     setBeequips((prevBeequips) => [...prevBeequips, beequip]);
   };
 
+  const removeBeequip = (beequip: Beequip) => {
+    setBeequips((prevBeequips) => prevBeequips.filter((b) => b.name !== beequip.name));
+  };
+
   return (
     <>
       <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addItem={addBeequip} />
@@ -103,7 +107,9 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
         </Grid>
         <VStack>
           {beequips.map((beequip) => (
-            <Text>{beequip.name}</Text>
+            <Box key={beequip.name} w="96px">
+              <BeequipTile beequip={beequip} onClick={removeBeequip} />
+            </Box>
           ))}
         </VStack>
         <Divider />
@@ -129,4 +135,4 @@ const ItemStack = ({ color, title }: ItemStackProps) => {
   );
 };
 
-export default ItemStack;
+export default Stack;
