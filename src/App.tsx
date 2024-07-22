@@ -2,6 +2,7 @@ import { Box, Center, Grid, GridItem, Heading, HStack, Image } from "@chakra-ui/
 import arrows from "./assets/arrows.webp";
 import background from "./assets/background.jpg";
 import sticker from "./assets/sticker.webp";
+import FooterButtons from "./components/FooterButtons";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
 
@@ -60,7 +61,7 @@ const App = () => {
             <ItemStack color="rgb(110, 222, 75)" title="Looking For" />
           </GridItem>
           <GridItem gridArea="footer">
-            <Heading>Footer</Heading>
+            <FooterButtons />
           </GridItem>
         </Grid>
       </Box>

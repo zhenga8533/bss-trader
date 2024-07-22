@@ -118,14 +118,14 @@ const Stack = ({ color, title }: StackProps) => {
         </VStack>
         <Divider />
         <HStack>
-          <Button backgroundColor="rgba(0, 0, 255, 0.2)" onClick={() => setBeequipsOpen(true)}>
+          <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
             Beequips
           </Button>
-          <Button backgroundColor="rgba(0, 255, 0, 0.2)" onClick={() => setItemsOpen(true)}>
+          <Button colorScheme="green" onClick={() => setItemsOpen(true)}>
             Cosmetics
           </Button>
           <Button
-            backgroundColor="rgba(255, 0, 0, 0.4)"
+            colorScheme="red"
             onClick={() => {
               setBeequips([]);
               setItems({});
