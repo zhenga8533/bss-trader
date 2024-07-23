@@ -21,6 +21,21 @@ interface BeequipTileProps {
   onClick: (beequip: Beequip) => void;
 }
 
+export const formatStat = (stat: string, index: number) => {
+  const color = stat.startsWith("+")
+    ? "green"
+    : stat.startsWith("-")
+    ? "red"
+    : stat.startsWith("[")
+    ? "yellow"
+    : "white";
+  return (
+    <Text color={color} key={index}>
+      {stat}
+    </Text>
+  );
+};
+
 const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
   const tile = (
     <Button className="box" p={1} onClick={() => onClick(beequip)}>
@@ -73,8 +88,8 @@ const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
       <VStack alignItems="left" className="box" p={1} gap={0}>
         <Text fontWeight="bold">Stats:</Text>
         {beequip.activeStats.length > 0
-          ? beequip.activeStats.map((stat, index) => <Text key={index}>{"● " + stat}</Text>)
-          : beequip.stats.map((stat, index) => <Text key={index}>{"● " + stat}</Text>)}
+          ? beequip.activeStats.map((stat, index) => formatStat(stat, index))
+          : beequip.stats.map((stat, index) => formatStat(stat, index))}
       </VStack>
       {/* Waxes */}
       {beequip.waxes.length > 0 && (

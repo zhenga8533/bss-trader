@@ -21,6 +21,7 @@ import {
 import { useState } from "react";
 import waxData from "../data/waxes.json";
 import { Beequip } from "./BeequipTile";
+import StatsPopover from "./StatsPopover";
 
 interface BeequipInputProps {
   beequip: Beequip | null;
@@ -59,7 +60,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
               ))}
             </HStack>
             <Divider /> {/* Stats */}
-            <Text className="heading">Add Stat</Text>
+            <StatsPopover stats={beequip.stats} />
             <Input
               color="white"
               placeholder="Enter any stat..."
