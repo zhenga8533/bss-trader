@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 
 export interface Beequip {
@@ -72,10 +72,20 @@ const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
       {/* Stats */}
       <VStack alignItems="left" className="box" p={1} gap={0}>
         <Text fontWeight="bold">Stats:</Text>
-        {beequip.stats.map((stat, index) => (
-          <Text key={index}>{"● " + stat}</Text>
-        ))}
+        {beequip.activeStats.length > 0
+          ? beequip.activeStats.map((stat, index) => <Text key={index}>{"● " + stat}</Text>)
+          : beequip.stats.map((stat, index) => <Text key={index}>{"● " + stat}</Text>)}
       </VStack>
+      {/* Waxes */}
+      {beequip.waxes.length > 0 && (
+        <Grid className="box" templateColumns="repeat(5, 1fr)" gap={1}>
+          {beequip.waxes.map((wax, index) => (
+            <GridItem key={index} className="box" m={1}>
+              <Image src={wax} alt={wax} p={1} />
+            </GridItem>
+          ))}
+        </Grid>
+      )}
     </VStack>
   );
 
