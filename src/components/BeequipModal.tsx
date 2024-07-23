@@ -18,6 +18,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import beequip from "../assets/beequip.webp";
 import beequips from "../data/beequips.json";
 import { isTermIncluded } from "../services/format";
+import BeequipInput from "./BeequipInput";
 import { Beequip } from "./BeequipTile";
 const BeequipTile = React.lazy(() => import("./BeequipTile"));
 
@@ -30,6 +31,9 @@ interface BeequipTileProps {
 const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
   const [filteredBeequips, setFilteredBeequips] = useState(beequips);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const [selected, setSelected] = useState<Beequip | null>(null);
+  const [inputOpen, setInputOpen] = useState(false);
 
   useEffect(() => {
     setFilteredBeequips(beequips);
@@ -67,7 +71,13 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
         <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} columnGap={3} rowGap={5}>
           {filteredBeequips.map((beequip) => (
             <GridItem key={beequip.name}>
-              <BeequipTile beequip={beequip} onClick={addBeequip} />
+              <BeequipTile
+                beequip={beequip}
+                onClick={(beequip) => {
+                  setSelected(beequip);
+                  setInputOpen(true);
+                }}
+              />
             </GridItem>
           ))}
         </Grid>
@@ -87,7 +97,15 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
             <Image src={beequip} alt="Beequip" boxSize="36px" />
           </HStack>
         </ModalHeader>
-        <ModalBody>{body}</ModalBody>
+        <ModalBody>
+          <BeequipInput
+            beequip={selected}
+            isOpen={inputOpen}
+            onClose={() => setInputOpen(false)}
+            onEnter={addBeequip}
+          />
+          {body}
+        </ModalBody>
       </ModalContent>
     </Modal>
   );
