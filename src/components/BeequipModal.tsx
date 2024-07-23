@@ -91,7 +91,7 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
         <ModalCloseButton />
         <ModalHeader>
           <HStack>
-            <Heading color="white" size="lg" textShadow={"1px 1px 2px black"}>
+            <Heading className="heading" size="lg">
               Beequips
             </Heading>
             <Image src={beequip} alt="Beequip" boxSize="36px" />

@@ -61,7 +61,7 @@ const SproutTimer = () => {
   return (
     <Flex justifyContent="flex-end">
       <Box css={rainbowAnimation} borderRadius={5} p={3}>
-        <Heading textShadow={"1px 1px 2px black"}>🌱 {formatTime(timeLeft)} </Heading>
+        <Heading className="heading">🌱 {formatTime(timeLeft)} </Heading>
       </Box>
     </Flex>
   );

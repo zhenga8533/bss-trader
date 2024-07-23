@@ -80,14 +80,7 @@ const Stack = ({ color, title }: StackProps) => {
       <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addBeequip={addBeequip} />
       <ItemModal isOpen={itemsOpen} onClose={() => setItemsOpen(false)} addItem={addItem} stackItems={items} />
       <VStack>
-        <Heading
-          background={color}
-          borderRadius={5}
-          textAlign="center"
-          textShadow={"1px 1px 2px black"}
-          size="lg"
-          w="100%"
-        >
+        <Heading className="heading" background={color} borderRadius={5} textAlign="center" size="lg" w="100%">
           {title}
         </Heading>
         <Divider />

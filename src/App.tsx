@@ -41,7 +41,7 @@ const App = () => {
             <HStack justifyContent="center">
               <HStack backgroundColor="rgba(128, 128, 128, 0.5)" borderRadius={5} p={3}>
                 <Image src={sticker} alt="Sticker" />
-                <Heading textShadow={"1px 1px 2px black"}>BSS Trader</Heading>
+                <Heading className="heading">BSS Trader</Heading>
                 <Image src={sticker} alt="Sticker" />
               </HStack>
             </HStack>

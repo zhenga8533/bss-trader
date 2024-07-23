@@ -37,7 +37,7 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
   return (
     <VStack alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3}>
       <HStack>
-        <Heading color="white" size="lg" textShadow={"1px 1px 2px black"}>
+        <Heading className="heading" size="lg">
           {title}
         </Heading>
         <Image src={icon} alt={title} />
