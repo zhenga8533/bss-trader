@@ -53,7 +53,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
             <HStack>
               {/* Waxes */}
               {Object.entries(waxData).map(([name, wax]) => (
-                <Button key={name} colorScheme="blue" variant="solid" onClick={() => setWaxes([...waxes, name])}>
+                <Button key={name} colorScheme="blue" variant="solid" onClick={() => setWaxes([...waxes, wax])}>
                   <Image src={wax} alt={name} boxSize="36px" />
                 </Button>
               ))}
@@ -97,7 +97,18 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
             </NumberInput>
           </VStack>
           <HStack>
-            <Button colorScheme="blue" variant="solid" onClick={() => onEnter(beequip)}>
+            <Button
+              colorScheme="blue"
+              variant="solid"
+              onClick={() => {
+                const newquip = { ...beequip };
+                newquip.waxes = waxes;
+                newquip.activeStats = stats;
+                newquip.potential = potential;
+                onEnter(newquip);
+                onClose();
+              }}
+            >
               Add
             </Button>
             <Button colorScheme="red" variant="solid" onClick={() => onClose()}>

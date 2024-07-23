@@ -12,7 +12,7 @@ export interface Beequip {
   requirement: string;
   stats: string[];
   activeStats: string[];
-  stars: number;
+  potential: number;
   waxes: string[];
 }
 
@@ -48,7 +48,7 @@ const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
             </Text>
             <HStack className="box" p={2} w="100%">
               {Array.from({ length: 5 }, (_, index) =>
-                beequip.stars > index ? <FaStar key={index} size="large" /> : <FaRegStar key={index} size="large" />
+                beequip.potential > index ? <FaStar key={index} size="large" /> : <FaRegStar key={index} size="large" />
               )}
             </HStack>
           </VStack>
@@ -90,7 +90,7 @@ const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
   );
 
   return (
-    <Tooltip label={label} borderRadius={5} placement="right" transform="rotate(15deg)">
+    <Tooltip label={label} borderRadius={5} placement="right" hasArrow>
       {tile}
     </Tooltip>
   );

@@ -15,7 +15,7 @@
       "[Hive Bonus] Convert Rate (from wax, rare, caustic only) - x1.01."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -39,7 +39,7 @@
       "[Hive Bonus] Pollen (from waxing, rare, caustic only) - +1%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -59,7 +59,7 @@
       "[Hive Bonus] Attack (from waxing, rare, caustic only) - x1.01."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -80,7 +80,7 @@
       "[Hive Bonus] Bee Attack (from waxing, rare, caustic only) - +1% to +3%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -104,7 +104,7 @@
       "[Hive Bonus] Super-Crit Power (from waxing, caustic only) - +1% to +5%"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -124,7 +124,7 @@
       "[Hive Bonus] Critical Power (from waxing, rare) - +2% to +15%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -138,7 +138,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -160,7 +160,7 @@
       "[Hive Bonus] Max Bee Energy (from waxing, rare) - +1% to +3%"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -181,7 +181,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -209,7 +209,7 @@
       "[Hive Bonus] Dandelion Field Pollen - +1%. (up to +41% from waxing)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -231,7 +231,7 @@
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +3%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -253,7 +253,7 @@
       "[Hive Bonus] Capacity (from waxing, rare, caustic only) - +1% - +5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -277,7 +277,7 @@
       "[Hive Bonus] Instant Blue Bomb Conversion (from waxing, rare, caustic only) - +1%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -300,7 +300,7 @@
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare, caustic only) - +1% - +5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -329,7 +329,7 @@
       "[Hive Bonus] Super-Crit Power (from waxing) - +2% to +30%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -349,7 +349,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -382,7 +382,7 @@
       "[Hive Bonus] Blue Pollen (Guaranteed) - x0.5"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -403,7 +403,7 @@
       "[Hive Bonus] Honey From Instant Conversion - +1% (from waxing, rare, caustic only)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -417,7 +417,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -431,7 +431,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -453,7 +453,7 @@
       "[Hive Bonus] Instant Conversion - x1.01 to x1.05 (from waxing, extremely rare, caustic only)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -467,7 +467,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -486,7 +486,7 @@
       "[Hive Bonus] Honey At Hive (from waxing, rare) - +1% to +20%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -505,7 +505,7 @@
       "[Hive Bonus] Red Pollen (from waxing) - +1% to +9%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -531,7 +531,7 @@
       "[Hive Bonus] Capacity (from waxing, rare) - +1% to +10%"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -552,7 +552,7 @@
       "[Hive Bonus] Bee Ability Rate (from waxing, rare) - +1%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -572,7 +572,7 @@
       "[Hive Bonus] Critical Power (Guaranteed) - +2% to +5%. (up to +15% from waxing)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -598,7 +598,7 @@
       "[Hive Bonus] Pine Tree Forest Pollen (Guaranteed) - +5% to +10%. (up to +20% from waxing)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -618,7 +618,7 @@
       "[Hive Bonus] Monster Respawn Time (from waxing, rare) - -1% to -5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -639,7 +639,7 @@
       "[Hive Bonus] Convert Rate At Hive (Guaranteed) - +3% to +5%. (up to +15% from waxing)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -660,7 +660,7 @@
       "[Hive Bonus] Bee Movespeed (from waxing, rare) - +1% to +5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -690,7 +690,7 @@
       "[Hive Bonus] Honey From Tokens (Guaranteed) - +2% to +5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -717,7 +717,7 @@
       "[Hive Bonus] Bomb Pollen (from waxing) - +1% to +5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -731,7 +731,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -760,7 +760,7 @@
       "[Hive Bonus] Convert Rate (from waxing) - +1% to +20%"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -786,7 +786,7 @@
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +5%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -813,7 +813,7 @@
       "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +10%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -839,7 +839,7 @@
       "[Hive Bonus] Red Pollen - +1% to +2%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -858,7 +858,7 @@
       "[Hive Bonus] Red Pollen (From waxing) - +2% to +25%."
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -878,7 +878,7 @@
       "[Hive Bonus] Flame Pollen - +1%. (up to +11% from waxing)"
     ],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   },
   {
@@ -892,7 +892,7 @@
     "requirement": "None",
     "stats": ["TODO: Scrape stats table"],
     "activeStats": [],
-    "stars": 0,
+    "potential": 0,
     "waxes": []
   }
 ]
