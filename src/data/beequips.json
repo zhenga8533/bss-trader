@@ -13,7 +13,10 @@
       "Convert Amount (Guaranteed) - +1% - +5%. (up to +10% from waxing)",
       "[Hive Bonus] Convert Rate (rare) - +1%. (up to +10% from waxing)",
       "[Hive Bonus] Convert Rate (from wax, rare, caustic only) - x1.01."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Sweatband",
@@ -34,7 +37,10 @@
       "[Hive Bonus] Blue Pollen (rare) - +1%. (up to +2% from waxing)",
       "[Hive Bonus] Max Bee Energy (from waxing, rare) - +1% to +5%",
       "[Hive Bonus] Pollen (from waxing, rare, caustic only) - +1%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Bandage",
@@ -51,7 +57,10 @@
       "Attack (Guaranteed) - 1% to 3%.",
       "Attack (from waxing, caustic only) - +1.",
       "[Hive Bonus] Attack (from waxing, rare, caustic only) - x1.01."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Thumbtack",
@@ -69,7 +78,10 @@
       "Attack - +1. (up to +2 from waxing)",
       "[Hive Bonus] Red Bee Attack - +1% to +3% (up to +6% from waxing)",
       "[Hive Bonus] Bee Attack (from waxing, rare, caustic only) - +1% to +3%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Camo Bandana",
@@ -90,7 +102,10 @@
       "[Hive Bonus] Pumpkin Patch Capacity - +4% to +8%. (up to +13% from waxing)",
       "[Hive Bonus] Coconut Field Capacity - +4% to +8%. (up to +13% from waxing)",
       "[Hive Bonus] Super-Crit Power (from waxing, caustic only) - +1% to +5%"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Bottle Cap",
@@ -107,7 +122,10 @@
       "Critical Chance (Guaranteed) - +1% to +2%. (up to +12% from waxing)",
       "Ability: Buzz Bomb (from waxing, rare, caustic only)",
       "[Hive Bonus] Critical Power (from waxing, rare) - +2% to +15%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Kazoo",
@@ -118,7 +136,10 @@
     "description": "\"A plastic instrument that's kind of like a recorder, but more obnoxious.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Smiley Sticker",
@@ -137,7 +158,10 @@
       "Ability: Blue Bomb (from waxing, rare, caustic only)",
       "[Hive Bonus] Mark Duration (rare) - +1%. (up to +2% from waxing)",
       "[Hive Bonus] Max Bee Energy (from waxing, rare) - +1% to +3%"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Whistle",
@@ -155,7 +179,10 @@
       "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d9/RageIcon.png"
     ],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Charm Bracelet",
@@ -180,7 +207,10 @@
       "[Hive Bonus] Blue Flower Field Pollen - +1%. (up to +41% from waxing)",
       "[Hive Bonus] Sunflower Field Pollen - +1%. (up to +41% from waxing)",
       "[Hive Bonus] Dandelion Field Pollen - +1%. (up to +41% from waxing)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Paperclip",
@@ -199,7 +229,10 @@
       "Collects all ability tokens, granting 25 Honey (+10 per lvl) per token collected.",
       "[Hive Bonus] Ability Token Lifespan (Guaranteed) - +1% to +3%. (up to +9% from waxing)",
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +3%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Beret",
@@ -218,7 +251,10 @@
       "[Hive Bonus] Capacity (Guaranteed) - +5,000 - +10,000. (up to +20,000 from waxing)",
       "[Hive Bonus] Blue Capacity (from waxing) - +1% - +5%.",
       "[Hive Bonus] Capacity (from waxing, rare, caustic only) - +1% - +5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Bang Snap",
@@ -239,7 +275,10 @@
       "[Hive Bonus] Instant Buzz Bomb Conversion (from waxing, rare, caustic only) - +1%.",
       "[Hive Bonus] Instant Red Bomb Conversion (from waxing, rare, caustic only) - +1%.",
       "[Hive Bonus] Instant Blue Bomb Conversion (from waxing, rare, caustic only) - +1%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Bead Lizard",
@@ -259,7 +298,10 @@
       "[Hive Bonus] Bubble Pollen (from waxing) - +1% - +10%.",
       "[Hive Bonus] Flame Pollen (from waxing) - +1% - +10%.",
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare, caustic only) - +1% - +5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Pink Shades",
@@ -285,7 +327,10 @@
       "Ability: Focus (From waxing, caustic only)",
       "[Hive Bonus] Super-Crit Chance (from waxing, caustic only) - +1%.",
       "[Hive Bonus] Super-Crit Power (from waxing) - +2% to +30%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Lei",
@@ -302,7 +347,10 @@
       "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/66/ExhaustedIcon.png"
     ],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Demon Talisman",
@@ -332,7 +380,10 @@
       "[Hive Bonus] Player Movespeed (Guaranteed) - -5",
       "[Hive Bonus] Bee Attack - +3% to +5%",
       "[Hive Bonus] Blue Pollen (Guaranteed) - x0.5"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Camphor Lip Balm",
@@ -350,7 +401,10 @@
       "[Hive Bonus] Bubble Pollen (Guaranteed) - +10% to +15% (up to +25% from waxing)",
       "[Hive Bonus] Gold Bubble Pollen - +2% to +12% (from waxing, caustic only)",
       "[Hive Bonus] Honey From Instant Conversion - +1% (from waxing, rare, caustic only)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Autumn Sunhat",
@@ -361,7 +415,10 @@
     "description": "\"A lovely straw hat made from 100% fall-sourced materials.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Rose Headband",
@@ -372,7 +429,10 @@
     "description": "\"Compliments a bee's rosy complexion and flower-esque fleeting youth.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Pink Eraser",
@@ -391,7 +451,10 @@
       "[Hive Bonus] Instant Bee Gather Conversion (Guaranteed) - +3% to +5% (up to +8% from waxing)",
       "[Hive Bonus] Honey From Instant Conversion - +0.5% to +1% (up to 4% from waxing)",
       "[Hive Bonus] Instant Conversion - x1.01 to x1.05 (from waxing, extremely rare, caustic only)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Candy Ring",
@@ -402,7 +465,10 @@
     "description": "\"Keeps some sugar on hand to satisfy on demand.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Elf Cap",
@@ -418,7 +484,10 @@
       "Convert Rate At Hive (Guaranteed) - +10% to +20%. (up to +60% from waxing)",
       "[Hive Bonus] Convert Rate At Hive (from waxing) - +1% to +10%.",
       "[Hive Bonus] Honey At Hive (from waxing, rare) - +1% to +20%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Single Mitten",
@@ -434,7 +503,10 @@
       "Bomb Pollen (Guaranteed) - +10% to +15%. (up to +75% from waxing)",
       "[Hive Bonus] Capacity (Guaranteed) - +7,500 to +10,000. (up to +15,000 from waxing)",
       "[Hive Bonus] Red Pollen (from waxing) - +1% to +9%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Warm Scarf",
@@ -457,7 +529,10 @@
       "[Hive Bonus] Red Field Capacity (Guaranteed) - +1% to +3%. (up to +13% from waxing)",
       "[Hive Bonus] White Field Capacity (Guaranteed) - +1% to +3%. (up to +13% from waxing)",
       "[Hive Bonus] Capacity (from waxing, rare) - +1% to +10%"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Peppermint Antennas",
@@ -475,7 +550,10 @@
       "Ability Rate - +1%. (up to 6% from waxing)",
       "Movespeed (Guaranteed) - +1%.",
       "[Hive Bonus] Bee Ability Rate (from waxing, rare) - +1%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Beesmas Top",
@@ -492,7 +570,10 @@
       "Ability Rate (Guaranteed) - +5% to +10%. (up to +20% from waxing)",
       "Attack - +1.",
       "[Hive Bonus] Critical Power (Guaranteed) - +2% to +5%. (up to +15% from waxing)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Pinecone",
@@ -515,7 +596,10 @@
       "Ability Rate (rare) - +1%. (up to 2% from waxing)",
       "[Hive Bonus] Pine Tree Forest Capacity (Guaranteed) - +8% to +15%. (up to +25% from waxing)",
       "[Hive Bonus] Pine Tree Forest Pollen (Guaranteed) - +5% to +10%. (up to +20% from waxing)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Icicles",
@@ -532,7 +616,10 @@
       "[Hive Bonus] Cactus Field Pollen (Guaranteed) - +5% to +10%. (up to +20% from waxing)",
       "[Hive Bonus] Blue Bomb Pollen (Guaranteed) - +3% to +5%. (up to +15% from waxing)",
       "[Hive Bonus] Monster Respawn Time (from waxing, rare) - -1% to -5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Beesmas Tree Hat",
@@ -550,7 +637,10 @@
       "Ability Rate - +1%. (up to +2% from waxing)",
       "[Hive Bonus] Capacity (Guaranteed) - +10,000 to +25,000. (up to +35,000 from waxing)",
       "[Hive Bonus] Convert Rate At Hive (Guaranteed) - +3% to +5%. (up to +15% from waxing)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Bubble Light",
@@ -568,7 +658,10 @@
       "Mark Duration (Guaranteed) - +5% to +15%. (up to +25% from waxing)",
       "[Hive Bonus] Bubble Pollen - +1%. (up to +11% from waxing)",
       "[Hive Bonus] Bee Movespeed (from waxing, rare) - +1% to +5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Snow Tiara",
@@ -595,7 +688,10 @@
       "[Hive Bonus] Blue Field Capacity (Guaranteed) - +2% to +5%. (up to +15% from waxing)",
       "[Hive Bonus] White Field Capacity (Guaranteed) - +2% to +5%. (up to +15% from waxing)",
       "[Hive Bonus] Honey From Tokens (Guaranteed) - +2% to +5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Snowglobe",
@@ -619,7 +715,10 @@
       "Ability: Snowglobe Shake (Guaranteed).\nSends a cool, soothing breeze to all players on the server. This gives the same buff as the \"Snowflake\" item, which grants x1.25 Capacity and other minor boosts for 20s. Duration stacks up to 15 minutes, and the boosts increase with each stack.",
       "Sends a cool, soothing breeze to all players on the server. This gives the same buff as the \"Snowflake\" item, which grants x1.25 Capacity and other minor boosts for 20s. Duration stacks up to 15 minutes, and the boosts increase with each stack.",
       "[Hive Bonus] Bomb Pollen (from waxing) - +1% to +5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Reindeer Antlers",
@@ -630,7 +729,10 @@
     "description": "\"These magic antlers and glowing-red nose help Puppy Bee guide you through darkness!\"",
     "bees": ["https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0c/PuppyIcon.png"],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Toy Horn",
@@ -656,7 +758,10 @@
       "Grants +100% Critical Power for 30 seconds. Critical Power increases the pollen and damage of critical hits.",
       "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +5%",
       "[Hive Bonus] Convert Rate (from waxing) - +1% to +20%"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Paper Angel",
@@ -679,7 +784,10 @@
       "Collects all ability tokens, granting  25\u00a0Honey (+10 per lvl) per token collected.",
       "[Hive Bonus] Ability Token Lifespan (from waxing, rare) - +1% to +3%.",
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +5%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Toy Drum",
@@ -703,7 +811,10 @@
       "Ability: Haste (Guaranteed)\nGrants +10% Player Movespeed for 20 seconds. Stacks up to 10 times.",
       "Grants +10% Player Movespeed for 20 seconds. Stacks up to 10 times.",
       "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +10%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Lump Of Coal",
@@ -726,7 +837,10 @@
       "[Hive Bonus] White Pollen - +1% to +2%.",
       "[Hive Bonus] Blue Pollen - +1% to +2%.",
       "[Hive Bonus] Red Pollen - +1% to +2%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Poinsettia",
@@ -742,7 +856,10 @@
       "Gather Pollination Chance (Guaranteed) - +10% to +20%. (up to +40% from waxing)",
       "[Hive Bonus] Bee Gather Pollen - +1%. (up to +31% from waxing)",
       "[Hive Bonus] Red Pollen (From waxing) - +2% to +25%."
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Electric Candle",
@@ -759,7 +876,10 @@
       "Gathering Flames Chance (Guaranteed) - +1% to +5%. (up to +25% from waxing)",
       "Energy (Guaranteed) - +5% to +10%.",
       "[Hive Bonus] Flame Pollen - +1%. (up to +11% from waxing)"
-    ]
+    ],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   },
   {
     "name": "Festive Wreath",
@@ -770,6 +890,9 @@
     "description": "\"This ornate wreath was specially made to suit Festive Bee's taste.\"",
     "bees": ["https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/17/FestiveIcon.png"],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"]
+    "stats": ["TODO: Scrape stats table"],
+    "activeStats": [],
+    "stars": 0,
+    "waxes": []
   }
 ]

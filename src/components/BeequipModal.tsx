@@ -18,12 +18,13 @@ import React, { Suspense, useEffect, useState } from "react";
 import beequip from "../assets/beequip.webp";
 import beequips from "../data/beequips.json";
 import { isTermIncluded } from "../services/format";
+import { Beequip } from "./BeequipTile";
 const BeequipTile = React.lazy(() => import("./BeequipTile"));
 
 interface BeequipTileProps {
   isOpen: boolean;
   onClose: () => void;
-  addBeequip: (beequip: any) => void;
+  addBeequip: (beequip: Beequip) => void;
 }
 
 const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {

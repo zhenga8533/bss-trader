@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
-import { FaRegStar } from "react-icons/fa";
+import { FaRegStar, FaStar } from "react-icons/fa";
 
 export interface Beequip {
   name: string;
@@ -11,6 +11,9 @@ export interface Beequip {
   bees: string[];
   requirement: string;
   stats: string[];
+  activeStats: string[];
+  stars: number;
+  waxes: string[];
 }
 
 interface BeequipTileProps {
@@ -44,9 +47,9 @@ const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
               Limit: {beequip.limit}
             </Text>
             <HStack className="box" p={2} w="100%">
-              {Array.from({ length: 5 }, (_, index) => (
-                <FaRegStar key={index} size="large" />
-              ))}
+              {Array.from({ length: 5 }, (_, index) =>
+                beequip.stars > index ? <FaStar key={index} size="large" /> : <FaRegStar key={index} size="large" />
+              )}
             </HStack>
           </VStack>
         </HStack>
