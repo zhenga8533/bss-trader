@@ -38,7 +38,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
-      <ModalContent bgColor="rgb(64, 64, 255)" borderRadius={5} color="black" my={20} maxW="40vw" minW="400px">
+      <ModalContent bgColor="rgb(64, 64, 255)" borderRadius={5} color="black" my={20} maxW="40vw" minW="420px">
         <ModalCloseButton />
         <ModalHeader>
           <HStack>
@@ -60,10 +60,35 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
             </HStack>
             <Divider /> {/* Stats */}
             <Text className="heading">Add Stat</Text>
-            <Input color="white" placeholder="Enter any stat..." />
+            <Input
+              color="white"
+              placeholder="Enter any stat..."
+              onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
+                if (e.key === "Enter" && e.currentTarget.value) {
+                  setStats([...stats, e.currentTarget.value]);
+                  e.currentTarget.value = "";
+                }
+              }}
+            />
+            {stats.map((stat, index) => (
+              <Button
+                key={index}
+                colorScheme=""
+                variant="solid"
+                onClick={() => setStats(stats.filter((_, i) => i !== index))}
+              >
+                {stat}
+              </Button>
+            ))}
             <Divider mt={1} /> {/* Potential */}
             <Text className="heading">Select Potential</Text>
-            <NumberInput defaultValue={0} min={0} max={5} color="white">
+            <NumberInput
+              defaultValue={0}
+              min={0}
+              max={5}
+              color="white"
+              onChange={(value) => setPotential(Number(value))}
+            >
               <NumberInputField />
               <NumberInputStepper>
                 <NumberIncrementStepper color="white" />
