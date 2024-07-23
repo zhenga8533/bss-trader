@@ -20,7 +20,7 @@ const StatsPopover = ({ stats }: StatsPopoverProps) => {
   return (
     <Popover placement="right">
       <PopoverTrigger>
-        <Button colorScheme="blue" variant="solid">
+        <Button colorScheme="gray" variant="solid">
           Stats
         </Button>
       </PopoverTrigger>
