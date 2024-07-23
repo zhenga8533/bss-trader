@@ -1,4 +1,4 @@
-import { Button, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
+import { Box, Button, Grid, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 
 export interface Beequip {
   name: string;
@@ -26,12 +26,55 @@ const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
 
   const label = (
     <VStack alignItems="left" my={1}>
-      <Text>Placeholder</Text>
+      <VStack alignItems="left" my={1}>
+        <Heading size="md">{beequip.name}</Heading>
+        <HStack>
+          <Box className="box" boxSize="50%" p={5}>
+            <Image src={beequip.image_url} alt={beequip.name} />
+          </Box>
+          <VStack w="50%">
+            <Text className="box" fontSize="large" p={0.5} w="100%">
+              Level: {beequip.level}
+            </Text>
+            <Text className="box" fontSize="large" p={0.5} w="100%">
+              Color: {beequip.color}
+            </Text>
+            <Text className="box" fontSize="large" p={0.5} w="100%">
+              Limit: {beequip.limit}
+            </Text>
+            <Text className="box" fontSize="large" p={0.5} w="100%">
+              Stars
+            </Text>
+          </VStack>
+        </HStack>
+        <Text fontStyle="italic">{beequip.description}</Text>
+        {/* Requirements */}
+        <VStack alignItems="left" className="box" p={1}>
+          {beequip.bees.length > 0 && (
+            <HStack>
+              <Text textAlign="center">Only For:</Text>
+              <Grid templateColumns="repeat(6, 1fr)" columnGap={2}>
+                {beequip.bees.map((bee) => (
+                  <Image src={bee} alt={bee} />
+                ))}
+              </Grid>
+            </HStack>
+          )}
+          {beequip.requirement !== "None" && <Text>{"● " + beequip.requirement}</Text>}
+        </VStack>
+      </VStack>
+      {/* Stats */}
+      <VStack alignItems="left" className="box" p={1} gap={0}>
+        <Text fontWeight="bold">Stats:</Text>
+        {beequip.stats.map((stat, index) => (
+          <Text key={index}>{"● " + stat}</Text>
+        ))}
+      </VStack>
     </VStack>
   );
 
   return (
-    <Tooltip label={label} bg="rgb(255, 255, 48)" borderRadius={5} placement="bottom" transform="rotate(15deg)">
+    <Tooltip label={label} borderRadius={5} placement="right" transform="rotate(15deg)">
       {tile}
     </Tooltip>
   );
