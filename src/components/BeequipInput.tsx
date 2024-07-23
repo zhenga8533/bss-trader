@@ -1,17 +1,25 @@
 import {
   Button,
+  Divider,
   Heading,
   HStack,
   Image,
+  Input,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalHeader,
+  NumberDecrementStepper,
+  NumberIncrementStepper,
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import waxData from "../data/waxes.json";
 import { Beequip } from "./BeequipTile";
 
 interface BeequipInputProps {
@@ -30,7 +38,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
-      <ModalContent bgColor="rgb(64, 64, 255)" borderRadius={5} color="black" my={20} w="40vw">
+      <ModalContent bgColor="rgb(64, 64, 255)" borderRadius={5} color="black" my={20} maxW="40vw" minW="420px">
         <ModalCloseButton />
         <ModalHeader>
           <HStack>
@@ -41,10 +49,27 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
           </HStack>
         </ModalHeader>
         <ModalBody>
-          <VStack className="box" mb={3}>
-            <Text>Add Waxes</Text>
-            <Text>Add Stat</Text>
-            <Text>Select Potential</Text>
+          <VStack className="box" mb={3} p={2}>
+            <HStack>
+              {/* Waxes */}
+              {Object.entries(waxData).map(([name, wax]) => (
+                <Button key={name} colorScheme="blue" variant="solid" onClick={() => setWaxes([...waxes, name])}>
+                  <Image src={wax} alt={name} boxSize="36px" />
+                </Button>
+              ))}
+            </HStack>
+            <Divider /> {/* Stats */}
+            <Text className="heading">Add Stat</Text>
+            <Input color="white" placeholder="Enter any stat..." />
+            <Divider mt={1} /> {/* Potential */}
+            <Text className="heading">Select Potential</Text>
+            <NumberInput defaultValue={0} min={0} max={5} color="white">
+              <NumberInputField />
+              <NumberInputStepper>
+                <NumberIncrementStepper color="white" />
+                <NumberDecrementStepper color="white" />
+              </NumberInputStepper>
+            </NumberInput>
           </VStack>
           <HStack>
             <Button colorScheme="blue" variant="solid" onClick={() => onEnter(beequip)}>
