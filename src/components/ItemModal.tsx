@@ -48,7 +48,7 @@ const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => 
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
-      <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" my={5} w="60vw">
+      <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" my={5} maxW="60vw" minW="360px">
         <ModalCloseButton />
         <ModalBody mt={1}>
           <HStack mb={4}>

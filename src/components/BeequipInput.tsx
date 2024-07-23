@@ -38,7 +38,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
-      <ModalContent bgColor="rgb(64, 64, 255)" borderRadius={5} color="black" my={20} maxW="40vw" minW="420px">
+      <ModalContent bgColor="rgb(64, 64, 255)" borderRadius={5} color="black" my={20} maxW="40vw" minW="400px">
         <ModalCloseButton />
         <ModalHeader>
           <HStack>
