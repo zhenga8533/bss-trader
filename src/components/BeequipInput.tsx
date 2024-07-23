@@ -48,13 +48,33 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
             </Heading>
             <Image src={beequip.image_url} alt={beequip.name} boxSize="36px" />
           </HStack>
+          <HStack>
+            {waxes.map((wax, index) => (
+              <Button
+                key={index}
+                colorScheme="cyan"
+                mt={1}
+                variant="solid"
+                onClick={() => setWaxes(waxes.filter((_, i) => i !== index))}
+              >
+                <Image src={wax} alt={"wax"} boxSize="36px" />
+              </Button>
+            ))}
+          </HStack>
         </ModalHeader>
         <ModalBody>
           <VStack className="box" mb={3} p={2}>
             <HStack>
               {/* Waxes */}
               {Object.entries(waxData).map(([name, wax]) => (
-                <Button key={name} colorScheme="blue" variant="solid" onClick={() => setWaxes([...waxes, wax])}>
+                <Button
+                  key={name}
+                  colorScheme="blue"
+                  variant="solid"
+                  onClick={() => {
+                    if (waxes.length < 5) setWaxes([...waxes, wax]);
+                  }}
+                >
                   <Image src={wax} alt={name} boxSize="36px" />
                 </Button>
               ))}
