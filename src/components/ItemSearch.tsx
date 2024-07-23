@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, Heading, HStack, Image, Input, Spinner, VStack } from "@chakra-ui/react";
 import React, { Suspense, useEffect, useState } from "react";
+import { isTermIncluded } from "../services/format";
 import { Item } from "./ItemTile";
 import { StackItem } from "./Stack";
 const ItemTile = React.lazy(() => import("./ItemTile"));
@@ -28,12 +29,7 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
       setFilteredItems(items);
     } else {
       term = term.toLowerCase();
-      const filtered = items.filter(
-        (item) =>
-          item.name.toLowerCase().includes(term) ||
-          item.description.toLowerCase().includes(term) ||
-          item.where_from.toLowerCase().includes(term)
-      );
+      const filtered = items.filter((item) => isTermIncluded(item, term));
       setFilteredItems(filtered);
     }
   };

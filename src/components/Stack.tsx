@@ -77,7 +77,7 @@ const Stack = ({ color, title }: StackProps) => {
 
   return (
     <>
-      <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addItem={addBeequip} />
+      <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addBeequip={addBeequip} />
       <ItemModal isOpen={itemsOpen} onClose={() => setItemsOpen(false)} addItem={addItem} stackItems={items} />
       <VStack>
         <Heading
