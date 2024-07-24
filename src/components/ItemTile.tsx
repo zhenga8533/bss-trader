@@ -23,7 +23,7 @@ const ItemTile = ({ item, stackQuantity, onClick }: ItemTileProps) => {
   );
 
   const label = (
-    <VStack alignItems="left" my={1}>
+    <VStack alignItems="left" color="black" my={1}>
       <Heading size="md">{item.name}</Heading>
       <HStack>
         <Box className="box" boxSize="50%" p={5}>
