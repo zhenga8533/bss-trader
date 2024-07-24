@@ -29,6 +29,8 @@ export const formatStat = (stat: string, index: number) => {
     ? "red"
     : stat.startsWith("[")
     ? "yellow"
+    : stat.startsWith("Ability:")
+    ? "cyan"
     : "white";
   return (
     <Text color={color} key={index}>

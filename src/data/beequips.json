@@ -9,8 +9,8 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +20 - +40. (up to +80 from waxing)",
-      "Convert Amount (Guaranteed) - +1% - +5%. (up to +10% from waxing)",
+      "Convert Amount - +20 - +40. (up to +80 from waxing)",
+      "Convert Amount - +1% - +5%. (up to +10% from waxing)",
       "[Hive Bonus] Convert Rate (rare) - +1%. (up to +10% from waxing)",
       "[Hive Bonus] Convert Rate (from wax, rare, caustic only) - x1.01."
     ],
@@ -28,7 +28,7 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Energy (Guaranteed) - +15% to +20%. (up to +80% from waxing)",
+      "Energy - +15% to +20%. (up to +80% from waxing)",
       "White Gather Amount - +15% to +20%. (up to +60% from waxing)",
       "Red Gather Amount - +15% to +20%. (up to +60% from waxing)",
       "Blue Gather Amount - +15% to +20%. (up to +60% from waxing)",
@@ -52,9 +52,9 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Gather Amount (Guaranteed) - +3 to +6. (up to +16 from waxing)",
-      "Energy (Guaranteed) - +5% to +10%. (up to +20% from waxing)",
-      "Attack (Guaranteed) - 1% to 3%.",
+      "Gather Amount - +3 to +6. (up to +16 from waxing)",
+      "Energy - +5% to +10%. (up to +20% from waxing)",
+      "Attack - 1% to 3%.",
       "Attack (from waxing, caustic only) - +1.",
       "[Hive Bonus] Attack (from waxing, rare, caustic only) - x1.01."
     ],
@@ -72,9 +72,9 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Gather Amount (Guaranteed) - +1 to +3. (up to +33 from waxing)",
-      "Critical Power (Guaranteed) - +5% to +10%. (up to +40% from waxing)",
-      "Attack (Guaranteed) - +2% to +5%. (up to +40% from waxing)",
+      "Gather Amount - +1 to +3. (up to +33 from waxing)",
+      "Critical Power - +5% to +10%. (up to +40% from waxing)",
+      "Attack - +2% to +5%. (up to +40% from waxing)",
       "Attack - +1. (up to +2 from waxing)",
       "[Hive Bonus] Red Bee Attack - +1% to +3% (up to +6% from waxing)",
       "[Hive Bonus] Bee Attack (from waxing, rare, caustic only) - +1% to +3%."
@@ -93,12 +93,12 @@
     "bees": [],
     "requirement": "Bee must know \"Bomb\" ability",
     "stats": [
-      "Gather Amount (Guaranteed) - +10% to +15%. (up to +95% from waxing)",
-      "Buzz Bomb Pollen (Guaranteed) - +15% to +15%. (up to +105% from waxing)",
+      "Gather Amount - +10% to +15%. (up to +95% from waxing)",
+      "Buzz Bomb Pollen - +15% to +15%. (up to +105% from waxing)",
       "Attack - +1.",
       "Critical Power (from waxing) - +2% to +80%.",
       "Super-Crit Power (from waxing, caustic only) - +10% to +300%.",
-      "[Hive Bonus] Buzz Bomb Pollen (Guaranteed) - +2% to +5%. (up to +15% from waxing)",
+      "[Hive Bonus] Buzz Bomb Pollen - +2% to +5%. (up to +15% from waxing)",
       "[Hive Bonus] Pumpkin Patch Capacity - +4% to +8%. (up to +13% from waxing)",
       "[Hive Bonus] Coconut Field Capacity - +4% to +8%. (up to +13% from waxing)",
       "[Hive Bonus] Super-Crit Power (from waxing, caustic only) - +1% to +5%"
@@ -117,9 +117,9 @@
     "bees": [],
     "requirement": "Bee must be Common or Rare",
     "stats": [
-      "Convert Amount (Guaranteed) - +10 to +20. (up to +95 from waxing)",
+      "Convert Amount - +10 to +20. (up to +95 from waxing)",
       "Critical Power (1% chance as a base stat, ~30% chance from waxing) - +5% to +10%. (up to +60% from waxing)",
-      "Critical Chance (Guaranteed) - +1% to +2%. (up to +12% from waxing)",
+      "Critical Chance - +1% to +2%. (up to +12% from waxing)",
       "Ability: Buzz Bomb (from waxing, rare, caustic only)",
       "[Hive Bonus] Critical Power (from waxing, rare) - +2% to +15%."
     ],
@@ -136,7 +136,14 @@
     "description": "\"A plastic instrument that's kind of like a recorder, but more obnoxious.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Convert Amount - +20% - +30%. (up to +90% from waxing)",
+      "Critical Power (Guarenteed) - +2% to +5%. (up to +65% from waxing)",
+      "Energy - -45% to -55%.",
+      "Ability: Melody (Guarenteed)",
+      "[Hive Bonus] Critical Power (5% to 25% as a base stat) - +2% to +5%. (up to 10% from waxing)",
+      "[Hive Bonus] Super-Crit Power (from waxing, rare, caustic only) - +1% to +5%"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -179,7 +186,16 @@
       "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d9/RageIcon.png"
     ],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Movespeed - +5% to +10%. (up to +40% from waxing)",
+      "Critical Power - +15% to +25%. (up to +85% from waxing)",
+      "Energy - -45% to -55%.",
+      "Ability: Haste",
+      "Ability: Melody (from waxing, extremely rare, caustic only).",
+      "[Hive Bonus] Bee Movespeed (from waxing, extremely rare, caustic only) - +1%.",
+      "[Hive Bonus] Super-Crit Power (from waxing, rare, caustic only) - +1% to +20%",
+      "[Hive Bonus] Player Movespeed (from waxing, extremely rare) - x1.01"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -194,12 +210,12 @@
     "bees": [],
     "requirement": "Bee must be Legendary",
     "stats": [
-      "Convert Amount (Guaranteed) - +15% to +20%.",
-      "Critical Chance (Guaranteed) - +1% to +15%.",
-      "Mark Duration (Guaranteed) - +4% to +8%.",
-      "Ability Rate (Guaranteed) - +3% to +6%.",
+      "Convert Amount - +15% to +20%.",
+      "Critical Chance - +1% to +15%.",
+      "Mark Duration - +4% to +8%.",
+      "Ability Rate - +3% to +6%.",
       "Ability: Melody (from waxing, rare, caustic only).",
-      "[Hive Bonus] Loot Luck (Guaranteed) - +1%.",
+      "[Hive Bonus] Loot Luck - +1%.",
       "[Hive Bonus] Honey At Hive - +1%.",
       "[Hive Bonus] Honey From Tokens - +1%.",
       "[Hive Bonus] Convert Rate At Hive - +1%.",
@@ -222,12 +238,11 @@
     "bees": [],
     "requirement": "Bee must be Rare or Epic",
     "stats": [
-      "Ability Rate (Guaranteed) - +1% to +3%. (up to +6% from waxing)",
-      "Ability Pollen (Guaranteed) - +5% to +15%. (up to +65% from waxing)",
+      "Ability Rate - +1% to +3%. (up to +6% from waxing)",
+      "Ability Pollen - +5% to +15%. (up to +65% from waxing)",
       "Convert Rate At Hive (from waxing) - +2% to +30%.",
-      "Ability: Token Link (from waxing, extremely rare, caustic only)\nCollects all ability tokens, granting 25 Honey (+10 per lvl) per token collected.",
-      "Collects all ability tokens, granting 25 Honey (+10 per lvl) per token collected.",
-      "[Hive Bonus] Ability Token Lifespan (Guaranteed) - +1% to +3%. (up to +9% from waxing)",
+      "Ability: Token Link (from waxing, extremely rare, caustic only)",
+      "[Hive Bonus] Ability Token Lifespan - +1% to +3%. (up to +9% from waxing)",
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +3%."
     ],
     "activeStats": [],
@@ -244,11 +259,11 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +10 - +20. (up to +60 from waxing)",
-      "Convert Amount (Guaranteed) - +5% - +10%. (up to +50% from waxing)",
+      "Convert Amount - +10 - +20. (up to +60 from waxing)",
+      "Convert Amount - +5% - +10%. (up to +50% from waxing)",
       "Ability Pollen - +1% - +5%.",
       "Ability: Blue Boost (from waxing, very rare, caustic only)",
-      "[Hive Bonus] Capacity (Guaranteed) - +5,000 - +10,000. (up to +20,000 from waxing)",
+      "[Hive Bonus] Capacity - +5,000 - +10,000. (up to +20,000 from waxing)",
       "[Hive Bonus] Blue Capacity (from waxing) - +1% - +5%.",
       "[Hive Bonus] Capacity (from waxing, rare, caustic only) - +1% - +5%."
     ],
@@ -266,9 +281,9 @@
     "bees": [],
     "requirement": "Bees must be Common, Rare, or Epic.",
     "stats": [
-      "Bomb Pollen (Guaranteed) - +10% to +15%. (up to +95% from waxing)",
-      "Critical Chance (Guaranteed) - +1% to +3%. (up to +23% from waxing)",
-      "Ability: Buzz, Red, or Blue Bomb (Guaranteed)",
+      "Bomb Pollen - +10% to +15%. (up to +95% from waxing)",
+      "Critical Chance - +1% to +3%. (up to +23% from waxing)",
+      "Ability: Buzz, Red, or Blue Bomb",
       "Ability: Buzz, Red, or Blue Bomb+ (from waxing, rare, caustic only)",
       "[Hive Bonus] Bomb Pollen (from waxing, rare) - +1% to 10%.",
       "[Hive Bonus] Instant Bomb Conversion (from waxing, rare, caustic only) - +1%.",
@@ -293,8 +308,7 @@
       "Convert Amount - +20% - +30%. (up to 110% from waxing)",
       "Gathering Flames Chance - +8% - +12%. (up to 52% from waxing)",
       "Gathering Bubbles Chance - +8% - +12%. (up to 52% from waxing)",
-      "Ability: Token Link (from waxing, caustic only)\nCollects all ability tokens, granting  25\u00a0Honey (+10 per lvl) per token collected.",
-      "Collects all ability tokens, granting  25\u00a0Honey (+10 per lvl) per token collected.",
+      "Ability: Token Link (from waxing, caustic only)",
       "[Hive Bonus] Bubble Pollen (from waxing) - +1% - +10%.",
       "[Hive Bonus] Flame Pollen (from waxing) - +1% - +10%.",
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare, caustic only) - +1% - +5%."
@@ -347,7 +361,17 @@
       "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/66/ExhaustedIcon.png"
     ],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Gather Amount - +10 to +20. (up to +60 from waxing)",
+      "Gather Amount - +10% to +20%. (up to +60% from waxing)",
+      "Gather Pollination Chance - +20% to +30%. (up to +50% from waxing)",
+      "Ability Rate - +1%.",
+      "[Hive Bonus] Sunflower Field Pollen - +3% to +5%. (up to +25% from waxing)",
+      "[Hive Bonus] Blue Flower Field Pollen - +3% to +5%. (up to +25% from waxing)",
+      "[Hive Bonus] Rose Field Pollen - +3% to +5%. (up to +25% from waxing)",
+      "[Hive Bonus] Coconut Field Pollen - +3% to +5%. (up to +25% from waxing)",
+      "Ability: Red or Blue Boost (from waxing, rare, caustic only)"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -362,24 +386,24 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Attack (Guaranteed) - +50% to +70% (up to +100% from waxing)",
-      "Gather Amount (Guaranteed) - +50% to +70% (up to +160% from waxing)",
-      "Ability Pollen (Guaranteed) - +50% to +70% (up to +160% from waxing)",
-      "Gathering Flames Chance (Guaranteed) - +10% to +15% (up to +21% from waxing)",
+      "Attack - +50% to +70% (up to +100% from waxing)",
+      "Gather Amount - +50% to +70% (up to +160% from waxing)",
+      "Ability Pollen - +50% to +70% (up to +160% from waxing)",
+      "Gathering Flames Chance - +10% to +15% (up to +21% from waxing)",
       "Super-Crit Chance - +5% to +10% (up to +30% from waxing)",
-      "Movespeed (Guaranteed) - -30% to -40%",
-      "Energy (Guaranteed) - -70% to -80%",
+      "Movespeed - -30% to -40%",
+      "Energy - -70% to -80%",
       "Ability: Inferno (from waxing, extremely rare, caustic only)",
-      "[Hive Bonus] Red Bomb Pollen (Guaranteed) - +7% to +13% (up to 35% from waxing)",
-      "[Hive Bonus] Flame Pollen (Guaranteed) - +7% to +13% (up to +35% from waxing)",
+      "[Hive Bonus] Red Bomb Pollen - +7% to +13% (up to 35% from waxing)",
+      "[Hive Bonus] Flame Pollen - +7% to +13% (up to +35% from waxing)",
       "[Hive Bonus] Instant Red Bomb Conversion (Guranteed) - +6% to +9% (up to +14% from waxing)",
       "[Hive Bonus] Instant Flame Conversion - +6% to +9% (up to +14% from waxing)",
-      "[Hive Bonus] Instant Demon Bee Conversion (Guaranteed) - +10%",
+      "[Hive Bonus] Instant Demon Bee Conversion - +10%",
       "[Hive Bonus] Super-Crit Power - +2% to +10% (from waxing, caustic only)",
-      "[Hive Bonus] Max Bee Energy (Guaranteed) - -20% to -25%",
-      "[Hive Bonus] Player Movespeed (Guaranteed) - -5",
+      "[Hive Bonus] Max Bee Energy - -20% to -25%",
+      "[Hive Bonus] Player Movespeed - -5",
       "[Hive Bonus] Bee Attack - +3% to +5%",
-      "[Hive Bonus] Blue Pollen (Guaranteed) - x0.5"
+      "[Hive Bonus] Blue Pollen - x0.5"
     ],
     "activeStats": [],
     "potential": 0,
@@ -395,10 +419,10 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Gather Amount (Guaranteed) - +20 to +30 (up to +75 from waxing)",
-      "Critical Power (Guaranteed) - +50% to +70% (up to +145% from waxing)",
-      "[Hive Bonus] Pepper Patch Pollen (Guaranteed) - x1.03 to x1.05 (up to x1.08 from waxing)",
-      "[Hive Bonus] Bubble Pollen (Guaranteed) - +10% to +15% (up to +25% from waxing)",
+      "Gather Amount - +20 to +30 (up to +75 from waxing)",
+      "Critical Power - +50% to +70% (up to +145% from waxing)",
+      "[Hive Bonus] Pepper Patch Pollen - x1.03 to x1.05 (up to x1.08 from waxing)",
+      "[Hive Bonus] Bubble Pollen - +10% to +15% (up to +25% from waxing)",
       "[Hive Bonus] Gold Bubble Pollen - +2% to +12% (from waxing, caustic only)",
       "[Hive Bonus] Honey From Instant Conversion - +1% (from waxing, rare, caustic only)"
     ],
@@ -415,7 +439,17 @@
     "description": "\"A lovely straw hat made from 100% fall-sourced materials.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Convert Amount - +60 to +80 (up to +200 from waxing)",
+      "Convert Amount - +15% - +20% (up to +60% from waxing)",
+      "White Gather Amount - +40% to +60% (up to +110% from waxing)",
+      "Ability Rate - +8% to +15% (up to +25% from waxing)",
+      "[Hive Bonus] Capacity - +40,000 to +60,000 (up to +100,000 from waxing)",
+      "[Hive Bonus] Sunflower Field Pollen - +18% to +24% (up to +44% from waxing)",
+      "[Hive Bonus] Pumpkin Patch Pollen - +18% to +24% (up to +44% from waxing)",
+      "[Hive Bonus] White Field Capacity - +6% to +10% (up to +22% from waxing)",
+      "[Hive Bonus] White Pollen - +5% to +10% (from waxing, rare, caustic only)"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -429,7 +463,18 @@
     "description": "\"Compliments a bee's rosy complexion and flower-esque fleeting youth.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Attack - +2 to +4 (up to +7 from waxing)",
+      "Convert Amount - +40% to +60% (up to +140% from waxing)",
+      "Gather Pollination Chance - +10% to +15% (up to +20% from waxing)",
+      "Critical Chance - +5% to +10% (up to +20% from waxing)",
+      "Ability Rate - +1% to +2%",
+      "[Hive Bonus] Capacity - +20,000 to +30,000 (up to +55,000 from waxing)",
+      "[Hive Bonus] Rose Field Pollen - +14% to +20% (up to +25% from waxing)",
+      "[Hive Bonus] Red Field Capacity - +6% to +10% (up to +20% from waxing)",
+      "[Hive Bonus] Instant Rose Field Conversion - +2% to +6% (from waxing, rare, caustic only)",
+      "[Hive Bonus] Bee Attack - +2% to +9% (from waxing, extremely rare, caustic only)"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -444,11 +489,11 @@
     "bees": [],
     "requirement": "Bee must have a Convert Amount mutation",
     "stats": [
-      "Convert Amount (Guaranteed) - +20 to +40 (up to +100 from waxing)",
-      "Instant Conversion (Guaranteed) - +15% to +20% (up to +30% from waxing)",
-      "Mark Duration (Guaranteed) - -90% to -99%",
-      "[Hive Bonus] Instant Red Bomb Conversion (Guaranteed) - +7% to +10% (up to +15% from waxing)",
-      "[Hive Bonus] Instant Bee Gather Conversion (Guaranteed) - +3% to +5% (up to +8% from waxing)",
+      "Convert Amount - +20 to +40 (up to +100 from waxing)",
+      "Instant Conversion - +15% to +20% (up to +30% from waxing)",
+      "Mark Duration - -90% to -99%",
+      "[Hive Bonus] Instant Red Bomb Conversion - +7% to +10% (up to +15% from waxing)",
+      "[Hive Bonus] Instant Bee Gather Conversion - +3% to +5% (up to +8% from waxing)",
       "[Hive Bonus] Honey From Instant Conversion - +0.5% to +1% (up to 4% from waxing)",
       "[Hive Bonus] Instant Conversion - x1.01 to x1.05 (from waxing, extremely rare, caustic only)"
     ],
@@ -465,7 +510,14 @@
     "description": "\"Keeps some sugar on hand to satisfy on demand.\"",
     "bees": [],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Energy - +60 to +80 (up to +240 from waxing)",
+      "Convert Amount - +20% - +30%. (up to +80% from waxing)",
+      "Ability Rate - +1% to +2%. (up to +5% from waxing)",
+      "[Hive Bonus] Honey At Hive - +2% to +5%. (up to +25% from waxing)",
+      "[Hive Bonus] Honey Per Goo - +1%. (up to +7% from waxing)",
+      "[Hive Bonus] Honey From Tokens - x1.01 (from waxing, extremely rare, caustic only)"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -480,8 +532,8 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +25 to +50. (up to +110 from waxing)",
-      "Convert Rate At Hive (Guaranteed) - +10% to +20%. (up to +60% from waxing)",
+      "Convert Amount - +25 to +50. (up to +110 from waxing)",
+      "Convert Rate At Hive - +10% to +20%. (up to +60% from waxing)",
       "[Hive Bonus] Convert Rate At Hive (from waxing) - +1% to +10%.",
       "[Hive Bonus] Honey At Hive (from waxing, rare) - +1% to +20%."
     ],
@@ -499,9 +551,9 @@
     "bees": [],
     "requirement": "Bee must be Rare, Epic, or Legendary",
     "stats": [
-      "Gather Amount (Guaranteed) - +5 to +10. (up to +50 from waxing)",
-      "Bomb Pollen (Guaranteed) - +10% to +15%. (up to +75% from waxing)",
-      "[Hive Bonus] Capacity (Guaranteed) - +7,500 to +10,000. (up to +15,000 from waxing)",
+      "Gather Amount - +5 to +10. (up to +50 from waxing)",
+      "Bomb Pollen - +10% to +15%. (up to +75% from waxing)",
+      "[Hive Bonus] Capacity - +7,500 to +10,000. (up to +15,000 from waxing)",
       "[Hive Bonus] Red Pollen (from waxing) - +1% to +9%."
     ],
     "activeStats": [],
@@ -524,10 +576,10 @@
     ],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +25% to +35%. (up to +75% from waxing)",
-      "Energy (Guaranteed) - +25% to +35%. (up to +75% from waxing)",
-      "[Hive Bonus] Red Field Capacity (Guaranteed) - +1% to +3%. (up to +13% from waxing)",
-      "[Hive Bonus] White Field Capacity (Guaranteed) - +1% to +3%. (up to +13% from waxing)",
+      "Convert Amount - +25% to +35%. (up to +75% from waxing)",
+      "Energy - +25% to +35%. (up to +75% from waxing)",
+      "[Hive Bonus] Red Field Capacity - +1% to +3%. (up to +13% from waxing)",
+      "[Hive Bonus] White Field Capacity - +1% to +3%. (up to +13% from waxing)",
       "[Hive Bonus] Capacity (from waxing, rare) - +1% to +10%"
     ],
     "activeStats": [],
@@ -544,11 +596,11 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +2% to +4%. (up to 44% from waxing)",
-      "Gather Amount (Guaranteed) - +2% to +4%. (up to 44% from waxing)",
+      "Convert Amount - +2% to +4%. (up to 44% from waxing)",
+      "Gather Amount - +2% to +4%. (up to 44% from waxing)",
       "Ability Pollen - +1%. (up to 6% from waxing)",
       "Ability Rate - +1%. (up to 6% from waxing)",
-      "Movespeed (Guaranteed) - +1%.",
+      "Movespeed - +1%.",
       "[Hive Bonus] Bee Ability Rate (from waxing, rare) - +1%."
     ],
     "activeStats": [],
@@ -565,11 +617,11 @@
     "bees": [],
     "requirement": "Bee must be Common or Rare",
     "stats": [
-      "Critical Chance (Guaranteed) - +5% to +10%. (up to +20% from waxing)",
-      "Energy (Guaranteed) - -25% to -35% (up to +125% from waxing)",
-      "Ability Rate (Guaranteed) - +5% to +10%. (up to +20% from waxing)",
+      "Critical Chance - +5% to +10%. (up to +20% from waxing)",
+      "Energy - -25% to -35% (up to +125% from waxing)",
+      "Ability Rate - +5% to +10%. (up to +20% from waxing)",
       "Attack - +1.",
-      "[Hive Bonus] Critical Power (Guaranteed) - +2% to +5%. (up to +15% from waxing)"
+      "[Hive Bonus] Critical Power - +2% to +5%. (up to +15% from waxing)"
     ],
     "activeStats": [],
     "potential": 0,
@@ -592,10 +644,10 @@
     ],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +20% to +30%. (up to +70% from waxing)",
+      "Convert Amount - +20% to +30%. (up to +70% from waxing)",
       "Ability Rate (rare) - +1%. (up to 2% from waxing)",
-      "[Hive Bonus] Pine Tree Forest Capacity (Guaranteed) - +8% to +15%. (up to +25% from waxing)",
-      "[Hive Bonus] Pine Tree Forest Pollen (Guaranteed) - +5% to +10%. (up to +20% from waxing)"
+      "[Hive Bonus] Pine Tree Forest Capacity - +8% to +15%. (up to +25% from waxing)",
+      "[Hive Bonus] Pine Tree Forest Pollen - +5% to +10%. (up to +20% from waxing)"
     ],
     "activeStats": [],
     "potential": 0,
@@ -611,10 +663,10 @@
     "bees": [],
     "requirement": "Bee must know \"Blue Bomb\" ability",
     "stats": [
-      "Attack (Guaranteed) - +3% to +5%. (up to +45% from waxing)",
-      "Blue Bomb Pollen (Guaranteed) - +20% to +30%. (up to +110% from waxing)",
-      "[Hive Bonus] Cactus Field Pollen (Guaranteed) - +5% to +10%. (up to +20% from waxing)",
-      "[Hive Bonus] Blue Bomb Pollen (Guaranteed) - +3% to +5%. (up to +15% from waxing)",
+      "Attack - +3% to +5%. (up to +45% from waxing)",
+      "Blue Bomb Pollen - +20% to +30%. (up to +110% from waxing)",
+      "[Hive Bonus] Cactus Field Pollen - +5% to +10%. (up to +20% from waxing)",
+      "[Hive Bonus] Blue Bomb Pollen - +3% to +5%. (up to +15% from waxing)",
       "[Hive Bonus] Monster Respawn Time (from waxing, rare) - -1% to -5%."
     ],
     "activeStats": [],
@@ -631,12 +683,12 @@
     "bees": [],
     "requirement": "Bee must have a Mutation",
     "stats": [
-      "Convert Amount (Guaranteed) - +10% to +20%. (up to +60% from waxing)",
-      "Critical Chance (Guaranteed) - +2% to +5%. (up to +10% from waxing)",
-      "Ability Pollen (Guaranteed) - +2% to +5%. (up to +10% from waxing)",
+      "Convert Amount - +10% to +20%. (up to +60% from waxing)",
+      "Critical Chance - +2% to +5%. (up to +10% from waxing)",
+      "Ability Pollen - +2% to +5%. (up to +10% from waxing)",
       "Ability Rate - +1%. (up to +2% from waxing)",
-      "[Hive Bonus] Capacity (Guaranteed) - +10,000 to +25,000. (up to +35,000 from waxing)",
-      "[Hive Bonus] Convert Rate At Hive (Guaranteed) - +3% to +5%. (up to +15% from waxing)"
+      "[Hive Bonus] Capacity - +10,000 to +25,000. (up to +35,000 from waxing)",
+      "[Hive Bonus] Convert Rate At Hive - +3% to +5%. (up to +15% from waxing)"
     ],
     "activeStats": [],
     "potential": 0,
@@ -652,10 +704,10 @@
     "bees": [],
     "requirement": "Bee must have Energy Mutation",
     "stats": [
-      "Convert Amount (Guaranteed) - +30 to +50. (up to +120 from waxing)",
-      "Movespeed (Guaranteed) - +3 to +5. (up to +10 from waxing)",
-      "Bubble Pollen (Guaranteed) - +15% to +30%. (up to +60% from waxing)",
-      "Mark Duration (Guaranteed) - +5% to +15%. (up to +25% from waxing)",
+      "Convert Amount - +30 to +50. (up to +120 from waxing)",
+      "Movespeed - +3 to +5. (up to +10 from waxing)",
+      "Bubble Pollen - +15% to +30%. (up to +60% from waxing)",
+      "Mark Duration - +5% to +15%. (up to +25% from waxing)",
       "[Hive Bonus] Bubble Pollen - +1%. (up to +11% from waxing)",
       "[Hive Bonus] Bee Movespeed (from waxing, rare) - +1% to +5%."
     ],
@@ -680,14 +732,14 @@
     ],
     "requirement": "Bee must be Gifted",
     "stats": [
-      "Convert Amount (Guaranteed) - +10% to +25%. (up to +65% from waxing)",
-      "Convert At Hive (Guaranteed) - +10% to +25%. (up to +65% from waxing)",
-      "Blue Gather (Guaranteed) - +10% to +25%. (up to +65% from waxing)",
-      "White Gather (Guaranteed) - +10% to +25%. (up to +65% from waxing)",
-      "Critical Chance (Guaranteed) - +1%.",
-      "[Hive Bonus] Blue Field Capacity (Guaranteed) - +2% to +5%. (up to +15% from waxing)",
-      "[Hive Bonus] White Field Capacity (Guaranteed) - +2% to +5%. (up to +15% from waxing)",
-      "[Hive Bonus] Honey From Tokens (Guaranteed) - +2% to +5%."
+      "Convert Amount - +10% to +25%. (up to +65% from waxing)",
+      "Convert At Hive - +10% to +25%. (up to +65% from waxing)",
+      "Blue Gather - +10% to +25%. (up to +65% from waxing)",
+      "White Gather - +10% to +25%. (up to +65% from waxing)",
+      "Critical Chance - +1%.",
+      "[Hive Bonus] Blue Field Capacity - +2% to +5%. (up to +15% from waxing)",
+      "[Hive Bonus] White Field Capacity - +2% to +5%. (up to +15% from waxing)",
+      "[Hive Bonus] Honey From Tokens - +2% to +5%."
     ],
     "activeStats": [],
     "potential": 0,
@@ -710,10 +762,9 @@
     ],
     "requirement": "None",
     "stats": [
-      "Bomb Pollen (Guaranteed) - +30% to +50%. (up to 90% from waxing)",
+      "Bomb Pollen - +30% to +50%. (up to 90% from waxing)",
       "Ability Rate (from waxing) - +1%.",
-      "Ability: Snowglobe Shake (Guaranteed).\nSends a cool, soothing breeze to all players on the server. This gives the same buff as the \"Snowflake\" item, which grants x1.25 Capacity and other minor boosts for 20s. Duration stacks up to 15 minutes, and the boosts increase with each stack.",
-      "Sends a cool, soothing breeze to all players on the server. This gives the same buff as the \"Snowflake\" item, which grants x1.25 Capacity and other minor boosts for 20s. Duration stacks up to 15 minutes, and the boosts increase with each stack.",
+      "Ability: Snowglobe Shake.",
       "[Hive Bonus] Bomb Pollen (from waxing) - +1% to +5%."
     ],
     "activeStats": [],
@@ -729,7 +780,14 @@
     "description": "\"These magic antlers and glowing-red nose help Puppy Bee guide you through darkness!\"",
     "bees": ["https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0c/PuppyIcon.png"],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Convert Amount - +10% - +15%. (up to +95% from waxing)",
+      "Ability Pollen - +10% to +15%. (up to +23% from waxing)",
+      "Ability: Focus",
+      "Ability: Reindeer Fetch",
+      "[Hive Bonus] Capacity - +1% to +20% (from waxing, rare)",
+      "[Hive Bonus] Bond From Treats - +1% to +3% (from waxing, extremely rare)"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
@@ -750,12 +808,11 @@
     ],
     "requirement": "None",
     "stats": [
-      "Convert Amount (Guaranteed) - +30 to +60. (up to +180 from waxing",
-      "Ability Pollen (Guaranteed) - +1% to +5%. (up to +25% from waxing)",
-      "Energy (Guaranteed) - -10% to -20%.",
+      "Convert Amount - +30 to +60. (up to +180 from waxing",
+      "Ability Pollen - +1% to +5%. (up to +25% from waxing)",
+      "Energy - -10% to -20%.",
       "Ability Rate - +1%. (up to +4% from waxing)",
-      "Ability: Melody (Guaranteed).\nGrants +100% Critical Power for 30 seconds. Critical Power increases the pollen and damage of critical hits.",
-      "Grants +100% Critical Power for 30 seconds. Critical Power increases the pollen and damage of critical hits.",
+      "Ability: Melody.",
       "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +5%",
       "[Hive Bonus] Convert Rate (from waxing) - +1% to +20%"
     ],
@@ -778,10 +835,9 @@
     ],
     "requirement": "None",
     "stats": [
-      "White Gather Amount (Guaranteed) - +10% to +20%. (up to +60% from waxing)",
-      "Ability Pollen (Guaranteed) - +1% to +3%. (up to +23% from waxing)",
-      "Ability: Token Link (Guaranteed)\nCollects all ability tokens, granting  25\u00a0Honey (+10 per lvl) per token collected.",
-      "Collects all ability tokens, granting  25\u00a0Honey (+10 per lvl) per token collected.",
+      "White Gather Amount - +10% to +20%. (up to +60% from waxing)",
+      "Ability Pollen - +1% to +3%. (up to +23% from waxing)",
+      "Ability: Token Link",
       "[Hive Bonus] Ability Token Lifespan (from waxing, rare) - +1% to +3%.",
       "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +5%."
     ],
@@ -804,12 +860,11 @@
     ],
     "requirement": "None",
     "stats": [
-      "Gather Amount (Guaranteed) - +10 to +20. (up to +60 from waxing)",
-      "Attack (Guaranteed) - +1% to +5%. (up to +25% from waxing)",
-      "Energy (Guaranteed) - -10% to -20%.",
+      "Gather Amount - +10 to +20. (up to +60 from waxing)",
+      "Attack - +1% to +5%. (up to +25% from waxing)",
+      "Energy - -10% to -20%.",
       "Critical Chance - +1%.",
-      "Ability: Haste (Guaranteed)\nGrants +10% Player Movespeed for 20 seconds. Stacks up to 10 times.",
-      "Grants +10% Player Movespeed for 20 seconds. Stacks up to 10 times.",
+      "Ability: Haste",
       "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +10%."
     ],
     "activeStats": [],
@@ -826,10 +881,10 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Energy (Guaranteed) - -70% to -80%.",
-      "Movespeed (Guaranteed) - -40% to -50%.",
+      "Energy - -70% to -80%.",
+      "Movespeed - -40% to -50%.",
       "Bomb Pollen (from waxing) - +1% to +40%",
-      "[Hive Bonus] Bomb Pollen (Guaranteed) - +1% to +3%. (up to +15% from waxing)",
+      "[Hive Bonus] Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
       "[Hive Bonus] Buzz Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
       "[Hive Bonus] Blue Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
       "[Hive Bonus] Red Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
@@ -852,8 +907,8 @@
     "bees": [],
     "requirement": "Bee must know \"Boost\" ability",
     "stats": [
-      "Red Gather Amount (Guaranteed) - +10% to +25%. (up to +60% from waxing)",
-      "Gather Pollination Chance (Guaranteed) - +10% to +20%. (up to +40% from waxing)",
+      "Red Gather Amount - +10% to +25%. (up to +60% from waxing)",
+      "Gather Pollination Chance - +10% to +20%. (up to +40% from waxing)",
       "[Hive Bonus] Bee Gather Pollen - +1%. (up to +31% from waxing)",
       "[Hive Bonus] Red Pollen (From waxing) - +2% to +25%."
     ],
@@ -871,10 +926,10 @@
     "bees": [],
     "requirement": "None",
     "stats": [
-      "Red Gather Amount (Guaranteed) - +5% to +10%. (up to +50% from waxing)",
-      "Flames Pollen (Guaranteed) - +5% to +10%. (up to +50% from waxing)",
-      "Gathering Flames Chance (Guaranteed) - +1% to +5%. (up to +25% from waxing)",
-      "Energy (Guaranteed) - +5% to +10%.",
+      "Red Gather Amount - +5% to +10%. (up to +50% from waxing)",
+      "Flames Pollen - +5% to +10%. (up to +50% from waxing)",
+      "Gathering Flames Chance - +1% to +5%. (up to +25% from waxing)",
+      "Energy - +5% to +10%.",
       "[Hive Bonus] Flame Pollen - +1%. (up to +11% from waxing)"
     ],
     "activeStats": [],
@@ -890,7 +945,18 @@
     "description": "\"This ornate wreath was specially made to suit Festive Bee's taste.\"",
     "bees": ["https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/17/FestiveIcon.png"],
     "requirement": "None",
-    "stats": ["TODO: Scrape stats table"],
+    "stats": [
+      "Gather Amount - +5 to +15. (up to +55 from waxing)",
+      "Convert Amount - +15 to +30. (up to +110 from waxing)",
+      "Red Bomb Pollen - +20% to +40%.",
+      "Mark Duration - +2% to +8%. (up to +13% from waxing)",
+      "Ability Rate - +1% (10% as base stat)",
+      "Ability: Festive Mark",
+      "[Hive Bonus] Capacity - +5,000 to +10,000. (up to +110,000 from waxing)",
+      "[Hive Bonus] Ticket Chance - +1% to +5% (from waxing, extremely rare)",
+      "[Hive Bonus] Red Bee Convert Rate - +2% to +10% (from waxing)",
+      "[Hive Bonus] Honey At Hive - +1% to +3% (from waxing, rare, caustic only)"
+    ],
     "activeStats": [],
     "potential": 0,
     "waxes": []
