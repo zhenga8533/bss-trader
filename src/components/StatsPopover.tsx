@@ -1,15 +1,4 @@
-import {
-  Button,
-  HStack,
-  Popover,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Button, Heading, HStack, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { formatStat } from "./BeequipTile";
 
 interface StatsPopoverProps {
@@ -18,16 +7,15 @@ interface StatsPopoverProps {
 
 const StatsPopover = ({ stats }: StatsPopoverProps) => {
   return (
-    <Popover placement="right">
-      <PopoverTrigger>
-        <Button colorScheme="gray" variant="solid">
-          Stats
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent bg="gray" width="25vw">
-        <PopoverCloseButton />
-        <PopoverHeader className="heading">Stats</PopoverHeader>
-        <PopoverBody>
+    <Tooltip
+      className="box"
+      hasArrow
+      placement="right"
+      label={
+        <>
+          <Heading size="sm" mb={1}>
+            Stats
+          </Heading>
           <VStack alignItems="left">
             {stats.map((stat, index) => {
               return (
@@ -38,9 +26,13 @@ const StatsPopover = ({ stats }: StatsPopoverProps) => {
               );
             })}
           </VStack>
-        </PopoverBody>
-      </PopoverContent>
-    </Popover>
+        </>
+      }
+    >
+      <Button colorScheme="gray" variant="solid">
+        Stats
+      </Button>
+    </Tooltip>
   );
 };
 

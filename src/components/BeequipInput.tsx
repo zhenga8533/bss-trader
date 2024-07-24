@@ -16,12 +16,15 @@ import {
   NumberInputField,
   NumberInputStepper,
   Text,
+  Tooltip,
+  useToast,
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import waxData from "../data/waxes.json";
 import { Beequip } from "./BeequipTile";
 import StatsPopover from "./StatsPopover";
+import WaxTile from "./WaxTile";
 
 interface BeequipInputProps {
   beequip: Beequip | null;
@@ -36,6 +39,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
   const [waxes, setWaxes] = useState<string[]>([]);
   const [stats, setStats] = useState<string[]>([]);
   const [potential, setPotential] = useState<number>(0);
+  const toast = useToast();
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
@@ -67,16 +71,23 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
             <HStack>
               {/* Waxes */}
               {Object.entries(waxData).map(([name, wax]) => (
-                <Button
-                  key={name}
-                  colorScheme="blue"
-                  variant="solid"
+                <WaxTile
+                  name={name}
+                  wax={wax}
                   onClick={() => {
-                    if (waxes.length < 5) setWaxes([...waxes, wax]);
+                    if (waxes.length < 5) setWaxes([...waxes, wax.image_url]);
+                    else
+                      toast({
+                        title: "The Wax didn't seem to help...",
+                        description: "You can only apply up to 5 Waxes to a Beequip.",
+                        status: "error",
+                        duration: 3000,
+                        isClosable: true,
+                        position: "top",
+                        variant: "subtle",
+                      });
                   }}
-                >
-                  <Image src={wax} alt={name} boxSize="36px" />
-                </Button>
+                />
               ))}
             </HStack>
             <Divider /> {/* Stats */}
@@ -102,7 +113,27 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
               </Button>
             ))}
             <Divider mt={1} /> {/* Potential */}
-            <Text className="heading">Select Potential</Text>
+            <Tooltip
+              className="box"
+              hasArrow
+              placement="right"
+              label={
+                <>
+                  <Heading size="sm" mb={1}>
+                    Potential
+                  </Heading>
+                  <Text whiteSpace="pre-line">
+                    {`Beequips have a potential that can range from 0-5 stars, but potential is measured in 10 points(including 0), since those stars can appear halved.
+                      The higher the potential a beequip has, the higher chance the beequip having better base stats and stats increase when modified using Waxes.
+                      The potential of a beequip cannot change.`}
+                  </Text>
+                </>
+              }
+            >
+              <Button colorScheme="gray" variant="solid">
+                Potential
+              </Button>
+            </Tooltip>
             <NumberInput
               defaultValue={0}
               min={0}

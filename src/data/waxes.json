@@ -1,7 +1,22 @@
 {
-  "Soft Wax": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/77/Soft_Wax.png",
-  "Hard Wax": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d2/Hard_Wax.png",
-  "Swirled Wax": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/91/Swirled_Wax.png",
-  "Caustic Wax": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bc/Caustic_Wax.png",
-  "Failed Wax": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d6/Hivesticker_red_x.png"
+  "Soft Wax": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/77/Soft_Wax.png",
+    "description": "Upon usage, it has a 100% chance to slightly improve the Beequip's stats. Soft Wax has Upgrade Value of 1."
+  },
+  "Hard Wax": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d2/Hard_Wax.png",
+    "description": "Upon usage, it has a 60% chance of improving the beequip's stats. The other 40% and the Hard Wax gives no improvement, simply taking up a space in a wax slot. Hard Wax has Upgrade Value of 2."
+  },
+  "Swirled Wax": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/91/Swirled_Wax.png",
+    "description": "Upon usage, it has a 25% chance of greatly improving the beequip's stats; however, it has a 75% chance of permanently destroying the beequip instead, destroying the beequip and also wasting the Caustic Wax. This wax cannot be used on permanent beequips. Caustic Wax has Upgrade Value of 4."
+  },
+  "Caustic Wax": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bc/Caustic_Wax.png",
+    "description": "Beequips with higher potential have a greater chance of having better stats when rerolled. Swirled Wax has Upgrade Value of 0."
+  },
+  "Failed Wax": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e1/Turpentine.png",
+    "description": "Placeholder for a failed wax roll. Failed Wax has Upgrade Value of 0."
+  }
 }
