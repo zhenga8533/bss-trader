@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
+import { Box, Button, Divider, Flex, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import BeequipModal from "./BeequipModal";
 import BeequipTile, { Beequip } from "./BeequipTile";
@@ -102,13 +102,13 @@ const Stack = ({ color, title }: StackProps) => {
             </Box>
           ))}
         </Grid>
-        <VStack>
+        <Flex wrap="wrap" justifyContent="space-around" w="100%">
           {beequips.map((beequip) => (
-            <Box key={beequip.name} w="96px">
-              <BeequipTile beequip={beequip} onClick={removeBeequip} />
+            <Box key={beequip.name} p={2} minW="90px" maxW="1fr">
+              <BeequipTile beequip={beequip} detailed={true} onClick={removeBeequip} />
             </Box>
           ))}
-        </VStack>
+        </Flex>
         <Divider />
         <HStack>
           <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>

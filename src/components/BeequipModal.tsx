@@ -73,6 +73,7 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
             <GridItem key={beequip.name}>
               <BeequipTile
                 beequip={beequip}
+                detailed={false}
                 onClick={(beequip) => {
                   setSelected(beequip);
                   setInputOpen(true);

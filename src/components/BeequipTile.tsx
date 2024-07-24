@@ -18,6 +18,7 @@ export interface Beequip {
 
 interface BeequipTileProps {
   beequip: Beequip;
+  detailed: boolean;
   onClick: (beequip: Beequip) => void;
 }
 
@@ -36,8 +37,40 @@ export const formatStat = (stat: string, index: number) => {
   );
 };
 
-const BeequipTile = ({ beequip, onClick }: BeequipTileProps) => {
-  const tile = (
+const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
+  const tile = detailed ? (
+    <Button className="box" p={1} onClick={() => onClick(beequip)} h="auto">
+      <Grid
+        templateAreas='"button stats"
+                       "waxes  stats"'
+        alignItems="center"
+        justifyItems="center"
+        gap={1}
+      >
+        <GridItem area="button">
+          <HStack>
+            <Image src={beequip.image_url} alt={beequip.name} maxW="56px" />
+            <HStack spacing={0}>
+              <Text color="white">{beequip.potential}</Text>
+              <FaStar color="white" />
+            </HStack>
+          </HStack>
+        </GridItem>
+        <GridItem area="stats">
+          <VStack className="box" p={1} spacing={0}>
+            {beequip.activeStats.map((stat, index) => formatStat(stat, index))}
+          </VStack>
+        </GridItem>
+        <GridItem area="waxes">
+          <HStack className="box" p={1}>
+            {beequip.waxes.map((wax, index) => (
+              <Image key={index} src={wax} alt={wax} boxSize="24px" />
+            ))}
+          </HStack>
+        </GridItem>
+      </Grid>
+    </Button>
+  ) : (
     <Button className="box" p={1} onClick={() => onClick(beequip)}>
       <Image src={beequip.image_url} alt={beequip.name} />
     </Button>
