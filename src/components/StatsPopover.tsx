@@ -19,7 +19,7 @@ const StatsPopover = ({ stats }: StatsPopoverProps) => {
           <VStack alignItems="left">
             {stats.map((stat, index) => {
               return (
-                <HStack>
+                <HStack key={index}>
                   <Text color="white">● </Text>
                   {formatStat(stat, index)}
                 </HStack>

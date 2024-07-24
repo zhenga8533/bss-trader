@@ -72,6 +72,7 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
               {/* Waxes */}
               {Object.entries(waxData).map(([name, wax]) => (
                 <WaxTile
+                  key={name}
                   name={name}
                   wax={wax}
                   onClick={() => {

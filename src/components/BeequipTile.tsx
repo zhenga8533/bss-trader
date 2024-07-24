@@ -98,7 +98,7 @@ const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
             </Text>
             <HStack className="box" p={2} w="100%">
               {Array.from({ length: 5 }, (_, index) =>
-                beequip.potential > index ? <FaStar key={index} size="large" /> : <FaRegStar key={index} size="large" />
+                beequip.potential > index ? <FaStar key={index} /> : <FaRegStar key={index} />
               )}
             </HStack>
           </VStack>
@@ -110,8 +110,8 @@ const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
             <HStack>
               <Text textAlign="center">Only For:</Text>
               <Grid templateColumns="repeat(6, 1fr)" columnGap={2}>
-                {beequip.bees.map((bee) => (
-                  <Image src={bee} alt={bee} />
+                {beequip.bees.map((bee, index) => (
+                  <Image key={index} src={bee} alt={bee} />
                 ))}
               </Grid>
             </HStack>
