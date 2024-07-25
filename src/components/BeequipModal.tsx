@@ -19,24 +19,25 @@ import beequip from "../assets/beequip.webp";
 import beequips from "../data/beequips.json";
 import { isTermIncluded } from "../services/find";
 import BeequipInput from "./BeequipInput";
-import { Beequip } from "./BeequipTile";
+import { BeequipData } from "./BeequipTile";
 const BeequipTile = React.lazy(() => import("./BeequipTile"));
 
 interface BeequipTileProps {
   isOpen: boolean;
   onClose: () => void;
-  addBeequip: (beequip: Beequip) => void;
+  addBeequip: (data: BeequipData) => void;
 }
 
 const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
-  const [filteredBeequips, setFilteredBeequips] = useState(beequips);
+  const keys = Object.keys(beequips);
+  const [filtered, setFiltered] = useState(keys);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const [selected, setSelected] = useState<Beequip | null>(null);
+  const [selected, setSelected] = useState("");
   const [inputOpen, setInputOpen] = useState(false);
 
   useEffect(() => {
-    setFilteredBeequips(beequips);
+    setFiltered(keys);
     setSearchTerm("");
   }, [beequips]);
 
@@ -44,11 +45,12 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
     let term = event.target.value;
     setSearchTerm(term);
     if (!term.trim()) {
-      setFilteredBeequips(beequips);
+      setFiltered(keys);
     } else {
       term = term.toLowerCase();
-      const filtered = beequips.filter((beequip) => isTermIncluded(beequip, term));
-      setFilteredBeequips(filtered);
+      // @ts-ignore
+      const filter = keys.filter((key) => isTermIncluded(beequips[key], term));
+      setFiltered(filter);
     }
   };
 
@@ -69,13 +71,12 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
         }
       >
         <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} columnGap={3} rowGap={5}>
-          {filteredBeequips.map((beequip) => (
-            <GridItem key={beequip.name}>
+          {filtered.map((name) => (
+            <GridItem key={name}>
               <BeequipTile
-                beequip={beequip}
-                detailed={false}
-                onClick={(beequip) => {
-                  setSelected(beequip);
+                name={name}
+                onClick={() => {
+                  setSelected(name);
                   setInputOpen(true);
                 }}
               />
