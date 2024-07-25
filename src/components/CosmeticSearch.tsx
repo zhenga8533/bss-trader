@@ -53,7 +53,15 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
           </Box>
         }
       >
-        <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} columnGap={3} rowGap={5}>
+        <Grid
+          templateColumns="repeat(auto-fill, minmax(90px, 1fr))"
+          borderRadius={5}
+          columnGap={3}
+          rowGap={5}
+          className="custom-scroll"
+          maxH="60vh"
+          overflow="auto"
+        >
           {filtered.map((name) => (
             <GridItem key={name}>
               <CosmeticTile name={name} quantity={stack[name] ?? 0} onClick={addCosmetic} />

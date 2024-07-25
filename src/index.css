@@ -7,3 +7,12 @@
   color: white;
   text-shadow: 1px 1px 2px black;
 }
+
+.custom-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
