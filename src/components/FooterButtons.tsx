@@ -1,4 +1,5 @@
 import { Button, Center, HStack, useToast } from "@chakra-ui/react";
+import LZString from "lz-string";
 import { useState } from "react";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
@@ -9,16 +10,16 @@ const FooterButtons = () => {
   const getText = () => {
     // Offering
     const offeringCosmetics = JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}");
-
     let offering = "Offering:";
+
     Object.keys(offeringCosmetics).forEach((key) => {
       offering += `\n- ${key} x${offeringCosmetics[key]}`;
     });
 
     // Looking for
     const lfCosmetics = JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}");
-
     let lf = "Looking for:";
+
     Object.keys(lfCosmetics).forEach((key) => {
       lf += `\n- ${key} x${lfCosmetics[key]}`;
     });
@@ -33,16 +34,16 @@ const FooterButtons = () => {
       offering: JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}"),
       lookingFor: JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}"),
     };
-
-    return JSON.stringify(data, null, 2);
+    const jsonString = JSON.stringify(data);
+    return LZString.compressToBase64(jsonString);
   };
   const [exportOpen, setExportOpen] = useState(false);
   const [exportData, setExportData] = useState("");
 
   const importData = (data: string) => {
     try {
-      console.log(data);
-      const parsedData = JSON.parse(data);
+      const jsonString = LZString.decompressFromBase64(data);
+      const parsedData = JSON.parse(jsonString);
       localStorage.setItem("offering-cosmetics", JSON.stringify(parsedData.offering));
       localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsedData.lookingFor));
 
