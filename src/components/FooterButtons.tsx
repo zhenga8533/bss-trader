@@ -1,11 +1,32 @@
 import { Button, Center, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
 
 const FooterButtons = () => {
   const toast = useToast();
+  const update = new CustomEvent("update");
+
+  // Import data from URL
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const data = url.searchParams.get("data");
+    if (data === null) return;
+
+    try {
+      const jsonString = LZString.decompressFromBase64(data);
+      const parsedData = JSON.parse(jsonString);
+
+      localStorage.setItem("offering-cosmetics", JSON.stringify(parsedData.offering));
+      localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsedData.lookingFor));
+      window.dispatchEvent(update);
+      url.searchParams.delete("data");
+      window.history.replaceState({}, document.title, url.toString());
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
 
   const getText = () => {
     // Offering
@@ -46,9 +67,7 @@ const FooterButtons = () => {
       const parsedData = JSON.parse(jsonString);
       localStorage.setItem("offering-cosmetics", JSON.stringify(parsedData.offering));
       localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsedData.lookingFor));
-
-      const event = new CustomEvent("update");
-      window.dispatchEvent(event);
+      window.dispatchEvent(update);
 
       toast({
         title: "Trade data imported",
