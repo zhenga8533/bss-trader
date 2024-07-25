@@ -1,8 +1,9 @@
 import { Box, Button, Grid, GridItem, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { FaRegStar, FaStar } from "react-icons/fa";
+import beequips from "../data/beequips.json";
+import { getStatColor } from "../services/format";
 
-export interface Beequip {
-  name: string;
+interface Beequip {
   image_url: string;
   level: string;
   color: string;
@@ -11,37 +12,33 @@ export interface Beequip {
   bees: string[];
   requirement: string;
   stats: string[];
+}
+
+export interface BeequipData {
+  name: string;
   activeStats: string[];
   potential: number;
   waxes: string[];
 }
 
 interface BeequipTileProps {
-  beequip: Beequip;
-  detailed: boolean;
-  onClick: (beequip: Beequip) => void;
+  name: string;
+  data?: BeequipData;
+  onClick: () => void;
 }
 
-export const formatStat = (stat: string, index: number) => {
-  const color = stat.startsWith("+")
-    ? "green"
-    : stat.startsWith("-")
-    ? "red"
-    : stat.startsWith("[")
-    ? "yellow"
-    : stat.startsWith("Ability:")
-    ? "cyan"
-    : "white";
-  return (
-    <Text color={color} key={index}>
-      {stat}
-    </Text>
-  );
-};
+const formatStat = (stat: string, index: number) => (
+  <Text key={index} color={getStatColor(stat)}>
+    {stat}
+  </Text>
+);
 
-const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
-  const tile = detailed ? (
-    <Button className="box" p={1} onClick={() => onClick(beequip)} h="auto">
+const BeequipTile = ({ name, data, onClick }: BeequipTileProps) => {
+  // @ts-ignore
+  const beequip = beequips[name] as Beequip;
+
+  const tile = data ? (
+    <Button className="box" p={1} onClick={onClick} h="auto">
       <Grid
         templateAreas='"button stats"
                        "waxes  stats"'
@@ -51,21 +48,21 @@ const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
       >
         <GridItem area="button">
           <HStack>
-            <Image src={beequip.image_url} alt={beequip.name} maxW="56px" />
+            <Image src={beequip.image_url} alt={name} maxW="56px" />
             <HStack spacing={0}>
-              <Text color="white">{beequip.potential}</Text>
+              <Text color="white">{data.potential}</Text>
               <FaStar color="white" />
             </HStack>
           </HStack>
         </GridItem>
         <GridItem area="stats">
           <VStack className="box" p={1} spacing={0}>
-            {beequip.activeStats.map((stat, index) => formatStat(stat, index))}
+            {data.activeStats.map((stat, index) => formatStat(stat, index))}
           </VStack>
         </GridItem>
         <GridItem area="waxes">
           <HStack className="box" p={1}>
-            {beequip.waxes.map((wax, index) => (
+            {data.waxes.map((wax, index) => (
               <Image key={index} src={wax} alt={wax} boxSize="24px" />
             ))}
           </HStack>
@@ -73,18 +70,18 @@ const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
       </Grid>
     </Button>
   ) : (
-    <Button className="box" p={1} onClick={() => onClick(beequip)}>
-      <Image src={beequip.image_url} alt={beequip.name} />
+    <Button className="box" p={1} onClick={onClick}>
+      <Image src={beequip.image_url} alt={name} />
     </Button>
   );
 
   const label = (
     <VStack alignItems="left" my={1}>
       <VStack alignItems="left" my={1}>
-        <Heading size="md">{beequip.name}</Heading>
+        <Heading size="md">{name}</Heading>
         <HStack>
           <Box className="box" boxSize="50%" p={5}>
-            <Image src={beequip.image_url} alt={beequip.name} />
+            <Image src={beequip.image_url} alt={name} />
           </Box>
           <VStack w="50%">
             <Text className="box" fontSize="large" p={0.5} w="100%">
@@ -98,7 +95,7 @@ const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
             </Text>
             <HStack className="box" p={2} w="100%">
               {Array.from({ length: 5 }, (_, index) =>
-                beequip.potential > index ? <FaStar key={index} /> : <FaRegStar key={index} />
+                data?.potential ?? 0 > index ? <FaStar key={index} /> : <FaRegStar key={index} />
               )}
             </HStack>
           </VStack>
@@ -122,14 +119,14 @@ const BeequipTile = ({ beequip, detailed, onClick }: BeequipTileProps) => {
       {/* Stats */}
       <VStack alignItems="left" className="box" p={1} gap={0}>
         <Text fontWeight="bold">Stats:</Text>
-        {beequip.activeStats.length > 0
-          ? beequip.activeStats.map((stat, index) => formatStat(stat, index))
+        {data?.activeStats?.length
+          ? data.activeStats.map((stat, index) => formatStat(stat, index))
           : beequip.stats.map((stat, index) => formatStat(stat, index))}
       </VStack>
       {/* Waxes */}
-      {beequip.waxes.length > 0 && (
+      {data?.waxes?.length && (
         <Grid className="box" templateColumns="repeat(5, 1fr)" gap={1}>
-          {beequip.waxes.map((wax, index) => (
+          {data.waxes.map((wax, index) => (
             <GridItem key={index} className="box" m={1}>
               <Image src={wax} alt={wax} p={1} />
             </GridItem>

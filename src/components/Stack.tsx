@@ -1,7 +1,7 @@
 import { Box, Button, Divider, Flex, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import BeequipModal from "./BeequipModal";
-import BeequipTile, { Beequip } from "./BeequipTile";
+import BeequipTile, { BeequipData } from "./BeequipTile";
 import CosmeticModal from "./CosmeticModal";
 import CosmeticTile from "./CosmeticTile";
 
@@ -46,15 +46,19 @@ const Stack = ({ color, title }: StackProps) => {
     return saveData ? JSON.parse(saveData) : [];
   };
 
-  const [beequips, setBeequips] = useState<Beequip[]>(getBeequips);
+  const [beequips, setBeequips] = useState<BeequipData[]>(getBeequips);
   const [beequipsOpen, setBeequipsOpen] = useState(false);
 
-  const addBeequip = (beequip: Beequip) => {
-    setBeequips((prevBeequips) => [...prevBeequips, beequip]);
+  const addBeequip = (data: BeequipData) => {
+    setBeequips((prevBeequips) => [...prevBeequips, data]);
   };
 
-  const removeBeequip = (beequip: Beequip) => {
-    setBeequips((prevBeequips) => prevBeequips.filter((b) => b.name !== beequip.name));
+  const removeBeequip = (index: number) => {
+    setBeequips((prevBeequips) => {
+      const newBeequips = [...prevBeequips];
+      newBeequips.splice(index, 1);
+      return newBeequips;
+    });
   };
 
   useEffect(() => {
@@ -100,9 +104,9 @@ const Stack = ({ color, title }: StackProps) => {
           ))}
         </Grid>
         <Flex wrap="wrap" justifyContent="space-around" w="100%">
-          {beequips.map((beequip) => (
+          {beequips.map((beequip, index) => (
             <Box key={beequip.name} p={2} minW="90px" maxW="1fr">
-              <BeequipTile beequip={beequip} detailed={true} onClick={removeBeequip} />
+              <BeequipTile name={beequip.name} data={beequip} onClick={() => removeBeequip(index)} />
             </Box>
           ))}
         </Flex>

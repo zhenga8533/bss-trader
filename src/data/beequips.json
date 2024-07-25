@@ -1,6 +1,5 @@
-[
-  {
-    "name": "Thimble",
+{
+  "Thimble": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/39/Thimble.png",
     "level": "3",
     "color": "Any",
@@ -18,8 +17,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Sweatband",
+  "Sweatband": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1b/Sweatband.png",
     "level": "5",
     "color": "Any",
@@ -42,8 +40,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Bandage",
+  "Bandage": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0c/Bandage.png",
     "level": "3",
     "color": "Any",
@@ -62,8 +59,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Thumbtack",
+  "Thumbtack": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7e/Thumbtack.png",
     "level": "6",
     "color": "Red",
@@ -83,8 +79,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Camo Bandana",
+  "Camo Bandana": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/dc/Camo_Bandana.png",
     "level": "8",
     "color": "Any",
@@ -107,8 +102,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Bottle Cap",
+  "Bottle Cap": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c9/Bottle_Cap.png",
     "level": "4",
     "color": "Any",
@@ -127,8 +121,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Kazoo",
+  "Kazoo": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/47/Kazoo.png",
     "level": "9",
     "color": "Any",
@@ -148,8 +141,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Smiley Sticker",
+  "Smiley Sticker": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/57/Smiley_Sticker.png",
     "level": "7",
     "color": "Any",
@@ -170,8 +162,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Whistle",
+  "Whistle": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/18/Whistle.png",
     "level": "8",
     "color": "Any",
@@ -200,8 +191,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Charm Bracelet",
+  "Charm Bracelet": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/00/Charm_Bracelet.png",
     "level": "12",
     "color": "Any",
@@ -228,8 +218,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Paperclip",
+  "Paperclip": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/35/Paperclip.png",
     "level": "7",
     "color": "Any",
@@ -249,8 +238,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Beret",
+  "Beret": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/43/Beret.png",
     "level": "11",
     "color": "Blue",
@@ -271,8 +259,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Bang Snap",
+  "Bang Snap": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/75/Bang_Snap.png",
     "level": "10",
     "color": "Any",
@@ -295,8 +282,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Bead Lizard",
+  "Bead Lizard": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6f/Bead_Lizard.png",
     "level": "9",
     "color": "Any",
@@ -317,8 +303,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Pink Shades",
+  "Pink Shades": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Pink_Shades.png",
     "level": "10",
     "color": "Any",
@@ -346,8 +331,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Lei",
+  "Lei": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/45/Lei.png",
     "level": "14",
     "color": "Any",
@@ -376,8 +360,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Demon Talisman",
+  "Demon Talisman": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b3/Demon_Talisman.png",
     "level": "15",
     "color": "Red",
@@ -409,8 +392,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Camphor Lip Balm",
+  "Camphor Lip Balm": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/04/Camphor_Lip_Balm.png",
     "level": "12",
     "color": "Any",
@@ -430,8 +412,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Autumn Sunhat",
+  "Autumn Sunhat": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/51/Autumn_Sunhat.png",
     "level": "16",
     "color": "Any",
@@ -454,8 +435,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Rose Headband",
+  "Rose Headband": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/33/Rose_Headband.png",
     "level": "13",
     "color": "Any",
@@ -479,8 +459,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Pink Eraser",
+  "Pink Eraser": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/92/Pink_Eraser.png",
     "level": "12",
     "color": "Any",
@@ -501,8 +480,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Candy Ring",
+  "Candy Ring": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1a/Candy_Ring.png",
     "level": "14",
     "color": "Any",
@@ -522,8 +500,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Elf Cap",
+  "Elf Cap": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/74/Elf_Cap.png",
     "level": "3",
     "color": "Any",
@@ -541,8 +518,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Single Mitten",
+  "Single Mitten": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ee/Single_Mitten.png",
     "level": "6",
     "color": "Any",
@@ -560,8 +536,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Warm Scarf",
+  "Warm Scarf": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/43/Warm_Scarf.png",
     "level": "5",
     "color": "Any",
@@ -586,8 +561,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Peppermint Antennas",
+  "Peppermint Antennas": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fc/Peppermint_Antennas.png",
     "level": "7",
     "color": "Any",
@@ -607,8 +581,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Beesmas Top",
+  "Beesmas Top": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/2c/Beesmas_Top.png",
     "level": "4",
     "color": "Any",
@@ -627,8 +600,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Pinecone",
+  "Pinecone": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a7/Pinecone.png",
     "level": "9",
     "color": "Any",
@@ -653,8 +625,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Icicles",
+  "Icicles": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c5/Icicles.png",
     "level": "10",
     "color": "Blue",
@@ -673,8 +644,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Beesmas Tree Hat",
+  "Beesmas Tree Hat": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/14/Beesmas_Tree_Hat.png",
     "level": "10",
     "color": "Any",
@@ -694,8 +664,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Bubble Light",
+  "Bubble Light": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1e/Bubble_Light.png",
     "level": "8",
     "color": "Any",
@@ -715,8 +684,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Snow Tiara",
+  "Snow Tiara": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ac/Snow_Tiara.png",
     "level": "12",
     "color": "Any",
@@ -745,8 +713,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Snowglobe",
+  "Snowglobe": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/36/Snowglobe.png",
     "level": "7",
     "color": "Any",
@@ -771,8 +738,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Reindeer Antlers",
+  "Reindeer Antlers": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/69/Reindeer_Antlers.png",
     "level": "8",
     "color": "Any",
@@ -792,8 +758,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Toy Horn",
+  "Toy Horn": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bf/Toy_Horn.png",
     "level": "9",
     "color": "Any",
@@ -820,8 +785,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Paper Angel",
+  "Paper Angel": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/eb/Paper_Angel.png",
     "level": "8",
     "color": "Any",
@@ -845,8 +809,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Toy Drum",
+  "Toy Drum": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/30/Toy_Drum.png",
     "level": "7",
     "color": "Any",
@@ -871,8 +834,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Lump Of Coal",
+  "Lump Of Coal": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/11/Lump_Of_Coal.png",
     "level": "13",
     "color": "Any",
@@ -897,8 +859,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Poinsettia",
+  "Poinsettia": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3a/Poinsettia.png",
     "level": "6",
     "color": "Any",
@@ -916,8 +877,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Electric Candle",
+  "Electric Candle": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/50/Electric_Candle.png",
     "level": "6",
     "color": "Red",
@@ -936,8 +896,7 @@
     "potential": 0,
     "waxes": []
   },
-  {
-    "name": "Festive Wreath",
+  "Festive Wreath": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6b/Festive_Wreath.png",
     "level": "10",
     "color": "Red",
@@ -961,4 +920,4 @@
     "potential": 0,
     "waxes": []
   }
-]
+}
