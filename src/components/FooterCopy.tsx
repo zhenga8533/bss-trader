@@ -1,5 +1,6 @@
 import {
   Button,
+  HStack,
   Modal,
   ModalCloseButton,
   ModalContent,
@@ -9,14 +10,16 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
+import QRCode from "qrcode.react";
 
 interface FooterCopyProps {
   data: string;
   isOpen: boolean;
+  showQR: boolean;
   onClose: () => void;
 }
 
-const FooterCopy = ({ data, isOpen, onClose }: FooterCopyProps) => {
+const FooterCopy = ({ data, isOpen, showQR, onClose }: FooterCopyProps) => {
   const toast = useToast();
   const copy = () => {
     navigator.clipboard.writeText(data);
@@ -38,13 +41,16 @@ const FooterCopy = ({ data, isOpen, onClose }: FooterCopyProps) => {
         <ModalCloseButton />
         <Textarea value={data} rows={10} />
 
-        <ModalFooter>
-          <Button colorScheme="blue" variant="solid" mr={3} onClick={copy}>
-            Copy
-          </Button>
-          <Button colorScheme="red" variant="solid" onClick={onClose}>
-            Cancel
-          </Button>
+        <ModalFooter justifyContent="space-between">
+          {showQR && <QRCode value={"https://zhenga8533.github.io/bss-trader?data=" + data} size={64} />}
+          <HStack>
+            <Button colorScheme="blue" variant="solid" mr={3} onClick={copy}>
+              Copy
+            </Button>
+            <Button colorScheme="red" variant="solid" onClick={onClose}>
+              Cancel
+            </Button>
+          </HStack>
         </ModalFooter>
       </ModalContent>
     </Modal>

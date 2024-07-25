@@ -71,8 +71,8 @@ const FooterButtons = () => {
 
   return (
     <Center>
-      <FooterCopy data={textData} isOpen={textOpen} onClose={() => setTextOpen(false)} />
-      <FooterCopy data={exportData} isOpen={exportOpen} onClose={() => setExportOpen(false)} />
+      <FooterCopy data={textData} isOpen={textOpen} showQR={false} onClose={() => setTextOpen(false)} />
+      <FooterCopy data={exportData} isOpen={exportOpen} showQR={true} onClose={() => setExportOpen(false)} />
       <FooterPrompt
         isOpen={importOpen}
         onClose={() => setImportOpen(false)}

@@ -1,0 +1,34 @@
+[
+    {
+        "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b7/Cub_Buddy_Voucher.png",
+        "name": "Cub Buddy Voucher",
+        "description": "\"Can be redeemed for a Cub Buddy (if you don't already have one).\"",
+        "stack_boost": "+2% Honey From Tokens",
+        "stack_reward": "3 Micro-Converters",
+        "where_from": "Rewarded from Bee Bear's 15th Quest (if you already own a Cub Buddy)\nPurchased for 600  (if you already own a Cub Buddy)\nReward from Robo Bear Challenge (Unfathomably Rare)"
+    },
+    {
+        "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/05/Bear_Bee_Voucher.png",
+        "name": "Bear Bee Voucher",
+        "description": "\"Can be redeemed for a Bear Bee Egg (once per account).\"",
+        "stack_boost": "+0.5% Pollen",
+        "stack_reward": "10 Tickets",
+        "where_from": "Purchased for 800 \nReward from Retro Swarm Challenge (Nearly Impossible)\nDropped by Tunnel Bear (Nearly Impossible)"
+    },
+    {
+        "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c2/X2_Bee_Gather_Voucher.png",
+        "name": "x2 Bee Gather Voucher",
+        "description": "\"Redeem to activate x2 Bee Gather (once per account).\"",
+        "stack_boost": "+2 Bee Gather Pollen",
+        "stack_reward": "1 Glue",
+        "where_from": "Purchased for 400 \nReward from Retro Swarm Challenge (Nearly Impossible)\nDropped by Wild Windy Bee (Nearly Impossible)"
+    },
+    {
+        "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e9/X2_Convert_Speed_Voucher.png",
+        "name": "x2 Convert Speed",
+        "description": "\"Redeem to activate x2 Convert Speed (once per account).\"",
+        "stack_boost": "+10 Convert Rate",
+        "stack_reward": "1 Enzymes",
+        "where_from": "Purchased for 250 \nReward from Retro Swarm Challenge (Nearly Impossible)\nReward from Ant Challenge (Nearly Impossible)"
+    }
+]
