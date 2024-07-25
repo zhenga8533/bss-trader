@@ -1,36 +1,33 @@
 import { Box, Grid, GridItem, Heading, HStack, Image, Input, Spinner, VStack } from "@chakra-ui/react";
-import React, { Suspense, useEffect, useState } from "react";
-import { isTermIncluded } from "../services/format";
-import { Item } from "./ItemTile";
-import { StackItem } from "./Stack";
-const ItemTile = React.lazy(() => import("./ItemTile"));
+import React, { Suspense, useState } from "react";
+import cosmetics from "../data/cosmetics.json";
+import { isTermIncluded } from "../services/find";
+import { capitalize } from "../services/format";
+const CosmeticTile = React.lazy(() => import("./CosmeticTile"));
 
-interface ItemSearchProps {
+interface CosmeticSearchProps {
   icon: string;
-  items: Item[];
-  title: string;
-  addItem: (item: Item) => void;
-  stackItems: { [key: string]: StackItem };
+  type: string;
+  stack: { [name: string]: number };
+  addCosmetic: (name: string) => void;
 }
 
-const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps) => {
-  const [filteredItems, setFilteredItems] = useState(items);
+const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps) => {
+  // @ts-ignore
+  const category = cosmetics[type];
+  const keys = Object.keys(category);
+  const [filtered, setFiltered] = useState(keys);
   const [searchTerm, setSearchTerm] = useState("");
-
-  useEffect(() => {
-    setFilteredItems(items);
-    setSearchTerm("");
-  }, [items]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let term = event.target.value;
     setSearchTerm(term);
     if (!term.trim()) {
-      setFilteredItems(items);
+      setFiltered(keys);
     } else {
       term = term.toLowerCase();
-      const filtered = items.filter((item) => isTermIncluded(item, term));
-      setFilteredItems(filtered);
+      const filter = keys.filter((key) => isTermIncluded(category[key], term));
+      setFiltered(filter);
     }
   };
 
@@ -38,13 +35,13 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
     <VStack alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3}>
       <HStack>
         <Heading className="heading" size="lg">
-          {title}
+          {capitalize(type)}s
         </Heading>
-        <Image src={icon} alt={title} />
+        <Image src={icon} alt={type} />
       </HStack>
       <Input
         _placeholder={{ color: "gray.400" }}
-        placeholder={`Search for ${title.toLowerCase()}s...`}
+        placeholder={`Search for ${type}s...`}
         value={searchTerm}
         onChange={handleSearchChange}
         size="md"
@@ -57,9 +54,9 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
         }
       >
         <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" borderRadius={5} columnGap={3} rowGap={5}>
-          {filteredItems.map((item) => (
-            <GridItem key={item.name}>
-              <ItemTile item={item} stackQuantity={stackItems[item.name]?.quantity ?? 0} onClick={addItem} />
+          {filtered.map((name) => (
+            <GridItem key={name}>
+              <CosmeticTile name={name} quantity={stack[name] ?? 0} onClick={addCosmetic} />
             </GridItem>
           ))}
         </Grid>
@@ -68,4 +65,4 @@ const ItemSearch = ({ icon, items, title, addItem, stackItems }: ItemSearchProps
   );
 };
 
-export default ItemSearch;
+export default CosmeticSearch;

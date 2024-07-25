@@ -2,59 +2,41 @@ import { Box, Button, Divider, Flex, Grid, Heading, HStack, VStack } from "@chak
 import { useEffect, useState } from "react";
 import BeequipModal from "./BeequipModal";
 import BeequipTile, { Beequip } from "./BeequipTile";
-import ItemModal from "./ItemModal";
-import ItemTile, { Item } from "./ItemTile";
+import CosmeticModal from "./CosmeticModal";
+import CosmeticTile from "./CosmeticTile";
 
 interface StackProps {
   color: string;
   title: string;
 }
 
-export interface StackItem extends Item {
-  quantity: number;
-}
-
 const Stack = ({ color, title }: StackProps) => {
   const id = title.toLowerCase().replace(/\s/g, "-");
 
   // Cub Skins, Hive Skins, Stickers, and Vouchers
-  const [items, setItems] = useState<{ [key: string]: Item & { quantity: number } }>(() => {
+  const [cosmetics, setCosmetics] = useState<{ [key: string]: number }>(() => {
     const saveData = localStorage.getItem(id + "-items");
     return saveData ? JSON.parse(saveData) : {};
   });
-  const [itemsOpen, setItemsOpen] = useState(false);
+  const [cosmeticsOpen, setCosmeticsOpen] = useState(false);
 
-  const addItem = (item: Item) => {
-    setItems((prevItems) => {
-      if (prevItems[item.name]) {
-        return {
-          ...prevItems,
-          [item.name]: { ...prevItems[item.name], quantity: prevItems[item.name].quantity + 1 },
-        };
-      } else {
-        return { ...prevItems, [item.name]: { ...item, quantity: 1 } };
-      }
-    });
+  const addCosmetic = (name: string) => {
+    setCosmetics((prevCosmetics) => ({ ...prevCosmetics, [name]: (prevCosmetics[name] ?? 0) + 1 }));
   };
 
-  const removeItem = (item: Item) => {
-    setItems((prevItems) => {
-      if (prevItems[item.name].quantity > 1) {
-        return {
-          ...prevItems,
-          [item.name]: { ...prevItems[item.name], quantity: prevItems[item.name].quantity - 1 },
-        };
-      } else {
-        const newItems = { ...prevItems };
-        delete newItems[item.name];
-        return newItems;
+  const removeCosmetic = (name: string) => {
+    setCosmetics((prevCosmetics) => {
+      const newCosmetics = { ...prevCosmetics };
+      if (newCosmetics[name] && newCosmetics[name] > 0) {
+        newCosmetics[name] -= 1;
       }
+      return newCosmetics;
     });
   };
 
   useEffect(() => {
-    localStorage.setItem(id + "-items", JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem(id + "-items", JSON.stringify(cosmetics));
+  }, [cosmetics]);
 
   // Beequips
   const [beequips, setBeequips] = useState<Beequip[]>(() => {
@@ -78,16 +60,21 @@ const Stack = ({ color, title }: StackProps) => {
   return (
     <>
       <BeequipModal isOpen={beequipsOpen} onClose={() => setBeequipsOpen(false)} addBeequip={addBeequip} />
-      <ItemModal isOpen={itemsOpen} onClose={() => setItemsOpen(false)} addItem={addItem} stackItems={items} />
+      <CosmeticModal
+        isOpen={cosmeticsOpen}
+        stack={cosmetics}
+        addCosmetic={addCosmetic}
+        onClose={() => setCosmeticsOpen(false)}
+      />
       <VStack>
         <Heading className="heading" background={color} borderRadius={5} textAlign="center" size="lg" w="100%">
           {title}
         </Heading>
         <Divider />
         <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%" columnGap={3} rowGap={5}>
-          {Object.values(items).map((item) => (
-            <Box position={"relative"} key={item.name}>
-              <ItemTile item={item} stackQuantity={items[item.name]?.quantity ?? 0} onClick={removeItem} />
+          {Object.entries(cosmetics).map(([name, quantity]) => (
+            <Box position={"relative"} key={name}>
+              <CosmeticTile name={name} quantity={quantity} onClick={removeCosmetic} />
               <Box
                 backgroundColor="rgba(0, 0, 0, 0.5)"
                 borderRadius={5}
@@ -97,7 +84,7 @@ const Stack = ({ color, title }: StackProps) => {
                 right={-1}
                 bottom={-2}
               >
-                x{item.quantity}
+                x{quantity}
               </Box>
             </Box>
           ))}
@@ -114,14 +101,14 @@ const Stack = ({ color, title }: StackProps) => {
           <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
             Beequips
           </Button>
-          <Button colorScheme="green" onClick={() => setItemsOpen(true)}>
+          <Button colorScheme="green" onClick={() => setCosmeticsOpen(true)}>
             Cosmetics
           </Button>
           <Button
             colorScheme="red"
             onClick={() => {
               setBeequips([]);
-              setItems({});
+              setCosmetics({});
             }}
           >
             Clear

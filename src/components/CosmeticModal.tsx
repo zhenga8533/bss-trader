@@ -4,46 +4,31 @@ import cub from "../assets/cub.webp";
 import hive from "../assets/hive.webp";
 import sticker from "../assets/sticker.webp";
 import voucher from "../assets/voucher.webp";
-import cubs from "../data/cubs.json";
-import hives from "../data/hives.json";
-import stickers from "../data/stickers.json";
-import vouchers from "../data/vouchers.json";
-import ItemSearch from "./ItemSearch";
-import { StackItem } from "./Stack";
+import CosmeticSearch from "./CosmeticSearch";
 
-interface ItemModalProps {
+interface CosmeticModalProps {
   isOpen: boolean;
+  stack: { [name: string]: number };
+  addCosmetic: (name: string) => void;
   onClose: () => void;
-  addItem: (item: any) => void;
-  stackItems: { [key: string]: StackItem };
 }
 
-const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => {
-  const categories: { [key: string]: { icon: string; items: any[] } } = {
-    Cub: {
-      icon: cub,
-      items: cubs,
-    },
-    Hive: {
-      icon: hive,
-      items: hives,
-    },
-    Sticker: {
-      icon: sticker,
-      items: stickers,
-    },
-    Voucher: {
-      icon: voucher,
-      items: vouchers,
-    },
+const CosmeticModal = ({ isOpen, stack, onClose, addCosmetic }: CosmeticModalProps) => {
+  const categories: { [key: string]: string } = {
+    cub: cub,
+    hive: hive,
+    sticker: sticker,
+    voucher: voucher,
   };
-  const [category, setCategory] = useState("Sticker");
+  const [category, setCategory] = useState("sticker");
 
   const getSearch = (key: string) => {
-    const category = categories[key];
-    return (
-      <ItemSearch icon={category.icon} items={category.items} addItem={addItem} stackItems={stackItems} title={key} />
-    );
+    const icon = categories[key];
+    if (!icon) {
+      return null;
+    }
+
+    return <CosmeticSearch key={key} icon={icon} type={key} stack={stack} addCosmetic={addCosmetic} />;
   };
 
   return (
@@ -60,7 +45,7 @@ const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => 
                   setCategory(category);
                 }}
               >
-                <Image src={categories[category].icon} alt={category} />
+                <Image src={categories[category]} alt={category} />
               </Button>
             ))}
           </HStack>
@@ -71,4 +56,4 @@ const ItemModal = ({ isOpen, onClose, addItem, stackItems }: ItemModalProps) => 
   );
 };
 
-export default ItemModal;
+export default CosmeticModal;

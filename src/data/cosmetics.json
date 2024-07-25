@@ -1,0 +1,2005 @@
+{
+  "cub": {
+    "Brown Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9d/Brown_Cub.png",
+      "description": "\"A slightly chubby cub that got into the Royal Jelly.\"",
+      "stack_boost": "+1% Pollen",
+      "stack_reward": "10 Tickets",
+      "where_from": "Rewarded after completing 300 Brown Bear Quests"
+    },
+    "Robo Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d5/Robo_Cub.png",
+      "description": "\"They forgot a few drives when constructing this Robo Bear.\"",
+      "stack_boost": "+1% Duped Ability Pollen",
+      "stack_reward": "10 Tickets",
+      "where_from": "Reward from finishing in the top 10 of the Daily Robo Bear Challenge Leaderboard\nReward for winning round 25 of Robo Bear's Challenge for the first time...\nOr: Rewarded after collecting  250,000\u00a0Cogs"
+    },
+    "Stick Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ac/Stick_Cub.png",
+      "description": "\"This stick nymph evolved to camouflage itself as a bear.\"",
+      "stack_boost": "+1% Bee Attack",
+      "stack_reward": "10 Tickets",
+      "where_from": "Reward from finishing in the top 25 of the Daily Stick Bug Challenge Leaderboard\nDropped by Stick Bug (Unbelievably Rare)\nStick Bug Challenge Reward (Unbelievably Rare)"
+    },
+    "Star Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/39/Star_Cub.png",
+      "description": "\"A cosmic cub visiting from another galaxy.\"",
+      "stack_boost": "+1% Gifted Bee Pollen",
+      "stack_reward": "10 Tickets",
+      "where_from": "Awarded after sticking all 12 Star Signs to the Sticker Stack\nUsing the Diamond Star Amulet Generator (1 in a million chance)\nSticker Printer (Star Egg, All Gifted Eggs)"
+    },
+    "Noob Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5f/Noob_Cub.png",
+      "description": "\"This little noob doesn't know the first thing about running a shop.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10 Tickets",
+      "where_from": "This was included in the Cub Buddy Launch Pack"
+    },
+    "Bee Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8b/Bee_Cub.png",
+      "description": "\"A young polar bear going through an identity crisis.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10 Tickets",
+      "where_from": "This was the final reward of Bee Bear's 2019 quests"
+    },
+    "Gingerbread Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b5/Gingerbread_Cub.png",
+      "description": "\"A cub made of cookies, brought to life by Honeyday Magic!\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10 Tickets",
+      "where_from": "Purchased in Bee Bear's 2020 Catalog for  250\u00a0Gingerbread Bears"
+    },
+    "Snow Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/70/Snow_Cub.png",
+      "description": "\"This cruel cub was carved from a Lvl 20 Snowbear's snowball.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10 Tickets",
+      "where_from": "This was the final reward in Bee Bear's March 2022 quests"
+    },
+    "Peppermint Robo Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e1/Peppermint_Robo_Cub.png",
+      "description": "\"A clockwork cub composed of cogs and candycanes.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10 Tickets",
+      "where_from": "This was the final reward in Bee Bear's April 2023 quests"
+    },
+    "Doodle Cub Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/00/Doodle_Cub.png",
+      "description": "\"Cut from cardboard and scribbled up with magic crayons.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10 Tickets",
+      "where_from": "Completing all of Bee Bear's Summer 2024 quests (not yet available)"
+    }
+  },
+  "hive": {
+    "Basic Red Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5d/Hive_model_basic_red.png",
+      "description": "\"A recolored version of your everyday hive.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Completing 64 Riley Bee Quests\nDropped by King Beetle (Unbelievably Rare)\nSticker-Seeker Quest Reward (Very Rare)\nSticker Planter in the Rose Field or Pepper Patch (Extremely Rare)\nSticker Printer (Basic, Silver, Gold, and Diamond Egg)"
+    },
+    "Basic Blue Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0e/Hive_model_basic_blue.png",
+      "description": "\"A recolored version of your everyday hive.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Completing 64 Bucko Bee Quests\nDropped by King Beetle (Unbelievably Rare)\nSticker-Seeker Quest Reward (Very Rare)\nSticker Planter in the Blue Flower Field or Bamboo Field (Extremely Rare)\nSticker Printer (Basic, Silver, Gold, and Diamond Egg)"
+    },
+    "Basic Pink Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e7/Hive_model_basic_pink.png",
+      "description": "\"A recolored version of your everyday hive.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Reward for finishing in the top 100 of the Daily Haste Tokens Leaderboard\nDropped by Mondo Chick (Extremely Rare)\nSticker-Seeker Quest Reward (Extremely Rare)\nSticker Planter in the Strawberry Field or Pineapple Patch (Extremely Rare)\nSticker Printer (Basic, Silver, Gold, and Diamond Egg)"
+    },
+    "Basic Green Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5b/Hive_model_basic_green.png",
+      "description": "\"A recolored version of your everyday hive.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Reward for finishing in the top 100 of the Daily Sprout Tokens Leaderboard\nDropped by Stump Snail (Extremely Rare)\nSticker-Seeker Quest Reward (Extremely Rare)\nSticker Planter in the Clover Field or Cactus Field (Extremely Rare)\nSticker Printer (Basic, Silver, Gold, and Diamond Egg)"
+    },
+    "Basic White Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/19/Hive_model_basic_white.png",
+      "description": "\"A recolored version of your everyday hive.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Reward for finishing in the top 25 of the Daily White Pollen Leaderboard\nDropped by Coconut Crab (Extremely Rare)\nSticker-Seeker Quest Reward (Extremely Rare)\nSticker Planter in the Dandelion Field or Coconut Field (Unbelievably Rare)\nSticker Printer (Basic, Silver, Gold, and Diamond Egg)"
+    },
+    "Basic Black Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/04/Hive_model_basic_black.png",
+      "description": "\"A recolored version of your everyday hive.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Reward for finishing in the top 25 of the Daily Buzz Bomb Pollen Leaderboard\nDropped by Tunnel Bear (Extremely Rare)\nSticker-Seeker Quest Reward (Extremely Rare)\nSticker Planter in the Sunflower Field or Stump Field (Unbelievably Rare)\nSticker Printer (Basic, Gold, Diamond, Mythic, Gifted Gold, Gifted Mythic)"
+    },
+    "Wavy Yellow Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/57/Hive_model_wavy_yellow.png",
+      "description": "\"A hive with curvy, undulating edges.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Dropped by Golden Cogmower (Unbelievably Rare)\nEpic Puffshrooms+ in the Sunflower Field or Pineapple Path (Unfathomably Rare)\nSticker Printer (Gold Egg, Gifted Gold Egg)"
+    },
+    "Wavy Cyan Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bf/Hive_model_wavy_cyan.png",
+      "description": "\"A hive with curvy, undulating edges.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Dropped by Diamond Aphid (Unbelievably Rare)\nReward for finishing in the top 5 of the Raily Aphid Exterminators Leaderboard\nLegendary+ Puffshrooms in Blue fields (Unfathomably Rare)\nSticker Printer (Diamond Egg, Gifted Diamond Egg)"
+    },
+    "Wavy Purple Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/97/Hive_model_wavy_purple.png",
+      "description": "\"A hive with curvy, undulating edges.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Mythic Puffshrooms (Unfathomably Rare)\nSticker Printer (Mythic Egg, Gifted Mythic Egg)"
+    },
+    "Wavy Festive Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/71/Hive_model_wavy_festive.png",
+      "description": "\"A hive with undulating edges in the color scheme of Festive Bee.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "5 Tickets",
+      "where_from": "Reward for completing Bee Bear's 10th quest of 2024 (may return in future Beesmas events)"
+    },
+    "Wavy Doodle Hive Skin": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fc/Hive_model_wavy_doodle.png",
+      "description": "\"A hive with undulating that's been drawn on in crayon.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "5 Tickets",
+      "where_from": "Will be included in a pack."
+    }
+  },
+  "voucher": {
+    "Cub Buddy Voucher": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b7/Cub_Buddy_Voucher.png",
+      "description": "\"Can be redeemed for a Cub Buddy (if you don't already have one).\"",
+      "stack_boost": "+2% Honey From Tokens",
+      "stack_reward": "3 Micro-Converters",
+      "where_from": "Rewarded from Bee Bear's 15th Quest (if you already own a Cub Buddy)\nPurchased for 600  (if you already own a Cub Buddy)\nReward from Robo Bear Challenge (Unfathomably Rare)"
+    },
+    "Bear Bee Voucher": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/05/Bear_Bee_Voucher.png",
+      "description": "\"Can be redeemed for a Bear Bee Egg (once per account).\"",
+      "stack_boost": "+0.5% Pollen",
+      "stack_reward": "10 Tickets",
+      "where_from": "Purchased for 800 \nReward from Retro Swarm Challenge (Nearly Impossible)\nDropped by Tunnel Bear (Nearly Impossible)"
+    },
+    "x2 Bee Gather Voucher": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c2/X2_Bee_Gather_Voucher.png",
+      "description": "\"Redeem to activate x2 Bee Gather (once per account).\"",
+      "stack_boost": "+2 Bee Gather Pollen",
+      "stack_reward": "1 Glue",
+      "where_from": "Purchased for 400 \nReward from Retro Swarm Challenge (Nearly Impossible)\nDropped by Wild Windy Bee (Nearly Impossible)"
+    },
+    "x2 Convert Speed": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e9/X2_Convert_Speed_Voucher.png",
+      "description": "\"Redeem to activate x2 Convert Speed (once per account).\"",
+      "stack_boost": "+10 Convert Rate",
+      "stack_reward": "1 Enzymes",
+      "where_from": "Purchased for 250 \nReward from Retro Swarm Challenge (Nearly Impossible)\nReward from Ant Challenge (Nearly Impossible)"
+    }
+  },
+  "sticker": {
+    "Play Button": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/97/Hivesticker_play_button.png",
+      "description": "\"For being a loyal viewer.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Can be given out by certain video content creators"
+    },
+    "Gamer Chat Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/29/Hivesticker_gamer_chat_icon.png",
+      "description": "\"For positively contributing to BSS discorse.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Can be given out by official Bee Swarm Simulator Discord staff"
+    },
+    "Flying Rad Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/54/Hivesticker_flying_rad_bee.png",
+      "description": "\"The sun can't stop this bee from soaring.\"",
+      "stack_boost": "+2% Red Pollen",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Found by Rad Bee when gathering while very happy (Extremely Rare)\nSticker Printer (Silver Egg)\nSticker Planter (Extremely Rare)\nSticker Sprout (Unbelievably Rare)"
+    },
+    "Flying Ninja Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ae/Hivesticker_flying_ninja_bee.png",
+      "description": "\"A rare sight. Ninja Bee sticks to the shadows.\"",
+      "stack_boost": "+0.25% Bee Movespeed",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Found by Ninja Bee when gathering while very happy (Extremely Rare)\nSticker Printer (Diamond Egg)\nSticker Planter (Extremely Rare)\nSticker Sprout (Unbelievably Rare)"
+    },
+    "Flying Brave Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ea/Hivesticker_flying_brave_bee.png",
+      "description": "\"What monsters see before they go away forever.\"",
+      "stack_boost": "+2 Rare Bee Attack",
+      "stack_reward": "3\u00a0Stingers;amcep",
+      "where_from": "Found by Brave Bee when gathering while very happy (Extremely Rare)\nSticker Printer (Silver Egg)\nSticker Planter (Extremely Rare)\nSticker Sprout (Unbelievably Rare)"
+    },
+    "Flying Photon Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e6/Hivesticker_flying_photon_bee.png",
+      "description": "\"Doing what it does best.\"",
+      "stack_boost": "+5% Instant Event Bee Conversion",
+      "stack_reward": "1\u00a0Oil",
+      "where_from": "Found by Photon Bee when gathering while very happy (Extremely Rare)\nSticker Sprout (Unbelievably Rare)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Drooping Stubborn Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d5/Hivesticker_drooping_stubborn_bee.png",
+      "description": "\"It was forced to go where it didn't want to go.\"",
+      "stack_boost": "+1% Ability Token Lifespan",
+      "stack_reward": "1\u00a0Oil",
+      "where_from": "Found by Stubborn Bee when gathering while upset (Extremely Rare)\nFeeding a Neonberry to a Stubborn Bee (1 in 1,000 chance)"
+    },
+    "Wobbly Looker Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/66/Hivesticker_wobbly_looker_bee.png",
+      "description": "\"It looked a little too closely.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "1\u00a0Neonberry",
+      "where_from": "Found by Looker Bee when gathering while very happy (Extremely Rare)\nFeeding a Neonberry to a Looker Bee (1 in 1,000 chance)"
+    },
+    "Blob Bumble Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/Hivesticker_blob_bumble_bee.png",
+      "description": "\"This fellow is getting a little too mellow.\"",
+      "stack_boost": "+5% Blue Bomb Pollen",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Found by Mutated Bumble Bees in the Sunflower Field (Very Rare)\nFeeding a Neonberry to a Bumble Bee (1 in 1,000 chance)\nSticker Printer (Silver Egg, Gifted Silver Egg)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Round Rascal Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/48/Hivesticker_round_rascal_bee.png",
+      "description": "\"Built for rolling in laughter.\"",
+      "stack_boost": "+5% Red Bomb Pollen",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Found by Mutated Rascal Bees in the Sunflower Field (Very Rare)\nFeeding a Neonberry to a Rascal Bee (1 in 1,000 chance)\nSticker Printer (Silver Egg, Gifted Silver Egg)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Round Basic Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/39/Hivesticker_round_basic_bee.png",
+      "description": "\"An unnaturally rotund sight.\"",
+      "stack_boost": "x3 Common Bee Pollen",
+      "stack_reward": "1\u00a0Basic Egg",
+      "where_from": "Found by Mutated Basic Bee in the Pumpkin Patch (Unfathomably Rare)\nFeeding a Neonberry to a Basic Bee (Odds increase with level from 1 in 100,000 to 1 in 10,000)\nSticker Planter (Unfathomably Rare)\nSticker Printer (Basic)"
+    },
+    "Diamond Diamond Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/46/Hivesticker_diamond_diamond_bee.png",
+      "description": "\"It took its name too literally.\"",
+      "stack_boost": "+5% Mutated Bee Convert Rate",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Found by Gifted Diamond Bee on the Mountain Top Field (Unbelievably Rare)\nFeeding a Neonberry to a Diamond Bee (1 in 2,500 chance)\nSticker Planter (Unbelievably Rare)\nSticker Printer (Gifted Diamond Egg)"
+    },
+    "4-Pronged Vector Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4c/Hivesticker_4-pronged_vector_bee.png",
+      "description": "\"When the Mythic Egg gets the math wrong.\"",
+      "stack_boost": "+1% Mark Ability Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nFeeding a Neonberry to a Vector Bee (1 in 2,500 chance)\nSticker Printer (Mythic Egg, Gifted Mythic Egg)"
+    },
+    "Shocked Hive Slot": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/35/Hivesticker_shocked_hive_slot.png",
+      "description": "\"It's totally real. The bee is lvl 1.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "50\u00a0Pineapples",
+      "where_from": "Found by Shocked Bee in the Mushroom Field (Very Rare)\nFeeding a Neonberry to a Shocked Bee (1 in 1,000 chance)\nSticker Planter (Extremely Rare)"
+    },
+    "Bear Bee Offer": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/97/Hivesticker_bear_bee_offer.png",
+      "description": "\"Only available for a limited time! (your lifespan).\"",
+      "stack_boost": "+2% Event Bee Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Found by Gifted Bear Bee in the Pineapple Patch (Extremely Rare)\nFeeding a Star Treat to an already Gifted Bear Bee (1 in 3 chance)\nSticker Planter (Unbelievably Rare)\nSticker Sprout (Unbelievably Rare)"
+    },
+    "Tabby Scratch": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/37/Hivesticker_tabby_scratch.png",
+      "description": "\"A demonstration of feline ferocity.\"",
+      "stack_boost": "+10% Scratch Pollen",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Collecting Tabby Love after max stacks while a Stinger is active (Extremely Rare). The chance increases with Tabby Bee's level (From 1 in 10,000 to 1 in 100)."
+    },
+    "Tabby From Behind": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/64/Hivesticker_tabby_from_behind.png",
+      "description": "\"The first thing you see when you wake up.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Feeding a Moon Charm to a Tabby Bee at max Tabby Love. Odds increase with Tabby Bee's level (from 1 in 100,000 to 1 in 10,000).\nSticker Printed (Gold Egg, Gifted Gold Egg)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Fuzz Bomb": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/72/Hivesticker_fuzz_bomb.png",
+      "description": "\"They look sharp and spikey, but it's just an illusion.\"",
+      "stack_boost": "+5% Buzz Bomb Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Found by Fuzzy Bee in the Bamboo Field (Extremely Rare)\nPopping Fuzz bomb on the Bamboo Field (1 in 10,000 chance)\nSticker Printer (Mythic Egg)"
+    },
+    "Precise Eye": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9b/Hivesticker_precise_eye.png",
+      "description": "\"An extremely judgemental glare.\"",
+      "stack_boost": "+1% Super Crit Power",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Spawned after activating all 3 Target Practice targets on the Clover Field (1 in 3,333 chance)\nSticker Printer (Mythic Egg)"
+    },
+    "Chef Hat Polar Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/69/Hivesticker_chef_hat_polar_bear.png",
+      "description": "\"The hat, a Toque, dates back to the 16th century.\"",
+      "stack_boost": "+5% Instant Colorless Bee Conversion",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Reward from Polar Bear Quests (1 in 100 chance)"
+    },
+    "Honey Bee Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/db/Hivesticker_honey_bee_bear.png",
+      "description": "\"Its looks are as large as its appetite.\"",
+      "stack_boost": "+2% Honey From Tokens",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Found by Honey Bee in the Mountain Top Field (Extremely Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Gold Egg, Gifted Gold Egg)"
+    },
+    "Bomber Bee Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a1/Hivesticker_bomber_bee_bear.png",
+      "description": "\"The Hero Bakudan Kuma.\"",
+      "stack_boost": "+5% Buzz Bomb Pollen",
+      "stack_reward": "1\u00a0Loaded Dice",
+      "where_from": "Found by Bomber Bee in the Mountain Top Field (Extremely Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Silver Egg)"
+    },
+    "Uplooking Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/08/Hivesticker_uplooking_bear.png",
+      "description": "\"Rolling its eyes? Or stuck in the clouds?\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Very Rare)\nSticker Sprout (Very Rare)"
+    },
+    "Sitting Green Shirt Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a2/Hivesticker_sitting_green_shirt_bear.png",
+      "description": "\"Nothing interesting about this bear, apart from its shirt.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Found by Bubble Bee in the Clover Field (Uncommon)\nTacky Planter in the Clover field (Very Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Shy Brown Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f6/Hivesticker_shy_brown_bear.png",
+      "description": "\"He doesn't do well in crowds.\"",
+      "stack_boost": "+0.25% Bee Ability Pollen",
+      "stack_reward": "5\u00a0Royal Jellies",
+      "where_from": "Completing 123 Brown Bear Quests\nSticker Printer (Gold Egg)"
+    },
+    "Sitting Mother Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/db/Hivesticker_sitting_mother_bear.png",
+      "description": "\"She needs a rest from all that parenting.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in the Sunflower Field (Extremely Rare)\nHydroponic Planter in the Sunflower Field (Extremely Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Squashed Head Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/70/Hivesticker_squashed_head_bear.png",
+      "description": "\"It got hit by a Mythic Meteor. It'll never be the same.\"",
+      "stack_boost": "+1% Super Crit Power",
+      "stack_reward": "25\u00a0Bitterberries",
+      "where_from": "Mythic Meteors (Extremely Rare)\nSticker-Seeker Quest Reward (Extremely Rare)\nSticker Planter (Extremely Rare)\nUsing the Sticker-Seeker in any field (Nearly Impossible)"
+    },
+    "Stretched Head Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d3/Hivesticker_stretched_head_bear.png",
+      "description": "\"Its head was nearly blown off by a Windy Bee. It'll never be the same.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "25\u00a0Bitterberries",
+      "where_from": "Dropped by Wild Windy Bee (Extremely Rare)\nSticker-Seeker Quest Reward (Extremely rare)\nSticker Planter (Extremely Rare)\nUsing the Sticker-Seeker in any field (Nearly Impossible)"
+    },
+    "Panicked Science Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8b/Hivesticker_panicked_science_bear.png",
+      "description": "\"There was a miscalculation.\"",
+      "stack_boost": "+5% Mutated Bee Convert Rate",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Found by Radioactive Bees in the Pineapple Patch\nUsing a Micro-Converter in the Hive Hub (1 in 500 chance)\nSticker Sprout (Extremely Rare)"
+    },
+    "Dapper From Above": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9b/Hivesticker_dapper_from_above.png",
+      "description": "\"What most others see when talking to him.\"",
+      "stack_boost": "+0.5% Pollen",
+      "stack_reward": "1\u00a0Ticket Planter",
+      "where_from": "Tacky Planter chain involving 5 different fields...\nSticker-Seeker Quest Reward"
+    },
+    "Sideways Spirit Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/29/Hivesticker_sideways_spirit_bear.png",
+      "description": "\"She's just sleeping, I promise.\"",
+      "stack_boost": "+10% Instant Tool Conversion",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Extreme Memory Match (Extremely Rare)\nUsing the Petal Wand in the Hub Field (Unbelievably Rare)\nUsing a Glitter on the Hub Field (1 in 500 chance)"
+    },
+    "Glowering Gummy Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bd/Hivesticker_glowering_gummy_bear.png",
+      "description": "\"He oozes an aura of pure determination for conquest.\"",
+      "stack_boost": "+1% Honey Per Goo",
+      "stack_reward": "1\u00a0Glue",
+      "where_from": "Awarded to the #1 Daily Top Gummy Soldier\nReward for completing Gummy Bear's Beesmas quest"
+    },
+    "Menacing Mantis": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/Hivesticker_menacing_mantis.png",
+      "description": "\"It's praying for your doom.\"",
+      "stack_boost": "+5% Pineapple Patch Pollen",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Dropped by Mantis (Extremely Rare)\nFound by Rage Bee in the Pine Tree Forest (Very Rare)"
+    },
+    "Little Scorpion": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/50/Hivesticker_little_scorpion.png",
+      "description": "\"Sort of looks like a lobster.\"",
+      "stack_boost": "+5% Rose Field Pollen",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Dropped by Scorpion (Extremely Rare)\nFound by Basic Bee in the Rose Field (Very Rare)"
+    },
+    "Left Facing Ant": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c0/Hivesticker_left_facing_ant.png",
+      "description": "\"The bain[sic] of picnics.\"",
+      "stack_boost": "+1 Legendary Bee Attack",
+      "stack_reward": "1\u00a0Ant Pass",
+      "where_from": "Rewarded from Ant Challenge (Very Rare)\nFound by Lion Bee in the Ant Field"
+    },
+    "Walking Stick Nymph": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e3/Hivesticker_walking_stick_nymph.png",
+      "description": "\"It was just born and it's coming for you.\"",
+      "stack_boost": "+1% Bee Attack",
+      "stack_reward": "3\u00a0Stingers",
+      "where_from": "Dropped by Stick Nymphs (Extremely Rare)"
+    },
+    "Forward Facing Spider": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/81/Hivesticker_forward_facing_spider.png",
+      "description": "\"Not enough legs to technically be a spider.\"",
+      "stack_boost": "+10% Spider Field Capacity",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Dropped from Spider (Extremely Rare)\nUsing the Sticker-Seeker in the Spider Field (Extremely Rare)\nFound by Demon Bee when gathering in the Spider Field (Very Rare)"
+    },
+    "Forward Facing Aphid": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c8/Hivesticker_forward_facing_aphid.png",
+      "description": "\"A tiny sap-sipping bug staring you down.\"",
+      "stack_boost": "+1% Bee Attack",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Dropped by Aphids (Rare)"
+    },
+    "Right Facing Stump Snail": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/36/Hivesticker_right_facing_stump_snail.png",
+      "description": "\"It scoots clockwise forever.\"",
+      "stack_boost": "+5% Stump Field Pollen",
+      "stack_reward": "1\u00a0Glue",
+      "where_from": "Dropped by Stump Snail (Rare)"
+    },
+    "Standing Bean Bug": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5e/Hivesticker_standing_bean_bug.png",
+      "description": "\"It's done with jumping.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "5\u00a0Jelly Beans",
+      "where_from": "Bean Bugs (Very Rare)\nSticker-Seeker Quest Reward"
+    },
+    "Small Blue Chick": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Hivesticker_small_blue_chick.png",
+      "description": "\"It hatched, yet it's still an egg.\"",
+      "stack_boost": "+2% Blue Pollen",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Dropped from Mondo Chick (Very Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Tadpole": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8c/Hivesticker_tadpole.png",
+      "description": "\"A strange Tadpole Bee without wings.\"",
+      "stack_boost": "+3% Bubble Pollen",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "1 in a million chance to spawn when a bubble is popped\nFound by Tadpole Bee in the Mushroom Field (Very Rare)"
+    },
+    "Happy Fish": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f8/Hivesticker_happy_fish.png",
+      "description": "\"When you smile at it, it smiles at you.\"",
+      "stack_boost": "+3% Bubble Pollen",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Very Rare)\nSticker Planter (Very Rare)\nSticker Sprout\nSticker Printer (Gold Egg)"
+    },
+    "Coiled Snake": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6e/Hivesticker_coiled_snake.png",
+      "description": "\"Don't thread on this.\"",
+      "stack_boost": "+1 Epic Bee Attack",
+      "stack_reward": "3\u00a0Stingers",
+      "where_from": "Sticker-Seeker Quest Reward (Rare)\nSticker Planter (Very Rare)\nSticker Sprout (Uncommon)"
+    },
+    "Standing Caterpillar": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/76/Hivesticker_standing_caterpillar.png",
+      "description": "\"Wiggling it's way up in life.\"",
+      "stack_boost": "+10% Rare Bee Pollen",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Using Super-Scooper in the Pineapple Patch (Uncommon)\nSticker Planter on the Pineapple Patch\nHidden Sticker"
+    },
+    "Round Green Critter": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a8/Hivesticker_round_green_critter.png",
+      "description": "\"A little creature that lives on Sprouts.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Sprouts in the Clover Field (Very Rare)\nUsing the Sticker-Seeker in the Clover Field (Very Rare)"
+    },
+    "Flying Magenta Critter": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Hivesticker_flying_magenta_critter.png",
+      "description": "\"A little creature that lives on Sprouts.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Sprouts in the Dandelion Field (Very Rare)\nUsing the Sticker-Seeker in the Dandelion Field (Very Rare)"
+    },
+    "Blue Triangle Critter": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/27/Hivesticker_blue_triangle_critter.png",
+      "description": "\"A little creature that lives on Sprouts.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Sprouts in the Blue Flower Field (Very Rare)\nUsing the Sticker-Seeker in the Blue Flower Field"
+    },
+    "Purple Pointed Critter": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b7/Hivesticker_purple_pointed_critter.png",
+      "description": "\"A little creature that lives on Sprouts.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Sprouts in the Cactus Field (Very Rare)\nUsing the Sticker-Seeker in the Cactus Field"
+    },
+    "Orange Leg Critter": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3c/Hivesticker_orange_leg_critter.png",
+      "description": "\"A little creature that lives on Sprouts.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Sprouts in the Pumpkin Patch (Very Rare)\nUsing the Sticker-Seeker in the Pumpkin Patch"
+    },
+    "Green Plus Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0e/Hivesticker_green_plus_sign.png",
+      "description": "\"May indicate addition or a pharmacy.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nSticker-Seeker Quest Reward\nSticker Planter\nHidden Sticker\nSticker Sprout\nSticker Printer (Basic Egg)"
+    },
+    "Green Check Mark": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f2/Hivesticker_green_check_mark.png",
+      "description": "\"A standard seal of approval.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nSticker-Seeker Quest Reward\nSticker Planter\nHidden Sticker\nSticker Sprout\nSticker Printer (Basic Egg)"
+    },
+    "Red X": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d6/Hivesticker_red_x.png",
+      "description": "\"Demonstrates disdain or a desire for removal.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Using the Sticker-Seeker on any field (Uncommon)\nSticker Planter (Rare)\nHidden Sticker (Uncommon)\nSticker Printer (Basic Egg)"
+    },
+    "Alert Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ef/Hivesticker_alert_icon.png",
+      "description": "\"Let's[sic] you know something's up.\"",
+      "stack_boost": "+5% Red Bomb Pollen",
+      "stack_reward": "3\u00a0Micro-Converters",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nSticker Planter (Extremely Rare)\nSticker Sprout (Very Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Yellow Right Arrow": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/db/Hivesticker_yellow_right_arrow.png",
+      "description": "\"A directional indicator.\"",
+      "stack_boost": "+5% Instant Bee Gather Conversion",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward\nUsing the Sticker-Seeker in any field"
+    },
+    "Yellow Left Arrow": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9b/Hivesticker_yellow_left_arrow.png",
+      "description": "\"A directional indicator.\"",
+      "stack_boost": "+5% Instant Bee Gather Conversion",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward\nUsing the Sticker-Seeker in any field"
+    },
+    "Simple Sun": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fc/Hivesticker_simple_sun.png",
+      "description": "\"It sustains almost all life on Earth.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nHidden Sticker\nSticker Planter\nSticker Printer (Basic Egg, Gold Egg)"
+    },
+    "Pink Cupcake": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f7/Hivesticker_pink_cupcake.png",
+      "description": "\"There's strawberry jam inside.\"",
+      "stack_boost": "+0.5% Honey Per Goo",
+      "stack_reward": "50 Strawberry",
+      "where_from": "Found by Gifted Stubborn Bee in the Strawberry Field (Rare)\nUsing the Sticker-Seeker in the Strawberry Field (Extremely Rare)\nCandy Planter in the Strawberry Field (Extremely Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Rubber Duck": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/99/Hivesticker_rubber_duck.png",
+      "description": "\"Squeeks(sic) instead of quacks.\"",
+      "stack_boost": "+10% Rare Bee Pollen",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nHidden Sticker\nSticker Planter\nSticker Printer (Basic Egg)"
+    },
+    "Baseball Swing": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/27/Hivesticker_baseball_swing.png",
+      "description": "\"Hit it out of the park.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "5\u00a0Jelly Beans",
+      "where_from": "Using the Sticker-Seeker on fields in the starter zone (Uncommon)\nSticker Planter\nSticker Sprout (Uncommon)\nSticker Printer (Basic Egg)"
+    },
+    "Yellow Coffee Mug": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f4/Hivesticker_yellow_coffee_mug.png",
+      "description": "\"The best part of waking up.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "1\u00a0Oil",
+      "where_from": "Using the Sticker-Seeker in any field\nHidden Sticker\nSticker Planter\nSticker Printer (Basic Egg)"
+    },
+    "Launching Rocket": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/44/Hivesticker_launching_rocket.png",
+      "description": "\"The sky is not the limit.\"",
+      "stack_boost": "+15,000 Capacity",
+      "stack_reward": "10\u00a0Whirligigs",
+      "where_from": "Found by Gummy Bee in the Clover Field\nSticker Planter\nHidden Sticker (Uncommon)\nSticker Sprout (Uncommon)\nSticker Printer (Basic Egg)"
+    },
+    "Thumbs Up Hand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a3/Hivesticker_thumbs_up_hand.png",
+      "description": "\"Good job!\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward\nFound by Gifted Cool Bee in the Stump Field (Rare)\nSticker Sprout (Very Rare)"
+    },
+    "Peace Sign Hand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/83/Hivesticker_peace_sign_hand.png",
+      "description": "\"Could also mean Victory.\"",
+      "stack_boost": "+10% Convert Rare",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward\nFound by Gifted Cool Bee in the Pepper Patch (Rare)\nSticker Sprout (Very Rare)"
+    },
+    "Traffic Light": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1d/Hivesticker_traffic_light.png",
+      "description": "\"It's sending mixed messages.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "3\u00a0Neonberries",
+      "where_from": "Found by Shocked Bee while gathering when very happy\nSticker Sprout (Uncommon)"
+    },
+    "Window": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b6/Hivesticker_window.png",
+      "description": "\"Turn your hive into a home.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Sticker Planter (Uncommon)\nSticker Printer (Basic Egg)\nSticker Sprout (Rare)"
+    },
+    "Simple Skyscraper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/32/Hivesticker_simple_skyscraper.png",
+      "description": "\"High density living.\"",
+      "stack_boost": "+1% Honey At Hive",
+      "stack_reward": "3\u00a0Micro-Converters",
+      "where_from": "Using the Sticker-Seeker on the Mountain Top Field (Rare)\nSticker Planter (Uncommon)\nSticker Printer (Basic Egg)\nSticker Sprout (Rare)"
+    },
+    "Simple Mountain": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4b/Hivesticker_simple_mountain.png",
+      "description": "\"It simply dominates the landscape.\"",
+      "stack_boost": "+10% Mountain Top Field Pollen",
+      "stack_reward": "10\u00a0Whirligigs",
+      "where_from": "Found by Basic Bee in the Mountain Top Field (Rare)\nPuffshrooms on the Mountain Top Field (Rare)\nSticker Planter on the Mountain Top Field (Rare)\nUsing the Sticker-Seeker on the Mountain Top Field (Rare)"
+    },
+    "Pale Heart": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d3/Hivesticker_pale_heart.png",
+      "description": "\"A subtle hint of love.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "50\u00a0Strawberries",
+      "where_from": "Found by Gifted Baby Bee when gathering while very happy (Very Rare)\nFound by Puppy Bee when gathering while very happy (Uncommon)\nPetal Planter in the Strawberry Field (Very Rare)"
+    },
+    "Colorful Buttons": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e8/Hivesticker_colorful_buttons.png",
+      "description": "\"Resembles a famous gamepad layout.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "5\u00a0Jelly Beans",
+      "where_from": "Sticker Planter\nTacky Planter (Rare)\nHidden Sticker (Uncommon)\nSticker Printer (Basic Egg)"
+    },
+    "Giraffe": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b7/Hivesticker_giraffe.png",
+      "description": "\"It's neck is long so that it can see over horses standing in front of it.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in the 15 Bee Zone\nHidden Sticker (Uncommon)\nSticker Planter (Uncommon)\nSticker Printer (Basic Egg, Golden Egg)\nSticker Sprout"
+    },
+    "Silly Tongue": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/de/Hivesticker_silly_tongue.png",
+      "description": "\"An irreverent gesture.\"",
+      "stack_boost": "+2% Honey From Tokens",
+      "stack_reward": "25\u00a0Gumdrops",
+      "where_from": "Found by Rascal Bee in the Pineapple Patch (Uncommon)\nCandy Planter in the Pineapple Patch (Very Rare)"
+    },
+    "White Flag": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/99/Hivesticker_white_flag.png",
+      "description": "\"Let the world know you've given up.\"",
+      "stack_boost": "+2% White Pollen",
+      "stack_reward": "1\u00a0Oil",
+      "where_from": "Using the Rake in the Spider Field (Rare)\nSticker Planter on the Spider Field (Rare)\nHidden Sticker"
+    },
+    "Pyramid": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a9/Hivesticker_pyramid.png",
+      "description": "\"This tomb withstands the test of time.\"",
+      "stack_boost": "+5% Cactus Field Pollen",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Found by Lion Bee in the Cactus Field (Rare)\nHidden Sticker (Very Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Tiny House": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1e/Hivesticker_tiny_house.png",
+      "description": "\"Demands a minimalist lifestyle.\"",
+      "stack_boost": "+10% Convert Rate At Hive",
+      "stack_reward": "50\u00a0Sunflower Seeds",
+      "where_from": "Using the Sticker-Seeker in the starter zone\nSticker Sprout"
+    },
+    "TNT": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7a/Hivesticker_tnt.png",
+      "description": "\"Trinitrotoluene.\"",
+      "stack_boost": "+2% Bomb Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Found by Demo Bee when gathering while very happy (Uncommon)\nUsing any Cannon (1 in 25,000 chance)"
+    },
+    "Wishbone": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/32/Hivesticker_wishbone.png",
+      "description": "\"Snap it for a 50% chance at good luck.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "5\u00a0Field Dice",
+      "where_from": "Using the Scythe in the Cactus Field (Very Rare)\nHidden Sticker (Uncommon)\nSticker Planter (Uncommon)\nSticker Printer (Basic Egg)"
+    },
+    "Yellow Umbrella": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/2d/Hivesticker_yellow_umbrella.png",
+      "description": "\"Make your own sun on a rainy day.\"",
+      "stack_boost": "+10% Instant Rare Bee Conversion",
+      "stack_reward": "1\u00a0Cloud Vial",
+      "where_from": "Sticker-Seeker Quest Reward\nSticker Sprout\nSticker Planter"
+    },
+    "Red Palm Hand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/91/Hivesticker_red_palm_hand.png",
+      "description": "\"This means it's time to stop.\"",
+      "stack_boost": "+1% Red Pollen",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Found by Rare Bee on the Stump Field (Uncommon)\nUsing the Sticker-Seeker in any field (Extremely Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Basic Egg, Gifted Gold Egg)"
+    },
+    "Yellow Sticky Hand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7a/Hivesticker_yellow_sticky_hand.png",
+      "description": "\"Lets you grab things from afar maybe a couple times.\"",
+      "stack_boost": "+0.5 Honey Per Goo",
+      "stack_reward": "1 Glue",
+      "where_from": "Found by Gummy Bee in the Sunflower Field (Very Rare)\nUsing Glue in the Hive Hub (1 in 100 chance)\nSticker Sprout (Extremely Rare)\nUsing the Sticker-Seeker in any field (Unbelievably Rare)\nSticker Printer (Basic Egg, Gold Egg)"
+    },
+    "Yellow Walking Wiggly Person": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/65/Hivesticker_yellow_walking_wiggly_person.png",
+      "description": "\"It struts around without a care in the world.\"",
+      "stack_boost": "+5% Movement Collection Pollen",
+      "stack_reward": "25\u00a0Gumdrops",
+      "where_from": "Achievement: Walk on a specific flower in the Starter Zone, 5 Bee Zone, or 10 Bee Zone with the Basic Boots (different flower for each player)"
+    },
+    "Green SELL": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/63/Hivesticker_green_sell.png",
+      "description": "\"Perfect for setting up your own sticker shop.\"",
+      "stack_boost": "+10% Convert Rate At Hive",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in the starter zone or Hub Field (Rare)\nSticker Planter (Very Rare)\nSticker Printer (Basic Egg)"
+    },
+    "Yellow Hi": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f8/Hivesticker_yellow_hi.png",
+      "description": "\"English greeting.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Using the Sticker-Seeker on any field (Uncommon)\nHidden Sticker (Rare)\nSticker Planter (Rare)\nSticker Printer (Basic Egg)"
+    },
+    "AFK": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f0/Hivesticker_afk.png",
+      "description": "\"Away From Keyboard.\"",
+      "stack_boost": "+10% Convert Rate At Hive",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Awarded after every 24 hours spent in the Hive Hub\nSticker Sprout (Extremely Rare)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Auryn": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/79/Hivesticker_auryn.png",
+      "description": "\"A weary and neverending cycle, automated.\"",
+      "stack_boost": "+3% Capacity",
+      "stack_reward": "1\u00a0Swirled Wax",
+      "where_from": "Achievement: Remain in game for 7 days straight (15 minute grace period between sessions)\nSticker-Seeker Quest Reward (Unbelievably Rare)\nSticker Planter (Unfathomably Rare)"
+    },
+    "Pink Chair": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/97/Hivesticker_pink_chair.png",
+      "description": "\"Vibrant and functional.\"",
+      "stack_boost": "+0.25% Bee Ability Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nFound by Shy Bee when gathering while very happy (Extremely Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Basic Egg, Silver Egg)"
+    },
+    "Doodle S": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f9/Hivesticker_doodle_s.png",
+      "description": "\"A really neat geometric shape that only cool people can draw.\"",
+      "stack_boost": "+10,000 Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward (Uncommon)\nUsing the Sticker-Seeker on the Spider Field (Rare)\nHidden Sticker (Uncommon)"
+    },
+    "Triple Exclamation": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cb/Hivesticker_triple_exclamation.png",
+      "description": "\"When one just doesn't get the point across.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "1\u00a0Loaded Dice",
+      "where_from": "Rolling the same field 3 times in a row with Field Dice\nSticker Planter (Unbelievably Rare)"
+    },
+    "Eighth Note": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/87/Hivesticker_eighth_note.png",
+      "description": "\"Also known as a quaver.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Found by Music Bee when gathering while very happy (Very Rare)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Eviction": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e3/Hivesticker_eviction.png",
+      "description": "\"Given to bees when their time is up.\"",
+      "stack_boost": "+20,000 Capacity",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Discarding a Sticker (1 in 5,000 Chance)\nDiscarding a Beequip (1 in 2,500 Chance)"
+    },
+    "Fork And Knife": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1a/Hivesticker_fork_and_knife.png",
+      "description": "\"The dynamic duo of dining.\"",
+      "stack_boost": "+2% White Field Capacity",
+      "stack_reward": "500\u00a0Treats",
+      "where_from": "Rewarded from Polar Bear Quests (1 in 500 Chance)\nSticker Printer (Silver Egg)"
+    },
+    "Shining Halo": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6d/Hivesticker_shining_halo.png",
+      "description": "\"Bestowed upon the divine.\"",
+      "stack_boost": "+0.5% Pollen",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nSticker Planter (Extremely Rare)\nSticker Sprout (Extremely Rare)"
+    },
+    "Rhubarb": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/02/Hivesticker_rhubarb.png",
+      "description": "\"Good for pies and cobblers.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "50\u00a0Pineapples",
+      "where_from": "Using the Petal Wand in Pineapple Patch (Rare)\nGathering Leaves in the Pineapple Patch (Extremely Rare)\nSticker Printer (Basic egg, Gold Egg)"
+    },
+    "Sprout": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/dc/Hivesticker_sprout.png",
+      "description": "\"Not all sprouts are magical giants.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Sprout (Very Rare)"
+    },
+    "Palm Tree": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/85/Hivesticker_palm_tree.png",
+      "description": "\"The fronds can weight [sic] over 100 pounds.\"",
+      "stack_boost": "+10% Coconut Field Pollen",
+      "stack_reward": "10\u00a0Coconuts",
+      "where_from": "Using the Sticker-Seeker in the Coconut Field (Very Rare)\nPlanters in the Coconut Field (Very Rare)"
+    },
+    "Jack-O-Lantern": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/26/Hivesticker_jack-o-lantern.png",
+      "description": "\"A pumpkin carved for a rarely mentioned Honeyday.\"",
+      "stack_boost": "+10% Pumpkin Patch Capacity",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Found by Rascal Bee in the Pumpkin Patch (Extremely Rare)\nUsing the Sticker-Seeker in the Pumpkin Patch (Very Rare)\nHeat-Treated Planter in the Pumpkin Patch (Rare)"
+    },
+    "Lightning": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4f/Hivesticker_lightning.png",
+      "description": "\"A bolt from the heavens.\"",
+      "stack_boost": "+1% Tool Swing Speed",
+      "stack_reward": "3\u00a0Micro-Converters",
+      "where_from": "Sticker-Seeker Quest Reward\nUsing the Spark Staff in any field (Rare)\nSticker Planter (Very Rare)"
+    },
+    "Simple Cloud": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3e/Hivesticker_simple_cloud.png",
+      "description": "\"Doing its best to lower the UV Index.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "1\u00a0Cloud Vial",
+      "where_from": "Sticker-Seeker Quest Reward\nDropped by Wild Windy Bee\nSticker Printer (Basic Egg)"
+    },
+    "Grey Raining Cloud": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c3/Hivesticker_grey_raining_cloud.png",
+      "description": "\"A storm's a-brewing.\"",
+      "stack_boost": "+2% Blue Pollen",
+      "stack_reward": "3\u00a0Cloud Vials",
+      "where_from": "Using a Cloud Vial on the Clover Field (1 in 250 Chance)\nDropped by Wild Windy Bee (Very Rare)"
+    },
+    "Tornado": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/59/Hivesticker_tornado.png",
+      "description": "\"A destructive force of nature.\"",
+      "stack_boost": "+5% Tornado Pollen",
+      "stack_reward": "3\u00a0Cloud Vials",
+      "where_from": "Dropped by Wild Windy Bee (Extremely Rare)"
+    },
+    "Small Flame": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a1/Hivesticker_small_flame.png",
+      "description": "\"Heat up your hive.\"",
+      "stack_boost": "+3% Flame Pollen",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Found by Fire Bee when gathering while upset (Uncommon)\nUsing the Scythe in the Blue Flower Field (Very Rare)"
+    },
+    "Dark Flame": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/86/Hivesticker_dark_flame.png",
+      "description": "\"Someone's burning some cream of tartar.\"",
+      "stack_boost": "+3% Flame Pollen",
+      "stack_reward": "5\u00a0Stingers",
+      "where_from": "Found by Demon Bee when gathering while upset (Extremely Rare)\nHeat-Treated Planter in the Pine Tree Forest (Rare)"
+    },
+    "Small Shield": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/71/Hivesticker_small_shield.png",
+      "description": "\"Could deflect a pebble or two.\"",
+      "stack_boost": "+0.5% Dodge Chance",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Dropped by Armored Aphid (Extremely Rare)\nReward from Robo Bear Challenge (Very Rare)"
+    },
+    "Robot Head": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4b/Hivesticker_robot_head.png",
+      "description": "\"Beeps and boops.\"",
+      "stack_boost": "+1% Duped Ability Pollen",
+      "stack_reward": "1\u00a0Robo Pass",
+      "where_from": "Reward from Robo Bear Challenge (Extremely Rare)\nUsing a Micro-Converter in the Hive Hub (1 in 2500 chance)\nSticker Sprout (Extremely Rare)"
+    },
+    "Cyan Hilted Sword": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/22/Hivesticker_cyan_hilted_sword.png",
+      "description": "\"Defend your hive in style.\"",
+      "stack_boost": "+2% Bee Attack",
+      "stack_reward": "10\u00a0Stingers",
+      "where_from": "Awarded to top 25 Daily Fastest Coconut Crab Slayers\nDropped by Coconut Crab (Unbelievably Rare)"
+    },
+    "Cool Backpack": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e4/Hivesticker_cool_backpack.png",
+      "description": "\"Worn by self-sufficient folk.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Mythic Meteors (Extremely Rare)\nBlue Clay Planter in the Mountain Top Field (Extremely Rare)"
+    },
+    "Standing Beekeeper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4a/Hivesticker_standing_beekeeper.png",
+      "description": "\"It's just standing there when it should be making honey.\"",
+      "stack_boost": "+2% White Pollen",
+      "stack_reward": "1\u00a0Oil",
+      "where_from": "Achievement. Equip certain gear from Top Bear's Shop, then wait a while\nSticker Planter (Unbelievably Rare)"
+    },
+    "Red Wailing Cry": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/90/Hivesticker_red_wailing_cry.png",
+      "description": "\"Pure agony expressed.\"",
+      "stack_boost": "+2% Instant Red Bee Conversion",
+      "stack_reward": "3\u00a0Stingers",
+      "where_from": "Achievement: Use  100,000\u00a0Royal Jellies in a row without getting a Mythic Bee\nDropped by Rage Aphid (Extremely Rare)"
+    },
+    "Hourglass": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/64/Hivesticker_hourglass.png",
+      "description": "\"A somewhat reliable timekeeping method.\"",
+      "stack_boost": "+20,000 Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Using the Wealth Clock a (1 in 250 chance)\nThe Planter Of Plenty in the Clover Field (Very Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Atom Symbol": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a0/Hivesticker_atom_symbol.png",
+      "description": "\"Electrons orbiting a nucleus.\"",
+      "stack_boost": "+5% Instant Bomb Conversion",
+      "stack_reward": "5\u00a0Neonberries",
+      "where_from": "Using the Pulsar in any field (Extremely Rare)\nFound by Radioactive Bees (Very Rare)\nPesticide Planter (Unbelievably Rare)\nSticker Printer (Gifted Silver Egg)"
+    },
+    "Barcode": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9b/Hivesticker_barcode.png",
+      "description": "\"An omnipresent method of representing data.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Found by Digital Bee when gathering while very happy (Rare)\nUsing the Sticker-Seeker on fields in the 5 Bee Zone (Rare)\nHidden Sticker (Very Rare)\nSticker Printer (Silver Egg)"
+    },
+    "Wall Crack": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/35/Hivesticker_wall_crack.png",
+      "description": "\"There might be something wrong with your foundation.\"",
+      "stack_boost": "+10% Colorless Bee Convert Rate",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nHidden Sticker (Unbelievably Rare)\nSticker Printer (Basic Egg)"
+    },
+    "Green Circle": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3b/Hivesticker_green_circle.png",
+      "description": "\"For novice skiers.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Found by Commander Bee when gathering while very happy (Uncommon)\nSticker Sprout (Uncommon)\nSticker Planter (Rare)\nSticker Printer (Basic Egg, Silver Egg, Gold Egg)\n(Not listed) Hidden sticker"
+    },
+    "Blue Square": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8d/Hivesticker_blue_square.png",
+      "description": "\"For the skiers inbetween.\"",
+      "stack_boost": "+2% Critical Power",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Found by Bumble Bee when gathering while very happy (Rare)\nSticker Planter (Very Rare)\nSticker Printer (Basic, Silver, and Gold Eggs)\n(Not listed) Hidden Sticker"
+    },
+    "Black Diamond": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c9/Hivesticker_black_diamond.png",
+      "description": "\"Not for novice skiers.\"",
+      "stack_boost": "+3% Critical Power",
+      "stack_reward": "1\u00a0Caustic Wax",
+      "where_from": "Dropped by Tunnel Bear (Unbelievably Rare)\nFound by Diamond Bee when gathering while upset (Extremely Rare)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Waxing Crescent Moon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/57/Hivesticker_waxing_crescent_moon.png",
+      "description": "\"Earth's sidekick.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "10\u00a0Moon Charms",
+      "where_from": "Chasing Fireflies"
+    },
+    "Glowing Smile": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ee/Hivesticker_glowing_smile.png",
+      "description": "\"A happy little case of happenstance.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Reward for finishing in the top 100 of the Daily Firefly Chasers Leaderboard\nChasing Fireflies (Extremely Rare)"
+    },
+    "Saturn": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bb/Hivesticker_saturn.png",
+      "description": "\"The sixth planet from our Sun.\"",
+      "stack_boost": "+1% Mark Ability Pollen",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Achievement: Connect 10 Marks at once\nSticker Sprout (Unbelievably Rare)"
+    },
+    "Black Star": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/30/Hivesticker_black_star.png",
+      "description": "\"From a village in Norway.\"",
+      "stack_boost": "+3% Bomb Pollen",
+      "stack_reward": "1\u00a0Black Balloon",
+      "where_from": "Dropped by Tunnel Bear (Unbelievably Rare)\nSticker-Seeker Quest Reward (Extremely Rare)\nUsing the Bronze Star Amulet Generator (1 in 100.000 chance)\nSticker Printer (Gifted Silver Egg)"
+    },
+    "Cyan Star": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/07/Hivesticker_cyan_star.png",
+      "description": "\"Twinkle in teal.\"",
+      "stack_boost": "+3% Instant Gifted Bee Conversion",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Chasing Fireflies (Nearly Impossible)\nUsing the Diamond Star Amulet Generator (1 in 10,000 Chance)\nSticker Printer (Star Egg, Gifted Silver Egg, Gifted Gold Egg, Gifted Diamond Egg)"
+    },
+    "Shining Star": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4d/Hivesticker_shining_star.png",
+      "description": "\"Slowly losing mass.\"",
+      "stack_boost": "+0.5% Gifted Bee Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Found by Gifted Bees when very happy (Nearly Impossible)\nChasing Fireflies (Nearly Impossible)\nUsing the Gold Star Amulet Generator (1 in 100,000 chance)\nSticker Printer (Star Egg, Gifted Silver Egg, Gifted Gold Egg, Gifted Diamond Egg)"
+    },
+    "Grey Diamond Logo": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/22/Hivesticker_grey_diamond_logo.png",
+      "description": "\"Fueling ingenuity. Or something like that.\"",
+      "stack_boost": "+2% Event Bee Pollen",
+      "stack_reward": "3\u00a0Micro-Converters",
+      "where_from": "Sticker-Seeker Quest Reward (Rare)\nSticker Sprout (Extremely Rare)\nSticker Printer (Silver Egg)"
+    },
+    "Orphan Dog": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/91/Hivesticker_orphan_dog.png",
+      "description": "\"This golden retriever needs a home.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Pizza Delivery Man": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fd/Hivesticker_pizza_delivery_man.png",
+      "description": "\"He's hustling in this gig economy.\"",
+      "stack_boost": "+10% Red Bee Convert Rate",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker\nSticker Sprout"
+    },
+    "Interrobang Block": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ee/Hivesticker_interrobang_block.png",
+      "description": "\"Whatever's inside will inspire both excitement and confusion.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Theatrical Intruder": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c4/Hivesticker_theatrical_intruder.png",
+      "description": "\"It makes an unwelcome dramatic entrance.\"",
+      "stack_boost": "+1% Bee Attack",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Desperate Booth": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/69/Hivesticker_desperate_booth.png",
+      "description": "\"Everyone needs a little help sometimes.\"",
+      "stack_boost": "+2% Honey From Tokens",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Built Ship": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e0/Hivesticker_built_ship.png",
+      "description": "\"Perfectly constructed for treasure hunting.\"",
+      "stack_boost": "+2% Blue Field Capacity",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker\nSticker Sprout (Very Rare)"
+    },
+    "Grey Shape Companion": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/07/Hivesticker_grey_shape_companion.png",
+      "description": "\"This peculiar creature subsists purely on a diet of coins.\"",
+      "stack_boost": "+2% Honey From Tokens",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Evil Pig": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ec/Hivesticker_evil_pig.png",
+      "description": "\"An innocuous cartoon gone crazy.\"",
+      "stack_boost": "+1 Epic Bee Attack",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Waving Townsperson": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7c/Hivesticker_waving_townsperson.png",
+      "description": "\"He greets you to the Roblox top rated sort.\"",
+      "stack_boost": "+10% Blue Bee Convert Rate",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker\nSticker Sprout (Rare)"
+    },
+    "Cop And Robber": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cd/Hivesticker_cop_and_robber.png",
+      "description": "\"The criminal modded a smartphone to sideload apps.\"",
+      "stack_boost": "+0.5 Blue Bee Attack",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Sticker-Seeker in any field (Rare)\nHidden Sticker"
+    },
+    "Tough Potato": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8d/Hivesticker_tough_potato.png",
+      "description": "\"It's a one-tuber army.\"",
+      "stack_boost": "+1% Bee Attack",
+      "stack_reward": "3\u00a0Stingers",
+      "where_from": "Sticker-Seeker Quest Reward (Uncommon)\nHidden Sticker (Uncommon)\nSticker Sprout (Rare)"
+    },
+    "Young Elf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/11/Hivesticker_young_elf.png",
+      "description": "\"He'll gain more polygons as he ages.\"",
+      "stack_boost": "+2% Ungifted Bee Pollen",
+      "stack_reward": "5\u00a0Paper Planters",
+      "where_from": "Using the Sticker-Seeker in the Cactus Field (Very Rare)\nSticker Planter on the Cactus Field (Uncommon)\nHidden Sticker"
+    },
+    "Shrugging Heart": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3d/Hivesticker_shrugging_heart.png",
+      "description": "\"It doesn't know what it loves.\"",
+      "stack_boost": "+2% Red Pollen",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Using the Sticker-Seeker in the Rose Field (Very Rare)\nHidden Sticker (Very Rare)"
+    },
+    "Classic Killroy": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8b/Hivesticker_classic_killroy.png",
+      "description": "\"The sneaky sniffing proto-meme.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Hidden Sticker"
+    },
+    "Killroy With Hair": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/da/Hivesticker_killroy_with_hair.png",
+      "description": "\"A variation of the proto-meme.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Hidden Sticker (Very Rare)"
+    },
+    "Taunting Doodle Person": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e2/Hivesticker_taunting_doodle_person.png",
+      "description": "\"The disputed king of groove.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nUsing the Sticker-Seeker in the 15 Bee Zone (Unbelievably Rare)\nHidden Sticker (Unbelievably Rare)\nSticker Sprout (Unbelievably Rare)"
+    },
+    "Prehistoric Hand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c1/Hivesticker_prehistoric_hand.png",
+      "description": "\"The handpront of someone who sadly never got to play ROBLOX.\"",
+      "stack_boost": "+20% Convert Rate",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nUsing the Sticker-Seeker in the 35 Bee Zone (Very Rare)\nSticker Planter in the 35 Bee Zone (Very Rare)\nHidden Sticker (Extremely Rare)\nSticker Printer (Gifted Gold Egg)"
+    },
+    "Prehistoric Boar": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c4/Hivesticker_prehistoric_boar.png",
+      "description": "\"A drawing of a certified non-GMO pig.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nUsing the Sticker-Seeker in the 35 Bee Zone (Very Rare)\nSticker Planter in the 35 Bee Zone (Very Rare)\nHidden Sticker (Extremely Rare)\nSticker Printer (Gifted Gold Egg)"
+    },
+    "Red Doodle Person": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b6/Hivesticker_red_doodle_person.png",
+      "description": "\"Spontaneously shows up in subways.\"",
+      "stack_boost": "+2% Red Field Capacity",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Red Clay Planter (Unbelievably Rare)\nUsing a Red Extract in the Hive Hub (1 in 1,000 chance)\nHidden Sticker (Very Rare)"
+    },
+    "Pearl Girl": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b3/Hivesticker_pearl_girl.png",
+      "description": "\"A study of a painting by a Dutch master of the Baroque period.\"",
+      "stack_boost": "+2% White Field Capacity",
+      "stack_reward": "1\u00a0Swirled Wax",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nSticker Planter (Unbelievably Rare)\nSticker Sprout (Unfathomably Rare)\nSticker Printer (Star Egg)"
+    },
+    "Abstract Color Painting": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c5/Hivesticker_abstract_color_painting.png",
+      "description": "\"The colored rectangles seem to blur together.\"",
+      "stack_boost": "+20,000 Capacity",
+      "stack_reward": "1\u00a0Purple Potion",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nUsing the Sticker-Seeker in the Hub Field (Unbelievably Rare)\nSticker Planter (Unbelievably Rare)\nSticker Sprout (Unfathomably Rare)"
+    },
+    "Prism Painting": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/66/Hivesticker_prism_painting.png",
+      "description": "\"All colors you can see exists in white light.\"",
+      "stack_boost": "+5% Legendary Bee Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nSticker Sprout (Extremely Rare)"
+    },
+    "Banana Painting": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/dd/Hivesticker_banana_painting.png",
+      "description": "\"Painted on a Sunday morning.\"",
+      "stack_boost": "+5% Legendary Bee Pollen",
+      "stack_reward": "1\u00a0Purple Potion",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nSticker Sprout (Extremely Rare)"
+    },
+    "Moai": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f4/Hivesticker_moai.png",
+      "description": "\"One of many famous monolithic islanders.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Found by Exhausted Bee when gathering while very happy (Unbelievably Rare)\nHidden Sticker (Unbelievably Rare)\nSticker Printer (Silver Egg, Gifted Silver Egg)"
+    },
+    "Nessie": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/71/Hivesticker_nessie.png",
+      "description": "\"The lonely beasts from Loch Ness.\"",
+      "stack_boost": "+2% Event Bee Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Hidden Sticker (Unfathomably Rare)\nSticker-Seeker Quest Reward (Unfathomably Rare)"
+    },
+    "Ionic Column Top": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b9/Hivesticker_ionic_column_top.png",
+      "description": "\"Definitely not Doric.\"",
+      "stack_boost": "+20,000 Capacity",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nSticker Planter in the 15 Bee Zone (Unbelievably Rare)"
+    },
+    "Ionic Column Middle": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/dd/Hivesticker_ionic_column_middle.png",
+      "description": "\"Definitely not Doric.\"",
+      "stack_boost": "+20,000 Capacity",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Sticker-Seeker Quest Reward (Rare)\nSticker Planter in the 5 Bee Zone (Extremely Rare)"
+    },
+    "Ionic Column Base": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d8/Hivesticker_ionic_column_base.png",
+      "description": "\"Definitely not Doric.\"",
+      "stack_boost": "+20,000 Capacity",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nSticker Planter in the Starter Zone (Unbelievably Rare)"
+    },
+    "Orange Step Array": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/65/Hivesticker_orange_step_array.png",
+      "description": "\"A structure from another world.\"",
+      "stack_boost": "+5 Convert Amount",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nFound by Hasty Bee when gathering while very happy (Very Rare)\nUsing the Sticker-Seeker in the Sunflower Field or Pumpkin Patch (Extremely Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Orange Green Tri Deco": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5b/Hivesticker_orange_green_tri_deco.png",
+      "description": "\"Snazzy and sharp.\"",
+      "stack_boost": "+5 Convert Amount",
+      "stack_reward": "1\u00a0Enzymes",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nUsing the Sticker-Seeker in the Dandelion Field or Pumpkin Patch (Extremely Rare)\nPuffshrooms on the Pumpkin Patch (Extremely Rare)\nSticker Planter (Extremely Rare)\nSticker Printer (Gold Egg)"
+    },
+    "Orange Swirled Marble": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/2d/Hivesticker_orange_swirled_marble.png",
+      "description": "\"A small glass orb filled with orange-red streaks.\"",
+      "stack_boost": "+3% Flame Pollen",
+      "stack_reward": "3\u00a0Smooth Dice",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nUsing the Sticker-Seeker in any field (Unbelievably Rare)\nUsing the Sticker-Seeker in the Hub Field (Extremely Rare)\nSticker Printer (Silver Egg, Diamond Egg)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Blue And Green Marble": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/30/Hivesticker_blue_and_green_marble.png",
+      "description": "\"A glass orb that kinda resembles the Earth.\"",
+      "stack_boost": "+2% Blue Pollen",
+      "stack_reward": "3\u00a0Smooth Dice",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nUsing the Sticker-Seeker in any field (Unbelievably Rare)\nUsing the Sticker-Seeker in the Hub Field (Extremely Rare)\nSticker Printer (Silver Egg, Diamond Egg)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Yellow Swirled Marble": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b0/Hivesticker_yellow_swirled_marble.png",
+      "description": "\"A small orb with a yellow streak through the middle.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "3\u00a0Smooth Dice",
+      "where_from": "Sticker-Seeker Quest Reward (Very Rare)\nUsing the Sticker-Seeker in any field (Unbelievably Rare)\nUsing the Sticker-Seeker in the Hub Field (Extremely Rare)\nSticker Printer (Silver Egg, Diamond Egg)"
+    },
+    "Diamond Cluster": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0a/Hivesticker_diamond_cluster.png",
+      "description": "\"Bedazzle your hive.\"",
+      "stack_boost": "+15% Convert Rate",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Found by Diamond Bee in the Mountain Top Field (Extremely Rare)\nFound by Gifted Diamond Bee in any field (Unbelievably Rare)\nDropped by Diamond Aphid (Very Rare)\nSticker Printer (Diamond Egg, Gifted Diamond Egg)"
+    },
+    "Diamond Trim": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ae/Hivesticker_diamond_trim.png",
+      "description": "\"For hives overflowing with wealth.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Dropped by Diamond Aphid (Uncommon)\nSticker Printer (Diamond Egg, Gifted Diamond Egg)"
+    },
+    "Cyan Decorative Border": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/85/Hivesticker_cyan_decorative_border.png",
+      "description": "\"Resembles a snazzy M. Works well on trims.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Mega Memory Match (Extremely Rare)\nSticker Planter (Unbelievably Rare)\nSticker Printer (Diamond Egg, Gifted Silver Egg, Gifted Diamond Egg)"
+    },
+    "Left Gold Swirled Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e1/Hivesticker_left_gold_swirl_fleuron.png",
+      "description": "\"A decorative fleurish reserved for the greatest.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Possible reward for finishing in the top 100 of Daily Top Honeymaker Leaderboard\nDropped by Stump Snail (Unfathomably Rare)\nSticker Printer (Gold Egg, Gifted Gold Egg)"
+    },
+    "Right Gold Swirled Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/73/Hivesticker_right_gold_swirl_fleuron.png",
+      "description": "\"A decorative fleurish reserved for the greatest.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Possible reward for finishing in the top 100 of Daily Top Honeymaker Leaderboard\nDropped by Stump Snail (Unfathomably Rare)\nSticker Printer (Gold Egg, Gifted Gold Egg)"
+    },
+    "Left Shining Diamond Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9d/Hivesticker_left_shining_diamond_fleuron.png",
+      "description": "\"A pompous flourish.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Possible reward for finishing in the top 100 of Daily Blue Pollen Leaderboard\nSticker Printer (Diamond Egg, Gifted Diamond Egg)"
+    },
+    "Right Shining Diamond Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/58/Hivesticker_right_shining_diamond_fleuron.png",
+      "description": "\"A pompous flourish.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Possible reward for finishing in the top 100 of Daily Blue Pollen Leaderboard\nSticker Printer (Diamond Egg, Gifted Diamond Egg)"
+    },
+    "Left Mythic Gem Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1c/Hivesticker_left_mythic_gem_fleuron.png",
+      "description": "\"An incredible statement piece.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Possible reward for finishing in the top 100 of Daily Red Pollen Leaderboard\nSticker Printer (Mythic Egg, Gifted Mythic Egg)"
+    },
+    "Right Mythic Gem Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d2/Hivesticker_right_mythic_gem_fleuron.png",
+      "description": "\"An incredible statement piece.\"",
+      "stack_boost": "+0.5% Honey Per Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Possible reward for finishing in the top 100 of Daily Red Pollen Leaderboard\nSticker Printer (Mythic Egg, Gifted Mythic Egg)"
+    },
+    "Purple Fleuron": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e4/Hivesticker_purple_fleuron.png",
+      "description": "\"A vibrant decorative flourish.\"",
+      "stack_boost": "+1% Super Crit Power",
+      "stack_reward": "1\u00a0Purple Potion",
+      "where_from": "Sticker Printer (Mythic Egg, Gifted Mythic Egg)\nSticker Planter (Unbelievably Rare)"
+    },
+    "Royal Symbol": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/48/Hivesticker_royal_symbol.png",
+      "description": "\"For when you can't be conveyed in words.\"",
+      "stack_boost": "+1% Super Crit Power",
+      "stack_reward": "1\u00a0Purple Potion",
+      "where_from": "Mythic Meteors (Unbelievably Rare)\nSticker Printer (Gifted Mythic Egg)"
+    },
+    "Royal Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/63/Hivesticker_royal_bear.png",
+      "description": "\"From before democracy revolutionize the mountain.\"",
+      "stack_boost": "+1% Super Crit Power",
+      "stack_reward": "1\u00a0Purple Potion",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Rare)\nSticker Printer (Mythic Egg, Gifted Mythic Egg)"
+    },
+    "Mythic M": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/35/Hivesticker_mythic_m.png",
+      "description": "\"The M stands for Most useful bee.\"",
+      "stack_boost": "+1% Mythic Bee Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Reward for finishing in the top 25 of the Daily Mythic Bee Pollen Leaderboard\nSticker Printer (Mythic Egg, Gifted Mythic Egg)"
+    },
+    "Satisfying Nectar Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8a/Hivesticker_satisfying_nectar_icon.png",
+      "description": "\"Sweet stuff that hits the spot.\"",
+      "stack_boost": "+2% White Pollen",
+      "stack_reward": "1\u00a0Satisfying Vial",
+      "where_from": "Condensing Satisfying Nectar with the Nectar Condenser (1 in 25 chance)"
+    },
+    "Refreshing Nectar Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/52/Hivesticker_refreshing_nectar_icon.png",
+      "description": "\"The cure to feeling parched.\"",
+      "stack_boost": "+1% Unique Instant Conversion",
+      "stack_reward": "1\u00a0Refreshing Vial",
+      "where_from": "Condensing Refreshing Nectar with the Nectar Condenser (1 in 25 chance)"
+    },
+    "Motivating Nectar Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c3/Hivesticker_motivating_nectar_icon.png",
+      "description": "\"Psychoactive syrup that inspires work.\"",
+      "stack_boost": "+0.25% Bee Ability Rate",
+      "stack_reward": "1\u00a0Motivating Vial",
+      "where_from": "Condensing Motivating Nectar with the Nectar Condenser (1 in 25 chance)"
+    },
+    "Invigorating Nectar Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f8/Hivesticker_invigorating_nectar_icon.png",
+      "description": "\"Spicy syrup that gets your blood flowing.\"",
+      "stack_boost": "+2% Red Pollen",
+      "stack_reward": "1\u00a0Invigorating Vial",
+      "where_from": "Condensing Invigorating Nectar with the Nectar Condenser (1 in 25 chance)"
+    },
+    "Comforting Nectar Icon": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e5/Hivesticker_comforting_nectar_icon.png",
+      "description": "\"The syrup that settles you down.\"",
+      "stack_boost": "+2% Blue Pollen",
+      "stack_reward": "1\u00a0Comforting Vial",
+      "where_from": "Condensing Comforting Nectar with the Nectar Condenser (1 in 25 chance)"
+    },
+    "Small Tickseed": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/67/Hivesticker_small_tickseed.png",
+      "description": "\"Much prettier than than [sic] the name suggests.\"",
+      "stack_boost": "+5% Sunflower Field Pollen",
+      "stack_reward": "10\u00a0Honeysuckles",
+      "where_from": "Using Clippers or Scissors in the Sunflower Field or Pumpkin Patch (Rare)\nFound by Bucko Bee in the Sunflower Field or Pumpkin Patch (Uncommon)\nPlanters in the Sunflower Field (Very Rare)"
+    },
+    "Small White Daisy": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5f/Hivesticker_small_white_daisy.png",
+      "description": "\"A simple perennial.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "10\u00a0Honeysuckles",
+      "where_from": "Using Clippers or Scissors in the Spider Field or Pineapple Patch (Rare)\nFound by Hasty Bee in the Spider Field or Pineapple Patch (Uncommon)\nPlanters in the Spider Field (Very Rare)"
+    },
+    "Small Pink Tulip": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6f/Hivesticker_small_pink_tulip.png",
+      "description": "\"Their buds can be very valuable.\"",
+      "stack_boost": "+5% Mushroom Field Pollen",
+      "stack_reward": "10\u00a0Honeysuckles",
+      "where_from": "Using Clippers or Scissors in the Mushroom Field or Strawberry Field (Rare)\nFound by Riley Bee in the Mushroom Field or Strawberry Field (Uncommon)\nPlanters in the Strawberry Field (Very Rare)"
+    },
+    "Small Dandelion": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c5/Hivesticker_small_dandelion.png",
+      "description": "\"Scientic [sic] Name Taraxacum.\"",
+      "stack_boost": "+5% Dandelion Field Pollen",
+      "stack_reward": "10\u00a0Honeysuckles",
+      "where_from": "Using Clippers or Scissors in the Dandelion Field or Clover Field (Rare)\nFound by Frosty Bee in the Dandelion Field or Clover Field (Uncommon)\nPlanters in the Dandelion Field (Very Rare)"
+    },
+    "Purple 4-Point Flower": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fa/Hivesticker_purple_4-point_flower.png",
+      "description": "\"A tall and angular indigo blossom.\"",
+      "stack_boost": "+1% Super Crit Power",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Using Clippers or Scissors in the Hub Field (Unbelievably Rare)\nUsing a Purple Potion in the Hive Hub (1 in 250 chance)\nSticker Printer (Mythic Egg)"
+    },
+    "Spore Covered Puffshroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1f/Hivesticker_spore_covered_puffshroom.png",
+      "description": "\"Dapper Bear's favorite fungus.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms"
+    },
+    "White Button Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b5/Hivesticker_white_button_mushroom.png",
+      "description": "\"Commonly sliced onto salads.\"",
+      "stack_boost": "+25% Common Bee Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms in the 5 Bee Zone\nSticker Planter in the 5 Bee Zone (Very Rare)"
+    },
+    "Fly Agaric Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4b/Hivesticker_fly_agaric_mushroom.png",
+      "description": "\"An iconic looking red-capped shroom.\"",
+      "stack_boost": "+10% Rare Bee Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms in the Starter Zone\nSticker Planter in the Starter Zone (Very Rare)"
+    },
+    "Porcini Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6f/Hivesticker_porcini_mushroom.png",
+      "description": "\"Thick, short and stout.\"",
+      "stack_boost": "+5% Epic Bee Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms in the 15 Bee Zone\nSticker Planter in the 15 Bee Zone (Very Rare)"
+    },
+    "Oiler Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e7/Hivesticker_oiler_mushroom.png",
+      "description": "\"Grows on stumps and mosses.\"",
+      "stack_boost": "+5% Epic Bee Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms in the 10 Bee Zone\nSticker Planter in the 10 Bee Zone (Very Rare)"
+    },
+    "Morel Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/10/Hivesticker_morel_mushroom.png",
+      "description": "\"Delicious but may trigger trypophobia.\"",
+      "stack_boost": "+10% Rare Bee Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms in the Mountain Top Field\nSticker Planter in the Mountain Top Field (Extremely Rare)"
+    },
+    "Chanterelle Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c3/Hivesticker_chanterelle_mushroom.png",
+      "description": "\"A trupet-shaped delicacy.\"",
+      "stack_boost": "+5% Epic Bee Pollen",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Puffshrooms in the 35 Bee Zone\nSticker Planter in the 35 Bee Zone (Very Rare)"
+    },
+    "Shiitake Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/49/Hivesticker_shiitake_mushroom.png",
+      "description": "\"A staple vegan umami source.\"",
+      "stack_boost": "+1% Event Bee Pollen",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Puffshrooms in the Starter Zone or 10 Bee Zone (Very Rare)\nSticker Planter in the Starter Zone or 10 Bee Zone (Extremely Rare)"
+    },
+    "Black Truffle Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/93/Hivesticker_black_truffle_mushroom.png",
+      "description": "\"Has a rich, early flavor that overpowers everything.\"",
+      "stack_boost": "+5% Legendary Bee Pollen",
+      "stack_reward": "1\u00a0Hard Wax",
+      "where_from": "Reward for finishing in the top 100 of the Daily Top Damage to A Single Puffshroom Leaderboard\nEpic+ Puffshrooms (Unbelievably Rare"
+    },
+    "Prismatic Mushroom": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/28/Hivesticker_prismatic_mushroom.png",
+      "description": "\"It can show us colors we've never seen before.\"",
+      "stack_boost": "+1% Mythic Bee Pollen",
+      "stack_reward": "1\u00a0Caustic Wax",
+      "where_from": "Awarded after sticking all other mushrooms to the Sticker Stack\nMythic Puffshrooms (Unbelievably Rare)"
+    },
+    "Blowing Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/56/Hivesticker_blowing_leaf.png",
+      "description": "\"The answer my friend.\"",
+      "stack_boost": "+1% White Pollen",
+      "stack_reward": "3\u00a0Cloud Vials",
+      "where_from": "Gathering Leaves in any field (Extremely Rare)\nDropped by Wild Windy Bee (Rare)"
+    },
+    "Cordate Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a9/Hivesticker_cordate_leaf.png",
+      "description": "\"Heart-shaped leaf, nature's love letter.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Sunflower Field or Rose Field\nSticker Planter in the Sunflower Field or Rose Field (Very Rare)"
+    },
+    "Cunate Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/52/Hivesticker_cunate_leaf.png",
+      "description": "\"Leaf like a slender, tapering sunset.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Strawberry Field or Pumpkin Patch\nSticker Planter in the Strawberry Field or Pumpkin Patch (Very Rare)"
+    },
+    "Elliptic Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Hivesticker_elliptic_leaf.png",
+      "description": "\"Ocal elegance in every green whisper.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Blue Flower Field or Pine Tree Forest\nSticker Planter in the Blue Flower Field or Pine Tree Forest (Very Rare)"
+    },
+    "Hastate Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e1/Hivesticker_hastate_leaf.png",
+      "description": "\"Spear-pointed leaf, nature's valiant knight.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Spider Field or Pepper Patch\nSticker Planter in the Spider Field or Pepper Patch (Very Rare)"
+    },
+    "Lanceolate Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/74/Hivesticker_lanceolate_leaf.png",
+      "description": "\"Long, slender like a green lance.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Dandelion Field or Bamboo Field\nSticker Planter in the Dandelion Field or Bamboo Field (Very Rare)"
+    },
+    "Lyrate Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/11/Hivesticker_lyrate_leaf.png",
+      "description": "\"Musical curves in a lyre-shaped leaf.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Clover Field or Mountain Top Field\nSticker Planter in the Clover Field or Mountain Top Field (Very Rare)"
+    },
+    "Oblique Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0a/Hivesticker_oblique_leaf.png",
+      "description": "\"Asymmetry at its finest, uniquely tilted.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Hub Field or Coconut Field\nSticker Planter in the Coconut Field (Very Rare)"
+    },
+    "Rhomboid Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/43/Hivesticker_rhomboid_leaf.png",
+      "description": "\"Diamond-shaped dazzler in yellow hues.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Cactus Field or Stump Field\nSticker Planter in the Cactus Field or Stump Field (Very Rare)"
+    },
+    "Reniform Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Hivesticker_reniform_leaf.png",
+      "description": "\"Kidney-shaped leaf, nature's healthy organ.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Mushroom Field or Stump Forest\nSticker Planter in the Mushroom Field or Stump Forest (Very Rare)"
+    },
+    "Spatulate Leaf": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c2/Hivesticker_spatulate_leaf.png",
+      "description": "\"Spoon-like leaf, nature's kitchen tool.\"",
+      "stack_boost": "+1% Capacity",
+      "stack_reward": "5\u00a0Tickets",
+      "where_from": "Gathering Leaves in the Pineapple Patch or Pine Tree Forest\nSticker Planter in the Pineapple Patch or Pine Tree Forest (Very Rare)"
+    },
+    "Scooper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8c/Hivesticker_scooper.png",
+      "description": "\"A tool from out humble beginnings.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Scooper in any field (Extremely Rare). Higher chances in the Mountain Top Field or Hub Field."
+    },
+    "Rake": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d9/Hivesticker_rake.png",
+      "description": "\"Gently scrapes pollen from flowers without harming their stems.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Rake in any field (Extremely Rare). Higher chances in the Coconut Field or Hub Field."
+    },
+    "Clippers": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/db/Hivesticker_clippers.png",
+      "description": "\"Don't run with these.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Clippers in any field (Extremely Rare). Higher chances in the Pine Tree Forest or Hub Field."
+    },
+    "Magnet": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f6/Hivesticker_magnet.png",
+      "description": "\"Exaggerated Electromagnetism.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Magnet in any field (Extremely Rare). Higher chances in the Pineapple Patch or Hub Field."
+    },
+    "Vacuum": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b6/Hivesticker_vacuum.png",
+      "description": "\"It doesn't suck at sucking.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Vacuum in any field (Extremely Rare). Higher chances in the Rose Field or Hub Field."
+    },
+    "Super-Scooper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ac/Hivesticker_super-scooper.png",
+      "description": "\"The blue and yellow paint job makes it more aerodynamic.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Super-Scooper in any field (Extremely Rare). Higher chances in the Clover Field or Hub Field."
+    },
+    "Pulsar": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/be/Hivesticker_pulsar.png",
+      "description": "\"Might be radioactive.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Neonberries",
+      "where_from": "Using the Pulsar in any field (Extremely Rare). Higher chances in the Spider Field or Hub Field."
+    },
+    "Electro-Magnet": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/ca/Hivesticker_electro-magnet.png",
+      "description": "\"Two magnets in one for twice the pollen.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Electro-Magnet in any field (Extremely Rare). Higher chances in the Stump Field or Hub Field."
+    },
+    "Scissors": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/17/Hivesticker_scissors.png",
+      "description": "\"Snips and snaps.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Scissors in any field (Extremely Rare). Higher chances in the Pumpkin Patch or Hub Field."
+    },
+    "Honey Dipper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b0/Hivesticker_honey_dipper.png",
+      "description": "\"The prototypical Honeymaking tool.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Honey Dipper in any field (Extremely Rare). Higher chances in the Pepper Patch or Hub Field."
+    },
+    "Bubble Wand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/85/Hivesticker_bubble_wand.png",
+      "description": "\"For covering flowers in soapy water.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Using the Bubble Wand in any field (Extremely Rare). Higher chances in the Strawberry Field or Hub Field."
+    },
+    "Scythe": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/2c/Hivesticker_scythe.png",
+      "description": "\"Slices and burns.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Using the Scythe in any field (Extremely Rare). Higher chances in the Bamboo Field or Hub Field."
+    },
+    "Golden Rake": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/02/Hivesticker_golden_rake.png",
+      "description": "\"A superflous piece of yard work equipment.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Tickets",
+      "where_from": "Using the Golden Rake in any field (Extremely Rare). Higher chances in the Cactus Field or Hub Field."
+    },
+    "Spark Staff": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/df/Hivesticker_spark_staff.png",
+      "description": "\"Zap zap zap.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Micro-Converters",
+      "where_from": "Using the Spark Staff in any field (Extremely Rare). Higher chances in the Mountain Top Field or Hub Field."
+    },
+    "Porcelain Dipper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d7/Hivesticker_porcelain_dipper.png",
+      "description": "\"A tool wielded by those still in the so called early-mid game.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "3\u00a0Soft Waxes",
+      "where_from": "Using the Porcelain Dipper in any field (Extremely Rare). Higher chances in the Sunflower Field or Hub Field."
+    },
+    "Petal Wand": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cb/Hivesticker_petal_wand.png",
+      "description": "\"Spirit Bear's sun shade.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "10\u00a0Moon Charms",
+      "where_from": "Using the Petal Wand in any field (Extremely Rare). Higher chances in the Dandelion Field or Hub Field."
+    },
+    "Tide Popper": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d9/Hivesticker_tide_popper.png",
+      "description": "\"Waving it around creates waves.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "1\u00a0Blue Extract",
+      "where_from": "Using the Tide Popper in any field (Unfathomably Rare). Higher chances in the Mushroom Field or Hub Field."
+    },
+    "Dark Scythe": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c8/Hivesticker_dark_scythe.png",
+      "description": "\"For flame reaping.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Using the Dark Scythe in any field (Unfathomably Rare). Higher chances in the Blue Flower Field or Hub Field."
+    },
+    "Gummyballer": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/96/Hivesticker_gummyballer.png",
+      "description": "\"A Gummy Soldier's weapon of choice.\"",
+      "stack_boost": "+2% Pollen From Tools",
+      "stack_reward": "25\u00a0Gumdrops",
+      "where_from": "Using the Gummyballer in any field (Unfathomably Rare). Higher chances in the Clover Field or Hub Field."
+    },
+    "Capricorn Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/63/Hivesticker_capricorn_star_sign.png",
+      "description": "\"Disciplined, ambitious, cautious, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between December 22 and January 19 (Unbelievably Rare)\nMythic Meteors between December 22 and January 19 (Unbelievably Rare)\nUsing Star Jelly between December 22 and January 19 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Stump Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Aquarius Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/01/Hivesticker_aquarius_star_sign.png",
+      "description": "\"Innovative, detached, accentric, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between January 20 and February 18 (Unbelievably Rare)\nMythic Meteors between January 20 and February 18 (Unbelievably Rare)\nUsing Star Jelly between January 20 and February 18 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Mushroom Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Pisces Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/38/Hivesticker_pisces_star_sign.png",
+      "description": "\"Dreamy, empathetic, artistic, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between February 19 and March 20 (Unbelievably Rare)\nMythic Meteors between February 19 and March 20 (Unbelievably Rare)\nUsing Star Jelly between February 19 and March 20 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Pineapple Patch during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Aries Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cb/Hivesticker_aries_star_sign.png",
+      "description": "\"Bold, energetic, confident, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between March 21 and April 19 (Unbelievably Rare)\nMythic Meteors between March 21 and April 19 (Unbelievably Rare)\nUsing Star Jelly between March 21 and April 19 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Pepper Patch (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Taurus Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6d/Hivesticker_taurus_star_sign.png",
+      "description": "\"Stubborn, sensual, loyal, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between April 20 and May 20 (Unbelievably Rare)\nMythic Meteors between April 20 and May 20 (Unbelievably Rare)\nUsing Star Jelly between April 20 and May 20 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Rose Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Gemini Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bd/Hivesticker_gemini_star_sign.png",
+      "description": "\"Talkative, curious, intelligence, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between May 21 and June 20 (Unbelievably Rare)\nMythic Meteors between May 21 and June 20 (Unbelievably Rare)\nUsing Star Jelly between May 21 and June 20 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Dandelion Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Cancer Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/Hivesticker_cancer_star_sign.png",
+      "description": "\"Emotional, nurturing, moody, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between June 21 and July 22 (Unbelievably Rare)\nMythic Meteors between June 21 and July 22 (Unbelievably Rare)\nUsing Star Jelly between June 21 and July 22 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Stump Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Leo Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/10/Hivesticker_leo_star_sign.png",
+      "description": "\"Dramatic, outgoing, vain, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between July 23 and August 22 (Unbelievably Rare)\nMythic Meteors between July 23 and August 22 (Unbelievably Rare)\nUsing Star Jelly between July 23 and August 22 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Sunflower Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Virgo Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ad/Hivesticker_virgo_star_sign.png",
+      "description": "\"Analytical, meticulous, practical, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between August 23 and September 22 (Unbelievably Rare)\nMythic Meteors between August 23 and September 22 (Unbelievably Rare)\nUsing Star Jelly between August 23 and September 22 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Bamboo Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Libra Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/18/Hivesticker_libra_star_sign.png",
+      "description": "\"Diplomatic, elegant, social, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between September 23 and October 22 (Unbelievably Rare)\nMythic Meteors between September 23 and October 22 (Unbelievably Rare)\nUsing Star Jelly between September 23 and October 22 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Blue Flower Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Scorpio Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ab/Hivesticker_scorpio_star_sign.png",
+      "description": "\"Intense, secretive, passionate, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between October 23 and November 21 (Unbelievably Rare)\nMythic Meteors between October 23 and November 21 (Unbelievably Rare)\nUsing Star Jelly between October 23 and November 21 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Spider Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Sagittarius Star Sign": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/30/Hivesticker_sagittarius_star_sign.png",
+      "description": "\"Adventurous, optimistic, blunt, superstitious.\"",
+      "stack_boost": "+2% Capacity",
+      "stack_reward": "1\u00a0Glitter",
+      "where_from": "Chasing Fireflies between November 22 and December 21 (Unbelievably Rare)\nMythic Meteors between November 22 and December 21 (Unbelievably Rare)\nUsing Star Jelly between November 22 and December 21 (1 in 1,000 chance)\nUsing the Sticker-Seeker in the Mountain Top Field during Nighttime (Unfathomably Rare)\nSticker Printer (Star Eggs, most Gifted Eggs)"
+    },
+    "Sunflower Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ef/Hivesticker_sunflower_field_stamp.png",
+      "description": "\"Sent on letters from the Sunflower Field.\"",
+      "stack_boost": "+10% Sunflower Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Sunflower Field Pollen Collectors\nUsing the Sticker-Seeker in the Sunflower Field (Unfathomably Rare)\nPlanters on the Sunflower Field (Unfathomably Rare)"
+    },
+    "Dandelion Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/64/Hivesticker_dandelion_field_stamp.png",
+      "description": "\"Sent on letters from the Dandelion Field.\"",
+      "stack_boost": "+10% Dandelion Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Dandelion Field Pollen Collectors\nUsing the Sticker-Seeker in the Dandelion Field (Unfathomably Rare)\nPlanters on the Dandelion Field (Unfathomably Rare)"
+    },
+    "Mushroom Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b0/Hivesticker_mushroom_field_stamp.png",
+      "description": "\"Sent on letters from the Mushroom Field.\"",
+      "stack_boost": "+10% Mushroom Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Mushroom Field Pollen Collectors\nUsing the Sticker-Seeker in the Mushroom Field (Unfathomably Rare)\nPlanters on the Mushroom Field (Unfathomably Rare)"
+    },
+    "Blue Flower Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7a/Hivesticker_blue_flower_field_stamp.png",
+      "description": "\"Sent on letters from the Blue Flower Field.\"",
+      "stack_boost": "+10% Blue Flower Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Blue Flower Field Pollen Collectors\nUsing the Sticker-Seeker in the Blue Flower Field (Unfathomably Rare)\nPlanters on the Blue Flower Field (Unfathomably Rare)"
+    },
+    "Clover Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7f/Hivesticker_clover_field_stamp.png",
+      "description": "\"Sent on letters from the Clover Field.\"",
+      "stack_boost": "+10% Sunflower Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Clover Field Pollen Collectors\nUsing the Sticker-Seeker in the Clover Field (Unfathomably Rare)\nPlanters on the Clover Field (Unfathomably Rare)"
+    },
+    "Strawberry Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bf/Hivesticker_strawberry_field_stamp.png",
+      "description": "\"Sent on letters from the Strawberry Field.\"",
+      "stack_boost": "+10% Strawberry Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Strawberry Field Pollen Collectors\nUsing the Sticker-Seeker in the Strawberry Field (Unfathomably Rare)\nPlanters on the Strawberry Field (Unfathomably Rare)"
+    },
+    "Spider Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1c/Hivesticker_spider_field_stamp.png",
+      "description": "\"Sent on letters from the Spider Field.\"",
+      "stack_boost": "+10% Spider Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Spider Field Pollen Collectors\nUsing the Sticker-Seeker in the Spider Field (Unfathomably Rare)\nPlanters on the Spider Field (Unfathomably Rare)"
+    },
+    "Bamboo Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0d/Hivesticker_bamboo_field_stamp.png",
+      "description": "\"Sent on letters from the Bamboo Field.\"",
+      "stack_boost": "+10% Bamboo Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Bamboo Field Pollen Collectors\nUsing the Sticker-Seeker in the Bamboo Field (Unfathomably Rare)\nPlanters on the Bamboo Field (Unfathomably Rare)"
+    },
+    "Pineapple Patch Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/15/Hivesticker_pineapple_patch_stamp.png",
+      "description": "\"Sent on letters from the Pineapple Patch.\"",
+      "stack_boost": "+10% Pineapple Patch Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Pineapple Patch Pollen Collectors\nUsing the Sticker-Seeker in the Pineapple Patch (Unfathomably Rare)\nPlanters on the Pineapple Patch (Unfathomably Rare)"
+    },
+    "Stump Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a9/Hivesticker_stump_field_stamp.png",
+      "description": "\"Sent on letters from the Stump Field.\"",
+      "stack_boost": "+10% Stump Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Stump Field Pollen Collectors\nUsing the Sticker-Seeker in the Stump Field (Unfathomably Rare)\nPlanters on the Stump Field (Unfathomably Rare)"
+    },
+    "Cactus Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/84/Hivesticker_cactus_field_stamp.png",
+      "description": "\"Sent on letters from the Cactus Field.\"",
+      "stack_boost": "+10% Cactus Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Cactus Field Pollen Collectors\nUsing the Sticker-Seeker in the Cactus Field (Unfathomably Rare)\nPlanters on the Cactus Field (Unfathomably Rare)"
+    },
+    "Pumpkin Patch Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cf/Hivesticker_pumpkin_patch_stamp.png",
+      "description": "\"Sent on letters from the Pumpkin Patch.\"",
+      "stack_boost": "+10% Pumpkin Patch Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Pumpkin Patch Pollen Collectors\nUsing the Sticker-Seeker in the Pumpkin Patch (Unfathomably Rare)\nPlanters on the Pumpkin Patch (Unfathomably Rare)"
+    },
+    "Pine Tree Forest Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0a/Hivesticker_pine_tree_forest_stamp.png",
+      "description": "\"Sent on letters from the Pine Tree Forest.\"",
+      "stack_boost": "+10% Pine Tree Forest Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Pine Tree Forest Pollen Collectors\nUsing the Sticker-Seeker in the Pine Tree Forest (Unfathomably Rare)\nPlanters on the Pine Tree Forest (Unfathomably Rare)"
+    },
+    "Rose Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d8/Hivesticker_rose_field_stamp.png",
+      "description": "\"Sent on letters from the Rose Field.\"",
+      "stack_boost": "+10% Rose Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Rose Field Pollen Collectors\nUsing the Sticker-Seeker in the Rose Field (Unfathomably Rare)\nPlanters on the Rose Field (Unfathomably Rare)"
+    },
+    "Hub Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fe/Hivesticker_hub_field_stamp.png",
+      "description": "\"Sent on letters from the Hub Field.\"",
+      "stack_boost": "+10% Hub Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Hub Field Pollen Collectors\nUsing the Sticker-Seeker in the Hub Field (Unfathomably Rare)"
+    },
+    "Mountain Top Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/87/Hivesticker_mountain_top_field_stamp.png",
+      "description": "\"Sent on letters from the Mountain Top Field.\"",
+      "stack_boost": "+10% Mountain Top Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Mountain Top Field Pollen Collectors\nUsing the Sticker-Seeker in the Mountain Top Field (Unfathomably Rare)\nPlanters on the Mountain Top Field (Unfathomably Rare)"
+    },
+    "Pepper Patch Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6a/Hivesticker_pepper_patch_stamp.png",
+      "description": "\"Sent on letters from the Pepper Patch.\"",
+      "stack_boost": "+10% Pepper Patch Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Pepper Patch Pollen Collectors\nUsing the Sticker-Seeker in the Pepper Patch (Unfathomably Rare)\nPlanters on the Pepper Patch (Unfathomably Rare)"
+    },
+    "Coconut Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/62/Hivesticker_coconut_field_stamp.png",
+      "description": "\"Sent on letters from the Coconut Field.\"",
+      "stack_boost": "+10% Coconut Field Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Coconut Field Pollen Collectors\nUsing the Sticker-Seeker in the Coconut Field (Unfathomably Rare)\nPlanters on the Coconut Field (Unfathomably Rare)"
+    },
+    "Ant Field Stamp": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/49/Hivesticker_ant_field_stamp.png",
+      "description": "\"Sent on letters from the Ant Field.\"",
+      "stack_boost": "+0.5% Bee Attack",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Awarded to the Top 100 Daily Ant Challenge Scorer each day\nAnt Challenge Reward (Unfathomably Rare)\n(Not listed in-game) Awarded to the Top 100 Daily Ant Field Pollen Collectors"
+    },
+    "Green Beesmas Light": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/df/Hivesticker_green_beesmas_light.png",
+      "description": "\"A magical LED that exudes the Beesmas aura.\"",
+      "stack_boost": "+1% Critical Power",
+      "stack_reward": "3\u00a0Neonberries",
+      "where_from": "Catching a Green Falling Beesmas Light (1 in 10,000 chance)\nPotential reward from the Flourescent and Festive Gift Boxes"
+    },
+    "Blue Beesmas Light": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ef/Hivesticker_blue_beesmas_light.png",
+      "description": "\"A magical LED that exudes the Beesmas aura.\"",
+      "stack_boost": "+2% Blue Pollen",
+      "stack_reward": "3\u00a0Neonberries",
+      "where_from": "Catching a Blue Falling Beesmas Light (1 in 10,000 chance)\nPotential reward from the Flourescent and Festive Gift Boxes"
+    },
+    "Red Beesmas Light": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d4/Hivesticker_red_beesmas_light.png",
+      "description": "\"A magical LED that exudes the Beesmas aura.\"",
+      "stack_boost": "+2% Red Pollen",
+      "stack_reward": "3\u00a0Neonberries",
+      "where_from": "Catching a Red Falling Beesmas Light (1 in 10,000 chance)\nPotential reward from the Flourescent and Festive Gift Boxes"
+    },
+    "Yellow Beesmas Light": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cf/Hivesticker_yellow_beesmas_light.png",
+      "description": "\"A magical LED that exudes the Beesmas aura.\"",
+      "stack_boost": "+10% Convert Rate",
+      "stack_reward": "3\u00a0Neonberries",
+      "where_from": "Catching a Yellow Falling Beesmas Light (1 in 10,000 chance)\nPotential reward from the Flourescent and Festive Gift Boxes"
+    },
+    "Critter In A Stocking": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Hivesticker_critter_in_a_stocking.png",
+      "description": "\"It's stealing your goodies.\"",
+      "stack_boost": "+2% Bee Gathering Pollen",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Brown Bear's Stockings (Extremely Rare)\nIncluded in the Purple Planter Pack"
+    },
+    "Flying Festive Bee": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/48/Hivesticker_flying_festive_bee.png",
+      "description": "\"On its way to give out gifts!\"",
+      "stack_boost": "+10% Red Bee Convert Rate",
+      "stack_reward": "1\u00a0Red Extract",
+      "where_from": "Festive Gifts and Festive Wreaths during Beesmas (odds increase with level)"
+    },
+    "Flying Bee Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b4/Hivesticker_flying_bee_bear.png",
+      "description": "\"He is flying at over 25,000 MPH.\"",
+      "stack_boost": "+1% Event Bee Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Festive Sprouts (Rare)\nFestive Planter (Rare)"
+    },
+    "Party Robo Bear": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5b/Hivesticker_party_robo_bear.png",
+      "description": "\"Celebrate our manufacturing date.\"",
+      "stack_boost": "+1% Duped Ability Pollen",
+      "stack_reward": "1\u00a0Robo Pass",
+      "where_from": "Robo Party Reward"
+    },
+    "Festive Pufferfish": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/04/Hivesticker_festive_pufferfish.png",
+      "description": "\"They call him ol' Saint Puff.\"",
+      "stack_boost": "+2% Bomb Pollen",
+      "stack_reward": "10\u00a0Tickets",
+      "where_from": "Reward from the Pokey Gift Box"
+    },
+    "Festive Pea": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/ff/Hivesticker_festive_pea.png",
+      "description": "\"The unassuming VIP of the honeyday arsenal.\"",
+      "stack_boost": "+0.5% Bee Attack",
+      "stack_reward": "1\u00a0Magic Bean",
+      "where_from": "Supreme Sprout during Beesmas\nIncluded in the Pea Power Bundle in Bee Bear's Catalog"
+    },
+    "BBM From Below": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0f/Hivesticker_bbm_from_below.png",
+      "description": "\"Gaze into this abyss, and... it'll gaze too... at you...\"",
+      "stack_boost": "x1.01 Pollen",
+      "stack_reward": "1\u00a0Box-O-Frogs",
+      "where_from": "Reward from the Mondo Gift Box"
+    }
+  }
+}
