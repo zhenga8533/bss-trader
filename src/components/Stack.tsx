@@ -14,10 +14,12 @@ const Stack = ({ color, title }: StackProps) => {
   const id = title.toLowerCase().replace(/\s/g, "-");
 
   // Cub Skins, Hive Skins, Stickers, and Vouchers
-  const [cosmetics, setCosmetics] = useState<{ [key: string]: number }>(() => {
-    const saveData = localStorage.getItem(id + "-items");
+  const getCosmetics = () => {
+    const saveData = localStorage.getItem(id + "-cosmetics");
     return saveData ? JSON.parse(saveData) : {};
-  });
+  };
+
+  const [cosmetics, setCosmetics] = useState<{ [key: string]: number }>(getCosmetics);
   const [cosmeticsOpen, setCosmeticsOpen] = useState(false);
 
   const addCosmetic = (name: string) => {
@@ -35,14 +37,16 @@ const Stack = ({ color, title }: StackProps) => {
   };
 
   useEffect(() => {
-    localStorage.setItem(id + "-items", JSON.stringify(cosmetics));
+    localStorage.setItem(id + "-cosmetics", JSON.stringify(cosmetics));
   }, [cosmetics]);
 
   // Beequips
-  const [beequips, setBeequips] = useState<Beequip[]>(() => {
+  const getBeequips = () => {
     const saveData = localStorage.getItem(id + "-beequips");
     return saveData ? JSON.parse(saveData) : [];
-  });
+  };
+
+  const [beequips, setBeequips] = useState<Beequip[]>(getBeequips);
   const [beequipsOpen, setBeequipsOpen] = useState(false);
 
   const addBeequip = (beequip: Beequip) => {
@@ -56,6 +60,12 @@ const Stack = ({ color, title }: StackProps) => {
   useEffect(() => {
     localStorage.setItem(id + "-beequips", JSON.stringify(beequips));
   }, [beequips]);
+
+  // Event listener for updating the stack
+  window.addEventListener("update", () => {
+    setBeequips(getBeequips());
+    setCosmetics(getCosmetics());
+  });
 
   return (
     <>
