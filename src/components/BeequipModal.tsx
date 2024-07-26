@@ -100,12 +100,7 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
           </HStack>
         </ModalHeader>
         <ModalBody>
-          <BeequipInput
-            beequip={selected}
-            isOpen={inputOpen}
-            onClose={() => setInputOpen(false)}
-            onEnter={addBeequip}
-          />
+          <BeequipInput name={selected} isOpen={inputOpen} onClose={() => setInputOpen(false)} onEnter={addBeequip} />
           {body}
         </ModalBody>
       </ModalContent>

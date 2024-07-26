@@ -3,7 +3,7 @@ import { FaRegStar, FaStar } from "react-icons/fa";
 import beequips from "../data/beequips.json";
 import { formatStat } from "./StatsPopover";
 
-interface Beequip {
+export interface Beequip {
   image_url: string;
   level: string;
   color: string;

@@ -21,20 +21,23 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import beequips from "../data/beequips.json";
 import waxData from "../data/waxes.json";
-import { Beequip } from "./BeequipTile";
+import { Beequip, BeequipData } from "./BeequipTile";
 import StatsPopover from "./StatsPopover";
 import WaxTile from "./WaxTile";
 
 interface BeequipInputProps {
-  beequip: Beequip | null;
+  name: string;
   isOpen: boolean;
   onClose: () => void;
-  onEnter: (beequip: Beequip) => void;
+  onEnter: (data: BeequipData) => void;
 }
 
-const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) => {
-  if (beequip === null) return null;
+const BeequipInput = ({ name, isOpen, onClose, onEnter }: BeequipInputProps) => {
+  // @ts-ignore
+  const beequip = beequips[name] as Beequip;
+  if (!beequip) return null;
 
   const [waxes, setWaxes] = useState<string[]>([]);
   const [stats, setStats] = useState<string[]>([]);
@@ -48,9 +51,9 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
         <ModalHeader>
           <HStack>
             <Heading className="heading" size="lg">
-              {beequip.name}
+              {name}
             </Heading>
-            <Image src={beequip.image_url} alt={beequip.name} boxSize="36px" />
+            <Image src={beequip.image_url} alt={name} boxSize="36px" />
           </HStack>
           <HStack>
             {waxes.map((wax, index) => (
@@ -154,11 +157,12 @@ const BeequipInput = ({ beequip, isOpen, onClose, onEnter }: BeequipInputProps) 
               colorScheme="blue"
               variant="solid"
               onClick={() => {
-                const newquip = { ...beequip };
-                newquip.waxes = waxes;
-                newquip.activeStats = stats;
-                newquip.potential = potential;
-                onEnter(newquip);
+                onEnter({
+                  name: name,
+                  activeStats: stats,
+                  potential: potential,
+                  waxes: waxes,
+                });
                 onClose();
               }}
             >
