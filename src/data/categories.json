@@ -1,6 +1,6 @@
 [
-  "Any",
   "Offers",
+  "Not Offering",
   "In Demand",
   "Impossibly Rare",
   "Unbelievably Rare",
@@ -21,12 +21,12 @@
   "Blue Beequips",
   "Red Beequips",
   "White Beequips",
+  "Leafs",
   "Mobs",
   "Nectars",
   "Puffs",
-  "Leafs",
-  "Tools",
   "Quests",
+  "Tools",
   "Signs",
   "Stamps"
 ]
