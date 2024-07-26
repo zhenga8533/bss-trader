@@ -2,6 +2,12 @@ export const capitalize = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
+/**
+ * Formats a stat string with color based on the prefix.
+ *
+ * @param stat
+ * @returns
+ */
 export const getStatColor = (stat: string) => {
   const color = stat.startsWith("+")
     ? "green"

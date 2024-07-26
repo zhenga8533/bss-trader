@@ -1,7 +1,7 @@
 import { Box, Button, Grid, GridItem, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import beequips from "../data/beequips.json";
-import { getStatColor } from "../services/format";
+import { formatStat } from "./StatsPopover";
 
 interface Beequip {
   image_url: string;
@@ -26,12 +26,6 @@ interface BeequipTileProps {
   data?: BeequipData;
   onClick: () => void;
 }
-
-const formatStat = (stat: string, index: number) => (
-  <Text key={index} color={getStatColor(stat)}>
-    {stat}
-  </Text>
-);
 
 const BeequipTile = ({ name, data, onClick }: BeequipTileProps) => {
   // @ts-ignore

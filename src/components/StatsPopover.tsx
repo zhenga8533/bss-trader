@@ -1,5 +1,11 @@
 import { Button, Heading, HStack, Text, Tooltip, VStack } from "@chakra-ui/react";
-import { formatStat } from "./BeequipTile";
+import { getStatColor } from "../services/format";
+
+export const formatStat = (stat: string, index: number) => (
+  <Text key={index} color={getStatColor(stat)}>
+    {stat}
+  </Text>
+);
 
 interface StatsPopoverProps {
   stats: string[];
