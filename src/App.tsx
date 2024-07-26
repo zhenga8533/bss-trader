@@ -1,6 +1,7 @@
-import { Box, Center, Grid, GridItem, Heading, HStack, Image } from "@chakra-ui/react";
+import { Box, Center, Grid, GridItem, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/war.jpg";
+import discord from "./assets/discord.png";
 import FooterButtons from "./components/FooterButtons";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
@@ -71,6 +72,13 @@ const App = () => {
           </GridItem>
         </Grid>
       </Box>
+      <VStack color="white" position="relative" spacing={1} width="100%">
+        <Text>made by</Text>
+        <HStack>
+          <Image src={discord} alt="Discord" boxSize={10} />
+          <Heading size="md">grapefruited</Heading>
+        </HStack>
+      </VStack>
     </Box>
   );
 };
