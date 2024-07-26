@@ -1,6 +1,6 @@
 import { Box, Center, Grid, GridItem, Heading, HStack, Image } from "@chakra-ui/react";
 import arrows from "./assets/arrows.webp";
-import background from "./assets/background.jpg";
+import background from "./assets/backgrounds/war.jpg";
 import FooterButtons from "./components/FooterButtons";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
@@ -58,7 +58,9 @@ const App = () => {
           </GridItem>
           <GridItem gridArea="center">
             <Center>
-              <Image src={arrows} alt="Arrows" maxW={48} />
+              <Box maxW={48}>
+                <Image src={arrows} alt="Arrows" />
+              </Box>
             </Center>
           </GridItem>
           <GridItem gridArea="looking-for">
