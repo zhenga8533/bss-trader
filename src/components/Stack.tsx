@@ -111,7 +111,7 @@ const Stack = ({ color, title }: StackProps) => {
           ))}
         </Flex>
         <Divider />
-        <HStack>
+        <HStack flexWrap="wrap" justifyContent="center">
           <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
             Beequips
           </Button>

@@ -72,11 +72,13 @@ const App = () => {
           </GridItem>
         </Grid>
       </Box>
-      <VStack color="white" position="relative" spacing={1} width="100%">
-        <Text>made by</Text>
+      <VStack color="white" mb={5} position="relative" spacing={1} width="100%">
+        <Text className="heading">made by</Text>
         <HStack>
           <Image src={discord} alt="Discord" boxSize={10} />
-          <Heading size="md">grapefruited</Heading>
+          <Heading className="heading" size="md">
+            grapefruited
+          </Heading>
         </HStack>
       </VStack>
     </Box>

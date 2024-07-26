@@ -89,7 +89,7 @@ const FooterButtons = () => {
           setImportOpen(false);
         }}
       />
-      <HStack>
+      <HStack flexWrap="wrap" justifyContent="center">
         <Button
           colorScheme="green"
           variant="solid"
