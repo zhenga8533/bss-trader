@@ -2,6 +2,7 @@ import {
   Heading,
   HStack,
   Image,
+  Input,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -9,6 +10,7 @@ import {
   ModalHeader,
   VStack,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import category from "../assets/category.webp";
 import categories from "../data/categories.json";
 import CategoryTile from "./CategoryTile";
@@ -21,10 +23,32 @@ interface CategoryModalProps {
 }
 
 const CategoryModal = ({ isOpen, onClose, addCategory }: CategoryModalProps) => {
+  const [filtered, setFiltered] = useState(categories);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    let term = event.target.value;
+    setSearchTerm(term);
+    if (!term.trim()) {
+      setFiltered(categories);
+    } else {
+      term = term.toLowerCase();
+      const filter = categories.filter((category) => category.toLowerCase().includes(term));
+      setFiltered(filter);
+    }
+  };
+
   const body = (
     <VStack alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3}>
+      <Input
+        _placeholder={{ color: "gray.300" }}
+        placeholder={`Search for categories...`}
+        value={searchTerm}
+        onChange={handleSearchChange}
+        size="md"
+      />
       <HStack flexWrap="wrap" spacing={3} justifyContent="center">
-        {categories.map((category) => (
+        {filtered.map((category) => (
           <CategoryTile key={category} category={category} onClick={() => addCategory(category)} />
         ))}
       </HStack>
