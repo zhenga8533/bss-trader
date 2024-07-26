@@ -59,8 +59,9 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
           columnGap={3}
           rowGap={5}
           className="custom-scroll"
-          maxH="60vh"
+          maxH="70vh"
           overflow="auto"
+          py={3}
         >
           {filtered.map((name) => (
             <GridItem key={name}>
