@@ -30,7 +30,7 @@ const Stack = ({ color, title }: StackProps) => {
     setCosmetics((prevCosmetics) => {
       const newCosmetics = { ...prevCosmetics };
       if (newCosmetics[name] && newCosmetics[name] > 0) {
-        newCosmetics[name] -= 1;
+        if (--newCosmetics[name] === 0) delete newCosmetics[name];
       }
       return newCosmetics;
     });
