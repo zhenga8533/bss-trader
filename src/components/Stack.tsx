@@ -2,6 +2,8 @@ import { Box, Button, Divider, Flex, Grid, Heading, HStack, VStack } from "@chak
 import { useEffect, useState } from "react";
 import BeequipModal from "./BeequipModal";
 import BeequipTile, { BeequipData } from "./BeequipTile";
+import CategoryModal from "./CategoryModal";
+import CategoryTile from "./CategoryTile";
 import CosmeticModal from "./CosmeticModal";
 import CosmeticTile from "./CosmeticTile";
 
@@ -12,6 +14,31 @@ interface StackProps {
 
 const Stack = ({ color, title }: StackProps) => {
   const id = title.toLowerCase().replace(/\s/g, "-");
+
+  // Categories
+  const getCategories = () => {
+    const saveData = localStorage.getItem(id + "-categories");
+    return saveData ? JSON.parse(saveData) : [];
+  };
+
+  const [categories, setCategories] = useState<string[]>(getCategories);
+  const [categoriesOpen, setCategoriesOpen] = useState(false);
+
+  const addCategory = (name: string) => {
+    setCategories((prevCategories) => [...prevCategories, name]);
+  };
+
+  const removeCategory = (index: number) => {
+    setCategories((prevCategories) => {
+      const newCategories = [...prevCategories];
+      newCategories.splice(index, 1);
+      return newCategories;
+    });
+  };
+
+  useEffect(() => {
+    localStorage.setItem(id + "-categories", JSON.stringify(categories));
+  }, [categories]);
 
   // Cub Skins, Hive Skins, Stickers, and Vouchers
   const getCosmetics = () => {
@@ -67,8 +94,9 @@ const Stack = ({ color, title }: StackProps) => {
 
   // Event listener for updating the stack
   window.addEventListener("update", () => {
-    setBeequips(getBeequips());
+    setCategories(getCategories());
     setCosmetics(getCosmetics());
+    setBeequips(getBeequips());
   });
 
   return (
@@ -80,11 +108,26 @@ const Stack = ({ color, title }: StackProps) => {
         addCosmetic={addCosmetic}
         onClose={() => setCosmeticsOpen(false)}
       />
+      <CategoryModal
+        isOpen={categoriesOpen}
+        stack={cosmetics}
+        addCategory={addCategory}
+        onClose={() => setCategoriesOpen(false)}
+      />
       <VStack>
         <Heading className="heading" background={color} borderRadius={5} textAlign="center" size="lg" w="100%">
           {title}
         </Heading>
         <Divider />
+        {/** Categories */}
+        {categories.length > 0 && (
+          <HStack flexWrap="wrap" spacing={3} justifyContent="center">
+            {categories.map((category, index) => (
+              <CategoryTile key={category} category={category} onClick={() => removeCategory(index)} />
+            ))}
+          </HStack>
+        )}
+        {/** Cosmetics */}
         <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%" columnGap={3} rowGap={5}>
           {Object.entries(cosmetics).map(([name, quantity]) => (
             <Box position={"relative"} key={name}>
@@ -103,6 +146,7 @@ const Stack = ({ color, title }: StackProps) => {
             </Box>
           ))}
         </Grid>
+        {/** Beequips */}
         <Flex wrap="wrap" justifyContent="space-around" w="100%">
           {beequips.map((beequip, index) => (
             <Box key={beequip.name} p={2} minW="90px" maxW="1fr">
@@ -112,11 +156,14 @@ const Stack = ({ color, title }: StackProps) => {
         </Flex>
         <Divider />
         <HStack flexWrap="wrap" justifyContent="center">
-          <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
-            Beequips
+          <Button colorScheme="yellow" onClick={() => setCategoriesOpen(true)}>
+            Categories
           </Button>
           <Button colorScheme="green" onClick={() => setCosmeticsOpen(true)}>
             Cosmetics
+          </Button>
+          <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
+            Beequips
           </Button>
           <Button
             colorScheme="red"
