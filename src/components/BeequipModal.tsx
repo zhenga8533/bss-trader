@@ -89,7 +89,7 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
 
   return (
     <Modal isOpen={isOpen} onClose={() => onClose()} size="custom">
-      <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" my={5} maxW="60vw" minW="360px">
+      <ModalContent bgColor="rgb(255, 255, 64)" borderRadius={5} color="black" maxW="60vw" minW="360px">
         <ModalCloseButton />
         <ModalHeader>
           <HStack>
