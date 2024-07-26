@@ -8,17 +8,18 @@ import ItemStack from "./components/Stack";
 
 const App = () => {
   return (
-    <Box position="relative">
+    <Box display="flex" flexDirection="column" minH="100vh" position="relative">
       <Box
-        minH="100vh"
-        minW="100vw"
+        flex="1"
         backgroundImage={background}
         backgroundSize="cover"
         filter="blur(16px)"
         position="absolute"
         zIndex={0}
+        width="100%"
+        height="100%"
       />
-      <HStack justifyContent="space-between" position="relative" pt={5} px="5vw" zIndex={10}>
+      <HStack justifyContent="space-between" position="relative" pt="3vw" px="5%" zIndex={10}>
         <HStack justifyContent="center">
           <HStack backgroundColor="rgba(128, 128, 128, 0.5)" borderRadius={5} p={3}>
             <Image src={sticker} alt="Sticker" />
@@ -30,13 +31,13 @@ const App = () => {
       </HStack>
       <Box
         backgroundColor="rgba(0, 0, 0, 0.5)"
-        outline="5px solid rgba(255, 255, 0, 0.5)"
+        outline="5px solid rgba(255, 255, 0, 0.75)"
         borderRadius={10}
+        mx="5%"
+        my={5}
+        position="relative"
+        width="90%"
         zIndex={10}
-        mt={10}
-        ml="5vw"
-        width="90vw"
-        position="absolute"
       >
         <Grid
           templateAreas={{
