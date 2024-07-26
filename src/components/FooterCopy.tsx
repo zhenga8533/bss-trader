@@ -42,7 +42,7 @@ const FooterCopy = ({ data, isOpen, showQR, onClose }: FooterCopyProps) => {
         <Textarea value={data} rows={10} />
 
         <ModalFooter justifyContent="space-between">
-          {showQR && <QRCode value={"https://zhenga8533.github.io/bss-trader?data=" + data} size={64} />}
+          {showQR && <QRCode value={data} size={64} />}
           <HStack>
             <Button colorScheme="blue" variant="solid" mr={3} onClick={copy}>
               Copy

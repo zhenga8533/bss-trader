@@ -1,68 +1,41 @@
 import { Button, Center, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BeequipData } from "./BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
 
 const FooterButtons = () => {
   const toast = useToast();
-  const update = new CustomEvent("update");
 
-  // Import data from URL
-  useEffect(() => {
-    const url = new URL(window.location.href);
-    const data = url.searchParams.get("data");
-    if (data === null) return;
-
-    try {
-      const jsonString = LZString.decompressFromBase64(data);
-      const parsedData = JSON.parse(jsonString);
-
-      localStorage.setItem("offering-cosmetics", JSON.stringify(parsedData.offering));
-      localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsedData.lookingFor));
-      window.dispatchEvent(update);
-      url.searchParams.delete("data");
-      window.history.replaceState({}, document.title, url.toString());
-    } catch (e) {
-      console.error(e);
-    }
-  }, []);
-
-  const getText = () => {
+  const getText = (id: string) => {
     // Offering
-    let offering = "Offering:";
+    let text = "";
 
-    const offeringCosmetics = JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}");
+    const offeringCosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
     Object.keys(offeringCosmetics).forEach((key) => {
-      offering += `\n- ${key} x${offeringCosmetics[key]}`;
+      text += `\n- ${key} x${offeringCosmetics[key]}`;
     });
 
-    const offeringBeequips = JSON.parse(localStorage.getItem("offering-beequips") ?? "{}");
+    const offeringBeequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "{}");
     offeringBeequips.forEach((key: BeequipData) => {
-      offering += `\n- ${key.name} ${key.potential}★ [${key.waxes.length}/5 🝊]`;
+      text += `\n- ${key.name} ${key.potential}★ [${key.waxes.length}/5 🝊]`;
       key.activeStats.forEach((stat) => {
-        offering += `\n  ⁍ ${stat}`;
+        text += `\n  ⁍ ${stat}`;
       });
     });
 
-    // Looking for
-    const lfCosmetics = JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}");
-    let lf = "Looking for:";
-
-    Object.keys(lfCosmetics).forEach((key) => {
-      lf += `\n- ${key} x${lfCosmetics[key]}`;
-    });
-
-    return `${offering}\n\n${lf}`;
+    return text;
   };
   const [textOpen, setTextOpen] = useState(false);
   const [textData, setTextData] = useState("");
 
   const getExport = () => {
     const data = {
-      offering: JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}"),
-      lookingFor: JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}"),
+      offeringCosmetics: JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}"),
+      lfCosmetics: JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}"),
+      offeringBeequips: JSON.parse(localStorage.getItem("offering-beequips") ?? "[]"),
+      lfBeequips: JSON.parse(localStorage.getItem("looking-for-beequips") ?? "[]"),
     };
     const jsonString = JSON.stringify(data);
     return LZString.compressToBase64(jsonString);
@@ -72,11 +45,18 @@ const FooterButtons = () => {
 
   const importData = (data: string) => {
     try {
-      const jsonString = LZString.decompressFromBase64(data);
-      const parsedData = JSON.parse(jsonString);
-      localStorage.setItem("offering-cosmetics", JSON.stringify(parsedData.offering));
-      localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsedData.lookingFor));
-      window.dispatchEvent(update);
+      try {
+        const json = LZString.decompressFromBase64(data);
+        const parsed = JSON.parse(json);
+        localStorage.setItem("offering-cosmetics", JSON.stringify(parsed.offeringCosmetics));
+        localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsed.lfCosmetics));
+        localStorage.setItem("offering-beequips", JSON.stringify(parsed.offeringBeequips));
+        localStorage.setItem("looking-for-beequips", JSON.stringify(parsed.lfBeequips));
+      } catch (e) {
+        console.error(e);
+        localStorage.clear();
+      }
+      window.dispatchEvent(new CustomEvent("update"));
 
       toast({
         title: "Trade data imported",
@@ -114,7 +94,7 @@ const FooterButtons = () => {
           colorScheme="green"
           variant="solid"
           onClick={() => {
-            setTextData(getText());
+            setTextData(`Offering:${getText("offering")}\n\nLooking for:${getText("looking-for")}`);
             setTextOpen(true);
           }}
         >

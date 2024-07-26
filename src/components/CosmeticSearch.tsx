@@ -59,7 +59,7 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
           columnGap={3}
           rowGap={5}
           className="custom-scroll"
-          maxH="70vh"
+          maxH="64vh"
           overflow="auto"
           py={3}
         >
