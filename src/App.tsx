@@ -1,7 +1,6 @@
 import { Box, Center, Grid, GridItem, Heading, HStack, Image } from "@chakra-ui/react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/background.jpg";
-import sticker from "./assets/sticker.webp";
 import FooterButtons from "./components/FooterButtons";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
@@ -22,9 +21,7 @@ const App = () => {
       <HStack justifyContent="space-between" position="relative" pt="3vw" px="5%" zIndex={10}>
         <HStack justifyContent="center">
           <HStack backgroundColor="rgba(128, 128, 128, 0.5)" borderRadius={5} p={3}>
-            <Image src={sticker} alt="Sticker" />
             <Heading className="heading">BSS Trader</Heading>
-            <Image src={sticker} alt="Sticker" />
           </HStack>
         </HStack>
         <SproutTimer />

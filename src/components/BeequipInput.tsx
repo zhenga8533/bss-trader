@@ -24,7 +24,7 @@ import { useState } from "react";
 import beequips from "../data/beequips.json";
 import waxData from "../data/waxes.json";
 import { Beequip, BeequipData } from "./BeequipTile";
-import StatsPopover from "./StatsPopover";
+import StatsPopover, { formatStat } from "./StatsPopover";
 import WaxTile from "./WaxTile";
 
 interface BeequipInputProps {
@@ -113,7 +113,7 @@ const BeequipInput = ({ name, isOpen, onClose, onEnter }: BeequipInputProps) => 
                 variant="solid"
                 onClick={() => setStats(stats.filter((_, i) => i !== index))}
               >
-                {stat}
+                {formatStat(stat, index)}
               </Button>
             ))}
             <Divider mt={1} /> {/* Potential */}
