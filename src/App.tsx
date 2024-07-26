@@ -7,6 +7,19 @@ import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
 
 const App = () => {
+  /**
+  window.onerror = function (message, source, lineno, colno, error) {
+    console.error("Global error caught:", { message, source, lineno, colno, error });
+    localStorage.clear();
+    return false;
+  };
+
+  window.addEventListener("unhandledrejection", function (event) {
+    console.error("Unhandled promise rejection:", event.reason);
+    localStorage.clear();
+  });
+  */
+
   return (
     <Box position="relative">
       <Box
