@@ -1,6 +1,7 @@
 import { Button, Center, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import { useEffect, useState } from "react";
+import { BeequipData } from "./BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
 
@@ -30,11 +31,19 @@ const FooterButtons = () => {
 
   const getText = () => {
     // Offering
-    const offeringCosmetics = JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}");
     let offering = "Offering:";
 
+    const offeringCosmetics = JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}");
     Object.keys(offeringCosmetics).forEach((key) => {
       offering += `\n- ${key} x${offeringCosmetics[key]}`;
+    });
+
+    const offeringBeequips = JSON.parse(localStorage.getItem("offering-beequips") ?? "{}");
+    offeringBeequips.forEach((key: BeequipData) => {
+      offering += `\n- ${key.name} ${key.potential}★ [${key.waxes.length}/5 🝊]`;
+      key.activeStats.forEach((stat) => {
+        offering += `\n  ⁍ ${stat}`;
+      });
     });
 
     // Looking for
