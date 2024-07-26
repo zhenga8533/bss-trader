@@ -39,9 +39,18 @@ const App = () => {
         position="absolute"
       >
         <Grid
-          templateAreas={`"offering center looking-for"
-                          "footer footer footer"`}
-          templateColumns={"1fr auto 1fr"}
+          templateAreas={{
+            base: `"offering"
+                    "center"
+                    "looking-for"
+                    "footer"`,
+            md: `"offering center looking-for"
+                 "footer footer footer"`,
+          }}
+          templateColumns={{
+            base: "1fr",
+            md: "1fr auto 1fr",
+          }}
           gap={4}
           p={4}
           w="100%"
@@ -51,7 +60,7 @@ const App = () => {
           </GridItem>
           <GridItem gridArea="center">
             <Center>
-              <Image src={arrows} alt="Arrows" />
+              <Image src={arrows} alt="Arrows" maxW={48} />
             </Center>
           </GridItem>
           <GridItem gridArea="looking-for">
