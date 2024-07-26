@@ -156,10 +156,10 @@ const Stack = ({ color, title }: StackProps) => {
         </Flex>
         <Divider />
         <HStack flexWrap="wrap" justifyContent="center">
-          <Button colorScheme="yellow" onClick={() => setCategoriesOpen(true)}>
+          <Button colorScheme="green" onClick={() => setCategoriesOpen(true)}>
             Categories
           </Button>
-          <Button colorScheme="green" onClick={() => setCosmeticsOpen(true)}>
+          <Button colorScheme="yellow" onClick={() => setCosmeticsOpen(true)}>
             Cosmetics
           </Button>
           <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
