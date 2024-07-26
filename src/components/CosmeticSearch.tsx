@@ -26,7 +26,7 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
       setFiltered(keys);
     } else {
       term = term.toLowerCase();
-      const filter = keys.filter((key) => isTermIncluded(category[key], term));
+      const filter = keys.filter((key) => key.toLowerCase().includes(term) || isTermIncluded(category[key], term));
       setFiltered(filter);
     }
   };
