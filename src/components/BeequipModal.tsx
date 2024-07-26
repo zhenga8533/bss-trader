@@ -57,7 +57,7 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
   const body = (
     <VStack alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3}>
       <Input
-        _placeholder={{ color: "gray.400" }}
+        _placeholder={{ color: "gray.300" }}
         placeholder="Search for beequips..."
         value={searchTerm}
         onChange={handleSearchChange}

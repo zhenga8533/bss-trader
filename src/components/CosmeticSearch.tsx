@@ -40,7 +40,7 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
         <Image src={icon} alt={type} />
       </HStack>
       <Input
-        _placeholder={{ color: "gray.400" }}
+        _placeholder={{ color: "gray.300" }}
         placeholder={`Search for ${type}s...`}
         value={searchTerm}
         onChange={handleSearchChange}
