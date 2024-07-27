@@ -39,7 +39,7 @@ const FooterCopy = ({ data, isOpen, showQR, onClose }: FooterCopyProps) => {
       <ModalContent>
         <ModalHeader>Import Data</ModalHeader>
         <ModalCloseButton />
-        <Textarea value={data} rows={10} />
+        <Textarea value={data} rows={10} readOnly />
 
         <ModalFooter justifyContent="space-between">
           {showQR && <QRCode value={data} size={64} />}
