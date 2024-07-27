@@ -17,7 +17,6 @@ const CategoryTile = ({ category, onClick }: CategoryTileProps) => {
       minW="120px"
       minH="60px"
       py="36px"
-      mb={5}
     >
       <Text color="white" fontSize="xx-large" fontWeight="800" lineHeight="1.2">
         {category}

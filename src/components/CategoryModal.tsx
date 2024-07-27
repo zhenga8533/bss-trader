@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import category from "../assets/category.webp";
 import categories from "../data/categories.json";
+import CategoryInput from "./CategoryInput";
 import CategoryTile from "./CategoryTile";
 
 interface CategoryModalProps {
@@ -25,6 +26,7 @@ interface CategoryModalProps {
 const CategoryModal = ({ isOpen, onClose, addCategory }: CategoryModalProps) => {
   const [filtered, setFiltered] = useState(categories);
   const [searchTerm, setSearchTerm] = useState("");
+  const [inputOpen, setInputOpen] = useState(false);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let term = event.target.value;
@@ -52,6 +54,9 @@ const CategoryModal = ({ isOpen, onClose, addCategory }: CategoryModalProps) => 
           <CategoryTile key={category} category={category} onClick={() => addCategory(category)} />
         ))}
       </HStack>
+      {"custom text".includes(searchTerm.toLowerCase()) && (
+        <CategoryTile category="Custom Text" onClick={() => setInputOpen(true)} />
+      )}
     </VStack>
   );
 
@@ -67,7 +72,10 @@ const CategoryModal = ({ isOpen, onClose, addCategory }: CategoryModalProps) => 
             <Image src={category} alt="Beequip" boxSize="36px" />
           </HStack>
         </ModalHeader>
-        <ModalBody mt={1}>{body}</ModalBody>
+        <ModalBody mt={1}>
+          <CategoryInput isOpen={inputOpen} onClose={() => setInputOpen(false)} onEnter={addCategory} />
+          {body}
+        </ModalBody>
       </ModalContent>
     </Modal>
   );
