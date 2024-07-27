@@ -66,15 +66,15 @@ const Stack = ({ color, title }: StackProps) => {
 
   const sortCosmetics = () => {
     const referenceOrder: string[] = [];
-    Object.keys(cosmeticsData).forEach((name) => {
-      Object.keys(cosmeticsData[name]).forEach((category) => {
+    Object.entries(cosmeticsData).forEach(([_, value]) => {
+      Object.keys(value).forEach((category) => {
         referenceOrder.push(category);
       });
     });
 
     const sortedCosmetics = Object.keys(cosmetics)
       .sort((a, b) => referenceOrder.indexOf(a) - referenceOrder.indexOf(b))
-      .reduce((acc, key) => {
+      .reduce((acc: { [key: string]: number }, key) => {
         acc[key] = cosmetics[key];
         return acc;
       }, {});
