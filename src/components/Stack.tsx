@@ -1,5 +1,6 @@
 import { Box, Button, Divider, Flex, Grid, Heading, HStack, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import cosmeticsData from "../data/cosmetics.json";
 import BeequipModal from "./BeequipModal";
 import BeequipTile, { BeequipData } from "./BeequipTile";
 import CategoryModal from "./CategoryModal";
@@ -61,6 +62,24 @@ const Stack = ({ color, title }: StackProps) => {
       }
       return newCosmetics;
     });
+  };
+
+  const sortCosmetics = () => {
+    const referenceOrder: string[] = [];
+    Object.keys(cosmeticsData).forEach((name) => {
+      Object.keys(cosmeticsData[name]).forEach((category) => {
+        referenceOrder.push(category);
+      });
+    });
+
+    const sortedCosmetics = Object.keys(cosmetics)
+      .sort((a, b) => referenceOrder.indexOf(a) - referenceOrder.indexOf(b))
+      .reduce((acc, key) => {
+        acc[key] = cosmetics[key];
+        return acc;
+      }, {});
+
+    setCosmetics(sortedCosmetics);
   };
 
   useEffect(() => {
@@ -164,6 +183,10 @@ const Stack = ({ color, title }: StackProps) => {
           </Button>
           <Button colorScheme="blue" onClick={() => setBeequipsOpen(true)}>
             Beequips
+          </Button>
+
+          <Button colorScheme="purple" ml={5} onClick={sortCosmetics}>
+            Sort
           </Button>
           <Button
             colorScheme="red"
