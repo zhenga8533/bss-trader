@@ -12,13 +12,18 @@ const FooterButtons = () => {
     // Offering
     let text = "";
 
-    const offeringCosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
-    Object.keys(offeringCosmetics).forEach((key) => {
-      text += `\n- ${key} x${offeringCosmetics[key]}`;
+    const categories = JSON.parse(localStorage.getItem(`${id}-categories`) ?? "{}");
+    categories.forEach((category: string) => {
+      text += `\n- *${category}*`;
     });
 
-    const offeringBeequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "{}");
-    offeringBeequips.forEach((key: BeequipData) => {
+    const cosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
+    Object.keys(cosmetics).forEach((key) => {
+      text += `\n- ${key} x${cosmetics[key]}`;
+    });
+
+    const beequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "{}");
+    beequips.forEach((key: BeequipData) => {
       text += `\n- ${key.name} ${key.potential}★ [${key.waxes.length}/5 🝊]`;
       key.activeStats.forEach((stat) => {
         text += `\n  ⁍ ${stat}`;
@@ -32,10 +37,12 @@ const FooterButtons = () => {
 
   const getExport = () => {
     const data = {
-      offeringCosmetics: JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}"),
+      ofCosmetics: JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}"),
       lfCosmetics: JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}"),
-      offeringBeequips: JSON.parse(localStorage.getItem("offering-beequips") ?? "[]"),
+      ofBeequips: JSON.parse(localStorage.getItem("offering-beequips") ?? "[]"),
       lfBeequips: JSON.parse(localStorage.getItem("looking-for-beequips") ?? "[]"),
+      ofCategories: JSON.parse(localStorage.getItem("offering-categories") ?? "[]"),
+      lfCategories: JSON.parse(localStorage.getItem("looking-for-categories") ?? "[]"),
     };
     const jsonString = JSON.stringify(data);
     return LZString.compressToBase64(jsonString);
@@ -48,10 +55,12 @@ const FooterButtons = () => {
       try {
         const json = LZString.decompressFromBase64(data);
         const parsed = JSON.parse(json);
-        localStorage.setItem("offering-cosmetics", JSON.stringify(parsed.offeringCosmetics));
+        localStorage.setItem("offering-cosmetics", JSON.stringify(parsed.ofCosmetics));
         localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsed.lfCosmetics));
-        localStorage.setItem("offering-beequips", JSON.stringify(parsed.offeringBeequips));
+        localStorage.setItem("offering-beequips", JSON.stringify(parsed.ofBeequips));
         localStorage.setItem("looking-for-beequips", JSON.stringify(parsed.lfBeequips));
+        localStorage.setItem("offering-categories", JSON.stringify(parsed.ofCategories));
+        localStorage.setItem("looking-for-categories", JSON.stringify(parsed.lfCategories));
       } catch (e) {
         console.error(e);
         localStorage.clear();

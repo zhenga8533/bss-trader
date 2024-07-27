@@ -170,6 +170,7 @@ const Stack = ({ color, title }: StackProps) => {
             onClick={() => {
               setBeequips([]);
               setCosmetics({});
+              setCategories([]);
             }}
           >
             Clear
