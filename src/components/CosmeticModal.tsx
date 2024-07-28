@@ -5,10 +5,11 @@ import hive from "../assets/hive.webp";
 import sticker from "../assets/sticker.webp";
 import voucher from "../assets/voucher.webp";
 import CosmeticSearch from "./CosmeticSearch";
+import { CosmeticData } from "./CosmeticTile";
 
 interface CosmeticModalProps {
   isOpen: boolean;
-  stack: { [name: string]: number };
+  stack: { [name: string]: CosmeticData };
   addCosmetic: (name: string) => void;
   onClose: () => void;
 }

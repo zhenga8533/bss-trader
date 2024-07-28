@@ -6,7 +6,7 @@ import BeequipTile, { BeequipData } from "./BeequipTile";
 import CategoryModal from "./CategoryModal";
 import CategoryTile from "./CategoryTile";
 import CosmeticModal from "./CosmeticModal";
-import CosmeticTile from "./CosmeticTile";
+import CosmeticTile, { CosmeticData } from "./CosmeticTile";
 
 interface StackProps {
   color: string;
@@ -47,19 +47,31 @@ const Stack = ({ color, title }: StackProps) => {
     return saveData ? JSON.parse(saveData) : {};
   };
 
-  const [cosmetics, setCosmetics] = useState<{ [key: string]: number }>(getCosmetics);
+  const [cosmetics, setCosmetics] = useState<{ [key: string]: CosmeticData }>(getCosmetics);
   const [cosmeticsOpen, setCosmeticsOpen] = useState(false);
 
   const addCosmetic = (name: string) => {
-    setCosmetics((prevCosmetics) => ({ ...prevCosmetics, [name]: (prevCosmetics[name] ?? 0) + 1 }));
+    setCosmetics((prevCosmetics) => {
+      const newCosmetics = { ...prevCosmetics };
+      if (newCosmetics[name]) newCosmetics[name].quantity += 1;
+      else newCosmetics[name] = { color: 0, quantity: 1 };
+      return newCosmetics;
+    });
   };
 
   const removeCosmetic = (name: string) => {
     setCosmetics((prevCosmetics) => {
       const newCosmetics = { ...prevCosmetics };
-      if (newCosmetics[name] && newCosmetics[name] > 0) {
-        if (--newCosmetics[name] === 0) delete newCosmetics[name];
-      }
+      if (newCosmetics[name].quantity > 1) newCosmetics[name].quantity -= 1;
+      else delete newCosmetics[name];
+      return newCosmetics;
+    });
+  };
+
+  const colorCosmetic = (name: string) => {
+    setCosmetics((prevCosmetics) => {
+      const newCosmetics = { ...prevCosmetics };
+      newCosmetics[name].color = (newCosmetics[name].color + 1) % 7;
       return newCosmetics;
     });
   };
@@ -74,7 +86,7 @@ const Stack = ({ color, title }: StackProps) => {
 
     const sortedCosmetics = Object.keys(cosmetics)
       .sort((a, b) => referenceOrder.indexOf(a) - referenceOrder.indexOf(b))
-      .reduce((acc: { [key: string]: number }, key) => {
+      .reduce((acc: { [key: string]: CosmeticData }, key) => {
         acc[key] = cosmetics[key];
         return acc;
       }, {});
@@ -127,12 +139,7 @@ const Stack = ({ color, title }: StackProps) => {
         addCosmetic={addCosmetic}
         onClose={() => setCosmeticsOpen(false)}
       />
-      <CategoryModal
-        isOpen={categoriesOpen}
-        stack={cosmetics}
-        addCategory={addCategory}
-        onClose={() => setCategoriesOpen(false)}
-      />
+      <CategoryModal isOpen={categoriesOpen} addCategory={addCategory} onClose={() => setCategoriesOpen(false)} />
       <VStack>
         <Heading className="heading" background={color} borderRadius={5} textAlign="center" size="lg" w="100%">
           {title}
@@ -148,9 +155,14 @@ const Stack = ({ color, title }: StackProps) => {
         )}
         {/** Cosmetics */}
         <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%" columnGap={3} rowGap={5}>
-          {Object.entries(cosmetics).map(([name, quantity]) => (
+          {Object.entries(cosmetics).map(([name, data]) => (
             <Box position={"relative"} key={name}>
-              <CosmeticTile name={name} quantity={quantity} onClick={removeCosmetic} />
+              <CosmeticTile
+                name={name}
+                data={data}
+                onClick={() => removeCosmetic(name)}
+                onContextMenu={() => colorCosmetic(name)}
+              />
               <Box
                 backgroundColor="rgba(0, 0, 0, 0.5)"
                 borderRadius={5}
@@ -160,7 +172,7 @@ const Stack = ({ color, title }: StackProps) => {
                 right={-1}
                 bottom={-2}
               >
-                x{quantity}
+                x{data.quantity}
               </Box>
             </Box>
           ))}

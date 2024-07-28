@@ -18,7 +18,6 @@ import CategoryTile from "./CategoryTile";
 
 interface CategoryModalProps {
   isOpen: boolean;
-  stack: { [name: string]: number };
   addCategory: (name: string) => void;
   onClose: () => void;
 }

@@ -3,12 +3,13 @@ import React, { Suspense, useState } from "react";
 import cosmetics from "../data/cosmetics.json";
 import { isTermIncluded } from "../services/find";
 import { capitalize } from "../services/format";
+import { CosmeticData } from "./CosmeticTile";
 const CosmeticTile = React.lazy(() => import("./CosmeticTile"));
 
 interface CosmeticSearchProps {
   icon: string;
   type: string;
-  stack: { [name: string]: number };
+  stack: { [name: string]: CosmeticData };
   addCosmetic: (name: string) => void;
 }
 
@@ -65,7 +66,7 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
         >
           {filtered.map((name) => (
             <GridItem key={name}>
-              <CosmeticTile name={name} quantity={stack[name] ?? 0} onClick={addCosmetic} />
+              <CosmeticTile name={name} data={stack[name]} onClick={() => addCosmetic(name)} onContextMenu={() => {}} />
             </GridItem>
           ))}
         </Grid>

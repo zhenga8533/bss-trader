@@ -10,18 +10,47 @@ interface Cosmetic {
   where_from: string;
 }
 
-interface CosmeticTileProps {
-  name: string;
+export interface CosmeticData {
+  color: number;
   quantity: number;
-  onClick: (name: string) => void;
 }
 
-const CosmeticTile = ({ name, quantity, onClick }: CosmeticTileProps) => {
+interface CosmeticTileProps {
+  name: string;
+  data: CosmeticData;
+  onClick: () => void;
+  onContextMenu: () => void;
+}
+
+const CosmeticTile = ({ name, data, onClick, onContextMenu }: CosmeticTileProps) => {
   // @ts-ignore
   const cosmetic = findValue(name, cosmetics) as Cosmetic;
+  const color = [
+    "rgba(0, 0, 0, 0.3)",
+    "rgba(255, 48, 48, 0.3)",
+    "rgba(255, 165, 48, 0.3)",
+    "rgba(255, 255, 48, 0.3)",
+    "rgba(48, 255, 48, 0.3)",
+    "rgba(48, 48, 255, 0.3)",
+    "rgba(255, 48, 255, 0.3)",
+  ][data?.color ?? 0];
 
   const tile = (
-    <Button backgroundColor="rgba(0, 0, 0, 0.2)" borderRadius={5} p={1} onClick={() => onClick(name)}>
+    <Button
+      backgroundColor={color}
+      borderRadius={5}
+      p={1}
+      onClick={onClick}
+      onContextMenu={(e) => {
+        e.preventDefault();
+        onContextMenu();
+      }}
+      sx={{
+        ":hover": {
+          backgroundColor: color.replace("0.3", "0.6"),
+        },
+      }}
+    >
       <Image src={cosmetic.image_url} alt={name} />
     </Button>
   );
@@ -38,10 +67,10 @@ const CosmeticTile = ({ name, quantity, onClick }: CosmeticTileProps) => {
             Skin
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            In Book: {quantity > 0 ? "Yes" : "No"}
+            In Book: {data?.quantity > 0 ? "Yes" : "No"}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            In Stack: {quantity}
+            In Stack: {data?.quantity}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
             Type
