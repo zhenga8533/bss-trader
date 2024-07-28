@@ -1,6 +1,6 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import { css } from "@emotion/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SproutTimer = () => {
   const origin = 1722165900;
@@ -9,15 +9,28 @@ const SproutTimer = () => {
   const passed = Math.floor((now - origin) / interval);
   const start = origin + (passed + 1) * interval;
   const [timeLeft, setTimeLeft] = useState(start - now);
+  const intervalId = useRef<number | null>(null);
 
   useEffect(() => {
-    if (timeLeft > 0) {
-      const timerId = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
-      return () => clearTimeout(timerId);
-    } else {
+    const updateTimer = () => {
+      const currentTime = Math.floor(Date.now() / 1000);
+      setTimeLeft(start - currentTime);
+    };
+
+    intervalId.current = setInterval(updateTimer, 1000);
+
+    return () => {
+      if (intervalId.current) {
+        clearInterval(intervalId.current);
+      }
+    };
+  }, [start]);
+
+  useEffect(() => {
+    if (timeLeft <= 0) {
       setTimeLeft(interval);
     }
-  }, [timeLeft]);
+  }, [timeLeft, interval]);
 
   const formatTime = (seconds: number) => {
     const hours = Math.floor(seconds / 3600);
