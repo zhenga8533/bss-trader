@@ -1,6 +1,7 @@
 import { Box, Button, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 import cosmetics from "../data/cosmetics.json";
 import { findValue } from "../services/find";
+import { getTileColor } from "../services/format";
 
 interface Cosmetic {
   image_url: string;
@@ -25,15 +26,7 @@ interface CosmeticTileProps {
 const CosmeticTile = ({ name, data, onClick, onContextMenu }: CosmeticTileProps) => {
   // @ts-ignore
   const cosmetic = findValue(name, cosmetics) as Cosmetic;
-  const color = [
-    "rgba(0, 0, 0, 0.3)",
-    "rgba(255, 48, 48, 0.3)",
-    "rgba(255, 165, 48, 0.3)",
-    "rgba(255, 255, 48, 0.3)",
-    "rgba(48, 255, 48, 0.3)",
-    "rgba(48, 48, 255, 0.3)",
-    "rgba(255, 48, 255, 0.3)",
-  ][data?.color ?? 0];
+  const color = getTileColor(data?.color ?? 0);
 
   const tile = (
     <Button

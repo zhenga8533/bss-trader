@@ -159,6 +159,7 @@ const BeequipInput = ({ name, isOpen, onClose, onEnter }: BeequipInputProps) => 
               onClick={() => {
                 onEnter({
                   name: name,
+                  color: 0,
                   activeStats: stats,
                   potential: potential,
                   waxes: waxes,

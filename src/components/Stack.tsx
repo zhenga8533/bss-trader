@@ -119,6 +119,14 @@ const Stack = ({ color, title }: StackProps) => {
     });
   };
 
+  const colorBeequip = (index: number) => {
+    setBeequips((prevBeequips) => {
+      const newBeequips = [...prevBeequips];
+      newBeequips[index].color = (newBeequips[index].color + 1) % 7;
+      return newBeequips;
+    });
+  };
+
   useEffect(() => {
     localStorage.setItem(id + "-beequips", JSON.stringify(beequips));
   }, [beequips]);
@@ -181,7 +189,12 @@ const Stack = ({ color, title }: StackProps) => {
         <Flex wrap="wrap" justifyContent="space-around" w="100%">
           {beequips.map((beequip, index) => (
             <Box key={beequip.name} p={2} minW="90px" maxW="1fr">
-              <BeequipTile name={beequip.name} data={beequip} onClick={() => removeBeequip(index)} />
+              <BeequipTile
+                name={beequip.name}
+                data={beequip}
+                onClick={() => removeBeequip(index)}
+                onContextMenu={() => colorBeequip(index)}
+              />
             </Box>
           ))}
         </Flex>

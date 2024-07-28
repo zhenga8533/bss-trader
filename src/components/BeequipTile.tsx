@@ -1,6 +1,7 @@
 import { Box, Button, Grid, GridItem, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import beequips from "../data/beequips.json";
+import { getTileColor } from "../services/format";
 import { formatStat } from "./StatsPopover";
 
 export interface Beequip {
@@ -16,6 +17,7 @@ export interface Beequip {
 
 export interface BeequipData {
   name: string;
+  color: number;
   activeStats: string[];
   potential: number;
   waxes: string[];
@@ -25,14 +27,31 @@ interface BeequipTileProps {
   name: string;
   data?: BeequipData;
   onClick: () => void;
+  onContextMenu: () => void;
 }
 
-const BeequipTile = ({ name, data, onClick }: BeequipTileProps) => {
+const BeequipTile = ({ name, data, onClick, onContextMenu }: BeequipTileProps) => {
   // @ts-ignore
   const beequip = beequips[name] as Beequip;
+  const color = getTileColor(data?.color ?? 0);
 
   const tile = data ? (
-    <Button className="box" p={1} onClick={onClick} h="auto">
+    <Button
+      className="box"
+      backgroundColor={color}
+      h="auto"
+      p={1}
+      onClick={onClick}
+      onContextMenu={(e) => {
+        e.preventDefault();
+        onContextMenu();
+      }}
+      sx={{
+        ":hover": {
+          backgroundColor: color.replace("0.3", "0.6"),
+        },
+      }}
+    >
       <Grid
         templateAreas='"button stats"
                        "waxes  stats"'

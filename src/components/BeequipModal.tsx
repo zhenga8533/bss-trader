@@ -79,6 +79,7 @@ const BeequipModal = ({ isOpen, onClose, addBeequip }: BeequipTileProps) => {
                   setSelected(name);
                   setInputOpen(true);
                 }}
+                onContextMenu={() => {}}
               />
             </GridItem>
           ))}
