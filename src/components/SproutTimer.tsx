@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import { useEffect, useState } from "react";
 
 const SproutTimer = () => {
-  const origin = 1721584200;
+  const origin = 1722165900;
   const interval = 3 * 60 * 60; // 3 hours in seconds
   const now = Math.floor(Date.now() / 1000);
   const passed = Math.floor((now - origin) / interval);
