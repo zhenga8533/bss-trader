@@ -9,6 +9,7 @@ interface Cosmetic {
   stack_boost: string;
   stack_reward: string;
   where_from: string;
+  type: string;
 }
 
 export interface CosmeticData {
@@ -57,16 +58,16 @@ const CosmeticTile = ({ name, data, onClick, onContextMenu }: CosmeticTileProps)
         </Box>
         <VStack w="50%">
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            Skin
+            Cosmetic
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
             In Book: {data?.quantity > 0 ? "Yes" : "No"}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            In Stack: {data?.quantity}
+            In Stack: {data?.quantity ?? 0}
           </Text>
           <Text className="box" fontSize="large" p={0.5} w="100%">
-            Type
+            {cosmetic.type}
           </Text>
         </VStack>
       </HStack>
