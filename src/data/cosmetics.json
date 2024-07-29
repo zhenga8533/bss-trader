@@ -1044,7 +1044,7 @@
       "stack_boost": "+2% Bee Attack",
       "stack_reward": "10\u00a0Stingers",
       "where_from": "Awarded to top 25 Daily Fastest Coconut Crab Slayers\nDropped by Coconut Crab (Unbelievably Rare)",
-      "type": "Leaderboard"
+      "type": "Misc"
     },
     "Cool Backpack": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e4/Hivesticker_cool_backpack.png",
@@ -2052,7 +2052,7 @@
       "stack_boost": "+10% Sunflower Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Sunflower Field Pollen Collectors\nUsing the Sticker-Seeker in the Sunflower Field (Unfathomably Rare)\nPlanters on the Sunflower Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Dandelion Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/64/Hivesticker_dandelion_field_stamp.png",
@@ -2060,7 +2060,7 @@
       "stack_boost": "+10% Dandelion Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Dandelion Field Pollen Collectors\nUsing the Sticker-Seeker in the Dandelion Field (Unfathomably Rare)\nPlanters on the Dandelion Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Mushroom Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b0/Hivesticker_mushroom_field_stamp.png",
@@ -2068,7 +2068,7 @@
       "stack_boost": "+10% Mushroom Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Mushroom Field Pollen Collectors\nUsing the Sticker-Seeker in the Mushroom Field (Unfathomably Rare)\nPlanters on the Mushroom Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Blue Flower Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7a/Hivesticker_blue_flower_field_stamp.png",
@@ -2076,7 +2076,7 @@
       "stack_boost": "+10% Blue Flower Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Blue Flower Field Pollen Collectors\nUsing the Sticker-Seeker in the Blue Flower Field (Unfathomably Rare)\nPlanters on the Blue Flower Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Clover Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7f/Hivesticker_clover_field_stamp.png",
@@ -2084,7 +2084,7 @@
       "stack_boost": "+10% Sunflower Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Clover Field Pollen Collectors\nUsing the Sticker-Seeker in the Clover Field (Unfathomably Rare)\nPlanters on the Clover Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Strawberry Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bf/Hivesticker_strawberry_field_stamp.png",
@@ -2092,7 +2092,7 @@
       "stack_boost": "+10% Strawberry Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Strawberry Field Pollen Collectors\nUsing the Sticker-Seeker in the Strawberry Field (Unfathomably Rare)\nPlanters on the Strawberry Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Spider Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1c/Hivesticker_spider_field_stamp.png",
@@ -2100,7 +2100,7 @@
       "stack_boost": "+10% Spider Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Spider Field Pollen Collectors\nUsing the Sticker-Seeker in the Spider Field (Unfathomably Rare)\nPlanters on the Spider Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Bamboo Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0d/Hivesticker_bamboo_field_stamp.png",
@@ -2108,7 +2108,7 @@
       "stack_boost": "+10% Bamboo Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Bamboo Field Pollen Collectors\nUsing the Sticker-Seeker in the Bamboo Field (Unfathomably Rare)\nPlanters on the Bamboo Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Pineapple Patch Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/15/Hivesticker_pineapple_patch_stamp.png",
@@ -2116,7 +2116,7 @@
       "stack_boost": "+10% Pineapple Patch Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Pineapple Patch Pollen Collectors\nUsing the Sticker-Seeker in the Pineapple Patch (Unfathomably Rare)\nPlanters on the Pineapple Patch (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Stump Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a9/Hivesticker_stump_field_stamp.png",
@@ -2124,7 +2124,7 @@
       "stack_boost": "+10% Stump Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Stump Field Pollen Collectors\nUsing the Sticker-Seeker in the Stump Field (Unfathomably Rare)\nPlanters on the Stump Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Cactus Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/84/Hivesticker_cactus_field_stamp.png",
@@ -2132,7 +2132,7 @@
       "stack_boost": "+10% Cactus Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Cactus Field Pollen Collectors\nUsing the Sticker-Seeker in the Cactus Field (Unfathomably Rare)\nPlanters on the Cactus Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Pumpkin Patch Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/cf/Hivesticker_pumpkin_patch_stamp.png",
@@ -2140,7 +2140,7 @@
       "stack_boost": "+10% Pumpkin Patch Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Pumpkin Patch Pollen Collectors\nUsing the Sticker-Seeker in the Pumpkin Patch (Unfathomably Rare)\nPlanters on the Pumpkin Patch (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Pine Tree Forest Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0a/Hivesticker_pine_tree_forest_stamp.png",
@@ -2148,7 +2148,7 @@
       "stack_boost": "+10% Pine Tree Forest Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Pine Tree Forest Pollen Collectors\nUsing the Sticker-Seeker in the Pine Tree Forest (Unfathomably Rare)\nPlanters on the Pine Tree Forest (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Rose Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d8/Hivesticker_rose_field_stamp.png",
@@ -2156,7 +2156,7 @@
       "stack_boost": "+10% Rose Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Rose Field Pollen Collectors\nUsing the Sticker-Seeker in the Rose Field (Unfathomably Rare)\nPlanters on the Rose Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Hub Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fe/Hivesticker_hub_field_stamp.png",
@@ -2164,7 +2164,7 @@
       "stack_boost": "+10% Hub Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Hub Field Pollen Collectors\nUsing the Sticker-Seeker in the Hub Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Mountain Top Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/87/Hivesticker_mountain_top_field_stamp.png",
@@ -2172,7 +2172,7 @@
       "stack_boost": "+10% Mountain Top Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Mountain Top Field Pollen Collectors\nUsing the Sticker-Seeker in the Mountain Top Field (Unfathomably Rare)\nPlanters on the Mountain Top Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Pepper Patch Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6a/Hivesticker_pepper_patch_stamp.png",
@@ -2180,7 +2180,7 @@
       "stack_boost": "+10% Pepper Patch Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Pepper Patch Pollen Collectors\nUsing the Sticker-Seeker in the Pepper Patch (Unfathomably Rare)\nPlanters on the Pepper Patch (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Coconut Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/62/Hivesticker_coconut_field_stamp.png",
@@ -2188,7 +2188,7 @@
       "stack_boost": "+10% Coconut Field Pollen",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Coconut Field Pollen Collectors\nUsing the Sticker-Seeker in the Coconut Field (Unfathomably Rare)\nPlanters on the Coconut Field (Unfathomably Rare)",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Ant Field Stamp": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/49/Hivesticker_ant_field_stamp.png",
@@ -2196,7 +2196,7 @@
       "stack_boost": "+0.5% Bee Attack",
       "stack_reward": "10\u00a0Tickets",
       "where_from": "Awarded to the Top 100 Daily Ant Challenge Scorer each day\nAnt Challenge Reward (Unfathomably Rare)\n(Not listed in-game) Awarded to the Top 100 Daily Ant Field Pollen Collectors",
-      "type": "Stamp"
+      "type": "Field Stamp"
     },
     "Green Beesmas Light": {
       "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/df/Hivesticker_green_beesmas_light.png",

@@ -66,7 +66,7 @@ const CosmeticTile = ({ name, data, onClick, onContextMenu }: CosmeticTileProps)
           <Text className="box" fontSize="large" p={0.5} w="100%">
             In Stack: {data?.quantity ?? 0}
           </Text>
-          <Text className="box" fontSize="large" p={0.5} w="100%">
+          <Text className="box" fontSize="large" p={0.5} w="100%" whiteSpace="nowrap">
             {cosmetic.type}
           </Text>
         </VStack>
