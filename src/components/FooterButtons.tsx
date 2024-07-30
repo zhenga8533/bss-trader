@@ -8,6 +8,28 @@ import FooterPrompt from "./FooterPrompt";
 const FooterButtons = () => {
   const toast = useToast();
 
+  const getTag = (id: string) => {
+    // Offering
+    let text = "";
+
+    const categories = JSON.parse(localStorage.getItem(`${id}-categories`) ?? "{}");
+    categories.forEach((category: string) => {
+      text += ` ${category},`;
+    });
+
+    const cosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
+    Object.keys(cosmetics).forEach((key) => {
+      text += ` ${key},`;
+    });
+
+    const beequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "{}");
+    beequips.forEach((key: BeequipData) => {
+      text += ` ${key.name},`;
+    });
+
+    return text.slice(0, -1);
+  };
+
   const getText = (id: string) => {
     // Offering
     let text = "";
@@ -19,7 +41,7 @@ const FooterButtons = () => {
 
     const cosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
     Object.keys(cosmetics).forEach((key) => {
-      text += `\n- ${key} x${cosmetics[key]}`;
+      text += `\n- ${key} x${cosmetics[key].quantity}`;
     });
 
     const beequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "{}");
@@ -99,6 +121,16 @@ const FooterButtons = () => {
         }}
       />
       <HStack flexWrap="wrap" justifyContent="center">
+        <Button
+          colorScheme="yellow"
+          variant="solid"
+          onClick={() => {
+            setTextData(`Offering:${getTag("offering")}\n\nLooking for:${getTag("looking-for")}`);
+            setTextOpen(true);
+          }}
+        >
+          Tagify
+        </Button>
         <Button
           colorScheme="green"
           variant="solid"
