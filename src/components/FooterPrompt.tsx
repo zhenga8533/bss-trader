@@ -28,10 +28,12 @@ const FooterPrompt = ({ isOpen, onClose, onSubmit }: FooterPromptProps) => {
         <Textarea ref={ref} placeholder="Paste data here..." rows={10} />
 
         <ModalFooter>
-          <Button colorScheme="blue" mr={3} onClick={() => onSubmit(ref.current?.value ?? "")}>
+          <Button colorScheme="blue" variant="solid" mr={3} onClick={() => onSubmit(ref.current?.value ?? "")}>
             Submit
           </Button>
-          <Button onClick={onClose}>Cancel</Button>
+          <Button colorScheme="red" variant="solid" onClick={onClose}>
+            Cancel
+          </Button>
         </ModalFooter>
       </ModalContent>
     </Modal>
