@@ -1,6 +1,7 @@
 import { Button, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import { useState } from "react";
+import summer2024 from "../data/quests/summer2024.json";
 import { BeequipData } from "./BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
@@ -124,9 +125,9 @@ const FooterButtons = () => {
       />
       <HStack justifyContent="space-between" w="100%">
         <HStack flexWrap="wrap">
-          <QuestModal isOpen={questsOpen} onClose={() => setQuestsOpen(false)} />
+          <QuestModal quests={summer2024} isOpen={questsOpen} onClose={() => setQuestsOpen(false)} />
           <Button colorScheme="purple" variant="solid" onClick={() => setQuestsOpen(true)}>
-            Quests
+            Beesmas 2024
           </Button>
         </HStack>
 

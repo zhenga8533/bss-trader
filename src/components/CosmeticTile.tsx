@@ -27,8 +27,9 @@ interface CosmeticTileProps {
 const CosmeticTile = ({ name, data, onClick, onContextMenu }: CosmeticTileProps) => {
   // @ts-ignore
   const cosmetic = findValue(name, cosmetics) as Cosmetic;
-  const color = getTileColor(data?.color ?? 0);
+  if (!cosmetic) return null;
 
+  const color = getTileColor(data?.color ?? 0);
   const tile = (
     <Button
       backgroundColor={color}
