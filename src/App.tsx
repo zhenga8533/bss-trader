@@ -41,10 +41,8 @@ const App = () => {
           templateAreas={{
             base: `"offering"
                     "center"
-                    "looking-for"
-                    "footer"`,
-            md: `"offering center looking-for"
-                 "footer footer footer"`,
+                    "looking-for"`,
+            md: `"offering center looking-for"`,
           }}
           templateColumns={{
             base: "1fr",
@@ -67,11 +65,11 @@ const App = () => {
           <GridItem gridArea="looking-for">
             <ItemStack color="rgb(110, 222, 75)" title="Looking For" />
           </GridItem>
-          <GridItem gridArea="footer">
-            <FooterButtons />
-          </GridItem>
         </Grid>
       </Box>
+      <HStack justifyContent="space-between" position="relative" px="5%" zIndex={10}>
+        <FooterButtons />
+      </HStack>
       <VStack color="white" mb={5} position="relative" spacing={1} width="100%">
         <Text className="heading">made by</Text>
         <HStack>

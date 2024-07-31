@@ -1,12 +1,14 @@
-import { Button, Center, HStack, useToast } from "@chakra-ui/react";
+import { Button, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import { useState } from "react";
 import { BeequipData } from "./BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
+import QuestModal from "./QuestModal";
 
 const FooterButtons = () => {
   const toast = useToast();
+  const [questsOpen, setQuestsOpen] = useState(false);
 
   const getTag = (id: string) => {
     // Offering
@@ -109,7 +111,7 @@ const FooterButtons = () => {
   const [importOpen, setImportOpen] = useState(false);
 
   return (
-    <Center>
+    <>
       <FooterCopy data={textData} isOpen={textOpen} showQR={false} onClose={() => setTextOpen(false)} />
       <FooterCopy data={exportData} isOpen={exportOpen} showQR={true} onClose={() => setExportOpen(false)} />
       <FooterPrompt
@@ -120,42 +122,51 @@ const FooterButtons = () => {
           setImportOpen(false);
         }}
       />
-      <HStack flexWrap="wrap" justifyContent="center">
-        <Button
-          colorScheme="yellow"
-          variant="solid"
-          onClick={() => {
-            setTextData(`Offering:${getTag("offering")}\n\nLooking for:${getTag("looking-for")}`);
-            setTextOpen(true);
-          }}
-        >
-          Tagify
-        </Button>
-        <Button
-          colorScheme="green"
-          variant="solid"
-          onClick={() => {
-            setTextData(`Offering:${getText("offering")}\n\nLooking for:${getText("looking-for")}`);
-            setTextOpen(true);
-          }}
-        >
-          Textify
-        </Button>
-        <Button
-          colorScheme="blue"
-          variant="solid"
-          onClick={() => {
-            setExportData(getExport());
-            setExportOpen(true);
-          }}
-        >
-          Export
-        </Button>
-        <Button colorScheme="red" variant="solid" onClick={() => setImportOpen(true)}>
-          Import
-        </Button>
+      <HStack justifyContent="space-between" w="100%">
+        <HStack flexWrap="wrap">
+          <QuestModal isOpen={questsOpen} onClose={() => setQuestsOpen(false)} />
+          <Button colorScheme="purple" variant="solid" onClick={() => setQuestsOpen(true)}>
+            Quests
+          </Button>
+        </HStack>
+
+        <HStack flexWrap="wrap">
+          <Button
+            colorScheme="yellow"
+            variant="solid"
+            onClick={() => {
+              setTextData(`Offering:${getTag("offering")}\n\nLooking for:${getTag("looking-for")}`);
+              setTextOpen(true);
+            }}
+          >
+            Tagify
+          </Button>
+          <Button
+            colorScheme="green"
+            variant="solid"
+            onClick={() => {
+              setTextData(`Offering:${getText("offering")}\n\nLooking for:${getText("looking-for")}`);
+              setTextOpen(true);
+            }}
+          >
+            Textify
+          </Button>
+          <Button
+            colorScheme="blue"
+            variant="solid"
+            onClick={() => {
+              setExportData(getExport());
+              setExportOpen(true);
+            }}
+          >
+            Export
+          </Button>
+          <Button colorScheme="red" variant="solid" onClick={() => setImportOpen(true)}>
+            Import
+          </Button>
+        </HStack>
       </HStack>
-    </Center>
+    </>
   );
 };
 
