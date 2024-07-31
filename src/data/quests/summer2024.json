@@ -1,0 +1,126 @@
+{
+  "Bee Bear": {
+    "Beesmas Boosting": [{ "Rubber Duck": 1 }],
+    "Teamwork Makes The Dream": [{ "Simple Sun": 1 }],
+    "The Scoop On Stickers": [{ "Random": 1 }, { "Random": 1 }],
+    "Beesmas Beat Em Up": [{ "Random": 1 }, { "Random": 1 }],
+    "Walkin' In A Wavy Wonderland": [
+      { "Random": 1 },
+      { "Random": 1 },
+      {
+        "Round Green Critter": 1,
+        "Flying Magenta Critter": 1,
+        "Blue Triangle Critter": 1,
+        "Purple Pointed Critter": 1,
+        "Orange Leg Critter": 1
+      }
+    ],
+    "Festive Flower Fun": [
+      { "Small Tickseed": 3, "Small Dandelion": 3, "Small Pink Tulip": 3, "Small White Daisy": 3 }
+    ],
+    "Beesmas Bee-leaf-er": [
+      {
+        "Cordate Leaf": 5,
+        "Cunate Leaf": 5,
+        "Elliptic Leaf": 5,
+        "Hastate Leaf": 5,
+        "Lanceolate Leaf": 5,
+        "Lyrate Leaf": 5,
+        "Oblique Leaf": 5,
+        "Rhomboid Leaf": 5,
+        "Reniform Leaf": 5,
+        "Spatulate Leaf": 5
+      }
+    ],
+    "The Season For Giving": [{ "Pyramid": 3, "Tiny House": 3, "Simple Mountain": 5 }],
+    "Rain, Rain, Snow Away": [{ "Yellow Umbrella": 3 }, { "Grey Raining Cloud": 1, "Simple Cloud": 5 }],
+    "Here Comes Cub Buddy": [
+      { "Peace Sign Hand": 2, "Thumbs Up Hand": 2 },
+      { "Orange Swirled Marble": 2, "Blue And Green Marble": 2, "Yellow Swirled Marble": 2 },
+      { "Sitting Green Shirt Bear": 1 },
+      { "Diamond Cluster": 1 }
+    ],
+    "Doodle Cub Creation (1/5)": [
+      { "Green SELL": 2, "Yellow Hi": 3 },
+      { "Panicked Science Bear": 3, "Bomber Bee Bear": 2 },
+      { "Wobbly Looker Bee": 1, "Round Rascal Bee": 1, "Drooping Stubborn Bee": 1 }
+    ],
+    "Doodle Cub Creation (2/5)": [
+      { "Clippers": 4, "Rake": 4, "Vacuum": 4, "Scooper": 4 },
+      { "Uplooking Bear": 3 },
+      {
+        "Round Green Critter": 2,
+        "Flying Magenta Critter": 2,
+        "Blue Triangle Critter": 2,
+        "Purple Pointed Critter": 2
+      },
+      { "Atom Symbol": 1 }
+    ],
+    "Doodle Cub Creation (3/5)": [
+      { "Orange Step Array": 2, "Red Palm Hand": 5, "Baseball Swing": 5 },
+      { "Rhubarb": 4 },
+      { "Yellow Left Arrow": 3, "Yellow Right Arrow": 3 },
+      { "Eight Note": 2 },
+      { "Diamond Cluster": 1 }
+    ],
+    "Doodle Cub Creation (4/5)": [
+      { "Shocked Hive Slot": 1, "Doodle S": 4, "Wishbone": 4 },
+      { "Orange Swirled Marble": 2, "Blue And Green Marble": 2 },
+      {
+        "Satisfying Nectar Icon": 2,
+        "Refreshing Nectar Icon": 2,
+        "Motivating Nectar Icon": 2,
+        "Invigorating Nectar Icon": 2,
+        "Comforting Nectar Icon": 2
+      },
+      { "Hourglass": 1 }
+    ],
+    "Doodle Cub Creation (5/5)": [
+      { "Colorful Buttons": 1 },
+      { "Yellow Sticky Hand": 1 },
+      { "Cyan Decorative Border": 1, "Diamond Trim": 1 },
+      { "Black Star": 1, "Cyan Star": 1, "Shining Star": 1 },
+      { "Sitting Mother Bear": 1, "Shy Brown Bear": 1 },
+      { "Star Sign": 1 },
+      { "Shining Halo": 1 }
+    ]
+  },
+  "Brown Bear": {
+    "Brown Bear's Stockings": [{ "Green Plus Sign": 1 }]
+  },
+  "Science Bear": {
+    "Science Bear's Beesmas Lights": [{ "Simple Sun": 3 }, { "Traffic Light": 1 }]
+  },
+  "Dapper Bear": {
+    "Dapper Bear's Samovar": [{ "Yellow Coffee Mug": 4 }, { "Cordate Leaf": 3 }, { "Spore Covered Puffshroom": 1 }]
+  },
+  "Polar Bear": {
+    "Polar Bear's Beesmas Feast": [{ "Rubber Duck": 3 }, { "Random": 1 }]
+  },
+  "Bucko Bee": {
+    "Bucko Bee's Snow Machine": [
+      { "Small Dandelion": 5, "Simple Mountain": 3, "Simple Cloud": 5 },
+      { "Bubble Wand": 1 },
+      { "Blue Square": 1, "Window": 2 }
+    ]
+  },
+  "Riley Bee": {
+    "Riley Bee's Honeyday Candles": [{ "Small Flame": 3 }, { "Scythe": 1 }, { "Red Palm Hand": 1 }]
+  },
+  "Stick Bug": {
+    "Stick Bug's Nymph Hats": [
+      { "Right Facing Snail": 1 },
+      { "Forward Facing Spider": 2, "Menacing Mantis": 2 },
+      { "Small Blue Chick": 2, "Left Facing Ant": 3 },
+      { "Walking Stick Nymph": 4 }
+    ]
+  },
+  "Onett": {
+    "Onett’s Yard Art on The Lid": [
+      { "Random": 4 },
+      { "Blob Bumble Bee": 1 },
+      { "Mushshroom": 1 },
+      { "Golden Rake": 1 }
+    ]
+  }
+}
