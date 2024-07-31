@@ -20,34 +20,50 @@ export interface CosmeticData {
 interface CosmeticTileProps {
   name: string;
   data: CosmeticData;
+  showQuantity: boolean;
   onClick: () => void;
   onContextMenu: () => void;
 }
 
-const CosmeticTile = ({ name, data, onClick, onContextMenu }: CosmeticTileProps) => {
+const CosmeticTile = ({ name, data, showQuantity, onClick, onContextMenu }: CosmeticTileProps) => {
   // @ts-ignore
   const cosmetic = findValue(name, cosmetics) as Cosmetic;
   if (!cosmetic) return null;
 
   const color = getTileColor(data?.color ?? 0);
   const tile = (
-    <Button
-      backgroundColor={color}
-      borderRadius={5}
-      p={1}
-      onClick={onClick}
-      onContextMenu={(e) => {
-        e.preventDefault();
-        onContextMenu();
-      }}
-      sx={{
-        ":hover": {
-          backgroundColor: color.replace("0.3", "0.6"),
-        },
-      }}
-    >
-      <Image src={cosmetic.image_url} alt={name} />
-    </Button>
+    <Box maxW="100px" position="relative">
+      <Button
+        backgroundColor={color}
+        borderRadius={5}
+        p={1}
+        onClick={onClick}
+        onContextMenu={(e) => {
+          e.preventDefault();
+          onContextMenu();
+        }}
+        sx={{
+          ":hover": {
+            backgroundColor: color.replace("0.3", "0.6"),
+          },
+        }}
+      >
+        <Image src={cosmetic.image_url} alt={name} />
+      </Button>
+      {showQuantity && (
+        <Box
+          backgroundColor="rgba(0, 0, 0, 0.5)"
+          borderRadius={5}
+          color="white"
+          position="absolute"
+          p={0.5}
+          right={-1}
+          bottom={-2}
+        >
+          x{data.quantity}
+        </Box>
+      )}
+    </Box>
   );
 
   const label = (

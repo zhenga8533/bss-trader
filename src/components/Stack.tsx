@@ -164,25 +164,14 @@ const Stack = ({ color, title }: StackProps) => {
         {/** Cosmetics */}
         <Grid gap={2} templateColumns="repeat(auto-fill, minmax(90px, 1fr))" w="100%" columnGap={3} rowGap={5}>
           {Object.entries(cosmetics).map(([name, data]) => (
-            <Box position={"relative"} key={name}>
-              <CosmeticTile
-                name={name}
-                data={data}
-                onClick={() => removeCosmetic(name)}
-                onContextMenu={() => colorCosmetic(name)}
-              />
-              <Box
-                backgroundColor="rgba(0, 0, 0, 0.5)"
-                borderRadius={5}
-                color="white"
-                position="absolute"
-                p={0.5}
-                right={-1}
-                bottom={-2}
-              >
-                x{data.quantity}
-              </Box>
-            </Box>
+            <CosmeticTile
+              key={name}
+              name={name}
+              data={data}
+              showQuantity={true}
+              onClick={() => removeCosmetic(name)}
+              onContextMenu={() => colorCosmetic(name)}
+            />
           ))}
         </Grid>
         {/** Beequips */}

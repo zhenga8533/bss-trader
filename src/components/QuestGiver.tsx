@@ -19,24 +19,14 @@ const QuestGiver = ({ quests }: QuestGiverProps) => {
               {quest.map((reqs) => (
                 <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" columnGap={3} rowGap={1}>
                   {Object.entries(reqs).map(([sticker, quantity]) => (
-                    <Box key={sticker} maxW="100px" position={"relative"}>
+                    <Box key={sticker} maxW="100px">
                       <CosmeticTile
                         name={sticker}
                         data={{ color: 0, quantity: quantity || 0 }}
+                        showQuantity={true}
                         onClick={() => {}}
                         onContextMenu={() => {}}
                       />
-                      <Box
-                        backgroundColor="rgba(0, 0, 0, 0.5)"
-                        borderRadius={5}
-                        color="white"
-                        position="absolute"
-                        p={0.5}
-                        right={-1}
-                        bottom={-2}
-                      >
-                        x{quantity}
-                      </Box>
                     </Box>
                   ))}
                 </Grid>

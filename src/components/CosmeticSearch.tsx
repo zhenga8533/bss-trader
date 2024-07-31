@@ -66,7 +66,13 @@ const CosmeticSearch = ({ icon, type, stack, addCosmetic }: CosmeticSearchProps)
         >
           {filtered.map((name) => (
             <GridItem key={name}>
-              <CosmeticTile name={name} data={stack[name]} onClick={() => addCosmetic(name)} onContextMenu={() => {}} />
+              <CosmeticTile
+                name={name}
+                data={stack[name]}
+                showQuantity={false}
+                onClick={() => addCosmetic(name)}
+                onContextMenu={() => {}}
+              />
             </GridItem>
           ))}
         </Grid>
