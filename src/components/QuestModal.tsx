@@ -21,7 +21,9 @@ const QuestModal = ({ quests, isOpen, onClose }: QuestModalProps) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalContent bgColor="rgb(128, 32, 128)" borderRadius={5} color="black" maxW="60vw" minW="360px">
-        <ModalHeader className="heading">{giver} Quest Stickers</ModalHeader>
+        <ModalHeader className="heading" fontWeight="bold">
+          {giver} Quest Stickers
+        </ModalHeader>
         <ModalCloseButton />
         <ModalBody mt={1}>
           <Box className="custom-scroll" overflowX="auto" overflowY="hidden">

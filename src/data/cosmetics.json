@@ -2285,6 +2285,14 @@
       "stack_reward": "1\u00a0Box-O-Frogs",
       "where_from": "Reward from the Mondo Gift Box",
       "type": "Beesmas"
+    },
+    "Random": {
+      "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9b/Ccat_iconsmall_sticker.png",
+      "description": "\"We love sticker quests!\"",
+      "stack_boost": "-1% Sanity",
+      "stack_reward": "Probably for some quest...",
+      "where_from": "Sticker-Seeker Quest Reward (Extremely Random)",
+      "type": "Seeker"
     }
   }
 }

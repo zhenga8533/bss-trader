@@ -60,7 +60,7 @@
       { "Orange Step Array": 2, "Red Palm Hand": 5, "Baseball Swing": 5 },
       { "Rhubarb": 4 },
       { "Yellow Left Arrow": 3, "Yellow Right Arrow": 3 },
-      { "Eight Note": 2 },
+      { "Eighth Note": 2 },
       { "Diamond Cluster": 1 }
     ],
     "Doodle Cub Creation (4/5)": [
@@ -81,7 +81,20 @@
       { "Cyan Decorative Border": 1, "Diamond Trim": 1 },
       { "Black Star": 1, "Cyan Star": 1, "Shining Star": 1 },
       { "Sitting Mother Bear": 1, "Shy Brown Bear": 1 },
-      { "Star Sign": 1 },
+      {
+        "Capricorn Star Sign": 1,
+        "Aquarius Star Sign": 1,
+        "Pisces Star Sign": 1,
+        "Aries Star Sign": 1,
+        "Taurus Star Sign": 1,
+        "Gemini Star Sign": 1,
+        "Cancer Star Sign": 1,
+        "Leo Star Sign": 1,
+        "Virgo Star Sign": 1,
+        "Libra Star Sign": 1,
+        "Scorpio Star Sign": 1,
+        "Sagittarius Star Sign": 1
+      },
       { "Shining Halo": 1 }
     ]
   },
@@ -119,7 +132,16 @@
     "Onett’s Yard Art on The Lid": [
       { "Random": 4 },
       { "Blob Bumble Bee": 1 },
-      { "Mushshroom": 1 },
+      {
+        "Spore Covered Puffshroom": 1,
+        "White Button Mushroom": 1,
+        "Fly Agaric Mushroom": 1,
+        "Porcini Mushroom": 1,
+        "Oiler Mushroom": 1,
+        "Morel Mushroom": 1,
+        "Chanterelle Mushroom": 1,
+        "Shiitake Mushroom": 1
+      },
       { "Golden Rake": 1 }
     ]
   }
