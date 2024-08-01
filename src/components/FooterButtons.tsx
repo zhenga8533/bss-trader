@@ -125,7 +125,7 @@ const FooterButtons = () => {
       />
       <HStack justifyContent="space-between" w="100%">
         <HStack flexWrap="wrap">
-          <QuestModal quests={summer2024} isOpen={questsOpen} onClose={() => setQuestsOpen(false)} />
+          <QuestModal id="summer2024" quests={summer2024} isOpen={questsOpen} onClose={() => setQuestsOpen(false)} />
           <Button colorScheme="purple" variant="solid" onClick={() => setQuestsOpen(true)}>
             Beesmas 2024
           </Button>

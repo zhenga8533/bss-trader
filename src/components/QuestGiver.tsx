@@ -1,38 +1,40 @@
-import { Box, Divider, Grid, Text, VStack } from "@chakra-ui/react";
+import { Divider, Grid, Text, VStack } from "@chakra-ui/react";
+import { Fragment } from "react/jsx-runtime";
 import CosmeticTile from "./CosmeticTile";
 import { Quests } from "./QuestModal";
 
 interface QuestGiverProps {
   quests: Quests;
+  progress: boolean[][];
+  setProgress: (row: number, col: number) => void;
 }
 
-const QuestGiver = ({ quests }: QuestGiverProps) => {
+const QuestGiver = ({ quests, progress, setProgress }: QuestGiverProps) => {
   return (
     <VStack alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3} spacing={10}>
-      {Object.entries(quests).map(([name, quest]) => {
+      {Object.entries(quests).map(([name, quest], row) => {
         return (
-          <VStack alignItems="left">
+          <VStack alignItems="left" key={name}>
             <Text className="heading" fontWeight="bold">
               {name}
             </Text>
             <VStack alignItems="left">
-              {quest.map((reqs) => (
-                <>
+              {quest.map((reqs, col) => (
+                <Fragment key={col}>
                   <Divider />
                   <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" columnGap={3} rowGap={1}>
                     {Object.entries(reqs).map(([sticker, quantity]) => (
-                      <Box key={sticker} maxW="100px">
-                        <CosmeticTile
-                          name={sticker}
-                          data={{ color: 0, quantity: quantity || 0 }}
-                          showQuantity={true}
-                          onClick={() => {}}
-                          onContextMenu={() => {}}
-                        />
-                      </Box>
+                      <CosmeticTile
+                        key={sticker}
+                        name={sticker}
+                        data={{ color: progress[row][col] ? 7 : 0, quantity: quantity || 0 }}
+                        showQuantity={true}
+                        onClick={() => setProgress(row, col)}
+                        onContextMenu={() => {}}
+                      />
                     ))}
                   </Grid>
-                </>
+                </Fragment>
               ))}
             </VStack>
           </VStack>

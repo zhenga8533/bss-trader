@@ -26,14 +26,28 @@ export interface Quests {
 }
 
 interface QuestModalProps {
+  id: string;
   quests: { [npc: string]: Quests };
   isOpen: boolean;
   onClose: () => void;
 }
 
-const QuestModal = ({ quests, isOpen, onClose }: QuestModalProps) => {
+const QuestModal = ({ id, quests, isOpen, onClose }: QuestModalProps) => {
   const givers = Object.keys(quests);
   const [giver, setGiver] = useState<string>(givers[0]);
+
+  const [progress, setProgress] = useState<{ [key: string]: boolean[][] }>(() => {
+    const saveData = localStorage.getItem(id + "-progress");
+    if (saveData) return JSON.parse(saveData);
+
+    const progress: { [key: string]: boolean[][] } = {};
+    givers.forEach((key) => {
+      const giver = quests[key];
+      progress[key] = Object.keys(giver).map((quest) => Array(giver[quest].length).fill(false));
+    });
+
+    return progress;
+  });
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
@@ -58,7 +72,20 @@ const QuestModal = ({ quests, isOpen, onClose }: QuestModalProps) => {
               ))}
             </Grid>
           </Box>
-          <QuestGiver key={giver} quests={quests[giver]} />
+          <QuestGiver
+            key={giver}
+            quests={quests[giver]}
+            progress={progress[giver]}
+            setProgress={(row, col) => {
+              setProgress((prevProgress) => {
+                const newProgress = { ...prevProgress };
+                newProgress[giver][row][col] = !newProgress[giver][row][col];
+                localStorage.setItem(id + "-progress", JSON.stringify(newProgress));
+                console.log(newProgress);
+                return newProgress;
+              });
+            }}
+          />
         </ModalBody>
       </ModalContent>
     </Modal>

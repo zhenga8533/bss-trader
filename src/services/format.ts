@@ -42,5 +42,6 @@ export const getTileColor = (color: number) => {
     "rgba(48, 255, 48, 0.3)",
     "rgba(48, 48, 255, 0.3)",
     "rgba(255, 48, 255, 0.3)",
+    "rgba(48, 255, 48, 0.75)",
   ][color ?? 0];
 };
