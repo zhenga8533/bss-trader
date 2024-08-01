@@ -110,6 +110,32 @@
   "Polar Bear": {
     "Polar Bear's Beesmas Feast": [{ "Rubber Duck": 3 }, { "Random": 1 }]
   },
+  "Spirit Bear": {
+    "Spirit Bear's Galentine Shrine": [
+      { "Small Pink Tulip": 6, "Pink Chair": 3, "Shrugging Heart": 2 },
+      { "Simple Skyscraper": 4, "Window": 4 },
+      { "Pale Heart": 3 },
+      { "Diamond Cluster": 1 }
+    ]
+  },
+  "Gummy Bear": {
+    "Goo Years Beacon (Players will get eight of these at random)": [
+      { "Launching Rocket": 8 },
+      { "White Flag": 6 },
+      { "Saturn": 3 },
+      { "Alert Icon": 4 },
+      { "TNT": 4 },
+      { "Atom Symbol": 5 },
+      { "Fuzz Bomb": 3 },
+      { "Purple Fleuron": 1 },
+      { "Yellow Sticky Hand": 3 },
+      { "Black Diamond": 2 },
+      { "Glowing Smile": 2 },
+      { "Dark Flame": 1 },
+      { "Small Shield": 1 },
+      { "Gummyballer": 1 }
+    ]
+  },
   "Gifted Bucko Bee": {
     "Bucko Bee's Snow Machine": [
       { "Small Dandelion": 5, "Simple Mountain": 3, "Simple Cloud": 5 },
@@ -119,6 +145,9 @@
   },
   "Gifted Riley Bee": {
     "Riley Bee's Honeyday Candles": [{ "Small Flame": 3 }, { "Scythe": 1 }, { "Red Palm Hand": 1 }]
+  },
+  "Honey Bee (NPC)": {
+    "Honey Bee's Honey Wreath?": [{ "Silly Tongue": 9 }, { "Honey Dipper": 9 }, { "Honey Bee Bear": 9 }]
   },
   "Stick Bug": {
     "Stick Bug's Nymph Hats": [
@@ -143,6 +172,46 @@
         "Shiitake Mushroom": 1
       },
       { "Golden Rake": 1 }
+    ]
+  },
+  "Bubble Bee Man": {
+    "BBM's Naughty List": [
+      { "Basic White Hive Skin": 3, "Basic Black Hive Skin": 3, "Basic Red Hive Skin": 5, "Basic Blue Hive Skin": 5 },
+      { "Royal Symbol": 1 },
+      { "Shiitake Mushroom": 4, "Morel Mushroom": 4 },
+      { "Ionic Column Base": 1, "Ionic Column Middle": 1, "Ionic Column Top": 1 },
+      {
+        "Sunflower Field Stamp": 6,
+        "Dandelion Field Stamp": 6,
+        "Mushroom Field Stamp": 6,
+        "Blue Flower Field Stamp": 6,
+        "Clover Field Stamp": 6,
+        "Strawberry Field Stamp": 6,
+        "Spider Field Stamp": 6,
+        "Bamboo Field Stamp": 6,
+        "Pineapple Patch Stamp": 6,
+        "Stump Field Stamp": 6,
+        "Cactus Field Stamp": 6,
+        "Pumpkin Patch Stamp": 6,
+        "Pine Tree Forest Stamp": 6,
+        "Rose Field Stamp": 6,
+        "Ant Field Stamp": 6,
+        "Hub Field Stamp": 6,
+        "Mountain Top Field Stamp": 6,
+        "Coconut Field Stamp": 6,
+        "Pepper Patch Stamp": 6
+      },
+      { "Coiled Snake": 5, "Standing Bean Bug": 2 },
+      { "Tornado": 1, "Diamond Diamond Bee": 2 },
+      { "Flying Bee Bear": 3, "Flying Festive Bee": 1 },
+      { "Squashed Head Bear": 1 },
+      { "Prism Painting": 1, "Banana Painting": 1 },
+      { "Royal Bear": 1 },
+      { "Red X": 12 },
+      { "AFK": 2 },
+      { "Round Basic Bee": 1 },
+      { "Red Wailing Cry": 1 },
+      { "Stick Cub Skin": 1 }
     ]
   }
 }

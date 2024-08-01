@@ -1,4 +1,14 @@
-import { Button, Grid, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Grid,
+  Image,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import npcs from "../data/npcs.json";
 import QuestGiver from "./QuestGiver";
@@ -28,24 +38,26 @@ const QuestModal = ({ quests, isOpen, onClose }: QuestModalProps) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalContent bgColor="rgb(128, 32, 128)" borderRadius={5} color="black" maxW="60vw" minW="360px">
-        <ModalHeader className="heading" fontWeight="bold">
+        <ModalHeader className="heading" fontSize="xx-large" fontWeight="bold">
           {giver} Quest Stickers
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody mt={1}>
-          <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" columnGap={3} rowGap={1} mb={4}>
-            {givers.map((giver) => (
-              <Button
-                className="button"
-                key={giver}
-                onClick={() => {
-                  setGiver(giver);
-                }}
-              >
-                <Image src={(npcs as NPCS)[giver]?.image_url} alt={giver} maxW="48px" />
-              </Button>
-            ))}
-          </Grid>
+          <Box alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3} mb={4}>
+            <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" columnGap={3} rowGap={1}>
+              {givers.map((giver) => (
+                <Button
+                  className="button"
+                  key={giver}
+                  onClick={() => {
+                    setGiver(giver);
+                  }}
+                >
+                  <Image src={(npcs as NPCS)[giver]?.image_url} alt={giver} maxW="48px" />
+                </Button>
+              ))}
+            </Grid>
+          </Box>
           <QuestGiver key={giver} quests={quests[giver]} />
         </ModalBody>
       </ModalContent>
