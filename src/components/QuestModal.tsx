@@ -59,17 +59,21 @@ const QuestModal = ({ id, quests, isOpen, onClose }: QuestModalProps) => {
         <ModalBody mt={1}>
           <Box alignItems="left" backgroundColor="rgba(0, 0, 0, 0.1)" borderRadius={5} p={3} mb={4}>
             <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" columnGap={3} rowGap={1}>
-              {givers.map((giver) => (
-                <Button
-                  className="button"
-                  key={giver}
-                  onClick={() => {
-                    setGiver(giver);
-                  }}
-                >
-                  <Image src={(npcs as NPCS)[giver]?.image_url} alt={giver} maxW="48px" />
-                </Button>
-              ))}
+              {givers.map((giver) => {
+                const complete = progress[giver].every((quest) => quest.every((sticker) => sticker));
+                return (
+                  <Button
+                    key={giver}
+                    className="button"
+                    bgColor={complete ? "green.500" : ""}
+                    onClick={() => {
+                      setGiver(giver);
+                    }}
+                  >
+                    <Image src={(npcs as NPCS)[giver]?.image_url} alt={giver} maxW="48px" />
+                  </Button>
+                );
+              })}
             </Grid>
           </Box>
           <QuestGiver
