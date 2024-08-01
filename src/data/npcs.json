@@ -1,0 +1,53 @@
+{
+  "Black Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/71/Black.png"
+  },
+  "Brown Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/06/Brown.png"
+  },
+  "Mother Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/af/MotherBearTrans.png"
+  },
+  "Panda Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/00/Panda.png"
+  },
+  "Science Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a5/Science.png"
+  },
+  "Dapper Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/90/DapperBearHD.png"
+  },
+  "Honey Bee (NPC)": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8d/HoneyBeeNPCTransparent.png"
+  },
+  "Polar Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/23/Polar.png"
+  },
+  "Robo Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f9/RoboBearHD.png"
+  },
+  "Gifted Riley Bee": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b0/GiftedRileyBeeNPCTransparent.png"
+  },
+  "Gifted Bucko Bee": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3d/GiftedBuckoBeeNPCTransparent.png"
+  },
+  "Onett": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d0/OnettNPC.png"
+  },
+  "Spirit Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/21/Spirit_bear333.png"
+  },
+  "Sun Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/61/Sun.png"
+  },
+  "Gummy Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a2/GummyBearHD.png"
+  },
+  "Bee Bear": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ec/Bee_Bear.png"
+  },
+  "Bubble Bee Man": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fd/BBMThumb.png"
+  }
+}
