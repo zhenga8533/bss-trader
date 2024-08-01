@@ -1,6 +1,13 @@
-import { Box, Button, HStack, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader } from "@chakra-ui/react";
+import { Button, Grid, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader } from "@chakra-ui/react";
 import { useState } from "react";
+import npcs from "../data/npcs.json";
 import QuestGiver from "./QuestGiver";
+
+interface NPCS {
+  [npc: string]: {
+    image_url: string;
+  };
+}
 
 export interface Quests {
   [quest: string]: {
@@ -26,21 +33,19 @@ const QuestModal = ({ quests, isOpen, onClose }: QuestModalProps) => {
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody mt={1}>
-          <Box className="custom-scroll" overflowX="auto" overflowY="hidden">
-            <HStack spacing={4} minWidth="max-content" mb={3}>
-              {givers.map((giver) => (
-                <Button
-                  key={giver}
-                  minWidth="100px"
-                  onClick={() => {
-                    setGiver(giver);
-                  }}
-                >
-                  {giver}
-                </Button>
-              ))}
-            </HStack>
-          </Box>
+          <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr))" columnGap={3} rowGap={1} mb={4}>
+            {givers.map((giver) => (
+              <Button
+                className="button"
+                key={giver}
+                onClick={() => {
+                  setGiver(giver);
+                }}
+              >
+                <Image src={(npcs as NPCS)[giver]?.image_url} alt={giver} maxW="48px" />
+              </Button>
+            ))}
+          </Grid>
           <QuestGiver key={giver} quests={quests[giver]} />
         </ModalBody>
       </ModalContent>
