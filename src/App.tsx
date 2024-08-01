@@ -5,6 +5,7 @@ import discord from "./assets/discord.png";
 import FooterButtons from "./components/FooterButtons";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
+import StickerPrinter from "./components/StickerPrinter";
 
 const App = () => {
   return (
@@ -19,14 +20,13 @@ const App = () => {
         width="100%"
         height="100%"
       />
-      <HStack justifyContent="space-between" position="relative" pt="3vw" px="5%" zIndex={10}>
-        <HStack justifyContent="center">
-          <HStack backgroundColor="rgba(128, 128, 128, 0.5)" borderRadius={5} p={3}>
-            <Heading className="heading">BSS Trader</Heading>
-          </HStack>
-        </HStack>
+      <Grid templateColumns="repeat(3, 1fr)" gap={4} px="5%" py={5} position="relative" zIndex={10}>
+        <StickerPrinter />
+        <Center backgroundColor="rgba(255, 255, 32, 0.75)" borderRadius={5} p={3}>
+          <Heading className="heading">BSS Trader</Heading>
+        </Center>
         <SproutTimer />
-      </HStack>
+      </Grid>
       <Box
         backgroundColor="rgba(0, 0, 0, 0.5)"
         outline="5px solid rgba(255, 255, 0, 0.75)"
