@@ -1,0 +1,168 @@
+{
+  "Basic Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fa/Basic_Egg.png",
+    "description": "The Basic Egg is the most common type of egg found in the game. It will almost always hatch into a Basic Bee (87% chance), but in rare cases, it can hatch into a Rare Bee (10% chance), an Epic Bee (2.5% chance), a Legendary Bee (0.5% chance), a Mythic Bee (0% chance), or into a Gifted Bee (0.4% chance), with a 0.348% (1 out of 287.35632184) chance of getting a Gifted Basic Bee from the egg. Event bees cannot be hatched from this egg. This egg cannot be used on a Basic Bee.",
+    "obtainment": [
+      "First-time players receive a free Basic Egg in their inventory.",
+      "Purchasing from the Basic Egg Shop located near the Sunflower Field for a base price of Honey 1,000 Honey and capping at Honey 10,000,000 Honey. Every time the player purchases a Basic Egg, the price of the next egg scales up.",
+      "Adding the Round Basic Bee Sticker to the Sticker Stack rewards 1 Basic Egg."
+    ]
+  },
+  "Silver Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/42/Silver_Egg.png",
+    "description": "The Silver Egg is a type of egg that will most likely hatch into a Rare bee (64.9% chance), but it has a small chance to hatch into an Epic bee (30% chance), a Legendary bee (5% chance), or a Mythic bee (0.1% chance). A Basic Bee or an Event bee cannot be hatched from this egg.",
+    "obtainment": [
+      "Purchasing from Ticket Tent for Ticket 50 Tickets each.",
+      "Purchasing from the Robux Shop for Robux 100 Robux.",
+      "By purchasing the Silver Egg in Bee Bear's Catalog for Snowflake 25 Snowflakes and Gingerbread Bear 5 Gingerbread Bears during Beesmas 2024.",
+      "Finishing Black Bear's and Panda Bear's Silver Egg questline.",
+      "As a reward from Brown Bear's 25th quest.",
+      "Completing the 25th Sticker-Seeker quest rewards you 1 Silver Egg.",
+      "An extremely low chance of dropping from a Mantis (in increments of 1 or 5).",
+      "A low chance of dropping from the King Beetle and Tunnel Bear.",
+      "A low chance to drop from Rare sprouts.",
+      "An extremely rare chance from leaves when collecting pollen in the Clover Field.",
+      "As a drop from a Festive Planter Festive Planter.",
+      "A rare chance to drop from stockings.",
+      "A rare reward from the Winter Memory Match."
+    ]
+  },
+  "Gifted Silver Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3f/Gifted_Silver_Egg.png",
+    "description": "A Gifted Silver Egg shares the same probabilities as a Silver Egg, but the egg will always hatch the bee into its gifted variant.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg including a gifted silver egg, but with lower chances of obtaining upon subsequent defeats.",
+      "As a reward for getting Top 100 in the Daily Top Legendary Bee Pollen Collectors by the end of a day.",
+      "Completing Black Bear's \"Getting Stumped\" quest.",
+      "Completing the 100th quest of the Sticker-Seeker Quest Machine rewards you 1 Gifted Silver Egg.",
+      "An exceptionally rare chance of dropping from werewolves.",
+      "A rare chance to obtain when defeating the Stump Snail.",
+      "An extremely rare chance of dropping from a Scorpion."
+    ]
+  },
+  "Gold Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/50/Gold_Egg.png",
+    "description": "The Gold Egg is a type of egg most likely to hatch into an Epic bee (79% chance), but it has a chance to hatch into a Legendary bee (20% chance) or a Mythic bee (1% chance). A Basic Bee, Rare bee, or an Event bee cannot hatch from this egg.",
+    "obtainment": [
+      "Purchasing from the Ticket Tent for 100 Ticket Tickets each.",
+      "Purchasing from the Robux Shop for Robux 200 Robux each.",
+      "By purchasing the Gold Egg in Bee Bear's Catalog for Gingerbread Bear 10 Gingerbread Bears during Beesmas 2024.",
+      "A rare reward from the Robo Bear Challenge.",
+      "A rare reward from the Extreme Memory Match.",
+      "In token form in the Werewolf's Cave, which is guarded by two cave monsters.",
+      "Completing Black Bear's and Panda Bear's gold egg questline.",
+      "As a reward from Brown Bear's 50th, 340th and 390th quest.",
+      "Completing the Sticker-Seeker Quest Machine's 50th quest rewards 1 Gold Egg.",
+      "Capturing Commando Chick 10 times.",
+      "A low chance of dropping upon defeating the King Beetle.",
+      "An extremely low chance of dropping upon defeating a scorpion.",
+      "A rare chance to drop from Epic sprouts.",
+      "An extremely rare chance of dropping from leaves when collecting pollen in the Clover Field.",
+      "A rare drop from a Ticket Planter Ticket Planter, Candy Planter Candy Planter, Red Clay Planter Red Clay Planter, Festive Planter Festive Planter, Pesticide Planter Pesticide Planter and Petal Planter Petal Planter.",
+      "A rare drop from the Stockings.",
+      "A low chance to drop from a Festive Nymph.",
+      "As a rare reward from the Winter Memory Match."
+    ]
+  },
+  "Gifted Gold Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1c/Gifted_Gold_Egg.png",
+    "description": "A Gifted Gold Egg shares the same probabilities as a Gold Egg, but the egg will always hatch the bee into its gifted variant. This type of egg cannot be applied to craft the Honey Mask.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a Gifted Gold Egg, but with lower chances of obtaining upon subsequent defeats.",
+      "As a reward for getting Top 100 in the Daily Top Epic Bee Pollen Collectors by the end of a day.",
+      "As a Playtime Grandmaster badge reward from donating tickets to the Wind Shrine.",
+      "Completing 50 Gifted Bucko Bee quests or 50 Gifted Riley Bee quests awards 1 Gifted Gold Egg.",
+      "Completing 275 Brown Bear quests awards 1 Gifted Gold Egg.",
+      "Completing the 150th quest of the Sticker-Seeker Quest Machine rewards 1 Gifted Gold Egg.",
+      "A very rare chance of dropping upon defeating the Stump Snail and the Coconut Crab.",
+      "An exceptionally rare chance to drop from mantises."
+    ]
+  },
+  "Diamond Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/70/Diamond_Egg.png",
+    "description": "The Diamond Egg is a type of egg that will most likely hatch into a Legendary bee (95% chance), but it has a rare chance to hatch into a Mythic bee (5% chance). A Basic Bee, Rare bee, Epic bee, or an Event bee cannot hatch from this egg.",
+    "obtainment": [
+      "A Diamond Egg token is located past the Bear Gate, under the platform where Onett stands on. The player can use a glider or a parachute and glide towards the token in front of Shadow Bear.",
+      "Purchasing from the Robux Shop for Robux 400 Robux each.",
+      "Purchasing from the Ticket Tent for Ticket 400 Tickets each.",
+      "By purchasing the Diamond Egg in Bee Bear's Catalog for Snowflake 1,000 Snowflakes during Beesmas 2024.",
+      "A rare reward from Robo Bear Challenge.",
+      "A rare reward from the Extreme Memory Match.",
+      "Completing Black Bear's Diamond Egg questline.",
+      "Completing Panda Bear's fifth star treat/ant quest, \"Colossal Combat\".",
+      "Completing Dapper Bear's tenth quest, \"The Long Haul\".",
+      "Completing Brown Bear's 75th and 525th quest.",
+      "Completing Sticker-Seeker Quest Machine 75th quest.",
+      "A rare chance of dropping upon defeating the Stump Snail, Diamond Aphids, King Beetle, Tunnel Bear, and Coconut Crab.",
+      "A very rare chance of dropping upon defeating Spiders, Mantises, and Werewolves.",
+      "A rare chance to drop from Legendary sprouts.",
+      "A guaranteed drop from Supreme sprouts.",
+      "An extremely rare chance of dropping from leaves while collecting pollen from the Clover Field.",
+      "A very rare reward from catching a meteor.",
+      "A rare drop from a Festive Planter Festive Planter.",
+      "A very rare chance to drop from a Festive Nymph.",
+      "A very rare chance to drop from stockings.",
+      "A rare reward from Winter Memory Match."
+    ]
+  },
+  "Gifted Diamond Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/52/Gifted_Diamond_Egg.png",
+    "description": "A Gifted Diamond Egg shares the same probabilities as a Diamond Egg, but the egg will hatch that bee into its gifted variant. This type of egg cannot be applied to craft the Diamond Mask.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a gifted diamond egg, but with lower chances of obtaining upon subsequent defeats as mentioned above.",
+      "As a reward for being in the top 100 in the Daily Top Honey Gift Recievers.",
+      "As a Quest Grandmaster badge reward from donating Ticket Tickets to the Wind Shrine.",
+      "Completing 100, 250, 500, 750 and 1,000 Gifted Bucko Bee or Gifted Riley Bee quests awards one gifted diamond egg each.",
+      "Completing 425 Brown Bear quests awards one Gifted Diamond Egg.",
+      "Completing the Sticker-Seeker Quest Machine 200th quest awards one Gifted Diamond Egg.",
+      "An extremely rare chance of dropping upon defeating Tunnel Bear, Stump Snail, or the Coconut Crab."
+    ]
+  },
+  "Mythic Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/92/Mythic_Egg.png",
+    "description": "The Mythic Egg is a type of egg that will always hatch into a Mythic bee. The player cannot obtain any other type of bee from this egg besides a Mythic bee. (The player can obtain a Gifted Mythic bee from this egg, although it is very rare.)",
+    "obtainment": [
+      "As a reward for getting Top 25 in the Daily Top Memory Matchers by the end of a day.",
+      "Purchasing from the Robux Shop for Robux 1,200 Robux each (limited to 3 eggs per player).",
+      "Purchasing from the Ticket Tent for Ticket 2,500 Tickets each.",
+      "By purchasing in Bee Bear's Catalog for Snowflake 500 Snowflakes and Gingerbread Bear 100 Gingerbread Bears during Beesmas 2024.",
+      "As a very rare reward from Robo Bear Challenge.",
+      "An extremely rare chance of getting from Extreme Memory Match.",
+      "Completing Black Bear's 75th quest, \"Myth in The Making\".",
+      "Completing Dapper Bear's 15th quest, \"More Than Myth\".",
+      "As a reward from Brown Bear's 100th, 200th, and 400th quests.",
+      "Completing the Sticker-Seeker Quest Machine 300th quest awards one Mythic Egg.",
+      "Capturing Commando Chick for the 50th time guarantees a Mythic Egg.",
+      "An extremely rare chance of dropping upon defeating the Stump Snail, Mondo Chick, and Coconut Crab. Mondo Chick has a higher chance to drop when defeated faster.",
+      "An extremely rare chance of dropping when catching a meteor.",
+      "A very rare drop from a Festive Planter Festive Planter.",
+      "As an extremely rare drop from a Party Mechsquito.",
+      "As an extremely rare drop from a Party Cogmower.",
+      "A very rare reward from the Winter Memory Match.",
+      "An extremely low chance to drop from Stockings."
+    ]
+  },
+  "Gifted Mythic Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bc/Gifted_Mythic_Egg.png",
+    "description": "A Gifted Mythic Egg shares the same probabilities as the Mythic Egg, but the egg will always hatch that bee into its gifted variant.",
+    "obtainment": [
+      "As a reward for getting Top 25 in the Daily Top Rare Bee Pollen Collectors by the end of a day.",
+      "Purchasing the Merry Mondo Bundle in Bee Bear's Catalog for Snowflake 25,000 Snowflakes and Gingerbread Bear 250 Gingerbread Bears gives Gifted Mythic Egg 1 Gifted Mythic Egg and other items.",
+      "Completing 500 Sticker-Seeker Quest Machine quests."
+    ]
+  },
+  "Star Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/40/Star_Egg.png",
+    "description": "The Star Egg is a type of egg that hatches into any type of gifted bee that is not already in the player's hive, aside from gifted Event bees. If the player already has all the different types of gifted bees in their hive besides gifted event bees, the egg will hatch into a random type of gifted bee instead. The egg will never hatch a gifted mythic bee until all other gifted non-event bees are in the hive.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a star egg, but with lower chances of obtaining upon subsequent defeats as mentioned above.",
+      "Purchasing from the Robux Shop for Robux 800 Robux each (limited to 5 eggs per player).",
+      "An exceptionally rare chance of dropping from a Mythic Meteor Shower.",
+      "An exceptionally rare reward from Night Memory Match.",
+      "Completing Mother Bear's first ten quests (\"Seven To Seven\" quest) and Panda Bear's first ten star treat/ant quests (\"Royal Rumble\" quest).",
+      "An exceptionally rare chance to drop upon defeating the King Beetle and Tunnel Bear.",
+      "An exceptionally rare chance of dropping from a Festive Planter Festive Planter.",
+      "As an extremely rare drop from the Party Mechsquito."
+    ]
+  }
+}

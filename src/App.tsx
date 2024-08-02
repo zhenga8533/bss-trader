@@ -5,6 +5,7 @@ import discord from "./assets/discord.png";
 import FooterButtons from "./components/FooterButtons";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
+import StickerPrinter from "./components/StickerPrinter";
 
 const App = () => {
   return (
@@ -20,9 +21,11 @@ const App = () => {
         height="100%"
       />
       <Grid templateColumns="repeat(3, 1fr)" gap={4} px="5%" py={5} position="relative" zIndex={10}>
-        <div />
-        <Center backgroundColor="rgba(255, 255, 32, 0.75)" borderRadius={5} p={3}>
-          <Heading className="heading">BSS Trader</Heading>
+        <StickerPrinter />
+        <Center>
+          <Heading className="heading" backgroundColor="rgba(255, 255, 32, 0.75)" borderRadius={5} p={3}>
+            🡲 BSS Trader 🡰
+          </Heading>
         </Center>
         <SproutTimer />
       </Grid>
