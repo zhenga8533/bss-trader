@@ -1,17 +1,7 @@
-import {
-  Button,
-  Center,
-  Grid,
-  Image,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalHeader,
-  Spinner,
-} from "@chakra-ui/react";
+import { Center, Grid, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, Spinner } from "@chakra-ui/react";
 import { useState } from "react";
-import eggs from "../data/eggs.json";
+import eggs from "../../data/eggs.json";
+import EggTile from "./EggTile";
 
 interface StickerModalProps {
   isOpen: boolean;
@@ -19,7 +9,7 @@ interface StickerModalProps {
 }
 
 const StickerModal = ({ isOpen, onClose }: StickerModalProps) => {
-  const [sticker, setSticker] = useState(null);
+  const [sticker, setSticker] = useState<JSX.Element | null>(null);
   const [spinning, setSpinning] = useState(false);
 
   return (
@@ -40,9 +30,7 @@ const StickerModal = ({ isOpen, onClose }: StickerModalProps) => {
             p={6}
           >
             {Object.entries(eggs).map(([egg, data]) => (
-              <Button>
-                <Image src={data.image_url} alt={egg} />
-              </Button>
+              <EggTile key={egg} egg={egg} data={data} onClick={() => {}} setSpinning={setSpinning} />
             ))}
           </Grid>
           <Center bgColor="rgba(0, 0, 0, 0.2)" borderRadius={5} my={3} w="100%">
