@@ -27,19 +27,6 @@
       "A rare reward from the Winter Memory Match."
     ]
   },
-  "Gifted Silver Egg": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3f/Gifted_Silver_Egg.png",
-    "description": "A Gifted Silver Egg shares the same probabilities as a Silver Egg, but the egg will always hatch the bee into its gifted variant.",
-    "obtainment": [
-      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg including a gifted silver egg, but with lower chances of obtaining upon subsequent defeats.",
-      "As a reward for getting Top 100 in the Daily Top Legendary Bee Pollen Collectors by the end of a day.",
-      "Completing Black Bear's \"Getting Stumped\" quest.",
-      "Completing the 100th quest of the Sticker-Seeker Quest Machine rewards you 1 Gifted Silver Egg.",
-      "An exceptionally rare chance of dropping from werewolves.",
-      "A rare chance to obtain when defeating the Stump Snail.",
-      "An extremely rare chance of dropping from a Scorpion."
-    ]
-  },
   "Gold Egg": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/50/Gold_Egg.png",
     "description": "The Gold Egg is a type of egg most likely to hatch into an Epic bee (79% chance), but it has a chance to hatch into a Legendary bee (20% chance) or a Mythic bee (1% chance). A Basic Bee, Rare bee, or an Event bee cannot hatch from this egg.",
@@ -62,20 +49,6 @@
       "A rare drop from the Stockings.",
       "A low chance to drop from a Festive Nymph.",
       "As a rare reward from the Winter Memory Match."
-    ]
-  },
-  "Gifted Gold Egg": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1c/Gifted_Gold_Egg.png",
-    "description": "A Gifted Gold Egg shares the same probabilities as a Gold Egg, but the egg will always hatch the bee into its gifted variant. This type of egg cannot be applied to craft the Honey Mask.",
-    "obtainment": [
-      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a Gifted Gold Egg, but with lower chances of obtaining upon subsequent defeats.",
-      "As a reward for getting Top 100 in the Daily Top Epic Bee Pollen Collectors by the end of a day.",
-      "As a Playtime Grandmaster badge reward from donating tickets to the Wind Shrine.",
-      "Completing 50 Gifted Bucko Bee quests or 50 Gifted Riley Bee quests awards 1 Gifted Gold Egg.",
-      "Completing 275 Brown Bear quests awards 1 Gifted Gold Egg.",
-      "Completing the 150th quest of the Sticker-Seeker Quest Machine rewards 1 Gifted Gold Egg.",
-      "A very rare chance of dropping upon defeating the Stump Snail and the Coconut Crab.",
-      "An exceptionally rare chance to drop from mantises."
     ]
   },
   "Diamond Egg": {
@@ -105,19 +78,6 @@
       "A rare reward from Winter Memory Match."
     ]
   },
-  "Gifted Diamond Egg": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/52/Gifted_Diamond_Egg.png",
-    "description": "A Gifted Diamond Egg shares the same probabilities as a Diamond Egg, but the egg will hatch that bee into its gifted variant. This type of egg cannot be applied to craft the Diamond Mask.",
-    "obtainment": [
-      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a gifted diamond egg, but with lower chances of obtaining upon subsequent defeats as mentioned above.",
-      "As a reward for being in the top 100 in the Daily Top Honey Gift Recievers.",
-      "As a Quest Grandmaster badge reward from donating Ticket Tickets to the Wind Shrine.",
-      "Completing 100, 250, 500, 750 and 1,000 Gifted Bucko Bee or Gifted Riley Bee quests awards one gifted diamond egg each.",
-      "Completing 425 Brown Bear quests awards one Gifted Diamond Egg.",
-      "Completing the Sticker-Seeker Quest Machine 200th quest awards one Gifted Diamond Egg.",
-      "An extremely rare chance of dropping upon defeating Tunnel Bear, Stump Snail, or the Coconut Crab."
-    ]
-  },
   "Mythic Egg": {
     "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/92/Mythic_Egg.png",
     "description": "The Mythic Egg is a type of egg that will always hatch into a Mythic bee. The player cannot obtain any other type of bee from this egg besides a Mythic bee. (The player can obtain a Gifted Mythic bee from this egg, although it is very rare.)",
@@ -140,6 +100,46 @@
       "As an extremely rare drop from a Party Cogmower.",
       "A very rare reward from the Winter Memory Match.",
       "An extremely low chance to drop from Stockings."
+    ]
+  },
+  "Gifted Silver Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3f/Gifted_Silver_Egg.png",
+    "description": "A Gifted Silver Egg shares the same probabilities as a Silver Egg, but the egg will always hatch the bee into its gifted variant.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg including a gifted silver egg, but with lower chances of obtaining upon subsequent defeats.",
+      "As a reward for getting Top 100 in the Daily Top Legendary Bee Pollen Collectors by the end of a day.",
+      "Completing Black Bear's \"Getting Stumped\" quest.",
+      "Completing the 100th quest of the Sticker-Seeker Quest Machine rewards you 1 Gifted Silver Egg.",
+      "An exceptionally rare chance of dropping from werewolves.",
+      "A rare chance to obtain when defeating the Stump Snail.",
+      "An extremely rare chance of dropping from a Scorpion."
+    ]
+  },
+  "Gifted Gold Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1c/Gifted_Gold_Egg.png",
+    "description": "A Gifted Gold Egg shares the same probabilities as a Gold Egg, but the egg will always hatch the bee into its gifted variant. This type of egg cannot be applied to craft the Honey Mask.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a Gifted Gold Egg, but with lower chances of obtaining upon subsequent defeats.",
+      "As a reward for getting Top 100 in the Daily Top Epic Bee Pollen Collectors by the end of a day.",
+      "As a Playtime Grandmaster badge reward from donating tickets to the Wind Shrine.",
+      "Completing 50 Gifted Bucko Bee quests or 50 Gifted Riley Bee quests awards 1 Gifted Gold Egg.",
+      "Completing 275 Brown Bear quests awards 1 Gifted Gold Egg.",
+      "Completing the 150th quest of the Sticker-Seeker Quest Machine rewards 1 Gifted Gold Egg.",
+      "A very rare chance of dropping upon defeating the Stump Snail and the Coconut Crab.",
+      "An exceptionally rare chance to drop from mantises."
+    ]
+  },
+  "Gifted Diamond Egg": {
+    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/52/Gifted_Diamond_Egg.png",
+    "description": "A Gifted Diamond Egg shares the same probabilities as a Diamond Egg, but the egg will hatch that bee into its gifted variant. This type of egg cannot be applied to craft the Diamond Mask.",
+    "obtainment": [
+      "Defeating Tunnel Bear for the first time guarantees any type of gifted egg, including a gifted diamond egg, but with lower chances of obtaining upon subsequent defeats as mentioned above.",
+      "As a reward for being in the top 100 in the Daily Top Honey Gift Recievers.",
+      "As a Quest Grandmaster badge reward from donating Ticket Tickets to the Wind Shrine.",
+      "Completing 100, 250, 500, 750 and 1,000 Gifted Bucko Bee or Gifted Riley Bee quests awards one gifted diamond egg each.",
+      "Completing 425 Brown Bear quests awards one Gifted Diamond Egg.",
+      "Completing the Sticker-Seeker Quest Machine 200th quest awards one Gifted Diamond Egg.",
+      "An extremely rare chance of dropping upon defeating Tunnel Bear, Stump Snail, or the Coconut Crab."
     ]
   },
   "Gifted Mythic Egg": {
