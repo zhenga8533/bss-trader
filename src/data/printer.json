@@ -103,6 +103,18 @@
     { "sticker": "Left Shining Diamond Fleuron", "probability": "0.00505" },
     { "sticker": "Right Shining Diamond Fleuron", "probability": "0.00505" }
   ],
+  "Mythic Egg": [
+    { "sticker": "Precise Eye", "probability": "0.181818" },
+    { "sticker": "Purple Fleuron", "probability": "0.181818" },
+    { "sticker": "Purple 4-Point Flower", "probability": "0.181818" },
+    { "sticker": "Basic Black Hive Skin", "probability": "0.127272" },
+    { "sticker": "Fuzz Bomb", "probability": "0.090909" },
+    { "sticker": "Royal Bear", "probability": "0.0909090" },
+    { "sticker": "Mythic M", "probability": "0.090909" },
+    { "sticker": "4-Pronged Vector Bee", "probability": "0.036363" },
+    { "sticker": "Left Mythic Gem Fleuron", "probability": "0.00909" },
+    { "sticker": "Right Mythic Gem Fleuron", "probability": "0.0909" }
+  ],
   "Star Egg": [
     { "sticker": "Cyan Star", "probability": "0.160965" },
     { "sticker": "Shining Star", "probability": "0.160965" },
