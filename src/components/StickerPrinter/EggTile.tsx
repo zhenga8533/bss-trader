@@ -6,12 +6,11 @@ interface EggTileProps {
     image_url: string;
   };
   onClick: () => void;
-  setSpinning: (spinning: boolean) => void;
 }
 
-const EggTile = ({ egg, data }: EggTileProps) => {
+const EggTile = ({ egg, data, onClick }: EggTileProps) => {
   return (
-    <Button>
+    <Button onClick={onClick}>
       <Image src={data.image_url} alt={egg} />
     </Button>
   );
