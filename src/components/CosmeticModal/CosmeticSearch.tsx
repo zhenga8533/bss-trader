@@ -1,8 +1,8 @@
 import { Box, Grid, GridItem, Heading, HStack, Image, Input, Spinner, VStack } from "@chakra-ui/react";
 import React, { Suspense, useState } from "react";
-import cosmetics from "../data/cosmetics.json";
-import { isTermIncluded } from "../services/find";
-import { capitalize } from "../services/format";
+import cosmetics from "../../data/cosmetics.json";
+import { isTermIncluded } from "../../services/find";
+import { capitalize } from "../../services/format";
 import { CosmeticData } from "./CosmeticTile";
 const CosmeticTile = React.lazy(() => import("./CosmeticTile"));
 

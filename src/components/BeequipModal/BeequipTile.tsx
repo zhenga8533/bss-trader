@@ -1,7 +1,7 @@
 import { Box, Button, Grid, GridItem, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
 import { FaRegStar, FaStar } from "react-icons/fa";
-import beequips from "../data/beequips.json";
-import { getTileColor } from "../services/format";
+import beequips from "../../data/beequips.json";
+import { getTileColor } from "../../services/format";
 import { formatStat } from "./StatsPopover";
 
 export interface Beequip {

@@ -1,8 +1,8 @@
 import { Button, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import { useState } from "react";
-import summer2024 from "../data/quests/summer2024.json";
-import { BeequipData } from "./BeequipTile";
+import summer2024 from "../../data/quests/summer2024.json";
+import { BeequipData } from "../BeequipModal/BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
 import QuestModal from "./QuestModal";

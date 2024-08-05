@@ -2,7 +2,7 @@ import { Box, Center, Grid, GridItem, Heading, HStack, Image, Text, VStack } fro
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/war.jpg";
 import discord from "./assets/discord.png";
-import FooterButtons from "./components/FooterButtons";
+import Footer from "./components/Footer";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
 import StickerPrinter from "./components/StickerPrinter";
@@ -70,7 +70,7 @@ const App = () => {
         </Grid>
       </Box>
       <HStack justifyContent="space-between" position="relative" px="5%" zIndex={10}>
-        <FooterButtons />
+        <Footer />
       </HStack>
       <VStack color="white" mb={5} position="relative" spacing={1} width="100%">
         <Text className="heading">made by</Text>

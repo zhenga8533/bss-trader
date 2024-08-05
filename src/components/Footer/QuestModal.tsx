@@ -10,7 +10,7 @@ import {
   ModalHeader,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import npcs from "../data/npcs.json";
+import npcs from "../../data/npcs.json";
 import QuestGiver from "./QuestGiver";
 
 interface NPCS {

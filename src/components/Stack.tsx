@@ -2,11 +2,11 @@ import { Box, Button, Divider, Flex, Grid, Heading, HStack, VStack } from "@chak
 import { useEffect, useState } from "react";
 import cosmeticsData from "../data/cosmetics.json";
 import BeequipModal from "./BeequipModal";
-import BeequipTile, { BeequipData } from "./BeequipTile";
+import BeequipTile, { BeequipData } from "./BeequipModal/BeequipTile";
 import CategoryModal from "./CategoryModal";
-import CategoryTile from "./CategoryTile";
+import CategoryTile from "./CategoryModal/CategoryTile";
 import CosmeticModal from "./CosmeticModal";
-import CosmeticTile, { CosmeticData } from "./CosmeticTile";
+import CosmeticTile, { CosmeticData } from "./CosmeticModal/CosmeticTile";
 
 interface StackProps {
   color: string;

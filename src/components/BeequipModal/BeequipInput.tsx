@@ -21,8 +21,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import beequips from "../data/beequips.json";
-import waxData from "../data/waxes.json";
+import beequips from "../../data/beequips.json";
+import waxData from "../../data/waxes.json";
 import { Beequip, BeequipData } from "./BeequipTile";
 import StatsPopover, { formatStat } from "./StatsPopover";
 import WaxTile from "./WaxTile";

@@ -11,8 +11,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import category from "../assets/category.webp";
-import categories from "../data/categories.json";
+import category from "../../assets/category.webp";
+import categories from "../../data/categories.json";
 import CategoryInput from "./CategoryInput";
 import CategoryTile from "./CategoryTile";
 

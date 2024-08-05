@@ -1,7 +1,7 @@
 import { Box, Button, Heading, HStack, Image, Text, Tooltip, VStack } from "@chakra-ui/react";
-import cosmetics from "../data/cosmetics.json";
-import { findValue } from "../services/find";
-import { getTileColor } from "../services/format";
+import cosmetics from "../../data/cosmetics.json";
+import { findValue } from "../../services/find";
+import { getTileColor } from "../../services/format";
 
 interface Cosmetic {
   image_url: string;

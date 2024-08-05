@@ -1,9 +1,9 @@
 import { Button, HStack, Image, Modal, ModalBody, ModalCloseButton, ModalContent } from "@chakra-ui/react";
 import { useState } from "react";
-import cub from "../assets/cub.webp";
-import hive from "../assets/hive.webp";
-import sticker from "../assets/sticker.webp";
-import voucher from "../assets/voucher.webp";
+import cub from "../../assets/cub.webp";
+import hive from "../../assets/hive.webp";
+import sticker from "../../assets/sticker.webp";
+import voucher from "../../assets/voucher.webp";
 import CosmeticSearch from "./CosmeticSearch";
 import { CosmeticData } from "./CosmeticTile";
 

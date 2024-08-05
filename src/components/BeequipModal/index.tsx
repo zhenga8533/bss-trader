@@ -15,9 +15,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { Suspense, useEffect, useState } from "react";
-import beequip from "../assets/beequip.webp";
-import beequips from "../data/beequips.json";
-import { isTermIncluded } from "../services/find";
+import beequip from "../../assets/beequip.webp";
+import beequips from "../../data/beequips.json";
+import { isTermIncluded } from "../../services/find";
 import BeequipInput from "./BeequipInput";
 import { BeequipData } from "./BeequipTile";
 const BeequipTile = React.lazy(() => import("./BeequipTile"));

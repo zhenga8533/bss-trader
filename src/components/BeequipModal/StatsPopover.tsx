@@ -1,5 +1,5 @@
 import { Button, Heading, HStack, Text, Tooltip, VStack } from "@chakra-ui/react";
-import { getStatColor } from "../services/format";
+import { getStatColor } from "../../services/format";
 
 export const formatStat = (stat: string, index: number) => (
   <Text key={index} color={getStatColor(stat)}>

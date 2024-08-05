@@ -1,6 +1,6 @@
 import { Divider, Grid, Text, VStack } from "@chakra-ui/react";
 import { Fragment } from "react/jsx-runtime";
-import CosmeticTile from "./CosmeticTile";
+import CosmeticTile from "../CosmeticModal/CosmeticTile";
 import { Quests } from "./QuestModal";
 
 interface QuestGiverProps {
