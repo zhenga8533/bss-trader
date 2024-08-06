@@ -5,7 +5,7 @@ import printer from "../../data/printer.json";
 import CosmeticTile from "../CosmeticModal/CosmeticTile";
 import EggTile from "./EggTile";
 
-interface Printer {
+export interface Printer {
   [key: string]: { sticker: string; probability: number }[];
 }
 
