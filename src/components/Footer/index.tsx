@@ -2,6 +2,14 @@ import { Button, HStack, useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import { useState } from "react";
 import summer2024 from "../../data/quests/summer2024.json";
+import {
+  exportBeequips,
+  exportCategories,
+  exportCosmetics,
+  importBeequips,
+  importCategories,
+  importCosmetics,
+} from "../../services/data";
 import { BeequipData } from "../BeequipModal/BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
@@ -61,14 +69,15 @@ const FooterButtons = () => {
   const [textData, setTextData] = useState("");
 
   const getExport = () => {
-    const data = {
-      ofCosmetics: JSON.parse(localStorage.getItem("offering-cosmetics") ?? "{}"),
-      lfCosmetics: JSON.parse(localStorage.getItem("looking-for-cosmetics") ?? "{}"),
-      ofBeequips: JSON.parse(localStorage.getItem("offering-beequips") ?? "[]"),
-      lfBeequips: JSON.parse(localStorage.getItem("looking-for-beequips") ?? "[]"),
-      ofCategories: JSON.parse(localStorage.getItem("offering-categories") ?? "[]"),
-      lfCategories: JSON.parse(localStorage.getItem("looking-for-categories") ?? "[]"),
-    };
+    const data = [
+      exportCosmetics("offering"),
+      exportCosmetics("looking-for"),
+      exportBeequips("offering"),
+      exportBeequips("looking-for"),
+      exportCategories("offering"),
+      exportCategories("looking-for"),
+    ];
+
     const jsonString = JSON.stringify(data);
     return LZString.compressToBase64(jsonString);
   };
@@ -77,19 +86,14 @@ const FooterButtons = () => {
 
   const importData = (data: string) => {
     try {
-      try {
-        const json = LZString.decompressFromBase64(data);
-        const parsed = JSON.parse(json);
-        localStorage.setItem("offering-cosmetics", JSON.stringify(parsed.ofCosmetics));
-        localStorage.setItem("looking-for-cosmetics", JSON.stringify(parsed.lfCosmetics));
-        localStorage.setItem("offering-beequips", JSON.stringify(parsed.ofBeequips));
-        localStorage.setItem("looking-for-beequips", JSON.stringify(parsed.lfBeequips));
-        localStorage.setItem("offering-categories", JSON.stringify(parsed.ofCategories));
-        localStorage.setItem("looking-for-categories", JSON.stringify(parsed.lfCategories));
-      } catch (e) {
-        console.error(e);
-        localStorage.clear();
-      }
+      const json = LZString.decompressFromBase64(data);
+      const parsed = JSON.parse(json);
+      localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(parsed[0])));
+      localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(parsed[1])));
+      localStorage.setItem("offering-beequips", JSON.stringify(importBeequips(parsed[2])));
+      localStorage.setItem("looking-for-beequips", JSON.stringify(importBeequips(parsed[3])));
+      localStorage.setItem("offering-categories", JSON.stringify(importCategories(parsed[4])));
+      localStorage.setItem("looking-for-categories", JSON.stringify(importCategories(parsed[5])));
       window.dispatchEvent(new CustomEvent("update"));
 
       toast({
@@ -100,6 +104,7 @@ const FooterButtons = () => {
         isClosable: true,
       });
     } catch (e) {
+      localStorage.clear();
       toast({
         title: "Invalid trade data",
         status: "error",
