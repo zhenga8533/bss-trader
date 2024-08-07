@@ -1,4 +1,4 @@
-import { Button, HStack, useToast } from "@chakra-ui/react";
+import { Button, HStack, useToast, VStack } from "@chakra-ui/react";
 import LZString from "lz-string";
 import { useState } from "react";
 import summer2024 from "../../data/quests/summer2024.json";
@@ -14,6 +14,7 @@ import { BeequipData } from "../BeequipModal/BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
 import QuestModal from "./QuestModal";
+import SaveSlots from "./SaveSlots";
 
 const FooterButtons = () => {
   const toast = useToast();
@@ -117,7 +118,7 @@ const FooterButtons = () => {
   const [importOpen, setImportOpen] = useState(false);
 
   return (
-    <>
+    <VStack width="100%">
       <FooterCopy data={textData} isOpen={textOpen} showQR={false} onClose={() => setTextOpen(false)} />
       <FooterCopy data={exportData} isOpen={exportOpen} showQR={true} onClose={() => setExportOpen(false)} />
       <FooterPrompt
@@ -128,6 +129,7 @@ const FooterButtons = () => {
           setImportOpen(false);
         }}
       />
+
       <HStack justifyContent="space-between" w="100%">
         <HStack flexWrap="wrap">
           <QuestModal id="summer2024" quests={summer2024} isOpen={questsOpen} onClose={() => setQuestsOpen(false)} />
@@ -172,7 +174,8 @@ const FooterButtons = () => {
           </Button>
         </HStack>
       </HStack>
-    </>
+      <SaveSlots />
+    </VStack>
   );
 };
 
