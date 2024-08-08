@@ -33,6 +33,12 @@ Object.keys(waxes).forEach((wax) => {
   counter++;
 });
 
+/**
+ * Export cosmetics data to a compressed string.
+ *
+ * @param id - the id of the data to export
+ * @returns the compressed string of the cosmetics data
+ */
 const exportCosmetics = (id: string) => {
   const cosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
   const comp = Object.keys(cosmetics).map((key) => {
@@ -43,6 +49,12 @@ const exportCosmetics = (id: string) => {
   return LZString.compressToBase64(JSON.stringify(comp));
 };
 
+/**
+ * Import cosmetics data from a compressed string.
+ *
+ * @param data - the compressed string of the cosmetics data
+ * @returns the cosmetics data
+ */
 const importCosmetics = (data: string) => {
   const decomp = JSON.parse(LZString.decompressFromBase64(data));
   const cosmetics = Object.fromEntries(
@@ -55,6 +67,12 @@ const importCosmetics = (data: string) => {
   return cosmetics;
 };
 
+/**
+ * Export beequips data to a compressed string.
+ *
+ * @param id - the id of the data to export
+ * @returns the compressed string of the beequips data
+ */
 const exportBeequips = (id: string) => {
   const beequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "[]");
   const comp = beequips.map((beequip: any) => {
@@ -65,6 +83,12 @@ const exportBeequips = (id: string) => {
   return LZString.compressToBase64(JSON.stringify(comp));
 };
 
+/**
+ * Import beequips data from a compressed string.
+ *
+ * @param data - the compressed string of the beequips data
+ * @returns the beequips data
+ */
 const importBeequips = (data: string) => {
   const decomp = JSON.parse(LZString.decompressFromBase64(data));
   const beequips = decomp.map((beequip: any) => {
@@ -81,6 +105,12 @@ const importBeequips = (data: string) => {
   return beequips;
 };
 
+/**
+ * Export categories data to a compressed string.
+ *
+ * @param id - the id of the data to export
+ * @returns the compressed string of the categories data
+ */
 const exportCategories = (id: string) => {
   const categories = JSON.parse(localStorage.getItem(`${id}-categories`) ?? "[]");
   const comp = categories.map((category: string) => {
@@ -91,6 +121,12 @@ const exportCategories = (id: string) => {
   return LZString.compressToBase64(JSON.stringify(comp));
 };
 
+/**
+ * Import categories data from a compressed string.
+ *
+ * @param data - the compressed string of the categories data
+ * @returns the categories data
+ */
 const importCategories = (data: string) => {
   const decomp = JSON.parse(LZString.decompressFromBase64(data));
   const categories = decomp.map((category: any) => {
@@ -101,6 +137,11 @@ const importCategories = (data: string) => {
   return categories;
 };
 
+/**
+ * Import trade data from a compressed string.
+ *
+ * @param data - the compressed string of the trade data
+ */
 export const getImport = (data: string) => {
   const toast = useToast();
 
@@ -134,6 +175,11 @@ export const getImport = (data: string) => {
   }
 };
 
+/**
+ * Export trade data to a compressed string.
+ *
+ * @returns - the compressed string of the trade data
+ */
 export const getExport = () => {
   const data = [
     exportCosmetics("offering"),
@@ -148,6 +194,11 @@ export const getExport = () => {
   return LZString.compressToBase64(jsonString);
 };
 
+/**
+ * Save the trade data to local storage.
+ *
+ * @param id - the id of the data to save
+ */
 export const saveData = (id: string) => {
   const data = [
     exportCosmetics("offering"),
@@ -161,6 +212,11 @@ export const saveData = (id: string) => {
   localStorage.setItem(id, JSON.stringify(data));
 };
 
+/**
+ * Load the trade data from local storage.
+ *
+ * @param id - the id of the data to load
+ */
 export const loadData = (id: string) => {
   const data = JSON.parse(
     localStorage.getItem(id) ?? '["NoXSA===","NoXSA===","NoXSA===","NoXSA===","NoXSA===","NoXSA==="]'
@@ -175,6 +231,11 @@ export const loadData = (id: string) => {
   window.dispatchEvent(new CustomEvent("update"));
 };
 
+/**
+ * Clear the trade data from local storage.
+ *
+ * @param id - the id of the data to clear
+ */
 export const clearData = (id: string) => {
   localStorage.removeItem(id);
   window.dispatchEvent(new CustomEvent("update"));

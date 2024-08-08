@@ -1,3 +1,10 @@
+/**
+ * Find a value in an object by key.
+ *
+ * @param key - key to find in the object
+ * @param obj - object to search
+ * @returns the value of the key in the object
+ */
 export const findValue = (key: string, obj: any): any => {
   if (obj[key]) {
     return obj[key];
@@ -13,6 +20,13 @@ export const findValue = (key: string, obj: any): any => {
   }
 };
 
+/**
+ * Find a value in an object by key.
+ *
+ * @param obj - object to search
+ * @param term - term to search for
+ * @returns true if the term is included in the object
+ */
 export const isTermIncluded = (obj: any, term: string): boolean => {
   for (const key in obj) {
     const value = obj[key];
