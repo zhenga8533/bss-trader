@@ -104,3 +104,33 @@ export const importCategories = (data: string) => {
 
   return categories;
 };
+
+export const saveData = (id: string) => {
+  const data = [
+    exportCosmetics("offering"),
+    exportCosmetics("looking-for"),
+    exportBeequips("offering"),
+    exportBeequips("looking-for"),
+    exportCategories("offering"),
+    exportCategories("looking-for"),
+  ];
+
+  localStorage.setItem(id, JSON.stringify(data));
+};
+
+export const loadData = (id: string) => {
+  const data = JSON.parse(localStorage.getItem(id) ?? "[{}, {}, [], [], [], []]");
+
+  localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(data[0])));
+  localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(data[1])));
+  localStorage.setItem("offering-beequips", JSON.stringify(importBeequips(data[2])));
+  localStorage.setItem("looking-for-beequips", JSON.stringify(importBeequips(data[3])));
+  localStorage.setItem("offering-categories", JSON.stringify(importCategories(data[4])));
+  localStorage.setItem("looking-for-categories", JSON.stringify(importCategories(data[5])));
+  window.dispatchEvent(new CustomEvent("update"));
+};
+
+export const clearData = (id: string) => {
+  localStorage.removeItem(id);
+  window.dispatchEvent(new CustomEvent("update"));
+};
