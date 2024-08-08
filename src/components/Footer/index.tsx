@@ -1,15 +1,7 @@
-import { Button, HStack, useToast, VStack } from "@chakra-ui/react";
-import LZString from "lz-string";
+import { Button, HStack, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import summer2024 from "../../data/quests/summer2024.json";
-import {
-  exportBeequips,
-  exportCategories,
-  exportCosmetics,
-  importBeequips,
-  importCategories,
-  importCosmetics,
-} from "../../services/data";
+import { getExport, getImport } from "../../services/data";
 import { BeequipData } from "../BeequipModal/BeequipTile";
 import FooterCopy from "./FooterCopy";
 import FooterPrompt from "./FooterPrompt";
@@ -17,7 +9,6 @@ import QuestModal from "./QuestModal";
 import SaveSlots from "./SaveSlots";
 
 const FooterButtons = () => {
-  const toast = useToast();
   const [questsOpen, setQuestsOpen] = useState(false);
 
   const getTag = (id: string) => {
@@ -69,52 +60,8 @@ const FooterButtons = () => {
   const [textOpen, setTextOpen] = useState(false);
   const [textData, setTextData] = useState("");
 
-  const getExport = () => {
-    const data = [
-      exportCosmetics("offering"),
-      exportCosmetics("looking-for"),
-      exportBeequips("offering"),
-      exportBeequips("looking-for"),
-      exportCategories("offering"),
-      exportCategories("looking-for"),
-    ];
-
-    const jsonString = JSON.stringify(data);
-    return LZString.compressToBase64(jsonString);
-  };
   const [exportOpen, setExportOpen] = useState(false);
   const [exportData, setExportData] = useState("");
-
-  const importData = (data: string) => {
-    try {
-      const json = LZString.decompressFromBase64(data);
-      const parsed = JSON.parse(json);
-      localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(parsed[0])));
-      localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(parsed[1])));
-      localStorage.setItem("offering-beequips", JSON.stringify(importBeequips(parsed[2])));
-      localStorage.setItem("looking-for-beequips", JSON.stringify(importBeequips(parsed[3])));
-      localStorage.setItem("offering-categories", JSON.stringify(importCategories(parsed[4])));
-      localStorage.setItem("looking-for-categories", JSON.stringify(importCategories(parsed[5])));
-      window.dispatchEvent(new CustomEvent("update"));
-
-      toast({
-        title: "Trade data imported",
-        status: "success",
-        variant: "subtle",
-        duration: 2000,
-        isClosable: true,
-      });
-    } catch (e) {
-      localStorage.clear();
-      toast({
-        title: "Invalid trade data",
-        status: "error",
-        variant: "subtle",
-        duration: 2000,
-        isClosable: true,
-      });
-    }
-  };
   const [importOpen, setImportOpen] = useState(false);
 
   return (
@@ -125,7 +72,7 @@ const FooterButtons = () => {
         isOpen={importOpen}
         onClose={() => setImportOpen(false)}
         onSubmit={(data: string) => {
-          importData(data);
+          getImport(data);
           setImportOpen(false);
         }}
       />

@@ -1,4 +1,6 @@
 import { Box, Center, Grid, GridItem, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import QRCode from "qrcode.react";
+import { useState } from "react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/war.jpg";
 import discord from "./assets/discord.png";
@@ -6,8 +8,14 @@ import Footer from "./components/Footer";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
 import StickerPrinter from "./components/StickerPrinter";
+import { getExport } from "./services/data";
 
 const App = () => {
+  const [seed, setSeed] = useState(1);
+  const reset = () => {
+    setSeed(Math.random());
+  };
+
   return (
     <Box display="flex" flexDirection="column" minH="100vh" position="relative">
       <Box
@@ -55,17 +63,22 @@ const App = () => {
           w="100%"
         >
           <GridItem gridArea="offering">
-            <ItemStack color="rgb(231, 95, 95)" title="Offering" />
+            <ItemStack color="rgb(231, 95, 95)" title="Offering" onChange={reset} />
           </GridItem>
           <GridItem gridArea="center">
             <Center>
-              <Box maxW={48}>
+              <Box maxW={64} position="relative">
                 <Image src={arrows} alt="Arrows" />
+                <QRCode
+                  key={seed}
+                  value={"https://zhenga8533.github.io/bss-trader?data=" + getExport()}
+                  style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
+                />
               </Box>
             </Center>
           </GridItem>
           <GridItem gridArea="looking-for">
-            <ItemStack color="rgb(110, 222, 75)" title="Looking For" />
+            <ItemStack color="rgb(110, 222, 75)" title="Looking For" onChange={reset} />
           </GridItem>
         </Grid>
       </Box>

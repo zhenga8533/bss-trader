@@ -11,9 +11,10 @@ import CosmeticTile, { CosmeticData } from "./CosmeticModal/CosmeticTile";
 interface StackProps {
   color: string;
   title: string;
+  onChange: () => void;
 }
 
-const Stack = ({ color, title }: StackProps) => {
+const Stack = ({ color, title, onChange }: StackProps) => {
   const id = title.toLowerCase().replace(/\s/g, "-");
 
   // Categories
@@ -39,6 +40,7 @@ const Stack = ({ color, title }: StackProps) => {
 
   useEffect(() => {
     localStorage.setItem(id + "-categories", JSON.stringify(categories));
+    onChange();
   }, [categories]);
 
   // Cub Skins, Hive Skins, Stickers, and Vouchers
@@ -96,6 +98,7 @@ const Stack = ({ color, title }: StackProps) => {
 
   useEffect(() => {
     localStorage.setItem(id + "-cosmetics", JSON.stringify(cosmetics));
+    onChange();
   }, [cosmetics]);
 
   // Beequips
@@ -129,6 +132,7 @@ const Stack = ({ color, title }: StackProps) => {
 
   useEffect(() => {
     localStorage.setItem(id + "-beequips", JSON.stringify(beequips));
+    onChange();
   }, [beequips]);
 
   // Event listener for updating the stack
@@ -136,6 +140,7 @@ const Stack = ({ color, title }: StackProps) => {
     setCategories(getCategories());
     setCosmetics(getCosmetics());
     setBeequips(getBeequips());
+    onChange();
   });
 
   return (

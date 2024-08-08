@@ -1,3 +1,4 @@
+import { useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import beequips from "../data/beequips.json";
 import categories from "../data/categories.json";
@@ -32,12 +33,7 @@ Object.keys(waxes).forEach((wax) => {
   counter++;
 });
 
-/**
- *
- * @param id
- * @returns
- */
-export const exportCosmetics = (id: string) => {
+const exportCosmetics = (id: string) => {
   const cosmetics = JSON.parse(localStorage.getItem(`${id}-cosmetics`) ?? "{}");
   const comp = Object.keys(cosmetics).map((key) => {
     const cosmetic = cosmetics[key];
@@ -47,7 +43,7 @@ export const exportCosmetics = (id: string) => {
   return LZString.compressToBase64(JSON.stringify(comp));
 };
 
-export const importCosmetics = (data: string) => {
+const importCosmetics = (data: string) => {
   const decomp = JSON.parse(LZString.decompressFromBase64(data));
   const cosmetics = Object.fromEntries(
     decomp.map((cosmetic: any) => {
@@ -59,7 +55,7 @@ export const importCosmetics = (data: string) => {
   return cosmetics;
 };
 
-export const exportBeequips = (id: string) => {
+const exportBeequips = (id: string) => {
   const beequips = JSON.parse(localStorage.getItem(`${id}-beequips`) ?? "[]");
   const comp = beequips.map((beequip: any) => {
     const waxes = beequip.waxes.map((wax: string) => itemMap[wax]);
@@ -69,7 +65,7 @@ export const exportBeequips = (id: string) => {
   return LZString.compressToBase64(JSON.stringify(comp));
 };
 
-export const importBeequips = (data: string) => {
+const importBeequips = (data: string) => {
   const decomp = JSON.parse(LZString.decompressFromBase64(data));
   const beequips = decomp.map((beequip: any) => {
     const waxes = beequip[4].map((wax: number) => itemRevMap[wax]);
@@ -85,7 +81,7 @@ export const importBeequips = (data: string) => {
   return beequips;
 };
 
-export const exportCategories = (id: string) => {
+const exportCategories = (id: string) => {
   const categories = JSON.parse(localStorage.getItem(`${id}-categories`) ?? "[]");
   const comp = categories.map((category: string) => {
     if (!itemMap.hasOwnProperty(category)) return category;
@@ -95,7 +91,7 @@ export const exportCategories = (id: string) => {
   return LZString.compressToBase64(JSON.stringify(comp));
 };
 
-export const importCategories = (data: string) => {
+const importCategories = (data: string) => {
   const decomp = JSON.parse(LZString.decompressFromBase64(data));
   const categories = decomp.map((category: any) => {
     if (!itemRevMap.hasOwnProperty(category)) return category;
@@ -103,6 +99,53 @@ export const importCategories = (data: string) => {
   });
 
   return categories;
+};
+
+export const getImport = (data: string) => {
+  const toast = useToast();
+
+  try {
+    const json = LZString.decompressFromBase64(data);
+    const parsed = JSON.parse(json);
+    localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(parsed[0])));
+    localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(parsed[1])));
+    localStorage.setItem("offering-beequips", JSON.stringify(importBeequips(parsed[2])));
+    localStorage.setItem("looking-for-beequips", JSON.stringify(importBeequips(parsed[3])));
+    localStorage.setItem("offering-categories", JSON.stringify(importCategories(parsed[4])));
+    localStorage.setItem("looking-for-categories", JSON.stringify(importCategories(parsed[5])));
+    window.dispatchEvent(new CustomEvent("update"));
+
+    toast({
+      title: "Trade data imported",
+      status: "success",
+      variant: "subtle",
+      duration: 2000,
+      isClosable: true,
+    });
+  } catch (e) {
+    localStorage.clear();
+    toast({
+      title: "Invalid trade data",
+      status: "error",
+      variant: "subtle",
+      duration: 2000,
+      isClosable: true,
+    });
+  }
+};
+
+export const getExport = () => {
+  const data = [
+    exportCosmetics("offering"),
+    exportCosmetics("looking-for"),
+    exportBeequips("offering"),
+    exportBeequips("looking-for"),
+    exportCategories("offering"),
+    exportCategories("looking-for"),
+  ];
+
+  const jsonString = JSON.stringify(data);
+  return LZString.compressToBase64(jsonString);
 };
 
 export const saveData = (id: string) => {
@@ -119,7 +162,9 @@ export const saveData = (id: string) => {
 };
 
 export const loadData = (id: string) => {
-  const data = JSON.parse(localStorage.getItem(id) ?? "[{}, {}, [], [], [], []]");
+  const data = JSON.parse(
+    localStorage.getItem(id) ?? '["NoXSA===","NoXSA===","NoXSA===","NoXSA===","NoXSA===","NoXSA==="]'
+  );
 
   localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(data[0])));
   localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(data[1])));
