@@ -2,7 +2,7 @@ import { Box, Center, Grid, GridItem, Heading, HStack, Image, Text, VStack } fro
 import QRCode from "qrcode.react";
 import { useState } from "react";
 import arrows from "./assets/arrows.webp";
-import background from "./assets/backgrounds/war.jpg";
+import background from "./assets/backgrounds/doodle.webp";
 import discord from "./assets/discord.png";
 import Footer from "./components/Footer";
 import SproutTimer from "./components/SproutTimer";
