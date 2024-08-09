@@ -10,16 +10,14 @@ import {
   Textarea,
   useToast,
 } from "@chakra-ui/react";
-import QRCode from "qrcode.react";
 
 interface FooterCopyProps {
   data: string;
   isOpen: boolean;
-  showQR: boolean;
   onClose: () => void;
 }
 
-const FooterCopy = ({ data, isOpen, showQR, onClose }: FooterCopyProps) => {
+const FooterCopy = ({ data, isOpen, onClose }: FooterCopyProps) => {
   const toast = useToast();
   const copy = () => {
     navigator.clipboard.writeText(data);
@@ -42,7 +40,6 @@ const FooterCopy = ({ data, isOpen, showQR, onClose }: FooterCopyProps) => {
         <Textarea value={data} rows={10} readOnly />
 
         <ModalFooter justifyContent="space-between">
-          {showQR && <QRCode value={data} size={64} />}
           <HStack>
             <Button colorScheme="blue" variant="solid" mr={3} onClick={copy}>
               Copy

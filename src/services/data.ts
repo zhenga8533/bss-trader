@@ -143,7 +143,7 @@ const importCategories = (data: string) => {
  */
 export const getImport = (data: string) => {
   try {
-    const json = LZString.decompressFromBase64(data.replace(/-/g, "+"));
+    const json = LZString.decompressFromBase64(data.replace(/_/g, "+"));
     const parsed = JSON.parse(json);
     localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(parsed[0])));
     localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(parsed[1])));
@@ -173,7 +173,7 @@ export const getExport = () => {
   ];
 
   const jsonString = JSON.stringify(data);
-  return LZString.compressToBase64(jsonString).replace(/\+/g, "-");
+  return LZString.compressToBase64(jsonString).replace(/\+/g, "_");
 };
 
 /**
