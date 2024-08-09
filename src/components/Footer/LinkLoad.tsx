@@ -34,30 +34,37 @@ const LinkLoad = () => {
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
-      <ModalOverlay />
-      <ModalContent>
-        <ModalHeader>Data Import</ModalHeader>
-        <ModalBody>
-          <hr />
-          <Text>You are about to import the following data:</Text>
-          <Box className="box" p={1} mb={3}>
-            <Text>{data}</Text>
-          </Box>
-          <Text>Do you want to continue?</Text>
-          <Text fontWeight="bold">This action will overwrite your current data.</Text>
-          <hr />
-        </ModalBody>
-        <ModalFooter>
-          <Button colorScheme="green" mr={3} onClick={setQuery}>
-            Import
-          </Button>
-          <Button colorScheme="red" onClick={onClose}>
-            Cancel
-          </Button>
-        </ModalFooter>
-      </ModalContent>
-    </Modal>
+    <>
+      {data && (
+        <Button colorScheme="green" variant="solid" onClick={onOpen}>
+          Import
+        </Button>
+      )}
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Data Import</ModalHeader>
+          <ModalBody>
+            <hr />
+            <Text>You are about to import the following data:</Text>
+            <Box className="box" p={1} mb={3}>
+              <Text>{data}</Text>
+            </Box>
+            <Text>Do you want to continue?</Text>
+            <Text fontWeight="bold">This action will overwrite your current data.</Text>
+            <hr />
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="green" mr={3} onClick={setQuery}>
+              Import
+            </Button>
+            <Button colorScheme="red" onClick={onClose}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
 
