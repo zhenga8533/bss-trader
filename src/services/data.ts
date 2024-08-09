@@ -1,4 +1,3 @@
-import { useToast } from "@chakra-ui/react";
 import LZString from "lz-string";
 import beequips from "../data/beequips.json";
 import categories from "../data/categories.json";
@@ -143,10 +142,8 @@ const importCategories = (data: string) => {
  * @param data - the compressed string of the trade data
  */
 export const getImport = (data: string) => {
-  const toast = useToast();
-
   try {
-    const json = LZString.decompressFromBase64(data);
+    const json = LZString.decompressFromBase64(data.replace(/-/g, "+"));
     const parsed = JSON.parse(json);
     localStorage.setItem("offering-cosmetics", JSON.stringify(importCosmetics(parsed[0])));
     localStorage.setItem("looking-for-cosmetics", JSON.stringify(importCosmetics(parsed[1])));
@@ -155,23 +152,8 @@ export const getImport = (data: string) => {
     localStorage.setItem("offering-categories", JSON.stringify(importCategories(parsed[4])));
     localStorage.setItem("looking-for-categories", JSON.stringify(importCategories(parsed[5])));
     window.dispatchEvent(new CustomEvent("update"));
-
-    toast({
-      title: "Trade data imported",
-      status: "success",
-      variant: "subtle",
-      duration: 2000,
-      isClosable: true,
-    });
   } catch (e) {
     localStorage.clear();
-    toast({
-      title: "Invalid trade data",
-      status: "error",
-      variant: "subtle",
-      duration: 2000,
-      isClosable: true,
-    });
   }
 };
 
@@ -191,7 +173,7 @@ export const getExport = () => {
   ];
 
   const jsonString = JSON.stringify(data);
-  return LZString.compressToBase64(jsonString);
+  return LZString.compressToBase64(jsonString).replace(/\+/g, "-");
 };
 
 /**
