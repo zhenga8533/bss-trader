@@ -28,11 +28,18 @@ const App = () => {
         width="100%"
         height="100%"
       />
-      <Grid templateColumns="repeat(3, 1fr)" gap={4} px="5%" py={5} position="relative" zIndex={10}>
+      <Grid
+        templateColumns="repeat(auto-fit, minmax(200px, 1fr))"
+        gap={4}
+        px="5%"
+        py={5}
+        position="relative"
+        zIndex={10}
+      >
         <StickerPrinter />
         <Center>
           <Heading className="heading" backgroundColor="rgba(255, 255, 32, 0.75)" borderRadius={5} p={3}>
-            🡲 BSS Trader 🡰
+            BSS Trader
           </Heading>
         </Center>
         <SproutTimer />
