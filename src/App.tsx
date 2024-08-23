@@ -4,6 +4,7 @@ import { useState } from "react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/doodle.webp";
 import discord from "./assets/discord.png";
+import roblox from "./assets/roblox.png";
 import url from "./assets/url.png";
 import Footer from "./components/Footer";
 import SproutTimer from "./components/SproutTimer";
@@ -96,12 +97,19 @@ const App = () => {
       <HStack justifyContent="space-between" position="relative" px="5%" zIndex={10}>
         <Footer />
       </HStack>
-      <VStack color="white" mb={5} position="relative" spacing={1} width="100%">
+      <VStack color="white" mb={5} position="relative" spacing={2} width="100%">
         <Text className="heading">made by</Text>
+        {/*<HStack cursor="pointer" onClick={() => window.open("https://discord.com/users/166928679467745282")}>*/}
         <HStack>
           <Image src={discord} alt="Discord" boxSize={10} />
           <Heading className="heading" size="md">
             grapefruited
+          </Heading>
+        </HStack>
+        <HStack cursor="pointer" onClick={() => window.open("https://www.roblox.com/users/157670655/profile")}>
+          <Image src={roblox} alt="Roblox" boxSize={10} />
+          <Heading className="heading" size="md">
+            ItsAnEif
           </Heading>
         </HStack>
       </VStack>
