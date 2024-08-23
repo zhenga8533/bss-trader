@@ -4,6 +4,7 @@ import { useState } from "react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/doodle.webp";
 import discord from "./assets/discord.png";
+import url from "./assets/url.png";
 import Footer from "./components/Footer";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
@@ -75,12 +76,15 @@ const App = () => {
           <GridItem gridArea="center">
             <Center>
               <Box maxW={64} position="relative">
-                <Image src={arrows} alt="Arrows" />
-                <QRCode
-                  key={seed}
-                  value={"https://bsstrader.com?data=" + getExport()}
-                  style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
-                />
+                <Box position="relative">
+                  <Image src={arrows} alt="Arrows" />
+                  <QRCode
+                    key={seed}
+                    value={"https://bsstrader.com?data=" + getExport()}
+                    style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
+                  />
+                </Box>
+                <Image src={url} alt="bsstrader.com" />
               </Box>
             </Center>
           </GridItem>
