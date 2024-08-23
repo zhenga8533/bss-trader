@@ -84,7 +84,7 @@ const App = () => {
                     style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
                   />
                 </Box>
-                <Image src={url} alt="bsstrader.com" />
+                <Image src={url} alt="bsstrader.com" position="absolute" bottom="3%" className="wiggle" />
               </Box>
             </Center>
           </GridItem>

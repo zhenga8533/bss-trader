@@ -16,3 +16,17 @@
 .custom-scroll::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 3s infinite;
+}
