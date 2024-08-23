@@ -1,0 +1,1 @@
+.box{background-color:#0000004d;border-radius:5px}.heading{color:#fff;text-shadow:1px 1px 2px black}.custom-scroll{scrollbar-width:none;-ms-overflow-style:none}.custom-scroll::-webkit-scrollbar{display:none}@keyframes wiggle{0%,to{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}.wiggle{animation:wiggle 3s infinite}
