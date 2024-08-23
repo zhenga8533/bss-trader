@@ -78,7 +78,7 @@ const App = () => {
                 <Image src={arrows} alt="Arrows" />
                 <QRCode
                   key={seed}
-                  value={"www.bsstrader.com?data=" + getExport()}
+                  value={"https://bsstrader.com?data=" + getExport()}
                   style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
                 />
               </Box>
