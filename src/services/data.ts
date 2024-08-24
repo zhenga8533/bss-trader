@@ -26,9 +26,9 @@ Object.keys(categories).forEach((category) => {
   itemRevMap[counter] = category;
   counter++;
 });
-Object.keys(waxes).forEach((wax) => {
-  itemMap[wax] = counter;
-  itemRevMap[counter] = wax;
+Object.values(waxes).forEach(({ image_url }) => {
+  itemMap[image_url] = counter;
+  itemRevMap[counter] = image_url;
   counter++;
 });
 
