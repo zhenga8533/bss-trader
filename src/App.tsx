@@ -37,11 +37,6 @@ const App = () => {
         zIndex={10}
       >
         <StickerPrinter />
-        <Center>
-          <Heading className="heading" backgroundColor="rgba(255, 255, 32, 0.75)" borderRadius={5} p={3}>
-            BSS Trader
-          </Heading>
-        </Center>
         <SproutTimer />
       </Grid>
       <Box

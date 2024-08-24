@@ -8,7 +8,7 @@ const StickerPrinter = () => {
   return (
     <Flex justifyContent="flex-start">
       <PrinterModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <Button bgColor="rgba(0, 0, 0, 0.75)" borderRadius={5} p={3} h="100%" onClick={() => setIsOpen(true)}>
+      <Button bgColor="rgba(255, 255, 255, 0.5)" borderRadius={5} p={3} h="100%" onClick={() => setIsOpen(true)}>
         <Heading className="heading">🖨️ Printer</Heading>
       </Button>
     </Flex>
