@@ -2,11 +2,23 @@
   "Bee Bear": {
     "Beesmas Boosting": [{ "Rubber Duck": 1 }],
     "Teamwork Makes The Dream": [{ "Simple Sun": 1 }],
-    "The Scoop On Stickers": [{ "Random": 1 }, { "Random": 1 }],
-    "Beesmas Beat Em Up": [{ "Random": 1 }, { "Random": 1 }],
+    "The Scoop On Stickers": [
+      { "Green Check Mark": 1, "Green Plus Sign": 1 },
+      { "Standing Caterpillar": 1, "Colorful Buttons": 1 }
+    ],
+    "Beesmas Beat Em Up": [
+      { "Cop And Robber": 1, "Theatrical Intruder": 1, "Interrobang Block": 1, "Evil Pig": 1, "Tough Potato": 1 },
+      { "Red X": 1, "Doodle S": 1 }
+    ],
     "Walkin' In A Wavy Wonderland": [
-      { "Random": 1 },
-      { "Random": 1 },
+      {
+        "Desperate Booth": 1,
+        "Orphan Dog": 1,
+        "Pizza Delivery Man": 1,
+        "Built Ship": 1,
+        "Grey Shape Companion": 1
+      },
+      { "Baseball Swing": 1, "Launching Rocket": 1, "Giraffe": 1 },
       {
         "Round Green Critter": 1,
         "Flying Magenta Critter": 1,
@@ -105,10 +117,14 @@
     "Science Bear's Beesmas Lights": [{ "Simple Sun": 3 }, { "Traffic Light": 1 }]
   },
   "Dapper Bear": {
-    "Dapper Bear's Samovar": [{ "Yellow Coffee Mug": 4 }, { "Cordate Leaf": 3 }, { "Spore Covered Puffshroom": 1 }]
+    "Dapper Bear's Samovar": [
+      { "Yellow Coffee Mug": 4 },
+      { "Cordate Leaf": 3, "Hastate Leaf": 3, "Lanceolate Leaf": 3 },
+      { "Spore Covered Puffshroom": 1 }
+    ]
   },
   "Polar Bear": {
-    "Polar Bear's Beesmas Feast": [{ "Rubber Duck": 3 }, { "Random": 1 }]
+    "Polar Bear's Beesmas Feast": [{ "Rubber Duck": 3 }, { "Wishbone": 1, "Giraffe": 1 }]
   },
   "Spirit Bear": {
     "Spirit Bear's Galentine Shrine": [
@@ -119,19 +135,13 @@
     ]
   },
   "Gummy Bear": {
-    "Goo Years Beacon (Players will get eight of these at random)": [
-      { "Launching Rocket": 8 },
-      { "White Flag": 6 },
-      { "Saturn": 3 },
-      { "Alert Icon": 4 },
+    "Goo Years Beacon": [
+      { "Launching Rocket": 8, "Saturn": 3, "Glowing Smile Sticker": 2 },
+      { "White Flag": 6, "Alert Icon": 4, "Atom Symbol": 5 },
       { "TNT": 4 },
-      { "Atom Symbol": 5 },
-      { "Fuzz Bomb": 3 },
-      { "Purple Fleuron": 1 },
+      { "Precise Eye": 2, "Fuzz Bomb": 3, "Purple Fleuron": 1 },
       { "Yellow Sticky Hand": 3 },
-      { "Black Diamond": 2 },
-      { "Glowing Smile": 2 },
-      { "Dark Flame": 1 },
+      { "Dark Flame": 1, "Black Diamond": 2 },
       { "Small Shield": 1 },
       { "Gummyballer": 1 }
     ]
@@ -144,7 +154,11 @@
     ]
   },
   "Gifted Riley Bee": {
-    "Riley Bee's Honeyday Candles": [{ "Small Flame": 3 }, { "Scythe": 1 }, { "Red Palm Hand": 1 }]
+    "Riley Bee's Honeyday Candles": [
+      { "Blowing Leaf": 4, "Waxing Crescent Moon": 4 },
+      { "Scythe": 1 },
+      { "Red Palm Hand": 1, "Alert Icon": 1, "Small Flame": 3 }
+    ]
   },
   "Honey Bee (NPC)": {
     "Honey Bee's Honey Wreath?": [{ "Silly Tongue": 9 }, { "Honey Dipper": 9 }, { "Honey Bee Bear": 9 }]
@@ -152,15 +166,16 @@
   "Stick Bug": {
     "Stick Bug's Nymph Hats": [
       { "Right Facing Snail": 1 },
-      { "Forward Facing Spider": 2, "Menacing Mantis": 2 },
-      { "Small Blue Chick": 2, "Left Facing Ant": 3 },
+      { "Forward Facing Spider": 2, "Small Blue Chick": 2 },
+      { "Menacing Mantis": 2, "Little Scorpion": 2 },
+      { "Left Facing Ant": 3, "Forward Facing Aphid": 3 },
       { "Walking Stick Nymph": 4 }
     ]
   },
   "Onett": {
     "Onett’s Yard Art on The Lid": [
-      { "Random": 4 },
-      { "Blob Bumble Bee": 1 },
+      { "Green Circle": 4, "Blue Square": 2 },
+      { "Blob Bumble Bee": 1, "Happy Fish": 4 },
       {
         "Spore Covered Puffshroom": 1,
         "White Button Mushroom": 1,
@@ -171,15 +186,22 @@
         "Chanterelle Mushroom": 1,
         "Shiitake Mushroom": 1
       },
-      { "Golden Rake": 1 }
+      { "Golden Rake": 1, "Porcelain Dipper": 1 }
     ]
   },
   "Bubble Bee Man": {
     "BBM's Naughty List": [
-      { "Basic White Hive Skin": 3, "Basic Black Hive Skin": 3, "Basic Red Hive Skin": 5, "Basic Blue Hive Skin": 5 },
-      { "Royal Symbol": 1 },
-      { "Shiitake Mushroom": 4, "Morel Mushroom": 4 },
-      { "Ionic Column Base": 1, "Ionic Column Middle": 1, "Ionic Column Top": 1 },
+      {
+        "Basic White Hive Skin": 3,
+        "Basic Black Hive Skin": 3,
+        "Basic Green Hive": 4,
+        "Basic Pink Hive": 4,
+        "Basic Red Hive Skin": 5,
+        "Basic Blue Hive Skin": 5
+      },
+      { "Royal Symbol": 1, "Cool Backpack": 2, "Triple Exclamation": 4 },
+      { "Black Truffle Mushroom": 5, "Shiitake Mushroom": 4, "Morel Mushroom": 4 },
+      { "Eviction": 1, "Ionic Column Base": 1, "Ionic Column Top": 1 },
       {
         "Sunflower Field Stamp": 6,
         "Dandelion Field Stamp": 6,
@@ -195,20 +217,19 @@
         "Pumpkin Patch Stamp": 6,
         "Pine Tree Forest Stamp": 6,
         "Rose Field Stamp": 6,
-        "Ant Field Stamp": 6,
         "Hub Field Stamp": 6,
         "Mountain Top Field Stamp": 6,
         "Coconut Field Stamp": 6,
         "Pepper Patch Stamp": 6
       },
-      { "Coiled Snake": 5, "Standing Bean Bug": 2 },
-      { "Tornado": 1, "Diamond Diamond Bee": 2 },
+      { "Coiled Snake": 5, "Young Elf": 5, "Standing Bean Bug": 2, "Prehistoric Boar": 2, "Prehistoric Hand": 2 },
+      { "Tornado": 1, "Diamond Diamond Bee": 2, "Pearl Girl": 2 },
       { "Flying Bee Bear": 3, "Flying Festive Bee": 1 },
-      { "Squashed Head Bear": 1 },
-      { "Prism Painting": 1, "Banana Painting": 1 },
-      { "Royal Bear": 1 },
+      { "Squashed Head Bear": 1, "Stretched Head Bear": 1, "Uplooking Bear": 3 },
+      { "Prism Painting": 1, "Banana Painting": 1, "Abstract Color Painting": 1 },
+      { "Purple Fleuron": 3, "Purple 4-Point Flower": 3, "Mythic M": 3, "Royal Bear": 1 },
       { "Red X": 12 },
-      { "AFK": 2 },
+      { "Standing Beekeeper": 4, "AFK": 2 },
       { "Round Basic Bee": 1 },
       { "Red Wailing Cry": 1 },
       { "Stick Cub Skin": 1 }
