@@ -23,8 +23,14 @@ const App = () => {
     localStorage.setItem("showQR", showQR.toString());
   }, [showQR]);
 
+  const [showBoxes, setShowBoxes] = useState(localStorage.getItem("showBoxes") !== "false");
+  useEffect(() => {
+    localStorage.setItem("showBoxes", showBoxes.toString());
+  }, [showBoxes]);
+
   return (
     <Box display="flex" flexDirection="column" minH="100vh" position="relative">
+      {/* Heading */}
       <HStack
         width="100%"
         backgroundColor="rgba(0, 0, 0, 0.75)"
@@ -35,11 +41,19 @@ const App = () => {
         justifyContent="space-between"
       >
         <Heading size="lg">BSS Trader</Heading>
-        <HStack>
-          <Text fontSize="xl">QR Code</Text>
-          <Switch size="lg" defaultChecked={showQR} onChange={() => setShowQR(!showQR)} />
+        <HStack spacing={4}>
+          <HStack>
+            <Text fontSize="xl">QR Code</Text>
+            <Switch size="lg" defaultChecked={showQR} onChange={() => setShowQR(!showQR)} />
+          </HStack>
+          <HStack>
+            <Text fontSize="xl">Boxes</Text>
+            <Switch size="lg" defaultChecked={showBoxes} onChange={() => setShowBoxes(!showBoxes)} />
+          </HStack>
         </HStack>
       </HStack>
+
+      {/* Main Content */}
       <Box
         flex="1"
         backgroundImage={background}
@@ -50,17 +64,19 @@ const App = () => {
         width="100%"
         height="100%"
       />
-      <Grid
-        templateColumns="repeat(auto-fit, minmax(200px, 1fr))"
-        gap={4}
-        px="5%"
-        py={5}
-        position="relative"
-        zIndex={10}
-      >
-        <StickerPrinter />
-        <SproutTimer />
-      </Grid>
+      {showBoxes && (
+        <Grid
+          templateColumns="repeat(auto-fit, minmax(200px, 1fr))"
+          gap={4}
+          px="5%"
+          py={5}
+          position="relative"
+          zIndex={10}
+        >
+          <StickerPrinter />
+          <SproutTimer />
+        </Grid>
+      )}
       <Box
         backgroundColor="rgba(0, 0, 0, 0.5)"
         outline="5px solid rgba(255, 255, 0, 0.75)"
