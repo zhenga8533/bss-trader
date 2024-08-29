@@ -1,6 +1,6 @@
-import { Box, Center, Grid, GridItem, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Center, Grid, GridItem, Heading, HStack, Image, Switch, Text, VStack } from "@chakra-ui/react";
 import QRCode from "qrcode.react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/doodle.webp";
 import discord from "./assets/discord.png";
@@ -18,8 +18,28 @@ const App = () => {
     setSeed(Math.random());
   };
 
+  const [showQR, setShowQR] = useState(localStorage.getItem("showQR") !== "false");
+  useEffect(() => {
+    localStorage.setItem("showQR", showQR.toString());
+  }, [showQR]);
+
   return (
     <Box display="flex" flexDirection="column" minH="100vh" position="relative">
+      <HStack
+        width="100%"
+        backgroundColor="rgba(0, 0, 0, 0.75)"
+        color="white"
+        padding="1rem"
+        position="relative"
+        zIndex={10}
+        justifyContent="space-between"
+      >
+        <Heading size="lg">BSS Trader</Heading>
+        <HStack>
+          <Text fontSize="xl">QR Code</Text>
+          <Switch size="lg" defaultChecked={showQR} onChange={() => setShowQR(!showQR)} />
+        </HStack>
+      </HStack>
       <Box
         flex="1"
         backgroundImage={background}
@@ -74,11 +94,13 @@ const App = () => {
               <Box maxW={64} position="relative">
                 <Box position="relative">
                   <Image src={arrows} alt="Arrows" />
-                  <QRCode
-                    key={seed}
-                    value={"https://bsstrader.com?data=" + getExport()}
-                    style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
-                  />
+                  {showQR && (
+                    <QRCode
+                      key={seed}
+                      value={"https://bsstrader.com?data=" + getExport()}
+                      style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
+                    />
+                  )}
                 </Box>
                 <Image src={url} alt="bsstrader.com" position="absolute" bottom="3%" className="wiggle" />
               </Box>
