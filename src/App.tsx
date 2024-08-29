@@ -102,7 +102,13 @@ const App = () => {
                     />
                   )}
                 </Box>
-                <Image src={url} alt="bsstrader.com" position="absolute" bottom="3%" className="wiggle" />
+                <Image
+                  src={url}
+                  alt="bsstrader.com"
+                  position="absolute"
+                  bottom={showQR ? "3%" : "50%"}
+                  className="wiggle"
+                />
               </Box>
             </Center>
           </GridItem>
