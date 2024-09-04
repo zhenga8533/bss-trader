@@ -1,5 +1,5 @@
-import { Heading, HStack, Switch, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { Heading, HStack } from "@chakra-ui/react";
+import Toggle from "./Toggle";
 
 interface NavProps {
   onSetBoxes: (showBoxes: boolean) => void;
@@ -7,16 +7,6 @@ interface NavProps {
 }
 
 const Nav = ({ onSetBoxes, onSetQR }: NavProps) => {
-  const [showBoxes, setShowBoxes] = useState(localStorage.getItem("showBoxes") !== "false");
-  useEffect(() => {
-    localStorage.setItem("showBoxes", showBoxes.toString());
-  }, [showBoxes]);
-
-  const [showQR, setShowQR] = useState(localStorage.getItem("showQR") !== "false");
-  useEffect(() => {
-    localStorage.setItem("showQR", showQR.toString());
-  }, [showQR]);
-
   return (
     <HStack
       width="100%"
@@ -29,28 +19,8 @@ const Nav = ({ onSetBoxes, onSetQR }: NavProps) => {
     >
       <Heading size="lg">BSS Trader</Heading>
       <HStack spacing={4}>
-        <HStack>
-          <Text fontSize="xl">Boxes</Text>
-          <Switch
-            size="lg"
-            defaultChecked={showBoxes}
-            onChange={() => {
-              onSetBoxes(!showBoxes);
-              setShowBoxes(!showBoxes);
-            }}
-          />
-        </HStack>
-        <HStack>
-          <Text fontSize="xl">QR Code</Text>
-          <Switch
-            size="lg"
-            defaultChecked={showQR}
-            onChange={() => {
-              onSetQR(!showQR);
-              setShowQR(!showQR);
-            }}
-          />
-        </HStack>
+        <Toggle id="showBoxes" title="Boxes" onSet={onSetBoxes} />
+        <Toggle id="showQR" title="QR Code" onSet={onSetQR} />
       </HStack>
     </HStack>
   );
