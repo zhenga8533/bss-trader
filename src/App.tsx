@@ -1,12 +1,13 @@
-import { Box, Center, Grid, GridItem, Heading, HStack, Image, Switch, Text, VStack } from "@chakra-ui/react";
+import { Box, Center, Grid, GridItem, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import QRCode from "qrcode.react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import arrows from "./assets/arrows.webp";
 import background from "./assets/backgrounds/doodle.webp";
 import discord from "./assets/discord.png";
 import roblox from "./assets/roblox.png";
 import url from "./assets/url.png";
 import Footer from "./components/Footer";
+import Nav from "./components/Nav";
 import SproutTimer from "./components/SproutTimer";
 import ItemStack from "./components/Stack";
 import StickerPrinter from "./components/StickerPrinter";
@@ -18,42 +19,13 @@ const App = () => {
     setSeed(Math.random());
   };
 
-  const [showQR, setShowQR] = useState(localStorage.getItem("showQR") !== "false");
-  useEffect(() => {
-    localStorage.setItem("showQR", showQR.toString());
-  }, [showQR]);
-
   const [showBoxes, setShowBoxes] = useState(localStorage.getItem("showBoxes") !== "false");
-  useEffect(() => {
-    localStorage.setItem("showBoxes", showBoxes.toString());
-  }, [showBoxes]);
+  const [showQR, setShowQR] = useState(localStorage.getItem("showQR") !== "false");
 
   return (
     <Box display="flex" flexDirection="column" minH="100vh" position="relative">
-      {/* Heading */}
-      <HStack
-        width="100%"
-        backgroundColor="rgba(0, 0, 0, 0.75)"
-        color="white"
-        padding="1rem"
-        position="relative"
-        zIndex={10}
-        justifyContent="space-between"
-      >
-        <Heading size="lg">BSS Trader</Heading>
-        <HStack spacing={4}>
-          <HStack>
-            <Text fontSize="xl">QR Code</Text>
-            <Switch size="lg" defaultChecked={showQR} onChange={() => setShowQR(!showQR)} />
-          </HStack>
-          <HStack>
-            <Text fontSize="xl">Boxes</Text>
-            <Switch size="lg" defaultChecked={showBoxes} onChange={() => setShowBoxes(!showBoxes)} />
-          </HStack>
-        </HStack>
-      </HStack>
+      <Nav onSetBoxes={(showBoxes) => setShowBoxes(showBoxes)} onSetQR={(showQR) => setShowQR(showQR)} />
 
-      {/* Main Content */}
       <Box
         flex="1"
         backgroundImage={background}
