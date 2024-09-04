@@ -1,4 +1,5 @@
 import { Heading, HStack } from "@chakra-ui/react";
+import ThemeSwitch from "./ThemeSwitch";
 import Toggle from "./Toggle";
 
 interface NavProps {
@@ -21,6 +22,7 @@ const Nav = ({ onSetBoxes, onSetQR }: NavProps) => {
       <HStack spacing={4}>
         <Toggle id="showBoxes" title="Boxes" onSet={onSetBoxes} />
         <Toggle id="showQR" title="QR Code" onSet={onSetQR} />
+        <ThemeSwitch />
       </HStack>
     </HStack>
   );
