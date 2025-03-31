@@ -5,6 +5,7 @@ import { getTileColor } from "../../services/format";
 
 interface Cosmetic {
   image_url: string;
+  image_path: string;
   description: string;
   stack_boost: string;
   stack_reward: string;
@@ -48,7 +49,7 @@ const CosmeticTile = ({ name, data, showQuantity, onClick, onContextMenu }: Cosm
           },
         }}
       >
-        <Image src={cosmetic.image_url} alt={name} />
+        <Image src={cosmetic.image_path} alt={name} />
       </Button>
       {showQuantity && (
         <Box
@@ -71,7 +72,7 @@ const CosmeticTile = ({ name, data, showQuantity, onClick, onContextMenu }: Cosm
       <Heading size="md">{name}</Heading>
       <HStack>
         <Box className="box" boxSize="50%" p={5}>
-          <Image src={cosmetic.image_url} alt={name} />
+          <Image src={cosmetic.image_path} alt={name} />
         </Box>
         <VStack w="50%">
           <Text className="box" fontSize="large" p={0.5} w="100%">

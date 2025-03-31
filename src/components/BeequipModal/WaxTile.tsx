@@ -2,6 +2,7 @@ import { Button, Heading, Image, Text, Tooltip, VStack } from "@chakra-ui/react"
 
 interface Wax {
   image_url: string;
+  image_path: string;
   description: string;
 }
 
@@ -24,7 +25,7 @@ const WaxTile = ({ name, wax, onClick }: WaxTileProps) => {
       }
     >
       <Button colorScheme="blue" variant="solid" onClick={onClick}>
-        <Image src={wax.image_url} alt={"wax"} boxSize="36px" />
+        <Image src={wax.image_path} alt={"wax"} boxSize="36px" />
       </Button>
     </Tooltip>
   );

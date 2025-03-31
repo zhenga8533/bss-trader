@@ -4,6 +4,7 @@ interface EggTileProps {
   egg: string;
   data: {
     image_url: string;
+    image_path: string;
     description: string;
     obtainment: string[];
     odds: {
@@ -19,7 +20,7 @@ interface EggTileProps {
 const EggTile = ({ egg, data, onClick }: EggTileProps) => {
   const tile = (
     <Button onClick={onClick}>
-      <Image src={data.image_url} alt={egg} />
+      <Image src={data.image_path} alt={egg} />
     </Button>
   );
 
@@ -29,7 +30,7 @@ const EggTile = ({ egg, data, onClick }: EggTileProps) => {
         <Heading size="md">{egg}</Heading>
         <HStack>
           <Box className="box" boxSize="50%" p={5}>
-            <Image src={data.image_url} alt={egg} />
+            <Image src={data.image_path} alt={egg} />
           </Box>
           <VStack w="50%">
             <Text className="box" fontSize="large" p={0.5} w="100%">

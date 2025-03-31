@@ -16,6 +16,7 @@ import QuestGiver from "./QuestGiver";
 interface NPCS {
   [npc: string]: {
     image_url: string;
+    image_path: string;
   };
 }
 
@@ -70,7 +71,7 @@ const QuestModal = ({ id, quests, isOpen, onClose }: QuestModalProps) => {
                       setGiver(giver);
                     }}
                   >
-                    <Image src={(npcs as NPCS)[giver]?.image_url} alt={giver} maxW="48px" />
+                    <Image src={(npcs as NPCS)[giver]?.image_path} alt={giver} maxW="48px" />
                   </Button>
                 );
               })}
