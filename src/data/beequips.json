@@ -1,923 +1,1149 @@
 {
-  "Thimble": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/39/Thimble.png",
-    "level": "3",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"A tiny cup that usually protects our fingers. Bees can wear it as a hat.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +20 - +40. (up to +80 from waxing)",
-      "Convert Amount - +1% - +5%. (up to +10% from waxing)",
-      "[Hive Bonus] Convert Rate (rare) - +1%. (up to +10% from waxing)",
-      "[Hive Bonus] Convert Rate (from wax, rare, caustic only) - x1.01."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Sweatband": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1b/Sweatband.png",
-    "level": "5",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"This absorbant strap keeps sweat out of your eyes while looking vaguely patriotic.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Energy - +15% to +20%. (up to +80% from waxing)",
-      "White Gather Amount - +15% to +20%. (up to +60% from waxing)",
-      "Red Gather Amount - +15% to +20%. (up to +60% from waxing)",
-      "Blue Gather Amount - +15% to +20%. (up to +60% from waxing)",
-      "[Hive Bonus] White Pollen (rare) - +1%. (up to +2% from waxing)",
-      "[Hive Bonus] Red Pollen (rare) - +1%. (up to +2% from waxing)",
-      "[Hive Bonus] Blue Pollen (rare) - +1%. (up to +2% from waxing)",
-      "[Hive Bonus] Max Bee Energy (from waxing, rare) - +1% to +5%",
-      "[Hive Bonus] Pollen (from waxing, rare, caustic only) - +1%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Bandage": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0c/Bandage.png",
-    "level": "3",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"Heals cuts in no time and make a bee look tough.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Gather Amount - +3 to +6. (up to +16 from waxing)",
-      "Energy - +5% to +10%. (up to +20% from waxing)",
-      "Attack - 1% to 3%.",
-      "Attack (from waxing, caustic only) - +1.",
-      "[Hive Bonus] Attack (from waxing, rare, caustic only) - x1.01."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Thumbtack": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7e/Thumbtack.png",
-    "level": "6",
-    "color": "Red",
-    "limit": "2",
-    "description": "\"A small pin used to fasten stuff down or as a makeshift stinger.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Gather Amount - +1 to +3. (up to +33 from waxing)",
-      "Critical Power - +5% to +10%. (up to +40% from waxing)",
-      "Attack - +2% to +5%. (up to +40% from waxing)",
-      "Attack - +1. (up to +2 from waxing)",
-      "[Hive Bonus] Red Bee Attack - +1% to +3%. (up to +6% from waxing)",
-      "[Hive Bonus] Bee Attack (from waxing, rare, caustic only) - +1% to +3%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Camo Bandana": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/dc/Camo_Bandana.png",
-    "level": "8",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"For any bee that wants to be seen looking like it wants to be unseen.\"",
-    "bees": [],
-    "requirement": "Bee must know \"Bomb\" ability",
-    "stats": [
-      "Gather Amount - +10% to +15%. (up to +95% from waxing)",
-      "Buzz Bomb Pollen - +15% to +15%. (up to +105% from waxing)",
-      "Attack - +1.",
-      "Critical Power (from waxing) - +2% to +80%.",
-      "Super-Crit Power (from waxing, caustic only) - +10% to +300%.",
-      "[Hive Bonus] Buzz Bomb Pollen - +2% to +5%. (up to +15% from waxing)",
-      "[Hive Bonus] Pumpkin Patch Capacity - +4% to +8%. (up to +13% from waxing)",
-      "[Hive Bonus] Coconut Field Capacity - +4% to +8%. (up to +13% from waxing)",
-      "[Hive Bonus] Super-Crit Power (from waxing, caustic only) - +1% to +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Bottle Cap": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c9/Bottle_Cap.png",
-    "level": "4",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"The discarded top from a bottle of pop.\"",
-    "bees": [],
-    "requirement": "Bee must be Common or Rare",
-    "stats": [
-      "Convert Amount - +10 to +20. (up to +95 from waxing)",
-      "Critical Power (1% chance as a base stat, ~30% chance from waxing) - +5% to +10%. (up to +60% from waxing)",
-      "Critical Chance - +1% to +2%. (up to +12% from waxing)",
-      "Ability: Buzz Bomb (from waxing, rare, caustic only)",
-      "[Hive Bonus] Critical Power (from waxing, rare) - +2% to +15%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Kazoo": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/47/Kazoo.png",
-    "level": "9",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"A plastic instrument that's kind of like a recorder, but more obnoxious.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +20% - +30%. (up to +90% from waxing)",
-      "Critical Power (Guarenteed) - +2% to +5%. (up to +65% from waxing)",
-      "Energy - -45% to -55%.",
-      "Ability: Melody (Guarenteed)",
-      "[Hive Bonus] Critical Power (5% to 25% as a base stat) - +2% to +5%. (up to 10% from waxing)",
-      "[Hive Bonus] Super-Crit Power (from waxing, rare, caustic only) - +1% to +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Smiley Sticker": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/57/Smiley_Sticker.png",
-    "level": "7",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"This happy seal of approval is only for the brightest of bees.\"",
-    "bees": [],
-    "requirement": "Bee must be Gifted",
-    "stats": [
-      "Energy - +15% to +25%. (up to +85% from waxing)",
-      "Bomb Pollen - +10% to +20%. (up to +60% from waxing)",
-      "Mark Duration - +5% to +10%. (up to +30% from waxing)",
-      "Ability: Honey Mark (from waxing, rare, caustic only)",
-      "Ability: Blue Bomb (from waxing, rare, caustic only)",
-      "[Hive Bonus] Mark Duration (rare) - +1%. (up to +2% from waxing)",
-      "[Hive Bonus] Max Bee Energy (from waxing, rare) - +1% to +3%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Whistle": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/18/Whistle.png",
-    "level": "8",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Bees can blow into this to startle everyone around them.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f3/BraveIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/7c/CommanderIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/ce/RascalIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8d/DemoIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f9/CoolIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d9/RageIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Movespeed - +5% to +10%. (up to +40% from waxing)",
-      "Critical Power - +15% to +25%. (up to +85% from waxing)",
-      "Energy - -45% to -55%.",
-      "Ability: Haste",
-      "Ability: Melody (from waxing, extremely rare, caustic only)",
-      "[Hive Bonus] Bee Movespeed (from waxing, extremely rare, caustic only) - +1%.",
-      "[Hive Bonus] Super-Crit Power (from waxing, rare, caustic only) - +1% to +20%.",
-      "[Hive Bonus] Player Movespeed (from waxing, extremely rare) - x1.01."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Charm Bracelet": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/00/Charm_Bracelet.png",
-    "level": "12",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Bedazzles your bees with a shimmering assortment of symbols that are lucky somehow.\"",
-    "bees": [],
-    "requirement": "Bee must be Legendary",
-    "stats": [
-      "Convert Amount - +15% to +20%.",
-      "Critical Chance - +1% to +15%.",
-      "Mark Duration - +4% to +8%.",
-      "Ability Rate - +3% to +6%.",
-      "Ability: Melody (from waxing, rare, caustic only)",
-      "[Hive Bonus] Loot Luck - +1%.",
-      "[Hive Bonus] Honey At Hive - +1%.",
-      "[Hive Bonus] Honey From Tokens - +1%.",
-      "[Hive Bonus] Convert Rate At Hive - +1%.",
-      "[Hive Bonus] Mushroom Field Pollen - +1%. (up to +41% from waxing)",
-      "[Hive Bonus] Blue Flower Field Pollen - +1%. (up to +41% from waxing)",
-      "[Hive Bonus] Sunflower Field Pollen - +1%. (up to +41% from waxing)",
-      "[Hive Bonus] Dandelion Field Pollen - +1%. (up to +41% from waxing)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Paperclip": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/35/Paperclip.png",
-    "level": "7",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"A helpful trinket that keeps stacks of paper together without staples, tape, or glue.\"",
-    "bees": [],
-    "requirement": "Bee must be Rare or Epic",
-    "stats": [
-      "Ability Rate - +1% to +3%. (up to +6% from waxing)",
-      "Ability Pollen - +5% to +15%. (up to +65% from waxing)",
-      "Convert Rate At Hive (from waxing) - +2% to +30%.",
-      "Ability: Token Link (from waxing, extremely rare, caustic only)",
-      "[Hive Bonus] Ability Token Lifespan - +1% to +3%. (up to +9% from waxing)",
-      "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +3%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Beret": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/43/Beret.png",
-    "level": "11",
-    "color": "Blue",
-    "limit": "2",
-    "description": "\"Only the blue bees are cool enough to don this comfy cap.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +10 - +20. (up to +60 from waxing)",
-      "Convert Amount - +5% - +10%. (up to +50% from waxing)",
-      "Ability Pollen - +1% - +5%.",
-      "Ability: Blue Boost (from waxing, very rare, caustic only)",
-      "[Hive Bonus] Capacity - +5,000 - +10,000. (up to +20,000 from waxing)",
-      "[Hive Bonus] Blue Capacity (from waxing) - +1% - +5%.",
-      "[Hive Bonus] Capacity (from waxing, rare, caustic only) - +1% - +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Bang Snap": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/75/Bang_Snap.png",
-    "level": "10",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"These are the only explosives suitable for young bees and beekeepers.\"",
-    "bees": [],
-    "requirement": "Bees must be Common, Rare, or Epic.",
-    "stats": [
-      "Bomb Pollen - +10% to +15%. (up to +95% from waxing)",
-      "Critical Chance - +1% to +3%. (up to +23% from waxing)",
-      "Ability: Buzz, Red, or Blue Bomb",
-      "Ability: Buzz, Red, or Blue Bomb+ (from waxing, rare, caustic only)",
-      "[Hive Bonus] Bomb Pollen (from waxing, rare) - +1% to 10%.",
-      "[Hive Bonus] Instant Bomb Conversion (from waxing, rare, caustic only) - +1%.",
-      "[Hive Bonus] Instant Buzz Bomb Conversion (from waxing, rare, caustic only) - +1%.",
-      "[Hive Bonus] Instant Red Bomb Conversion (from waxing, rare, caustic only) - +1%.",
-      "[Hive Bonus] Instant Blue Bomb Conversion (from waxing, rare, caustic only) - +1%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Bead Lizard": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6f/Bead_Lizard.png",
-    "level": "9",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Threaded plastic beads arranged to look like a reptile. Would make a good keychain.\"",
-    "bees": [],
-    "requirement": "Bee must be Common or Rare",
-    "stats": [
-      "Convert Amount - +20% - +30%. (up to 110% from waxing)",
-      "Gathering Flames Chance - +8% - +12%. (up to 52% from waxing)",
-      "Gathering Bubbles Chance - +8% - +12%. (up to 52% from waxing)",
-      "Ability: Token Link (from waxing, caustic only)",
-      "[Hive Bonus] Bubble Pollen (from waxing) - +1% - +10%.",
-      "[Hive Bonus] Flame Pollen (from waxing) - +1% - +10%.",
-      "[Hive Bonus] Bee Ability Pollen (from waxing, rare, caustic only) - +1% - +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Pink Shades": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/9a/Pink_Shades.png",
-    "level": "10",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Flamboyant glasses that protect your eyes while making you look like a rock star.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/83/BasicIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4a/RadIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a0/BomberIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8d/DemoIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/2d/HoneyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a7/ShyIcon.png"
-    ],
-    "requirement": "Bee must be Gifted",
-    "stats": [
-      "Ability Pollen - +15% to +25%. (up to +65% from waxing)",
-      "Critical Power - +25% to +50%.",
-      "Critical Chance - +20% to +30%. (up to +68% from waxing)",
-      "Super-Crit Chance - +10% to +15%. (up to +55% from waxing)",
-      "Ability: Focus (From waxing, caustic only)",
-      "[Hive Bonus] Super-Crit Chance (from waxing, caustic only) - +1%.",
-      "[Hive Bonus] Super-Crit Power (from waxing) - +2% to +30%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Lei": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/45/Lei.png",
-    "level": "14",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Threaded petals to drape around your d\u00e9colletage.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/83/BasicIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/18/LookerIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ed/StubbornIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b5/HastyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/66/ExhaustedIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Gather Amount - +10 to +20. (up to +60 from waxing)",
-      "Gather Amount - +10% to +20%. (up to +60% from waxing)",
-      "Gather Pollination Chance - +20% to +30%. (up to +50% from waxing)",
-      "Ability Rate - +1%.",
-      "Ability: Red or Blue Boost (from waxing, rare, caustic only)",
-      "[Hive Bonus] Sunflower Field Pollen - +3% to +5%. (up to +25% from waxing)",
-      "[Hive Bonus] Blue Flower Field Pollen - +3% to +5%. (up to +25% from waxing)",
-      "[Hive Bonus] Rose Field Pollen - +3% to +5%. (up to +25% from waxing)",
-      "[Hive Bonus] Coconut Field Pollen - +3% to +5%. (up to +25% from waxing)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Demon Talisman": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/b3/Demon_Talisman.png",
-    "level": "15",
-    "color": "Red",
-    "limit": "1",
-    "description": "\"An ornament trying hard to look conventionally evil.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Attack - +50% to +70%. (up to +100% from waxing)",
-      "Gather Amount - +50% to +70%. (up to +160% from waxing)",
-      "Ability Pollen - +50% to +70%. (up to +160% from waxing)",
-      "Gathering Flames Chance - +10%. to +15% (up to +21% from waxing)",
-      "Super-Crit Chance - +5% to +10%. (up to +30% from waxing)",
-      "Movespeed - -30% to -40%.",
-      "Energy - -70% to -80%.",
-      "Ability: Inferno (from waxing, extremely rare, caustic only)",
-      "[Hive Bonus] Red Bomb Pollen - +7% to +13%. (up to 35% from waxing)",
-      "[Hive Bonus] Flame Pollen - +7% to +13%. (up to +35% from waxing)",
-      "[Hive Bonus] Instant Red Bomb Conversion - +6% to +9%. (up to +14% from waxing)",
-      "[Hive Bonus] Instant Flame Conversion - +6% to +9%. (up to +14% from waxing)",
-      "[Hive Bonus] Instant Demon Bee Conversion - +10%.",
-      "[Hive Bonus] Super-Crit Power - +2% to +10%. (from waxing, caustic only)",
-      "[Hive Bonus] Max Bee Energy - -20% to -25%.",
-      "[Hive Bonus] Player Movespeed - -5.",
-      "[Hive Bonus] Bee Attack - +3% to +5%.",
-      "[Hive Bonus] Blue Pollen - x0.5."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Camphor Lip Balm": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/04/Camphor_Lip_Balm.png",
-    "level": "12",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Soothes chapped lips with a slight cooling sensation.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Gather Amount - +20 to +30. (up to +75 from waxing)",
-      "Critical Power - +50% to +70%. (up to +145% from waxing)",
-      "[Hive Bonus] Pepper Patch Pollen - x1.03 to x1.05. (up to x1.08 from waxing)",
-      "[Hive Bonus] Bubble Pollen - +10% to +15%. (up to +25% from waxing)",
-      "[Hive Bonus] Gold Bubble Pollen - +2% to +12%. (from waxing, caustic only)",
-      "[Hive Bonus] Honey From Instant Conversion - +1%. (from waxing, rare, caustic only)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Autumn Sunhat": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/51/Autumn_Sunhat.png",
-    "level": "16",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"A lovely straw hat made from 100% fall-sourced materials.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +60 to +80. (up to +200 from waxing)",
-      "Convert Amount - +15% - +20%. (up to +60% from waxing)",
-      "White Gather Amount - +40% to +60%. (up to +110% from waxing)",
-      "Ability Rate - +8% to +15%. (up to +25% from waxing)",
-      "[Hive Bonus] Capacity - +40,000 to +60,000. (up to +100,000 from waxing)",
-      "[Hive Bonus] Sunflower Field Pollen - +18% to +24%. (up to +44% from waxing)",
-      "[Hive Bonus] Pumpkin Patch Pollen - +18% to +24%. (up to +44% from waxing)",
-      "[Hive Bonus] White Field Capacity - +6% to +10%. (up to +22% from waxing)",
-      "[Hive Bonus] White Pollen - +5% to +10%. (from waxing, rare, caustic only)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Rose Headband": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/33/Rose_Headband.png",
-    "level": "13",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Compliments a bee's rosy complexion and flower-esque fleeting youth.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Attack - +2 to +4. (up to +7 from waxing)",
-      "Convert Amount - +40% to +60%. (up to +140% from waxing)",
-      "Gather Pollination Chance - +10% to +15%. (up to +20% from waxing)",
-      "Critical Chance - +5% to +10%. (up to +20% from waxing)",
-      "Ability Rate - +1% to +2%.",
-      "[Hive Bonus] Capacity - +20,000 to +30,000. (up to +55,000 from waxing)",
-      "[Hive Bonus] Rose Field Pollen - +14% to +20%. (up to +25% from waxing)",
-      "[Hive Bonus] Red Field Capacity - +6% to +10%. (up to +20% from waxing)",
-      "[Hive Bonus] Instant Rose Field Conversion - +2% to +6%. (from waxing, rare, caustic only)",
-      "[Hive Bonus] Bee Attack - +2% to +9%. (from waxing, extremely rare, caustic only)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Pink Eraser": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/9/92/Pink_Eraser.png",
-    "level": "12",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Unmarks your marks.\"",
-    "bees": [],
-    "requirement": "Bee must have a Convert Amount mutation",
-    "stats": [
-      "Convert Amount - +20 to +40. (up to +100 from waxing)",
-      "Instant Conversion - +15% to +20%. (up to +30% from waxing)",
-      "Mark Duration - -90% to -99%.",
-      "[Hive Bonus] Instant Red Bomb Conversion - +7% to +10%. (up to +15% from waxing)",
-      "[Hive Bonus] Instant Bee Gather Conversion - +3% to +5%. (up to +8% from waxing)",
-      "[Hive Bonus] Honey From Instant Conversion - +0.5% to +1%. (up to 4% from waxing)",
-      "[Hive Bonus] Instant Conversion - x1.01 to x1.05. (from waxing, extremely rare, caustic only)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Candy Ring": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1a/Candy_Ring.png",
-    "level": "14",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"Keeps some sugar on hand to satisfy on demand.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Energy - +60 to +80. (up to +240 from waxing)",
-      "Convert Amount - +20% - +30%. (up to +80% from waxing)",
-      "Ability Rate - +1% to +2%. (up to +5% from waxing)",
-      "[Hive Bonus] Honey At Hive - +2% to +5%. (up to +25% from waxing)",
-      "[Hive Bonus] Honey Per Goo - +1%. (up to +7% from waxing)",
-      "[Hive Bonus] Honey From Tokens - x1.01. (from waxing, extremely rare, caustic only)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Elf Cap": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/7/74/Elf_Cap.png",
-    "level": "3",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"A darling cap fitted with a bell to keep the laborer alert.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +25 to +50. (up to +110 from waxing)",
-      "Convert Rate At Hive - +10% to +20%. (up to +60% from waxing)",
-      "[Hive Bonus] Convert Rate At Hive (from waxing) - +1% to +10%.",
-      "[Hive Bonus] Honey At Hive (from waxing, rare) - +1% to +20%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Single Mitten": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ee/Single_Mitten.png",
-    "level": "6",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"This winter-themed mitten is missing its partner.\"",
-    "bees": [],
-    "requirement": "Bee must be Rare, Epic, or Legendary",
-    "stats": [
-      "Gather Amount - +5 to +10. (up to +50 from waxing)",
-      "Bomb Pollen - +10% to +15%. (up to +75% from waxing)",
-      "[Hive Bonus] Capacity - +7,500 to +10,000. (up to +15,000 from waxing)",
-      "[Hive Bonus] Red Pollen (from waxing) - +1% to +9%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Warm Scarf": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/43/Warm_Scarf.png",
-    "level": "5",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"This winter scarf keeps bees warm in the field.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/83/BasicIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/4a/RadIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/66/ExhaustedIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/FrostyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a7/ShyIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +25% to +35%. (up to +75% from waxing)",
-      "Energy - +25% to +35%. (up to +75% from waxing)",
-      "[Hive Bonus] Red Field Capacity - +1% to +3%. (up to +13% from waxing)",
-      "[Hive Bonus] White Field Capacity - +1% to +3%. (up to +13% from waxing)",
-      "[Hive Bonus] Capacity (from waxing, rare) - +1% to +10%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Peppermint Antennas": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/fc/Peppermint_Antennas.png",
-    "level": "7",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"These grant a soothing cooling sensation to the bee who wears them.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +2% to +4%. (up to 44% from waxing)",
-      "Gather Amount - +2% to +4%. (up to 44% from waxing)",
-      "Ability Pollen - +1%. (up to 6% from waxing)",
-      "Ability Rate - +1%. (up to 6% from waxing)",
-      "Movespeed - +1%.",
-      "[Hive Bonus] Bee Ability Rate (from waxing, rare) - +1%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Beesmas Top": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/2/2c/Beesmas_Top.png",
-    "level": "4",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"Younger bees enjoy giving this traditional Beesmas toy a spin.\"",
-    "bees": [],
-    "requirement": "Bee must be Common or Rare",
-    "stats": [
-      "Critical Chance - +5% to +10%. (up to +20% from waxing)",
-      "Energy - -25% to -35% (up to +125% from waxing)",
-      "Ability Rate - +5% to +10%. (up to +20% from waxing)",
-      "Attack - +1.",
-      "[Hive Bonus] Critical Power - +2% to +5%. (up to +15% from waxing)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Pinecone": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a7/Pinecone.png",
-    "level": "9",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"A seed-producing organ produced by Conifer trees.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/45/BumbleIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ed/StubbornIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/42/BuckoIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/FrostyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d8/CarpenterIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8a/BearIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +20% to +30%. (up to +70% from waxing)",
-      "Ability Rate (rare) - +1%. (up to 2% from waxing)",
-      "[Hive Bonus] Pine Tree Forest Capacity - +8% to +15%. (up to +25% from waxing)",
-      "[Hive Bonus] Pine Tree Forest Pollen - +5% to +10%. (up to +20% from waxing)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Icicles": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/c5/Icicles.png",
-    "level": "10",
-    "color": "Blue",
-    "limit": "3",
-    "description": "\"Incredibly cold and incredibly sharp.\"",
-    "bees": [],
-    "requirement": "Bee must know \"Blue Bomb\" ability",
-    "stats": [
-      "Attack - +3% to +5%. (up to +45% from waxing)",
-      "Blue Bomb Pollen - +20% to +30%. (up to +110% from waxing)",
-      "[Hive Bonus] Cactus Field Pollen - +5% to +10%. (up to +20% from waxing)",
-      "[Hive Bonus] Blue Bomb Pollen - +3% to +5%. (up to +15% from waxing)",
-      "[Hive Bonus] Monster Respawn Time (from waxing, rare) - -1% to -5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Beesmas Tree Hat": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/14/Beesmas_Tree_Hat.png",
-    "level": "10",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"A party hat that's been painted to look like a Beesmas Tree.\"",
-    "bees": [],
-    "requirement": "Bee must have a Mutation",
-    "stats": [
-      "Convert Amount - +10% to +20%. (up to +60% from waxing)",
-      "Critical Chance - +2% to +5%. (up to +10% from waxing)",
-      "Ability Pollen - +2% to +5%. (up to +10% from waxing)",
-      "Ability Rate - +1%. (up to +2% from waxing)",
-      "[Hive Bonus] Capacity - +10,000 to +25,000. (up to +35,000 from waxing)",
-      "[Hive Bonus] Convert Rate At Hive - +3% to +5%. (up to +15% from waxing)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Bubble Light": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1e/Bubble_Light.png",
-    "level": "8",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"The incandescent light bulb in this ornament brings methylene chloride to a magical boil.\"",
-    "bees": [],
-    "requirement": "Bee must have Energy Mutation",
-    "stats": [
-      "Convert Amount - +30 to +50. (up to +120 from waxing)",
-      "Movespeed - +3 to +5. (up to +10 from waxing)",
-      "Bubble Pollen - +15% to +30%. (up to +60% from waxing)",
-      "Mark Duration - +5% to +15%. (up to +25% from waxing)",
-      "[Hive Bonus] Bubble Pollen - +1%. (up to +11% from waxing)",
-      "[Hive Bonus] Bee Movespeed (from waxing, rare) - +1% to +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Snow Tiara": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/ac/Snow_Tiara.png",
-    "level": "12",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"A beautiful crown perfect for occasions where you build snowbears with your sister.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f9/CoolIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/ed/StubbornIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d4/ShockedIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/FrostyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/67/DiamondIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/86/WindyIcon.png"
-    ],
-    "requirement": "Bee must be Gifted",
-    "stats": [
-      "Convert Amount - +10% to +25%. (up to +65% from waxing)",
-      "Convert At Hive - +10% to +25%. (up to +65% from waxing)",
-      "Blue Gather - +10% to +25%. (up to +65% from waxing)",
-      "White Gather - +10% to +25%. (up to +65% from waxing)",
-      "Critical Chance - +1%.",
-      "[Hive Bonus] Blue Field Capacity - +2% to +5%. (up to +15% from waxing)",
-      "[Hive Bonus] White Field Capacity - +2% to +5%. (up to +15% from waxing)",
-      "[Hive Bonus] Honey From Tokens - +2% to +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Snowglobe": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/36/Snowglobe.png",
-    "level": "7",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"Keep a little ball of winter wonder with you all year long.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/83/BasicIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/45/BumbleIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f9/CoolIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/42/BuckoIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/5a/FrostyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/86/WindyIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Bomb Pollen - +30% to +50%. (up to 90% from waxing)",
-      "Ability Rate (from waxing) - +1%.",
-      "Ability: Snowglobe Shake",
-      "[Hive Bonus] Bomb Pollen (from waxing) - +1% to +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Reindeer Antlers": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/69/Reindeer_Antlers.png",
-    "level": "8",
-    "color": "Any",
-    "limit": "1",
-    "description": "\"These magic antlers and glowing-red nose help Puppy Bee guide you through darkness!\"",
-    "bees": ["https://static.wikia.nocookie.net/bee-swarm-simulator/images/0/0c/PuppyIcon.png"],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +10% - +15%. (up to +95% from waxing)",
-      "Ability Pollen - +10% to +15%. (up to +23% from waxing)",
-      "Ability: Focus",
-      "Ability: Reindeer Fetch",
-      "[Hive Bonus] Capacity - +1% to +20%. (from waxing, rare)",
-      "[Hive Bonus] Bond From Treats - +1% to +3%. (from waxing, extremely rare)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Toy Horn": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/b/bf/Toy_Horn.png",
-    "level": "9",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"The tiny brass instrument can be heard from miles away.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f3/BraveIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/d/d9/RageIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/1a/LionIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/36/CobaltIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/11/CrimsonIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Convert Amount - +30 to +60. (up to +180 from waxing",
-      "Ability Pollen - +1% to +5%. (up to +25% from waxing)",
-      "Energy - -10% to -20%.",
-      "Ability Rate - +1%. (up to +4% from waxing)",
-      "Ability: Melody.",
-      "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +5%.",
-      "[Hive Bonus] Convert Rate (from waxing) - +1% to +20%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Paper Angel": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/eb/Paper_Angel.png",
-    "level": "8",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"Designs for this folded paper doll came to you in a dream.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a0/BomberIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/c/ce/RascalIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/a/a7/ShyIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6d/PhotonIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "White Gather Amount - +10% to +20%. (up to +60% from waxing)",
-      "Ability Pollen - +1% to +3%. (up to +23% from waxing)",
-      "Ability: Token Link",
-      "[Hive Bonus] Ability Token Lifespan (from waxing, rare) - +1% to +3%.",
-      "[Hive Bonus] Bee Ability Pollen (from waxing, rare) - +1% to +5%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Toy Drum": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/30/Toy_Drum.png",
-    "level": "7",
-    "color": "Any",
-    "limit": "2",
-    "description": "\"A small percussion instrument that keeps you in step.\"",
-    "bees": [
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/f/f3/BraveIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/8/8d/DemoIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/4/42/BuckoIcon.png",
-      "https://static.wikia.nocookie.net/bee-swarm-simulator/images/e/e4/RileyIcon.png"
-    ],
-    "requirement": "None",
-    "stats": [
-      "Gather Amount - +10 to +20. (up to +60 from waxing)",
-      "Attack - +1% to +5%. (up to +25% from waxing)",
-      "Energy - -10% to -20%.",
-      "Critical Chance - +1%.",
-      "Ability: Haste",
-      "[Hive Bonus] Bee Ability Pollen (from waxing) - +1% to +10%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Lump Of Coal": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/11/Lump_Of_Coal.png",
-    "level": "13",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"Naughty bees are forced to carry this burdensome load.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Energy - -70% to -80%.",
-      "Movespeed - -40% to -50%.",
-      "Bomb Pollen (from waxing) - +1% to +40%",
-      "[Hive Bonus] Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
-      "[Hive Bonus] Buzz Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
-      "[Hive Bonus] Blue Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
-      "[Hive Bonus] Red Bomb Pollen - +1% to +3%. (up to +15% from waxing)",
-      "[Hive Bonus] Pollen - +1%.",
-      "[Hive Bonus] White Pollen - +1% to +2%.",
-      "[Hive Bonus] Blue Pollen - +1% to +2%.",
-      "[Hive Bonus] Red Pollen - +1% to +2%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Poinsettia": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/3/3a/Poinsettia.png",
-    "level": "6",
-    "color": "Any",
-    "limit": "3",
-    "description": "\"A gorgeous red flower so vibrant it is reserved for a special time of the year.\"",
-    "bees": [],
-    "requirement": "Bee must know \"Boost\" ability",
-    "stats": [
-      "Red Gather Amount - +10% to +25%. (up to +60% from waxing)",
-      "Gather Pollination Chance - +10% to +20%. (up to +40% from waxing)",
-      "[Hive Bonus] Bee Gather Pollen - +1%. (up to +31% from waxing)",
-      "[Hive Bonus] Red Pollen (From waxing) - +2% to +25%."
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Electric Candle": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/5/50/Electric_Candle.png",
-    "level": "6",
-    "color": "Red",
-    "limit": "3",
-    "description": "\"A battery powered candle that produces an acceptible [sic] flicker.\"",
-    "bees": [],
-    "requirement": "None",
-    "stats": [
-      "Red Gather Amount - +5% to +10%. (up to +50% from waxing)",
-      "Flames Pollen - +5% to +10%. (up to +50% from waxing)",
-      "Gathering Flames Chance - +1% to +5%. (up to +25% from waxing)",
-      "Energy - +5% to +10%.",
-      "[Hive Bonus] Flame Pollen - +1%. (up to +11% from waxing)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  },
-  "Festive Wreath": {
-    "image_url": "https://static.wikia.nocookie.net/bee-swarm-simulator/images/6/6b/Festive_Wreath.png",
-    "level": "10",
-    "color": "Red",
-    "limit": "1",
-    "description": "\"This ornate wreath was specially made to suit Festive Bee's taste.\"",
-    "bees": ["https://static.wikia.nocookie.net/bee-swarm-simulator/images/1/17/FestiveIcon.png"],
-    "requirement": "None",
-    "stats": [
-      "Gather Amount - +5 to +15. (up to +55 from waxing)",
-      "Convert Amount - +15 to +30. (up to +110 from waxing)",
-      "Red Bomb Pollen - +20% to +40%.",
-      "Mark Duration - +2% to +8%. (up to +13% from waxing)",
-      "Ability Rate - +1%. (10% as base stat)",
-      "Ability: Festive Mark",
-      "[Hive Bonus] Capacity - +5,000 to +10,000. (up to +110,000 from waxing)",
-      "[Hive Bonus] Ticket Chance - +1% to +5%. (from waxing, extremely rare)",
-      "[Hive Bonus] Red Bee Convert Rate - +2% to +10%. (from waxing)",
-      "[Hive Bonus] Honey At Hive - +1% to +3%. (from waxing, rare, caustic only)"
-    ],
-    "activeStats": [],
-    "potential": 0,
-    "waxes": []
-  }
+    "Thimble":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/39\/Thimble.png",
+        "level":"3",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"A tiny cup that usually protects our fingers. Bees can wear it as a hat.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Convert Amount: 20 to 40 (up to 80, 0.75 chance)",
+            "%Convert Amount: 1% to 5% (up to 10%, 0.5 chance)",
+            "[Hive Bonus] %Convert Rate (0.1%-1% base): 1% to 1% (up to 10%, 10%-25% chance)",
+            "[Hive Bonus] xConvert Rate (from waxing, 0.1%-1% chance, caustic only): x1.01 to x1.01"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Sweatband":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/1b\/Sweatband.png",
+        "level":"5",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"This absorbant strap keeps sweat out of your eyes while looking vaguely patriotic.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Bee Energy: 15% to 20% (up to 80%, 0.5 chance)",
+            "%White Gather Amt. (40%-60% base): 15% to 20% (up to 60%, 0.15 chance)",
+            "%Red Gather Amt. (40%-60% base): 15% to 20% (up to 60%, 0.15 chance)",
+            "%Blue Gather Amt. (40%-60% base): 15% to 20% (up to 60%, 0.15 chance)",
+            "[Hive Bonus] %White Pollen (5%-25% base): 1% to 1% (up to 2%, 0.01%-1% chance)",
+            "[Hive Bonus] %Red Pollen (5%-25% base): 1% to 1% (up to 2%, 0.02%-1% chance)",
+            "[Hive Bonus] %Blue Pollen (5%-25% base): 1% to 1% (up to 2%, 0.01%-1% chance)",
+            "[Hive Bonus] %Max Bee Energy (from waxing, 0.01%-2% chance): 1% to 5%",
+            "[Hive Bonus] %Pollen (from waxing, 0.01%-0.1% chance, caustic only): 1% to 1%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Bandage":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/0\/0c\/Bandage.png",
+        "level":"3",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"Heals cuts in no time and make a bee look tough.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Gather Amount: 3 to 6 (up to 16, 0.5 chance)",
+            "%Energy: 5% to 10% (up to 20%, 0.5 chance)",
+            "%Bee Attack: 1% to 3% (up to 3%, - chance)",
+            "+Bee Attack (from waxing, 1%-10% chance, caustic only): 1 to 1",
+            "[Hive Bonus] xBee Attack (from waxing, 0.1%-1% chance, caustic only): x1.01 to x1.01"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Thumbtack":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/7\/7e\/Thumbtack.png",
+        "level":"6",
+        "color":"Red",
+        "limit":"2",
+        "description":"\"A small pin used to fasten stuff down or as a makeshift stinger.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Gather Amount: 1 to 3 (up to 33, 0.2 chance)",
+            "%Critical Power: 5% to 10% (up to 40%, 0.4 chance)",
+            "%Bee Attack: 2% to 5% (up to 35%, 0.4 chance)",
+            "+Attack (0.2%-10% base): 1 to 1 (up to 2, 0.1%-1% chance)",
+            "[Hive Bonus] %Red Bee Attack (1%-10% base): 1% to 3% (up to 6%, 0.04%-1% chance)",
+            "[Hive Bonus] %Bee Attack (from waxing, 0.04%-1% chance, caustic only): 1% to 3%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Camo Bandana":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/d\/dc\/Camo_Bandana.png",
+        "level":"8",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"For any bee that wants to be seen looking like it wants to be unseen.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must know \"Bomb\" ability",
+        "stats":[
+            "%Gather Amount: 10% to 15% (up to 95%, 0.33 chance)",
+            "%Buzz Bomb Pollen: 15% to 25% (up to 105%, 0.33 chance)",
+            "+Attack (5%-50% base): 1 to 1 (up to 1, - chance)",
+            "%Critical Power (from waxing, 0.33 chance): 2% to 80%",
+            "%Super-Crit Power (from waxing, 0.33 chance, caustic only): 10% to 300%",
+            "[Hive Bonus] %Buzz Bomb Pollen: 2% to 5% (up to 15%, 5%-33% chance)",
+            "[Hive Bonus] %Pumpkin Capacity (10%-25% base): 4% to 8% (up to 13%, 5%-10% chance)",
+            "[Hive Bonus] %Coconut Capacity (10%-25% base): 4% to 8% (up to 13%, 5%-10% chance)",
+            "[Hive Bonus] %Super-Crit Power (from waxing, 5%-10% chance, caustic only): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Bottle Cap":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/c\/c9\/Bottle_Cap.png",
+        "level":"4",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"The discarded top from a bottle of pop.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Common or Rare",
+        "stats":[
+            "+Convert Amount: 10 to 20 (up to 95, 0.5 chance)",
+            "%Critical Power (0.01 base): 5% to 10% (up to 60%, 0.3 chance)",
+            "%Critical Chance: 1% to 2% (up to 12%, 5%-20% chance)",
+            "[Ability] Buzz Bomb (from waxing, 0.1%-1% chance, caustic only)",
+            "[Hive Bonus] %Critical Power (from waxing, 0.1%-1% chance): 2% to 15%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Kazoo":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/47\/Kazoo.png",
+        "level":"9",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"A plastic instrument that's kind of like a recorder, but more obnoxious.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Convert Amount: 20% to 30% (up to 90%, 0.5 chance)",
+            "%Critical Power: 20% to 30% (up to 90%, 0.5 chance)",
+            "%Energy: -55.00% to -45% (up to -45%, - chance)",
+            "[Ability] Melody (guaranteed)",
+            "[Hive Bonus] %Critical Power (5%-25% base): 2% to 5% (up to 10%, 1%-5% chance)",
+            "[Hive Bonus] %Super-Crit Power (from waxing, 2%-8% chance, caustic only): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Smiley Sticker":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/57\/Smiley_Sticker.png",
+        "level":"7",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"This happy seal of approval is only for the brightest of bees.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Gifted",
+        "stats":[
+            "%Energy: 15% to 25% (up to 85%, 0.33 chance)",
+            "%Bomb Pollen: 10% to 20% (up to 60%, 0.33 chance)",
+            "%Mark Duration: 5% to 10% (up to 30%, 0.33 chance)",
+            "[Ability] Honey Mark (from waxing, .02%-0.2% chance, caustic only)",
+            "[Ability] Blue Bomb (from waxing, .02%-0.2% chance, caustic only)",
+            "[Hive Bonus] %Mark Duration (2.5%-10% base): 1% to 1% (up to 2%, .1%-1% chance)",
+            "[Hive Bonus] %Max Bee Energy (from waxing, 1%-5% chance): 1% to 3%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Whistle":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/18\/Whistle.png",
+        "level":"8",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Bees can blow into this to startle everyone around them.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/f3\/BraveIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/7\/7c\/CommanderIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/c\/ce\/RascalIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/8d\/DemoIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/f9\/CoolIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/d\/d9\/RageIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Movespeed: 5% to 10% (up to 40%, 0.333 chance)",
+            "%Critical Power: 15% to 25% (up to 85%, 0.666 chance)",
+            "%Energy: -55.00% to -45% (up to -45%, - chance)",
+            "[Ability] Haste (guaranteed)",
+            "[Ability] Melody (from waxing, 0.01%-0.1% chance, caustic only)",
+            "[Hive Bonus] %Bee Movespeed (from waxing, 0.2%-1% chance, caustic only): 1% to 1%",
+            "[Hive Bonus] %Super-Crit Power (from waxing, 1%-10% chance, caustic only): 1% to 20%",
+            "[Hive Bonus] xPlayer Movespeed (from waxing, 0.1%-0.4% chance): x1.01 to x1.01"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Charm Bracelet":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/0\/00\/Charm_Bracelet.png",
+        "level":"12",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Bedazzles your bees with a shimmering assortment of symbols that are lucky somehow.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Legendary",
+        "stats":[
+            "%Convert Amount: 15% to 20% (up to 20%, - chance)",
+            "%Critical Chance: 1% to 15% (up to 15%, - chance)",
+            "%Mark Duration: 4% to 8% (up to 8%, - chance)",
+            "%Ability Rate: 3% to 6% (up to 6%, - chance)",
+            "[Ability] Melody (from waxing, 0.1%-2% chance, caustic only)",
+            "[Hive Bonus] %Loot Luck: 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %Honey At Hive (10%-20% base): 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %Honey From Tokens (10%-20% base): 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %Conversion At Hive (10%-20% base): 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %Mushroom Pollen (10%-20% base): 1% to 1% (up to 41%, 0.25 chance)",
+            "[Hive Bonus] %Blue Flower Pollen (10%-20% base): 1% to 1% (up to 41%, 0.25 chance)",
+            "[Hive Bonus] %Sunflower Pollen (10%-20% base): 1% to 1% (up to 41%, 0.25 chance)",
+            "[Hive Bonus] %Dandelion Pollen (10%-20% base): 1% to 1% (up to 41%, 0.25 chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Paperclip":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/35\/Paperclip.png",
+        "level":"7",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"A helpful trinket that keeps stacks of paper together without staples, tape, or glue.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Rare or Epic",
+        "stats":[
+            "%Ability Rate: 1% to 3% (up to 6%, 1%-10% chance)",
+            "%Ability Pollen: 5% to 15% (up to 65%, 5%-25% chance)",
+            "%Hive Convert Rate (from waxing, 1 chance): 2% to 30%",
+            "[Ability] Token Link (from waxing, 0.067%-0.67% chance, caustic only)",
+            "[Hive Bonus] %Token Lifespan: 1% to 3% (up to 9%, 0.2%-1% chance)",
+            "[Hive Bonus] %Bee Ability Pollen (from waxing, 0.4%-2% chance): 1% to 3%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Beret":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/43\/Beret.png",
+        "level":"11",
+        "color":"Blue",
+        "limit":"2",
+        "description":"\"Only the blue bees are cool enough to don this comfy cap.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Convert Amount: 10 to 20 (up to 60, 0.5 chance)",
+            "%Convert Amount: 5% to 10% (up to 50%, 0.5 chance)",
+            "%Ability Pollen (10%-50% base): 1% to 5% (up to 5%, - chance)",
+            "[Ability] Blue Boost (from waxing, 0.02%-0.2% chance, caustic only)",
+            "[Hive Bonus] +Capacity: 10000 to 35000 (up to 50000, 25%-50% chance)",
+            "[Hive Bonus] %Blue Capacity (from waxing, 2%-10% chance): 1% to 5%",
+            "[Hive Bonus] %Capacity (from waxing, 0.1%-5% chance, caustic only): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Bang Snap":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/7\/75\/Bang_Snap.png",
+        "level":"10",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"These are the only explosives suitable for young bees and beekeepers.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bees must be Common, Rare, or Epic.",
+        "stats":[
+            "%Bomb Pollen: 10% to 15% (up to 95%, 0.5 chance)",
+            "%Critical Chance: 1% to 3% (up to 23%, 0.5 chance)",
+            "[Ability] Pool: Bomb (guaranteed)",
+            "[Ability] Pool: Bomb+ (from waxing, 0.1%-1% chance, caustic only)",
+            "[Hive Bonus] %Bomb Pollen (from waxing, .5%-5% chance): 1% to 10%",
+            "[Hive Bonus] %Bomb IC (from waxing, 1%-5% chance, caustic only): 1% to 1%",
+            "[Hive Bonus] %Buzz Bomb IC (from waxing, 1%-10% chance, caustic only): 1% to 1%",
+            "[Hive Bonus] %Red Bomb IC (from waxing, 1%-10% chance, caustic only): 1% to 1%",
+            "[Hive Bonus] %Blue Bomb IC (from waxing, 1%-10% chance, caustic only): 1% to 1%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Bead Lizard":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/6f\/Bead_Lizard.png",
+        "level":"9",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Threaded plastic beads arranged to look like a reptile. Would make a good keychain.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Common or Rare",
+        "stats":[
+            "%Convert Amount: 20% to 30% (up to 110.00%, 0.33 chance)",
+            "%Flame Chance: 8% to 12% (up to 52%, 0.33 chance)",
+            "%Bubble Chance: 8% to 12% (up to 52%, 0.33 chance)",
+            "[Ability] Token Link (from waxing, 5%-33% chance, caustic only)",
+            "[Hive Bonus] %Bubble Pollen (from waxing, 1%-10% chance): 1% to 10%",
+            "[Hive Bonus] %Flame Pollen (from waxing, 1%-10% chance): 1% to 10%",
+            "[Hive Bonus] %Bee Ability Pollen (from waxing, 0.1%-5% chance, caustic only): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Pink Shades":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/9\/9a\/Pink_Shades.png",
+        "level":"10",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Flamboyant glasses that protect your eyes while making you look like a rock star.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/83\/BasicIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/4a\/RadIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/a0\/BomberIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/8d\/DemoIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/2\/2d\/HoneyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/a7\/ShyIcon.png"
+        ],
+        "requirement":"Bee must be Gifted",
+        "stats":[
+            "%Ability Pollen: 15% to 25% (up to 65%, 0.15 chance)",
+            "%Critical Power: 25% to 50% (up to 50%, - chance)",
+            "%Critical Chance: 20% to 30% (up to 68%, 0.55 chance)",
+            "%Super-Crit Chance (25%-75% base): 10% to 15% (up to 55.00%, 0.3 chance)",
+            "[Ability] Focus (from waxing, 5%-25% chance, caustic only)",
+            "[Hive Bonus] %Super-Crit Chance (from waxing, 2.5%-10% chance, caustic only): 1% to 1%",
+            "[Hive Bonus] %Super-Crit Power (from waxing, 2.5%-10% chance): 2% to 30%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Lei":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/45\/Lei.png",
+        "level":"14",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Threaded petals to drape around your d\u00e9colletage.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/83\/BasicIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/18\/LookerIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/e\/ed\/StubbornIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/b\/b5\/HastyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/66\/ExhaustedIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Gather Amount: 10 to 20 (up to 60, 0.33 chance)",
+            "%Gather Amount: 10% to 20% (up to 60%, 0.33 chance)",
+            "%Gather Pollination: 20% to 30% (up to 50%, 0.33 chance)",
+            "%Ability Rate (10%-50% base): 1% to 1% (up to 1%, - chance)",
+            "[Ability] Pool: Boost (from waxing, 0.1%-1% chance, caustic only)",
+            "[Hive Bonus] %Sunflower Pollen (10%-25% base): 3% to 5% (up to 25%, 2%-10% chance)",
+            "[Hive Bonus] %Blue Flower Pollen (10%-25% base): 3% to 5% (up to 25%, 2%-10% chance)",
+            "[Hive Bonus] %Rose Pollen (10%-25% base): 3% to 5% (up to 25%, 2%-10% chance)",
+            "[Hive Bonus] %Coconut Pollen (5%-10% base): 3% to 5% (up to 25%, 2%-10% chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Demon Talisman":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/b\/b3\/Demon_Talisman.png",
+        "level":"15",
+        "color":"Red",
+        "limit":"1",
+        "description":"\"An ornament trying hard to look conventionally evil.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Attack: 50% to 70% (up to 95%, 0.33 chance)",
+            "%Gather Amount: 50% to 70% (up to 160%, 0.16 chance)",
+            "%Ability Pollen: 50% to 70% (up to 160%, 0.16 chance)",
+            "%Gathering Flames Chance: 10% to 15% (up to 21%, 0.23 chance)",
+            "%Super-Crit Chance (1%-5% base): 5% to 10% (up to 30%, 0.1 chance)",
+            "-%Movespeed: -0.6 to -0.7 (up to -0.7, - chance)",
+            "-%Energy: -0.2 to -0.3 (up to -0.3, - chance)",
+            "[Ability] Inferno (from waxing, .0125%-.1% chance, caustic only)",
+            "[Hive Bonus] %Red Bomb Pollen: 7.00% to 13% (up to 35%, 40%-60% chance)",
+            "[Hive Bonus] %Flame Pollen: 7.00% to 13% (up to 35%, 40%-60% chance)",
+            "[Hive Bonus] %Instant Red Bomb Conversion: 6% to 9% (up to 14.00%, 10%-25% chance)",
+            "[Hive Bonus] %Instant Flame Conversion: 6% to 9% (up to 14.00%, 10%-25% chance)",
+            "[Hive Bonus] %Instant Demon Bee Conversion: 10% to 10% (up to 10%, - chance)",
+            "[Hive Bonus] %Super-Crit Power (from waxing, 5%-20% chance, caustic only): 2% to 10%",
+            "[Hive Bonus] -%Max Bee Energy: -0.2 to -0.25 (up to -0.25, - chance)",
+            "[Hive Bonus] -Player Movespeed: -5 to -5 (up to -5, - chance)",
+            "[Hive Bonus] -xBlue Pollen: 0.5x to 0.5x (up to 0.5x, - chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Camphor Lip Balm":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/0\/04\/Camphor_Lip_Balm.png",
+        "level":"12",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Soothes chapped lips with a slight cooling sensation.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Gather Amount: 20 to 30 (up to 75, 0.5 chance)",
+            "%Critical Power: 50% to 70% (up to 145%, 0.5 chance)",
+            "[Hive Bonus] xPepper Patch Pollen: x1.03 to x1.05 (up to 1.08x, 2%-8% chance)",
+            "[Hive Bonus] %Bubble Pollen: 10% to 15% (up to 25%, 10%-25% chance)",
+            "[Hive Bonus] %Gold Bubble Pollen (from waxing, 1%-10% chance, caustic only): 2% to 12%",
+            "[Hive Bonus] %Honey From Instant Conversion (from waxing, .01%-1% chance, caustic only): 1% to 10%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Autumn Sunhat":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/51\/Autumn_Sunhat.png",
+        "level":"16",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"A lovely straw hat made from 100% fall-sourced materials.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Convert Amount: 60 to 80 (up to 200, 0.33 chance)",
+            "%Convert Amount: 15% to 20% (up to 60%, 0.33 chance)",
+            "%White Gather Amount: 40% to 60% (up to 110.00%, 0.33 chance)",
+            "%Ability Rate: 8% to 15% (up to 25%, 0.1 chance)",
+            "[Hive Bonus] +Capacity: 40000 to 60000 (up to 100000, 20%-33% chance)",
+            "[Hive Bonus] %Sunflower Field Pollen: 18% to 24% (up to 44%, 20%-33% chance)",
+            "[Hive Bonus] %Pumpkin Patch Pollen: 18% to 24% (up to 44%, 20%-33% chance)",
+            "[Hive Bonus] %White Field Capacity: 6% to 10% (up to 22%, 15%-25% chance)",
+            "[Hive Bonus] %White Pollen (from waxing, 5%-10% chance, caustic only): 1% to 30%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Rose Headband":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/33\/Rose_Headband.png",
+        "level":"13",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Compliments a bee's rosy complexion and flower-esque fleeting youth.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Attack: 2 to 4 (up to 7, 15%-25% chance)",
+            "%Convert Amount: 40% to 60% (up to 140%, 0.5 chance)",
+            "%Gather Pollination Chance: 10% to 15% (up to 20%, 15%-25% chance)",
+            "%Critical Chance (10%-25% base): 5% to 10% (up to 20%, 15%-25% chance)",
+            "%Ability Rate: 1% to 2% (up to 2%, - chance)",
+            "[Hive Bonus] +Capacity: 20000 to 30000 (up to 55000, 10%-30% chance)",
+            "[Hive Bonus] %Rose Field Pollen: 14.00% to 20% (up to 40%, 10%-30% chance)",
+            "[Hive Bonus] %Red Field Capacity: 6% to 10% (up to 20%, 6%-30% chance)",
+            "[Hive Bonus] %Instant Rose Field Conversion (from waxing, 1%-8% chance, caustic only): 2% to 6%",
+            "[Hive Bonus] %Bee Attack (from waxing, .1%-1% chance, caustic only): 2% to 9%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Pink Eraser":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/9\/92\/Pink_Eraser.png",
+        "level":"12",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Unmarks your marks.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must have a Convert Amount mutation",
+        "stats":[
+            "+Convert Amount: 20 to 40 (up to 100, 0.5 chance)",
+            "%Instant Conversion: 15% to 20% (up to 30%, 0.5 chance)",
+            "-%Mark Duration: -0.9 to -0.9 (up to -0.9, - chance)",
+            "[Hive Bonus] %Instant Red Bomb Conversion: 7.00% to 10% (up to 15%, 5%-20% chance)",
+            "[Hive Bonus] %Instant Bee Gather Conversion: 3% to 5% (up to 8%, 5%-20% chance)",
+            "[Hive Bonus] %Honey From Instant Conversion (10%-50% base): 0.50% to 1% (up to 4%, .02%-.2% chance, caustic only)",
+            "[Hive Bonus] %Unique Instant Conversion (from waxing, .02%-.1% chance, caustic only): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Candy Ring":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/1a\/Candy_Ring.png",
+        "level":"14",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"Keeps some sugar on hand to satisfy on demand.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Energy: 60 to 80 (up to 240, 1 chance)",
+            "%Convert Amount: 20% to 30% (up to 80%, 0.5 chance)",
+            "%Ability Rate: 1% to 2% (up to 5%, 10%-20% chance, caustic only)",
+            "[Hive Bonus] %Honey At Hive: 2% to 5% (up to 25%, 1%-10% chance)",
+            "[Hive Bonus] %Honey Per Goo: 1% to 1% (up to 7.00%, .5%-5% chance)",
+            "[Hive Bonus] xHoney From Tokens (from waxing, .005%-.02% chance, caustic only): 1.01x to 1.01x"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Elf Cap":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/7\/74\/Elf_Cap.png",
+        "level":"3",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"A darling cap fitted with a bell to keep the laborer alert.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Convert Amount: 25 to 50 (up to 110, 1 chance)",
+            "%Hive Convert Rate: 10% to 20% (up to 60%, 1 chance)",
+            "[Hive Bonus] %Hive Convert Rate: 1% to 3% (up to 13%, 10%-20% chance)",
+            "[Hive Bonus] %Honey At Hive (from waxing, 1%-10% chance): 1% to 20%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Single Mitten":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/e\/ee\/Single_Mitten.png",
+        "level":"6",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"This winter-themed mitten is missing its partner.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Rare, Epic, or Legendary",
+        "stats":[
+            "+Gather Amount: 5 to 10 (up to 50, 1 chance)",
+            "%Bomb Pollen: 10% to 15% (up to 75%, 1 chance)",
+            "[Hive Bonus] +Capacity: 7500 to 10000 (up to 15000, 25%-100% chance)",
+            "[Hive Bonus] %Red Pollen (from waxing, 1%-10% chance): 1% to 9%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Warm Scarf":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/43\/Warm_Scarf.png",
+        "level":"5",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"This winter scarf keeps bees warm in the field.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/83\/BasicIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/4a\/RadIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/66\/ExhaustedIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/5a\/FrostyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/a7\/ShyIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Convert Amount: 25% to 35% (up to 75%, 1 chance)",
+            "%Energy: 25% to 35% (up to 75%, 1 chance)",
+            "[Hive Bonus] %Red Capacity: 1% to 3% (up to 13%, 5%-10% chance)",
+            "[Hive Bonus] %White Capacity: 1% to 3% (up to 13%, 5%-10% chance)",
+            "[Hive Bonus] %Capacity (from waxing, 0.1%-1% chance): 1% to 10%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Peppermint Antennas":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/fc\/Peppermint_Antennas.png",
+        "level":"7",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"These grant a soothing cooling sensation to the bee who wears them.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Convert Amount: 2% to 4% (up to 44%, 1 chance)",
+            "%Gather amount: 2% to 4% (up to 44%, 1 chance)",
+            "%Ability Pollen (20%-60% base): 1% to 1% (up to 6%, 1%-10% chance)",
+            "%Ability rate (20%-60% base): 1% to 1% (up to 6%, 1%-10% chance)",
+            "%Movespeed: 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %Ability Rate (from waxing, 0.1%-1% chance): 1% to 1%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Beesmas Top":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/2\/2c\/Beesmas_Top.png",
+        "level":"4",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"Younger bees enjoy giving this traditional Beesmas toy a spin.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must be Common or Rare",
+        "stats":[
+            "%Critical Chance: 5% to 10% (up to 20%, 30%-100% chance)",
+            "%Energy: -35% to -25% (up to 125%, 1 chance)",
+            "%Ability Rate: 5% to 10% (up to 20%, 30%-100% chance)",
+            "+Attack (0.1 base): 1 to 1 (up to 1, - chance)",
+            "[Hive Bonus] %Critical Power: 2% to 5% (up to 15%, 1%-10% chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Pinecone":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/a7\/Pinecone.png",
+        "level":"9",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"A seed-producing organ produced by Conifer trees.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/45\/BumbleIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/e\/ed\/StubbornIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/42\/BuckoIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/5a\/FrostyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/d\/d8\/CarpenterIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/8a\/BearIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Convert Amount: 20% to 30% (up to 70%, 1 chance)",
+            "%Ability Rate (10%-25% base): 1% to 1% (up to 2%, 1%-10% chance)",
+            "[Hive Bonus] %Pine Tree Capacity: 8% to 15% (up to 25%, 5%-20% chance)",
+            "[Hive Bonus] %Pine Tree Pollen: 5% to 10% (up to 20%, 3%-10% chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Icicles":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/c\/c5\/Icicles.png",
+        "level":"10",
+        "color":"Blue",
+        "limit":"3",
+        "description":"\"Incredibly cold and incredibly sharp.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must know \"Blue Bomb\" ability",
+        "stats":[
+            "%Bee Attack: 3% to 5% (up to 45%, 1 chance)",
+            "%Blue Bomb Pollen: 20% to 30% (up to 110.00%, 1 chance)",
+            "[Hive Bonus] %Cactus Pollen: 5% to 10% (up to 20%, 2%-10% chance)",
+            "[Hive Bonus] %Blue Bomb Pollen: 3% to 5% (up to 15%, 2%-10% chance)",
+            "[Hive Bonus] %Monster Resp. Time (from waxing, 0.1%-1% chance): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Beesmas Tree Hat":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/14\/Beesmas_Tree_Hat.png",
+        "level":"10",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"A party hat that's been painted to look like a Beesmas Tree.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must have a Mutation",
+        "stats":[
+            "%Convert Amount: 10% to 20% (up to 60%, 1 chance)",
+            "%Critical Chance: 2% to 5% (up to 10%, 20%-50% chance)",
+            "%Ability Pollen: 2% to 5% (up to 10%, 20%-50% chance)",
+            "%Ability Rate (5%-50% base): 1% to 1% (up to 2%, 1%-10% chance)",
+            "[Hive Bonus] +Capacity: 10000 to 25000 (up to 35000, 5%-10% chance)",
+            "[Hive Bonus] %Convert At Hive: 3% to 5% (up to 15%, 5%-10% chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Bubble Light":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/1e\/Bubble_Light.png",
+        "level":"8",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"The incandescent light bulb in this ornament brings methylene chloride to a magical boil.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must have Energy Mutation",
+        "stats":[
+            "+Convert Amount: 30 to 50 (up to 170, 1 chance)",
+            "+Bee Movespeed: 3 to 5 (up to 10, 5%-10% chance)",
+            "%Bubble Pollen: 15% to 30% (up to 60%, 10%-25% chance)",
+            "%Mark Duration: 5% to 15% (up to 25%, 10%-25% chance)",
+            "[Hive Bonus] %Bubble Pollen (1%-10% base): 1% to 1% (up to 11%, 1%-10% chance)",
+            "[Hive Bonus] %Bee Movespeed (from waxing, 0.1%-1% chance): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Snow Tiara":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/ac\/Snow_Tiara.png",
+        "level":"12",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"A beautiful crown perfect for occasions where you build snowbears with your sister.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/f9\/CoolIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/e\/ed\/StubbornIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/d\/d4\/ShockedIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/5a\/FrostyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/67\/DiamondIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/86\/WindyIcon.png"
+        ],
+        "requirement":"Bee must be Gifted",
+        "stats":[
+            "%Convert Amount: 10% to 25% (up to 65%, 30%-60% chance)",
+            "%Convert At Hive: 10% to 25% (up to 65%, 1 chance)",
+            "%Blue Gather Amt.: 10% to 25% (up to 65%, 1 chance)",
+            "%White Gather Amt.: 10% to 25% (up to 65%, 1 chance)",
+            "%Critical Chance: 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %Blue Capacity: 2% to 5% (up to 15%, 1%-10% chance)",
+            "[Hive Bonus] %White Capacity: 2% to 5% (up to 15%, 1%-10% chance)",
+            "[Hive Bonus] %Honey From Tokens: 2% to 5% (up to 5%, - chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Snowglobe":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/36\/Snowglobe.png",
+        "level":"7",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"Keep a little ball of winter wonder with you all year long.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/83\/BasicIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/45\/BumbleIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/f9\/CoolIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/42\/BuckoIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/5a\/FrostyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/86\/WindyIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Bomb Pollen: 30% to 50% (up to 90%, 1 chance)",
+            "%Ability rate (from waxing, 1%-10% chance): 1% to 1%",
+            "[Ability] Snowglobe Shake (guaranteed)",
+            "[Hive Bonus] %Bomb Pollen (from waxing, 1%-10% chance): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Reindeer Antlers":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/69\/Reindeer_Antlers.png",
+        "level":"8",
+        "color":"Any",
+        "limit":"1",
+        "description":"\"These magic antlers and glowing-red nose help Puppy Bee guide you through darkness!\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/0\/0c\/PuppyIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Convert Amount: 10% to 15% (up to 95%, 1 chance)",
+            "%Ability Pollen: 10% to 15% (up to 95%, 1 chance)",
+            "[Ability] Focus (guaranteed)",
+            "[Ability] Reindeer Fetch (guaranteed)",
+            "[Ability] Baby Love (from waxing, .0167%-.05% chance, caustic only)",
+            "[Hive Bonus] %Capacity (from waxing, 5%-10% chance): 1% to 20%",
+            "[Hive Bonus] %Bond From Treats (from waxing, .01%-.05% chance): 1% to 3%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Toy Horn":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/b\/bf\/Toy_Horn.png",
+        "level":"9",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"The tiny brass instrument can be heard from miles away.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/f3\/BraveIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/d\/d9\/RageIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/1a\/LionIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/36\/CobaltIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/11\/CrimsonIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Convert Amount: 30 to 60 (up to 180, 1 chance)",
+            "%Ability Pollen: 1% to 5% (up to 25%, 5%-25% chance)",
+            "%Energy: -20% to -10% (up to -10%, - chance)",
+            "%Ability Rate (5%-90% base): 1% to 3% (up to 6%, 1%-10% chance)",
+            "[Ability] Melody (guaranteed)",
+            "[Hive Bonus] %Bee Ability Pollen (from waxing, 2%-5% chance): 1% to 5%",
+            "[Hive Bonus] %Convert Rate (from waxing, 5%-10% chance): 1% to 20%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Paper Angel":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/e\/eb\/Paper_Angel.png",
+        "level":"8",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"Designs for this folded paper doll came to you in a dream.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/a0\/BomberIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/c\/ce\/RascalIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/a\/a7\/ShyIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/6d\/PhotonIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "%White Gather Amt.: 10% to 20% (up to 60%, 1 chance)",
+            "%Ability Pollen: 1% to 3% (up to 23%, 5%-20% chance)",
+            "[Ability] Token Link (guaranteed)",
+            "[Hive Bonus] %Bee Ability Pollen (from waxing, 0.5%-5% chance): 1% to 3%",
+            "[Hive Bonus] %Token Lifespan (from waxing, 1%-5% chance): 1% to 5%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Toy Drum":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/30\/Toy_Drum.png",
+        "level":"7",
+        "color":"Any",
+        "limit":"2",
+        "description":"\"A small percussion instrument that keeps you in step.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/f\/f3\/BraveIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/8\/8d\/DemoIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/4\/42\/BuckoIcon.png",
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/e\/e4\/RileyIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Gather Amount: 10 to 20 (up to 60, 1 chance)",
+            "%Bee Attack: 1% to 5% (up to 25%, 50%-75% chance)",
+            "%Energy: -20% to -10% (up to -10%, - chance)",
+            "%Critical Chance (5%-90% base): 1% to 1% (up to 1%, - chance)",
+            "[Ability] Haste (guaranteed)",
+            "[Hive Bonus] %Bee Ability Pollen (from waxing, 1%-10% chance): 1% to 10%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Lump of Coal":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/11\/Lump_Of_Coal.png",
+        "level":"13",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"Naughty bees are forced to carry this burdensome load.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Energy: -80% to -70% (up to -70%, - chance)",
+            "%Movespeed: -50% to -40% (up to -40%, - chance)",
+            "%Bomb Pollen (from waxing, 1 chance): 1% to 40%",
+            "[Hive Bonus] %Bomb Pollen: 1% to 3% (up to 13%, 5%-20% chance)",
+            "[Hive Bonus] %Buzz Bomb Pollen (0.15 base): 1% to 3% (up to 13%, 5%-20% chance)",
+            "[Hive Bonus] %Blue Bomb Pollen (0.15 base): 1% to 3% (up to 13%, 5%-20% chance)",
+            "[Hive Bonus] %Red Bomb Pollen (0.15 base): 1% to 3% (up to 13%, 5%-20% chance)",
+            "[Hive Bonus] %Pollen (0.05 base): 1% to 1% (up to 1%, - chance)",
+            "[Hive Bonus] %White Pollen (0.1 base): 1% to 2% (up to 2%, - chance)",
+            "[Hive Bonus] %Blue Pollen (0.1 base): 1% to 2% (up to 2%, - chance)",
+            "[Hive Bonus] %Red Pollen (0.1 base): 1% to 2% (up to 2%, - chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Poinsettia":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/3\/3a\/Poinsettia.png",
+        "level":"6",
+        "color":"Any",
+        "limit":"3",
+        "description":"\"A gorgeous red flower so vibrant it is reserved for a special time of the year.\"",
+        "bees":[
+
+        ],
+        "requirement":"Bee must know \"Boost\" ability",
+        "stats":[
+            "%Red Gather Amt.: 10% to 20% (up to 60%, 1 chance)",
+            "%Pollination Chance: 10% to 20% (up to 40%, 25%-75% chance)",
+            "[Hive Bonus] %Pollen From Bees (20%-50% base): 1% to 1% (up to 31%, 10%-35% chance)",
+            "[Hive Bonus] %Red Pollen (from waxing, 1%-10% chance): 2% to 25%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Electric Candle":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/5\/50\/Electric_Candle.png",
+        "level":"6",
+        "color":"Red",
+        "limit":"3",
+        "description":"\"A battery powered candle that produces an acceptible [sic] flicker.\"",
+        "bees":[
+
+        ],
+        "requirement":"None",
+        "stats":[
+            "%Red Gather Amt.: 5% to 10% (up to 50%, 1 chance)",
+            "%Flame Pollen: 5% to 10% (up to 50%, 1 chance)",
+            "%Gathering Flames: 1% to 5% (up to 25%, 10%-50% chance)",
+            "%Energy: 5% to 10% (up to 10%, - chance)",
+            "[Hive Bonus] %Flame Pollen (1%-5% base): 1% to 1% (up to 11%, 1%-5% chance)"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    },
+    "Festive Wreath":{
+        "image_url":"https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/6\/6b\/Festive_Wreath.png",
+        "level":"10",
+        "color":"Red",
+        "limit":"1",
+        "description":"\"This ornate wreath was specially made to suit Festive Bee's taste.\"",
+        "bees":[
+            "https:\/\/static.wikia.nocookie.net\/bee-swarm-simulator\/images\/1\/17\/FestiveIcon.png"
+        ],
+        "requirement":"None",
+        "stats":[
+            "+Gather Amount: 5 to 15 (up to 55, 1 chance)",
+            "+Convert Amount: 15 to 30 (up to 110, 1 chance)",
+            "%Red Bomb Pollen: 20% to 40% (up to 40%, - chance)",
+            "%Mark Duration: 2% to 8% (up to 13%, 1%-10% chance)",
+            "%Ability Rate (0.1 base): 1% to 1% (up to 1%, - chance)",
+            "[Ability] Festive Mark (guaranteed)",
+            "[Hive Bonus] +Capacity: 10000 to 15000 (up to 110000, 1%-10% chance)",
+            "[Hive Bonus] %Ticket Chance (from waxing, 0.01%-0.05% chance): 1% to 5%",
+            "[Hive Bonus] %Red Bee Convert Rate (from waxing, 4%-15% chance, caustic only): 2% to 10%",
+            "[Hive Bonus] %Honey At Hive (from waxing, 8%-30% chance, caustic only): 1% to 10%"
+        ],
+        "activeStats":[
+
+        ],
+        "potential":0,
+        "waxes":[
+
+        ]
+    }
 }
