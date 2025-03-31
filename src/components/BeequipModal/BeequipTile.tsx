@@ -61,7 +61,7 @@ const BeequipTile = ({ name, data, onClick, onContextMenu }: BeequipTileProps) =
       >
         <GridItem area="button">
           <HStack>
-            <Image src={"../../assets/eggs/basic_egg.png"} alt={name} maxW="56px" />
+            <Image src={beequip.image_url} alt={name} maxW="56px" />
             <HStack spacing={0}>
               <Text color="white">{data.potential}</Text>
               <FaStar color="white" />
