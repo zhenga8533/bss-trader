@@ -27,7 +27,7 @@ def download_assets(data_path: str, category: str, logger: Logger) -> None:
         logger.info(f"download_cosmetics: Processing item '{name}'...")
         image_url = data.get("image_url")
         file_name = name.lower().replace(" ", "_") + ".png"
-        download_file(image_url, f"../assets/{category}/{file_name}", logger)
+        download_file(image_url, f"../../public/{category}/{file_name}", logger)
 
     logger.info("download_cosmetics: Finished downloading data assets.")
 
@@ -58,7 +58,7 @@ def download_cosmetics(data_path: str, logger: Logger) -> None:
             logger.info(f"download_cosmetics: Processing item '{item_name}'...")
             image_url = item_data.get("image_url")
             file_name = item_name.lower().replace(" ", "_") + ".png"
-            download_file(image_url, f"../assets/cosmetics/{category}s/{file_name}", logger)
+            download_file(image_url, f"../../public/cosmetics/{category}s/{file_name}", logger)
 
     logger.info("download_cosmetics: Finished downloading cosmetics data.")
 

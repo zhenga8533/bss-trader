@@ -122,7 +122,7 @@ def update_beequips(data_path: str, beequips: list, logger: Logger) -> None:
 
         # Download beequip image if it doesn't exist
         file_name = name.lower().replace(" ", "_") + ".png"
-        download_file(beequip_data.get("image_url"), f"../assets/beequips/{file_name}", logger)
+        download_file(beequip_data.get("image_url"), f"../../public/beequips/{file_name}", logger)
 
         # Update the data dictionary with the new stats
         beequip_data["stats"] = stat_strs
