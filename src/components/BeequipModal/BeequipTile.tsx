@@ -6,6 +6,7 @@ import { formatStat } from "./StatsPopover";
 
 export interface Beequip {
   image_url: string;
+  image_path: string;
   level: string;
   color: string;
   limit: string;
@@ -61,7 +62,7 @@ const BeequipTile = ({ name, data, onClick, onContextMenu }: BeequipTileProps) =
       >
         <GridItem area="button">
           <HStack>
-            <Image src={beequip.image_url} alt={name} maxW="56px" />
+            <Image src={beequip.image_path} alt={name} maxW="56px" />
             <HStack spacing={0}>
               <Text color="white">{data.potential}</Text>
               <FaStar color="white" />
@@ -84,7 +85,7 @@ const BeequipTile = ({ name, data, onClick, onContextMenu }: BeequipTileProps) =
     </Button>
   ) : (
     <Button className="box" p={1} onClick={onClick}>
-      <Image src={beequip.image_url} alt={name} />
+      <Image src={beequip.image_path} alt={name} />
     </Button>
   );
 
@@ -94,7 +95,7 @@ const BeequipTile = ({ name, data, onClick, onContextMenu }: BeequipTileProps) =
         <Heading size="md">{name}</Heading>
         <HStack>
           <Box className="box" boxSize="50%" p={5}>
-            <Image src={beequip.image_url} alt={name} />
+            <Image src={beequip.image_path} alt={name} />
           </Box>
           <VStack w="50%">
             <Text className="box" fontSize="large" p={0.5} w="100%">

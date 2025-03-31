@@ -53,7 +53,7 @@ const BeequipInput = ({ name, isOpen, onClose, onEnter }: BeequipInputProps) => 
             <Heading className="heading" size="lg">
               {name}
             </Heading>
-            <Image src={beequip.image_url} alt={name} boxSize="36px" />
+            <Image src={beequip.image_path} alt={name} boxSize="36px" />
           </HStack>
           <HStack>
             {waxes.map((wax, index) => (
@@ -79,7 +79,7 @@ const BeequipInput = ({ name, isOpen, onClose, onEnter }: BeequipInputProps) => 
                   name={name}
                   wax={wax}
                   onClick={() => {
-                    if (waxes.length < 5) setWaxes([...waxes, wax.image_url]);
+                    if (waxes.length < 5) setWaxes([...waxes, wax.image_path]);
                     else
                       toast({
                         title: "The Wax didn't seem to help...",
