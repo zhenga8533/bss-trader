@@ -26,8 +26,15 @@ def download_assets(data_path: str, category: str, logger: Logger) -> None:
     for name, data in asset_data.items():
         logger.info(f"download_cosmetics: Processing item '{name}'...")
         image_url = data.get("image_url")
+
         file_name = name.lower().replace(" ", "_") + ".png"
-        download_file(image_url, f"../../public/{category}/{file_name}", logger)
+        dir_path = f"{category}/{file_name}"
+        data["image_path"] = "/bss-trader/assets/" + dir_path
+        download_file(image_url, f"../../public/assets/{dir_path}", logger)
+
+    # Save data with updated image paths
+    with open(data_path, "w") as f:
+        json.dump(asset_data, f, indent=4)
 
     logger.info("download_cosmetics: Finished downloading data assets.")
 
@@ -57,8 +64,15 @@ def download_cosmetics(data_path: str, logger: Logger) -> None:
         for item_name, item_data in category_data.items():
             logger.info(f"download_cosmetics: Processing item '{item_name}'...")
             image_url = item_data.get("image_url")
+
             file_name = item_name.lower().replace(" ", "_") + ".png"
-            download_file(image_url, f"../../public/cosmetics/{category}s/{file_name}", logger)
+            dir_path = f"cosmetics/{category}s/{file_name}"
+            item_data["image_path"] = "/bss-trader/assets/" + dir_path
+            download_file(image_url, f"../../public/assets/{dir_path}", logger)
+
+    # Save cosmetics data with updated image paths
+    with open(data_path, "w") as f:
+        json.dump(cosmetics_data, f, indent=4)
 
     logger.info("download_cosmetics: Finished downloading cosmetics data.")
 

@@ -1,3 +1,4 @@
+import json
 import os
 
 import pandas as pd
@@ -103,7 +104,8 @@ def update_beequips(data_path: str, beequips: list, logger: Logger) -> None:
     logger.info("update_beequips: Updating beequips...")
 
     # Load json file from data_path
-    data = pd.read_json(data_path)
+    with open(data_path, "r") as f:
+        data = json.load(f)
 
     # Loop through each beequip and update the data dictionary
     for beequip in beequips:
@@ -122,7 +124,9 @@ def update_beequips(data_path: str, beequips: list, logger: Logger) -> None:
 
         # Download beequip image if it doesn't exist
         file_name = name.lower().replace(" ", "_") + ".png"
-        download_file(beequip_data.get("image_url"), f"../../public/beequips/{file_name}", logger)
+        dir_path = "beequips/" + file_name
+        beequip_data["image_path"] = "/bss-trader/assets/" + dir_path
+        download_file(beequip_data.get("image_url"), f"../../public/assets/{dir_path}", logger)
 
         # Update the data dictionary with the new stats
         beequip_data["stats"] = stat_strs
@@ -130,7 +134,7 @@ def update_beequips(data_path: str, beequips: list, logger: Logger) -> None:
 
     # Save new data
     logger.info("update_beequips: Saving updated beequips data...")
-    save_data = data.to_json(indent=4)
+    save_data = json.dumps(data, indent=4)
     with open(data_path, "w") as f:
         f.write(save_data)
     logger.info("update_beequips: Successfully updated beequips data.")
