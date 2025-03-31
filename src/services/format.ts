@@ -15,15 +15,16 @@ export const capitalize = (str: string) => {
  * @returns - The formatted stat string
  */
 export const getStatColor = (stat: string) => {
-  const color = stat.startsWith("+")
-    ? "green"
-    : stat.startsWith("-")
-    ? "red"
-    : stat.startsWith("[")
-    ? "yellow"
-    : stat.startsWith("Ability:")
-    ? "cyan"
-    : "white";
+  const color =
+    stat.startsWith("+") || stat.startsWith("%")
+      ? "lime"
+      : stat.startsWith("-")
+      ? "red"
+      : stat.startsWith("[Ability]")
+      ? "cyan"
+      : stat.startsWith("[Hive Bonus]")
+      ? "yellow"
+      : "white";
   return color;
 };
 
