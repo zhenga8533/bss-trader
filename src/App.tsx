@@ -85,14 +85,14 @@ const App = () => {
                   {showQR && (
                     <QRCode
                       key={seed}
-                      value={"https://bsstrader.com?data=" + getExport()}
+                      value={"https://zhenga8533.github.io/bss-trader/?data=" + getExport()}
                       style={{ position: "absolute", top: "15%", left: "15%", width: "70%", height: "70%" }}
                     />
                   )}
                 </Box>
                 <Image
                   src={url}
-                  alt="bsstrader.com"
+                  alt="https://zhenga8533.github.io/bss-trader/"
                   position="absolute"
                   bottom={showQR ? "3%" : "50%"}
                   className="wiggle"
